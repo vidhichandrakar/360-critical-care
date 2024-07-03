@@ -1,13 +1,788 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  font-family: "Inter" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.menuText {
+  color: #000 !important;
+  font-family: Inter !important;
+  font-weight: 600 !important;
+  font-size: 1.8rem !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.menuSize {
+  width: 800px !important;
+}
+.allCoursesIcon {
+  font-size: 1.8rem !important;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+html {
+  overflow: auto !important;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Inter" !important ;
+}
+.static {
+  position: sticky !important;
+  top: 0 !important;
+}
+.LoginButton {
+  width: 30;
+  height: 30;
+}
+.logo {
+  width: 200px;
+  height: 50px;
+  margin-left: 3%;
+}
+.loginContainer {
+  margin-right: 3%;
+}
+.homeImage {
+  width: 100%;
+}
+.homeImage img {
+  transform-style: preserve-3d;
+  height: 80vh !important;
+  width: 100%;
+  z-index: 78 !important;
+  margin-top: 5%;
+}
+.cardHome {
+  width: 71% !important;
+  overflow: visible;
+  height: 60%;
+  display: flex;
+  margin: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 25px 25px 25px 25px;
+  transform: translateY(-28%);
+  flex-direction: row;
+  box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+}
+
+.appImage {
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  width: 27%;
+  height: 89%;
+}
+
+.leftDesign {
+  font-size: x-large !important;
+  font-weight: 700 !important;
+  width: 70%;
+  height: 50%;
+  text-align: left;
+  margin-left: 5%;
+}
+.phoneTextField {
+  width: 60%;
+  margin-top: 4% !important;
+  color: black !important;
+  
+}
+.storeLogo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.appLogo {
+  width: 120px;
+  height: 36px;
+}
+.googleLogo {
+  width: 120px;
+  height: 36px;
+  margin-left: 3%;
+}
+
+.css-152mnda-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #000 !important;
+}
+.arrowIcon {
+  transform: rotate(275deg);
+  font-size: 2.2em !important;
+  color: #000;
+}
+.phoneTextFieldStartIcon {
+  color: #000 !important;
+  font-size: 1.3em;
+  font-weight: 500 !important;
+  margin-top: 40% !important;
+}
+.leftSubDesign {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.leftTextDesign {
+  font-size: 1.8em;
+  font-weight: 600;
+  /* font-family: "Inter"; */
+  /* font-family: Gilroy, "sans-serif" !important; */
+}
+
+/* Testimonials css start */
+
+.TestimonialsMain {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 1280px) {
+  .TestimonialsMain {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+  }
+  .TestimonialsCard {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    /* width: 85%; */
+    /* height: 100% !important; */
+  }
+  .TestimonialsLeftCard {
+    margin: 35px 17px;
+    background-color: rgb(243 243 243);
+    height: 34%;
+    width: 45%;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0% 0;
+  }
+  .arrow2 {
+    margin-left: 106%;
+  }
+
+  .testimonialPara {
+    font-size: xx-large;
+    padding-bottom: 1%;
+    height: 39vh;
+  }
+}
+
+.TestimonialsHeading {
+  font-size: xx-large;
+  margin-top: 2%;
+}
+
+.boxUnderHeading {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.secondHeading {
+  font-size: 50px;
+  font-weight: 400%;
+  margin-top: 1.5%;
+}
+
+.theMasters {
+  color: linear-gradient(45deg, rgba(#6e72fc, #ad1deb)) !important;
+}
+
+.TestimonialsCard {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+.TestimonialsLeftCard {
+  margin: 35px 36px;
+  background-color: rgb(243 243 243);
+  width: 45%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0% 0;
+}
+
+.testimonialPara {
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+  height: 39vh;
+}
+
+.names {
+  margin-top: 0%;
+}
+
+.TestimonialsLeftCard p {
+  margin: 36px 23px;
+}
+.TestimonialsLeftCard h3 {
+  margin: 36px 23px;
+}
+
+.TestimonialsRightCard {
+  background-color: grey;
+  width: 50%;
+}
+.TestimonialsArrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Arrow1 img {
+  width: 180px;
+}
+.Arrow2 img {
+  width: 180px;
+}
+
+.arrow1 {
+  margin-right: 22%;
+}
+.arrow2 {
+  width: 34%;
+  margin-left: 20%;
+  /* float: left; */
+  /* width: 50%;
+   margin-left: 20%; */
+}
+
+/* Testimonials css End */
+
+.cardBox {
+  min-width: 50%;
+  margin-left: 21%;
+  box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2%;
+  margin-top: 3%;
+}
+.rowDesign {
+  display: flex;
+  flex-direction: row;
+  width: 59%;
+}
+.subCatHead {
+  font-weight: 600 !important;
+  /* font-family: "Inter" !important; */
+  font-size: 1.1em !important;
+  height: 60px !important;
+}
+.subCatSubHead {
+  font-size: 0.7em !important;
+  margin-top: 4px !important;
+  color: #0075ff;
+  border: solid white;
+}
+
+.catDrop .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
+  font-family: "Inter" !important;
+  font-weight: bold !important;
+}
+
+.categoryMainBox {
+  display: block;
+  margin: auto;
+  margin: 32px;
+  margin-top: -4%;
+}
+.catHeading {
+  font-size: 2em !important;
+  /* font-family: "Inter" !important; */
+  /* font-family: Gilroy, "sans-serif" !important; */
+  font-weight: bolder !important;
+}
+.cardBox .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
+  padding: 4% !important;
+}
+.cardBox .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root:hover {
+  box-shadow: 1px 1px 4px 2px #ecebeb !important;
+  background-color: white !important;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.highlight {
+  box-shadow: 1px 1px 4px 2px #ecebeb !important;
+  background-color: white !important;
+  border-radius: 5px 5px 5px 5px;
+  color: #0075ff;
+}
+/* subcategory */
+.subCatBox {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 33%;
+  min-width: 31% !important;
+  height: 38%;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+  border-radius: 10px 10px 10px 10px;
+  padding: 13px 22px;
+  align-items: left;
+  text-align: left;
+}
+.rightBoxCat {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+.SubCategoryBox{
+  display: none;
+}
+.SubBox{
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 3px #aaaaaa47 !important;
+  margin-top: 4%;
+  text-align: left;
+  padding: 4%;
+  font-size: 2.3rem !important;
+  line-height: 100px;
+  height: 81%;
+}
+.ShowButton{
+  display: none;
+  font-size: 2.3rem;
+  color: blue;
+}
+.SubBox{
+  font-size: 2.3rem;
+}
+/* Analytics */
+
+.analyticsBox {
+  width: 100%;
+  height: 60%;
+  background-color: #0075ff;
+  color: white;
+  padding: 3%;
+  margin-top: 3% !important;
+}
+.anaTypo {
+  font-size: 2.8em !important;
+  font-weight: 600 !important;
+}
+.analyticsCount {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.subTypo {
+  font-size: 1.8em !important;
+  margin-top: 1% !important;
+}
+.calCount {
+  font-size: 3em;
+  font-weight: 600;
+}
+.calMsg {
+  font-size: 1.3em;
+}
+
+/* PlanDescription */
+.planMainBox {
+  margin-top: 5%;
+  width: 100%;
+}
+.planImg {
+  width: 80%;
+  height: 477px;
+}
+.planText {
+  margin-top: 6%;
+}
+.planTextTypo {
+  font-size: 3.2em !important;
+  font-weight: 600 !important;
+}
+
+.planSubTextTypo {
+  font-size: 1.7em !important;
+  /* font-family: "Inter" !important; */
+  font-family: Gilroy, "sans-serif" !important;
+}
+
+/* Live */
+.liveBox {
+  display: flex;
+  width: 76%;
+  margin: auto;
+  padding: 2%;
+  box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+  border-radius: 25px 25px 25px 25px;
+}
+.liveFirst {
+  width: 30%;
+}
+.liveText {
+  color: #0075ff !important;
+  /* font-family: "Inter" !important; */
+  /* font-family: Gilroy, "sans-serif" !important; */
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 36.31px !important;
+}
+.liveTextScnd {
+  margin-top: 5% !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #00000078;
+  font-family: "Inter" !important;
+}
+
+
+
+
+                       /* 3/3  start*/
+
+
+
+@media (max-width: 360px){        
+  .liveTextScnd{
+    font-size: 24px !important; 
+  }
+  .leftTextDesign{
+    font-size: 24px !important;
+    font-weight: 800 !important;
+  }
+  .leftDesign{
+    padding-top: 62px !important;
+  }
+  .storeLogo{
+    margin-top: 10% !important;
+  }
+  .phoneTextField {
+    width: 66%;
+    height: 20%;
+    margin-top: 6% !important;
+    color: black !important;
+    border: 0.1px solid black !important;
+  }
+  /* .cardHome{
+  width: 80% !important;
+  height: 20% !important;
+} */
+.leftSubDesign{
+  color: grey;
+}
+.catHeading{
+  font-size: 3em !important;
+}
+/* .cardBox{
+  margin-top: 6%;
+} */
+.rowDesign{
+  margin-left: -12% !important;
+  width: 75%;
+  margin-top: 3%;
+}
+.subCatHead{
+font-size: 1.3em !important;
+}
+.subCatSubHead{
+  font-size: 1.3em !important;
+}
+.highlight{ 
+  /* this isn't working */
+  font-size: 1.3em !important; 
+}
+}
+
+                   /* 3/3 end  */
+
+
+.liveScnd {
+  width: 73%;
+  text-align: left;
+}
+.liveImg {
+  width: 236px;
+  height: 237px;
+  margin-top: -9%;
+}
+/* dot line */
+.dotLineImg {
+  width: 87%;
+  height: 20%;
+  margin-left: 20%;
+}
+.dotLine {
+  width: 80%;
+}
+.NeetBox {
+  margin-top: 20px;
+}
+.NeetImg {
+  width: 100%;
+}
+@media (max-width: 1289px) {
+  .leftTextDesign {
+    font-size: 1em !important;
+  }
+  .leftSubDesign {
+    font-size: 1.3em;
+  }
+  .leftDesign {
+    width: 55%;
+    height: 50%;
+  }
+  .cardHome {
+    width: 71% !important;
+    overflow: visible;
+    height: 60%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    padding: 2%;
+    padding-bottom: 6% !important;
+    border-radius: 25px 25px 25px 25px;
+    transform: translateY(-28%) !important;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+  }
+  .appImage {
+    width: 30%;
+    height: 65%;
+  }
+}
+@media (max-width: 990px) {
+  .leftSubDesign {
+    font-size: 1em;
+  }
+  .leftTextDesign {
+    font-size: 1.5em !important;
+  }
+  .leftDesign {
+    width: 100%;
+    height: 50%;
+    margin-left: 12%;
+  }
+  .cardHome {
+    width: 71% !important;
+    overflow: visible;
+    height: 60% !important;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    padding: 2%;
+    padding-bottom: 9% !important;
+    border-radius: 25px 25px 25px 25px;
+    transform: translateY(-28%) !important;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+  }
+  .appImage {
+    display: none;
+  }
+  .paddingDropdown {
+    padding: 0px !important;
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+    font-family: Inter !important;
+    text-transform: none !important;
+  }
+}
+
+@media (max-width: 484px) {
+  .leftSubDesign {
+    font-size: 2rem;
+  }
+  .analyticsCount {
+    grid-template-columns: 1fr 1fr;
+  }
+  .calBox2 {
+    margin-top: -34px;
+  }
+  .subCatBox {
+    height: 43%;
+  }
+  .rowDesign{
+    display: none;
+  } 
+  .SubCategoryBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .cardHome {
+    /* width: 71% !important; */
+    height: 70% !important;
+    /* 5/3  */
+    width: 84% !important;
+    overflow: visible;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    padding: 2%;
+    border-radius: 25px 25px 25px 25px;
+    transform: translateY(-28%) !important;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+  }
+  .LoginButton {
+    width: 6 !important;
+    height: 6 !important;
+    font-size: 1em !important;
+  }
+  /* .leftDesign {
+    width: 100%;
+    height: 50%;
+    margin-left: 10% !important;
+  } */
+  .appImage {
+    display: none;
+  }
+  .homeImage img {
+    transform-style: preserve-3d;
+    height: auto !important;
+    width: 100%;
+  }
+  .logo {
+    display: none;
+    width: 100px !important;
+    height: 40px !important;
+    margin-left: 1% !important;
+  }
+  .loginContainer {
+    margin-right: 1%;
+  }
+  .liveBox {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 2%;
+    width: 96%;
+  }
+  .liveScnd {
+    width: 98%;
+  }
+  .liveText {
+    font-size: 2.9rem !important;
+    line-height: 49.31px !important;
+  }
+  .liveTextScnd {
+    margin-top: 3% !important;
+    font-size: 2.1rem !important;
+    color: #000000a8;
+}
+.leftTextDesign {
+  font-size: 2.2rem !important;
+}
+.carousel-item img {
+  width: 96% !important;
+  height: 60vh !important;
+}
+.center p {
+  font-size: 2.3rem !important;
+}
+  .liveBoxrev {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 475px) {
+  /* .leftTextDesign {
+    font-size: 1.2em !important;
+  } */
+  .leftDesign {
+    width: 100%;
+    height: 50%;
+    margin-left: 2%;
+  }
+  .LoginButton {
+    width: 5 !important;
+    height: 5 !important;
+    font-size: 1em !important;
+  }
+  .logo {
+    display: none;
+    width: 100px !important;
+    height: 40px !important;
+    margin-left: 1% !important;
+  }
+  .loginContainer {
+    margin-right: 1%;
+  }
+  .appImage {
+    display: none;
+  }
+  .cardRight {
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width: 413px) {
+  .LoginButton {
+    width: 2 !important;
+    height: 2 !important;
+    font-size: 1em !important;
+  }
+
+  .logo {
+    display: none;
+    width: 150px !important;
+    height: 40px !important;
+    margin-left: 1% !important;
+  }
+  .loginContainer {
+    margin-right: 1%;
+  }
+}
+@media (max-width: 340px) {
+  .LoginButton {
+    width: 1 !important;
+    height: 1 !important;
+    font-size: 1em !important;
+  }
+
+  .logo {
+    width: 100px !important;
+    height: 20px !important;
+  }
+  .loginContainer {
+    margin-right: 1%;
+  }
+}
+@media (max-width: 379px) {
+  .appLogo {
+    /* width: 80px !important;
+    height: 36px !important; */
+    /* 3/3 */
+    width: 40% !important;
+    height: 20% !important;
+  }
+
+  .googleLogo {
+    /* width: 80px !important;
+    height: 36px !important; */
+    /* 3/3 */
+    width: 40% !important;
+    height: 20% !important; 
+    margin-left: 3%;
+  }
 }

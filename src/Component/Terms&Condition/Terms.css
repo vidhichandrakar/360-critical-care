@@ -1,0 +1,51 @@
+.TermsBox{
+    margin: 5%;
+}
+.text h1{
+    font-size: 1rem;
+    text-align: left;
+    padding: 28px;
+}
+.text p{
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+}
+.text{
+    text-align: left;
+    margin-top: 10%;
+}
+.text li{
+    font-size: 1rem !important;
+    text-align: left;
+    color: black;
+}
+.TermsList{
+    margin-left: 2%;
+    list-style-type: number;
+}
+
+@media(max-width: 498px){
+    .ContactFont{    
+         font-size: 2rem
+    }
+    .text h4{
+        /* font-size: 3.2rem !important; */
+        /* 5/3  */
+        font-size: 5.2rem !important;
+        padding-bottom: 5% !important;
+    }
+    .text li{
+        font-size: 2.5rem;
+    }
+    .text p{
+        font-size: 2rem;
+    }
+    .List li{
+        font-size: 2rem !important;
+    }
+    .TermsList li{
+        font-size: 2rem !important;
+    }
+
+}

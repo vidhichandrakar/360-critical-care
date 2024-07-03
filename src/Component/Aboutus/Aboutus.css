@@ -1,0 +1,139 @@
+.box-col{
+    margin: 50px;   
+}
+.Aboutbox{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.width_margin{
+    width:85%;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.w30{
+    margin: 10px 100px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.SB{
+    justify-content: space-between;
+}
+.box-fix{
+    border: solid 4px black;
+    width: 30%;
+    min-height: 300px;
+    margin: 50px;
+}
+.textLeft{
+    font-size: 1.7rem;
+    text-align: left;
+}
+.textLeft p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: black;
+}
+.Testmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 40px;
+}
+.textHead{
+    font-size: 1rem !important ;
+}
+.testBox{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: black;
+}
+
+.testBox p{
+    font-size: 1rem;
+    margin: 15px;
+    color: black;
+}
+.DownloadMargin {
+    margin: 10px 18px;
+    border-radius: 6px;
+    
+}
+
+.Download-row{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 1050px){
+    .Aboutbox{    
+         flex-direction: column;
+         align-items: center;
+    }
+}
+@media(max-width: 1050px){
+    .box-fix{    
+         width: 35%;
+    }
+}
+@media(max-width: 850px){
+    .box-fix{    
+         width: 40%;
+    }
+}
+@media(max-width: 750px){
+    .box-fix{    
+         width: 45%;
+    }
+}
+@media(max-width: 550px){
+    .box-fix{    
+         width: 80%;
+    }
+}
+@media(max-width: 498px){
+    .box-fix{    
+         width: 80%;
+    }
+    .Download-row{
+        flex-direction: column;
+    }
+    .textHead{
+        font-size: 2rem !important ;
+    }
+}
+@media(max-width: 300px){
+    .box-fix{    
+         width: 80%;
+    }
+}
+
+            /* 3/3 start  */
+
+
+.aboutSection{
+    font-family: Gilroy-Medium, sans-serif !important;
+    /* this font is from PW  */
+}            
+
+@media (max-width: 360px){
+    .aboutSection{
+        margin: 0px -73px;
+        
+    } 
+    /* I've only increased About us heading in media q  */
+    .width_margin textLeft h1{
+        font-size: 6.5rem !important;
+        font-weight: 600;
+        /* margin-bottom: 3% !important; */
+    }
+}           

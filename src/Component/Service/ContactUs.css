@@ -1,0 +1,131 @@
+.ContactTaxt{ 
+    text-align: left;
+    margin-top: 10%;
+}
+.ContactBox{
+    margin: 5%;
+}
+.FAQList{
+    margin-left: 2%;
+}
+.FAQList li {
+    margin-top: 1%;
+}
+
+@media(max-width: 498px){
+    .ContactFont{    
+         font-size: 2rem
+    }
+    .ContactBox h3{
+        font-size: 3.2rem;
+    }
+    .ContactBox h5{
+        font-size: 2.5rem;
+    }
+    .ContactBox p{
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+.allContactUs{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 50px;
+}
+.contactUsHeading{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    margin-top: 3%;
+}
+.contactHeading{
+    color: black;
+    font-weight: bold !important;
+}
+
+.usHeading{
+    color: blue;
+    font-weight: bold !important;
+}
+
+.contactUs1{
+     text-align: left;
+     padding: 2% 2%;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size:xx-large;
+}
+
+.contactUs2_1{
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+     text-align: left;
+     padding: 2% 2%;
+     font-family:Arial, Helvetica, sans-serif;    
+     font-size: small;
+}
+
+.contactUs2_2{
+    height: 90%;
+    width: 70%;
+}
+
+.text{
+    font-size: xx-large;
+}
+
+.criticalCareHead2_1{
+    font-size: 495%;
+}
+
+.contactEmailId{
+    /* padding: 0%; */
+    margin-top: 5%;
+    font-size: xx-large;
+    padding: 0px 0px;
+    width: 84%;
+    
+}
+
+.getDirectionBox {
+    margin: 14px 150px;
+    /* margin-left: 0% !important; */
+    padding: 17px 50px;
+    align-items: left;
+    justify-content: left;
+    text-align: center;
+    /* height: auto; */
+    /* margin-top: 2%; */
+    border-radius: 12px;
+    margin-left: 0%;
+    width: 84%;
+    font-size: xx-large;
+}
+
+
+
+.fAQSection{
+    margin-top: 1%;
+    text-align: left;
+    padding: 2% 2%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.fAQHeading{
+    font-size: 480%;
+}
+
+.qna{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+.line{
+    padding: 1% 4%;
+}

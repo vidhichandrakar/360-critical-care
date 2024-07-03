@@ -1,5 +1,8 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  height: 100%;
+  min-width: 980px;
 }
 
 .App-logo {
@@ -7,12 +10,53 @@
   pointer-events: none;
 }
 
+.colorblack {
+  color: #000000;
+}
+.carousel-item img {
+  width: 76% !important;
+  height: 50vh;
+  border-radius: 15px;
+  margin: auto !important;
+  margin-top: 50px !important;
+}
+
+/* Top Crash Course CSS start*/
+.TopCrashBox {
+  text-align: left;
+  margin: 5%;
+  margin-top: 10%;
+}
+.ContentBox {
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.Hamburger {
+  width: 100% !important;
+  height: 7vh !important;
+}
+/* Top Crash Course CSS End*/
+
+.DemoBox {
+  margin: 10%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.AppHeader {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.MuiBox-root .css-1lvtzne {
+  color: #000000 !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
