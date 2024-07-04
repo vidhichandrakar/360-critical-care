@@ -10,7 +10,7 @@ import Image5 from "../../Media/Images/Group.png"
 function NeetGroupImg() {
   return (
     <Fragment>
-        <Box
+        {/* <Box
           id="carouselExampleIndicators"
           class="carousel slide margin20"
           data-ride="carousel"
@@ -59,7 +59,8 @@ function NeetGroupImg() {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>  */}
-        </Box>
+        {/* </Box> */} 
+        <img src={Image1} className="imageNeet"/>
     </Fragment>
   );
 }

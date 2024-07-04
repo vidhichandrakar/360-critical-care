@@ -109,7 +109,7 @@ export const Dropdown = React.forwardRef(
 export const DropdownMenuItem = styled(MenuItem)`
   display: flex;
   justify-content: space-between !important;
-  
+ 
   & > svg {
     margin-left: 32px;
   }
@@ -118,7 +118,9 @@ export const DropdownNestedMenuItem = styled(NestedMenuItem)`
   display: flex;
   justify-content: space-between !important;
 
+
   & > svg {
     margin-left: 32px;
+    
   }
 `;

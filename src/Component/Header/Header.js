@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../../Media/Images/Logo.png";
+import Logo360 from "../../Media/Media_Image/360Logo.PNG";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
@@ -48,6 +49,7 @@ function Header() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{  display: { xs: "flex", md: "none" } }}>
+           
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -57,7 +59,10 @@ function Header() {
               color="inherit"
             >
               <MenuIcon className="Hamburger"/>
-            </IconButton>
+              </IconButton>
+            <Box>
+              <Link to="/Critical-Care"><img src={Logo} className="Responsivelogo"/></Link> 
+            </Box>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -80,19 +85,18 @@ function Header() {
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Inter !important" }}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
                 <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
               </MenuItem>
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Inter !important" }}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
               > 
                 <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}> 
                   <Typography
                     textAlign="center"
-                    
                     className="menuText"
                   >
                     About Us
@@ -102,7 +106,7 @@ function Header() {
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Inter !important" }}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
                 <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
                   {" "}
@@ -116,7 +120,7 @@ function Header() {
               </MenuItem>
             </Menu>
           </Box>
-         <Link to="/Critical-Care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
+         <Link to="/web"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
         
         
           <Typography
@@ -150,11 +154,11 @@ function Header() {
               onClick={handleCloseNavMenu}
               sx={{
                 color: "black",
-                fontFamily: "Inter",
                 fontWeight: "600",
-                marginLeft: "2%",
+                marginLeft: "3%",
                 fontSize: "1.1em",
-                marginTop: "0.4%",
+                marginTop: "1.2%",
+                fontFamily: "Arial, Helvetica, sans-serif "
               }}
             >
               <Link
@@ -170,11 +174,11 @@ function Header() {
               onClick={handleCloseNavMenu}
               sx={{
                 color: "black",
-                fontFamily: "Inter",
                 fontWeight: "600",
-                marginLeft: "2%",
+                marginLeft: "3%",
                 fontSize: "1.1em",
-                marginTop: "0.4%",
+                marginTop: "1.2%",
+                fontFamily: "Arial, Helvetica, sans-serif "
               }}
             >
               <Link
@@ -187,7 +191,7 @@ function Header() {
             </Typography>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }} className="loginContainer">
+          <Box sx={{ flexGrow: 0 ,position:"fixed",right:0}} className="loginContainer">
             <Button variant="contained" className="LoginButton">
               Login / Register
             </Button>

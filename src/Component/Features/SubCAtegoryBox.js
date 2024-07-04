@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import book from "../../Media/Images/book.png"
 
 const SubCAtegoryBox = () => {
     const [show, SetShow] = useState(false);
@@ -43,6 +44,7 @@ const SubCAtegoryBox = () => {
     ]
     const CategoryData2 = [
         {
+            herf: '/TopCourse',
             head : "TRICS-I",
             Button: "Explore"
         },
@@ -52,18 +54,22 @@ const SubCAtegoryBox = () => {
             Button: "Explore"
         },
         {
+            herf: '/TopCourse',
             head : "Nephro Critical Care Review Course",
             Button: "Explore"
         },
         {
+            herf: '/TopCourse',
             head : "Sepsis BASIC",
             Button: "Explore"
         },
         {
+            herf: '/TopCourse',
             head : "Sepsis ADVANCED",
             Button: "Explore"
         },
         {
+            herf: '/TopCourse',
             head : "Critical Care Nutrition",
             Button: "Explore"
         },
@@ -74,15 +80,24 @@ const SubCAtegoryBox = () => {
        <div className="SubCategoryBox">
        {CategoryData1.map((value) => (
            <Link to={value.herf}> <div className="SubBox">
-                <p><b>{value.head}</b></p>
+               <div className="leftCard"><p><b>{value.head}</b></p>
                 <p className="ShowButton">{value.Button}</p>
+                </div>
+                <div className="rightCard">
+                    <img src={book} className="cardImg"/>
+                </div>
             </div></Link>
         ))}
        {show && CategoryData2.map((value) => (
-            <div className="SubBox">
-                <p><b>{value.head}</b></p>
-                <p className="ShowButton">{value.Button}</p>
+           <Link to={value.herf}><div className="SubBox">
+           <div className="leftCard"><p><b>{value.head}</b></p>
+            <p className="ShowButton">{value.Button}</p>
             </div>
+            <div className="rightCard">
+                <img src={book} className="cardImg"/>
+            </div>
+        </div>
+        </Link>
         ))}
         
        </div>

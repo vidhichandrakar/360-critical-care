@@ -17,7 +17,7 @@ const CategoryBox = () => {
   }
   return (
     <Box className="categoryMainBox">
-      <Typography className="catHeading">Explore <span style={{ color: "#0075FF" }}>Category</span></Typography>
+      <Typography className="catHeading">Explore <span style={{ color: "#199884" }}>Category</span></Typography>
       <div className="category">
         <div class="rowDesign">
         

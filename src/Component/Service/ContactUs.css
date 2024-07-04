@@ -1,9 +1,19 @@
 .ContactTaxt{ 
     text-align: left;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 .ContactBox{
     margin: 5%;
+    margin-top: 7%;
+}
+.ContactBox p{
+    text-align: justify;
+}
+.ContactBox li{
+    text-align: justify;
+}
+.Headcenter{
+    text-align: left;
 }
 .FAQList{
     margin-left: 2%;
@@ -11,21 +21,68 @@
 .FAQList li {
     margin-top: 1%;
 }
+.MapBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.AddressBox{
+    margin-top: 10%;
+}
+
+.divider{
+    /* color: black; */
+    padding-bottom: 2%;
+    border-bottom: solid 1px black;
+}
 
 @media(max-width: 498px){
     .ContactFont{    
-         font-size: 2rem
+         font-size: 2.5rem !important;
+         margin-top: 3%;
     }
     .ContactBox h3{
         font-size: 3.2rem;
+        font-family: Arial, Helvetica, sans-serif  !important;
     }
     .ContactBox h5{
-        font-size: 2.5rem;
+        font-size: 2.6rem;
+        font-family: Arial, Helvetica, sans-serif  !important;
     }
     .ContactBox p{
-        font-size: 2rem;
+        margin-top: 2%;
+        font-size: 2.6rem;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif  !important;
     }
-
+    .ContactBox{
+        margin-top: 13% !important;
+    }
+    .MapBox{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Headcenter{
+        font-size: 3.5rem !important;
+    }
+    .GEtDirection{
+        font-size: 2rem !important;
+    }
+    .AddressBox{
+        padding-bottom: 4%;
+    }
+    .headSize{
+        font-size: 3rem !important;
+    }
+    .ContactBox p{
+        font-size: 2.3rem !important;
+        text-align: justify !important;
+    }
+    .ContactBox li{
+        font-size: 2.3rem !important;
+        text-align: justify !important;
+    }
 }
 
 

@@ -18,7 +18,7 @@ const SubCategory = ({ categorySelected }) => {
   const [savedPath, setSavedPath] = useState("");
 
   const handleCourses = ({ type }) => {
-    console.log(type);
+    // console.log(type);
 
     switch (type) {
       case "Top Crash Course": {

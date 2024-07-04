@@ -1,19 +1,50 @@
 .box-col{
-    margin: 50px;   
+    margin: 20px;   
+    margin-top: 3%;
+}
+.AboutBox{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+.AboutContent{
+    padding-right: 3%;
 }
 .Aboutbox{    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin: 50px;
+    /* width: 100%; */
 }
-.width_margin{
-    width:85%;
+.LogoBox{
+    justify-content: center;
+    border: solid 2px black;
+    padding: 84px 50px;
+    margin: 25px;
 }
+.AboutLogo{
+    width: 200px;
+    height: 50px;
+}
+/* .width_margin{
+    width: 100%;
+} */
 .flexrow{
     display: flex;
     flex-direction: row;
+}
+.Heading{
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+}
+.headSize{
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    margin-top: 1%;
 }
 .w30{
     margin: 10px 100px;
@@ -31,16 +62,19 @@
     border: solid 4px black;
     width: 30%;
     min-height: 300px;
-    margin: 50px;
+    margin: 30px;
 }
 .textLeft{
-    font-size: 1.7rem;
+    font-size: 1rem !important;
     text-align: left;
+    margin-top: 2%;
 }
 .textLeft p{
-    font-size: 1.5rem;
-    margin: 10px 0;
+    font-size: 1.2rem ;
+    /* margin: 10px 0; */
     color: black;
+    font-weight: 300 ;
+    text-align: justify;
 }
 .Testmain{
     display: flex;
@@ -50,7 +84,8 @@
     margin: 40px;
 }
 .textHead{
-    font-size: 1rem !important ;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
 }
 .testBox{
     display: flex;
@@ -108,9 +143,27 @@
         flex-direction: column;
     }
     .textHead{
-        font-size: 2rem !important ;
+        font-size: 2.5rem !important ;
+        /* margin: 15px !important; */
+    }
+    .textLeft{
+        margin-top: 12% !important;
+    }
+    .AboutBox{
+        flex-direction: column;
+    }
+    .LogoBox {
+        margin-top: 3%;
+        padding: 140px 150px;
+    }
+    .Heading{
+        font-size: 2.6rem !important;
+    }
+    .Aboutbox{
+        margin: 0;
     }
 }
+
 @media(max-width: 300px){
     .box-fix{    
          width: 80%;
@@ -121,7 +174,7 @@
 
 
 .aboutSection{
-    font-family: Gilroy-Medium, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     /* this font is from PW  */
 }            
 

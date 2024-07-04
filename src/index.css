@@ -16,11 +16,17 @@ body {
 }
 .menuText {
   color: #000 !important;
-  font-family: Inter !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-weight: 600 !important;
   font-size: 1.8rem !important;
+  
 }
-
+.Mui-focusVisible{
+  border-color:#18568f !important;
+}
+.paddingDropdown{
+  padding: 9px 22px !important;
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
@@ -30,7 +36,8 @@ body {
   width: 800px !important;
 }
 .allCoursesIcon {
-  font-size: 1.8rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -51,11 +58,12 @@ code {
 .LoginButton {
   width: 30;
   height: 30;
+  background-color: #18568f !important;
 }
 .logo {
   width: 200px;
   height: 50px;
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 .loginContainer {
   margin-right: 3%;
@@ -65,13 +73,13 @@ code {
 }
 .homeImage img {
   transform-style: preserve-3d;
-  height: 80vh !important;
+  height: auto !important;
   width: 100%;
   z-index: 78 !important;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .cardHome {
-  width: 71% !important;
+  width: 79% !important;
   overflow: visible;
   height: 60%;
   display: flex;
@@ -79,18 +87,19 @@ code {
   background-color: white;
   padding: 1%;
   border-radius: 25px 25px 25px 25px;
-  transform: translateY(-28%);
+  /* transform: translateY(-28%); */
   flex-direction: row;
-  box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+  box-shadow: 0px 0px 1px 1px #d3d3d3 !important;
+  margin-top: 3% !important;
 }
 
 .appImage {
   /* float: right; */
   position: absolute;
   right: 0;
-  margin-right: 2%;
-  width: 27%;
-  height: 89%;
+  margin-right: 14%;
+  width: 17%;
+    height: 32% !important;
 }
 
 .leftDesign {
@@ -103,14 +112,17 @@ code {
 }
 .phoneTextField {
   width: 60%;
-  margin-top: 4% !important;
+  margin-top: 1% !important;
   color: black !important;
+  font-size: 1.2rem !important;
   
 }
+
 .storeLogo {
   display: flex;
   flex-direction: row;
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 .appLogo {
   width: 120px;
@@ -121,41 +133,59 @@ code {
   height: 36px;
   margin-left: 3%;
 }
+.secondHeading{
+  font-size: 1.8rem !important;
+}
 
-.css-152mnda-MuiInputBase-input-MuiOutlinedInput-input {
+.MuiInputBase-input-MuiOutlinedInput-input {
   color: #000 !important;
+  font-size: 1.4rem !important;
 }
 .arrowIcon {
   transform: rotate(275deg);
-  font-size: 2.2em !important;
+  font-size: 1.4em !important;
   color: #000;
 }
 .phoneTextFieldStartIcon {
   color: #000 !important;
-  font-size: 1.3em;
+  font-size: 20px !important;
   font-weight: 500 !important;
-  margin-top: 40% !important;
+  margin-top: 30% !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .leftSubDesign {
-  font-weight: 600;
-  font-size: 1.6em;
+  font-weight: 500;
+  font-size: 0.8em !important;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .leftTextDesign {
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: 600;
-  /* font-family: "Inter"; */
-  /* font-family: Gilroy, "sans-serif" !important; */
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 /* Testimonials css start */
 
 .TestimonialsMain {
-  margin-top: 100px;
+  margin-top: 59px;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding-bottom: 2%;
 }
+.boxUnderHeading {
+  width: 20%;
+  margin-left: 40%;
+  background-image:  linear-gradient(to right top, #199884, #008a91, #007b99, #006999, #18568f) !important;
+}
 
+.TestimonialsHeading{
+  font-size: 1.6rem !important;
+}
+.Arrow2 {
+  margin-left: 3% !important;
+  font-size: 2.8rem !important;
+}
 @media (max-width: 1280px) {
   .TestimonialsMain {
     justify-content: center;
@@ -180,14 +210,15 @@ code {
     font-size: 0.9rem;
     padding: 0% 0;
   }
-  .arrow2 {
-    margin-left: 106%;
+  .Arrow2 {
+    margin-left: 10% !important;
   }
 
   .testimonialPara {
     font-size: xx-large;
     padding-bottom: 1%;
     height: 39vh;
+    text-align: justify;
   }
 }
 
@@ -199,16 +230,22 @@ code {
 .boxUnderHeading {
   width: 20%;
   margin-left: 40%;
+  background-color:  linear-gradient(to right top, #199884, #008a91, #007b99, #006999, #18568f) !important;
 }
 
 .secondHeading {
-  font-size: 50px;
+  font-size: 1.7rem;
   font-weight: 400%;
   margin-top: 1.5%;
 }
 
 .theMasters {
-  color: linear-gradient(45deg, rgba(#6e72fc, #ad1deb)) !important;
+  /* color: linear-gradient(90deg, #18568f 0%, #18568f 35%, #199884 100%) !important; */
+  /* font-size: 72px; */
+  font-weight: 600;
+  background:  linear-gradient(90deg, #18568f 0%, #18568f 35%, #199884 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .TestimonialsCard {
@@ -228,17 +265,20 @@ code {
 }
 
 .testimonialPara {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-bottom: 1%;
-  height: 39vh;
+  height: 22vh;
 }
 
 .names {
-  margin-top: 0%;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .TestimonialsLeftCard p {
   margin: 36px 23px;
+  
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .TestimonialsLeftCard h3 {
   margin: 36px 23px;
@@ -262,22 +302,25 @@ code {
   width: 180px;
 }
 
-.arrow1 {
-  margin-right: 22%;
+.Arrow1 {
+  font-size: 2.8rem !important;
 }
-.arrow2 {
-  width: 34%;
-  margin-left: 20%;
-  /* float: left; */
-  /* width: 50%;
-   margin-left: 20%; */
+.Arrow1:hover {
+  color:#199884;
+  cursor: pointer;
 }
+.Arrow2:hover {
+  color:#199884;
+  cursor: pointer;
+}
+
+
 
 /* Testimonials css End */
 
 .cardBox {
   min-width: 50%;
-  margin-left: 21%;
+  margin-left: 15%;
   box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
   border-radius: 10px 10px 10px 10px;
   padding: 2%;
@@ -286,10 +329,11 @@ code {
 .rowDesign {
   display: flex;
   flex-direction: row;
-  width: 59%;
+  width: 62%;
 }
 .subCatHead {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   /* font-family: "Inter" !important; */
   font-size: 1.1em !important;
   height: 60px !important;
@@ -297,20 +341,22 @@ code {
 .subCatSubHead {
   font-size: 0.7em !important;
   margin-top: 4px !important;
-  color: #0075ff;
+  color: #2683DA !important;
   border: solid white;
 }
 
 .catDrop .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
-  font-family: "Inter" !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-weight: bold !important;
 }
-
+.catDrop{
+  padding: 2%;
+}
 .categoryMainBox {
   display: block;
   margin: auto;
   margin: 32px;
-  margin-top: -4%;
+  margin-top: 5%;
 }
 .catHeading {
   font-size: 2em !important;
@@ -331,15 +377,18 @@ code {
   box-shadow: 1px 1px 4px 2px #ecebeb !important;
   background-color: white !important;
   border-radius: 5px 5px 5px 5px;
-  color: #0075ff;
+  color: #2683DA;
 }
 /* subcategory */
+.category{
+  /* width:84% !important; */
+}
 .subCatBox {
   margin-top: 3%;
   margin-left: 5%;
   width: 33%;
-  min-width: 31% !important;
-  height: 38%;
+  min-width: 35% !important;
+  height: 39%;
   background-color: #fff;
   box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
   border-radius: 10px 10px 10px 10px;
@@ -347,10 +396,22 @@ code {
   align-items: left;
   text-align: left;
 }
+.subMenuText1{
+  font-size: 1rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.nestedMenu{
+  font-size: 1rem !important;
+  font-weight: 550 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #1B2124 !important;
+  line-height: 1.5rem !important;
+  --tw-text-opacity: 1;
+}
 .rightBoxCat {
   display: flex;
   flex-wrap: wrap;
-  min-width: 100%;
+  min-width: 58vw;
 }
 .SubCategoryBox{
   display: none;
@@ -360,15 +421,21 @@ code {
   box-shadow: 0px 0px 0px 3px #aaaaaa47 !important;
   margin-top: 4%;
   text-align: left;
-  padding: 4%;
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-bottom: 4%;
   font-size: 2.3rem !important;
   line-height: 100px;
   height: 81%;
+  display: flex;
+  flex-direction: row;
 }
 .ShowButton{
   display: none;
-  font-size: 2.3rem;
-  color: blue;
+  font-size: 2.3rem !important;
+  color: #2683DA !important;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 .SubBox{
   font-size: 2.3rem;
@@ -378,30 +445,31 @@ code {
 .analyticsBox {
   width: 100%;
   height: 60%;
-  background-color: #0075ff;
+  background-color: #18568f;
   color: white;
   padding: 3%;
   margin-top: 3% !important;
 }
 .anaTypo {
-  font-size: 2.8em !important;
+  font-size: 1.8rem !important;
   font-weight: 600 !important;
 }
 .analyticsCount {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  margin-top: 2%;
 }
 .subTypo {
   font-size: 1.8em !important;
   margin-top: 1% !important;
 }
 .calCount {
-  font-size: 3em;
+  font-size: 2em !important;
   font-weight: 600;
 }
 .calMsg {
-  font-size: 1.3em;
+  font-size: 1.2em !important;
 }
 
 /* PlanDescription */
@@ -409,22 +477,40 @@ code {
   margin-top: 5%;
   width: 100%;
 }
+.bottomLogoBox{
+   box-shadow: 0px 1px 1px 1px #c8c6c6;
+   border-bottom-left-radius: 53px;
+   border-bottom-right-radius: 53px;
+   width: 75%;
+   margin-left: 12.5%;
+    padding: 2%;
+}
+.planImgBottom{
+  width: 20%;
+}
 .planImg {
-  width: 80%;
-  height: 477px;
+  width: 75%;
+  height: 62vh !important;
+  border-top-left-radius: 53px;
+  border-top-right-radius: 53px;
 }
 .planText {
   margin-top: 6%;
 }
 .planTextTypo {
-  font-size: 3.2em !important;
+  font-size: 1.8em !important;
   font-weight: 600 !important;
 }
-
+.imageNeet{
+  width:75%;
+  margin-top: 3%;
+}
 .planSubTextTypo {
-  font-size: 1.7em !important;
+  font-size: 1.2em !important;
+  margin-top: 10px !important;
   /* font-family: "Inter" !important; */
-  font-family: Gilroy, "sans-serif" !important;
+  color:#199884 !important;
+  font-family: Arial, Helvetica, sans-serif!important;
 }
 
 /* Live */
@@ -440,12 +526,13 @@ code {
   width: 30%;
 }
 .liveText {
-  color: #0075ff !important;
+  color: #18568f !important;
   /* font-family: "Inter" !important; */
   /* font-family: Gilroy, "sans-serif" !important; */
-  font-size: 38px !important;
+  font-size: 28px !important;
   font-weight: 700 !important;
   line-height: 36.31px !important;
+  text-align: justify;
 }
 .liveTextScnd {
   margin-top: 5% !important;
@@ -453,6 +540,7 @@ code {
   font-weight: 400 !important;
   color: #00000078;
   font-family: "Inter" !important;
+  text-align: justify;
 }
 
 
@@ -511,6 +599,10 @@ font-size: 1.3em !important;
   /* this isn't working */
   font-size: 1.3em !important; 
 }
+.MuiInputBase-input-MuiOutlinedInput-input {
+  color: #000 !important;
+  font-size: 2rem !important;
+}
 }
 
                    /* 3/3 end  */
@@ -561,13 +653,13 @@ font-size: 1.3em !important;
     padding: 2%;
     padding-bottom: 6% !important;
     border-radius: 25px 25px 25px 25px;
-    transform: translateY(-28%) !important;
+    /* transform: translateY(-28%) !important; */
     flex-direction: row;
     box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
   }
   .appImage {
     width: 30%;
-    height: 65%;
+    height: 49%;
   }
 }
 @media (max-width: 990px) {
@@ -592,7 +684,7 @@ font-size: 1.3em !important;
     padding: 2%;
     padding-bottom: 9% !important;
     border-radius: 25px 25px 25px 25px;
-    transform: translateY(-28%) !important;
+    /* transform: translateY(-28%) !important; */
     flex-direction: row;
     box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
   }
@@ -601,9 +693,9 @@ font-size: 1.3em !important;
   }
   .paddingDropdown {
     padding: 0px !important;
-    font-size: 1.8rem !important;
+    font-size: 1.4rem !important;
     font-weight: 600 !important;
-    font-family: Inter !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     text-transform: none !important;
   }
 }
@@ -612,6 +704,10 @@ font-size: 1.3em !important;
   .leftSubDesign {
     font-size: 2rem;
   }
+  .MuiInputBase-input-MuiOutlinedInput-input{
+    color: #000 !important;
+    font-size: 2rem !important;
+  }
   .analyticsCount {
     grid-template-columns: 1fr 1fr;
   }
@@ -619,7 +715,7 @@ font-size: 1.3em !important;
     margin-top: -34px;
   }
   .subCatBox {
-    height: 43%;
+    height: 59%;
   }
   .rowDesign{
     display: none;
@@ -640,14 +736,14 @@ font-size: 1.3em !important;
     background-color: white;
     padding: 2%;
     border-radius: 25px 25px 25px 25px;
-    transform: translateY(-28%) !important;
+    /* transform: translateY(-28%) !important; */
     flex-direction: row;
     box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
   }
   .LoginButton {
-    width: 6 !important;
-    height: 6 !important;
-    font-size: 1em !important;
+    width: 326px !important;
+    height: 57% !important;
+    font-size: 1.7em !important;
   }
   /* .leftDesign {
     width: 100%;
@@ -661,13 +757,9 @@ font-size: 1.3em !important;
     transform-style: preserve-3d;
     height: auto !important;
     width: 100%;
+    margin-top: 8%;
   }
-  .logo {
-    display: none;
-    width: 100px !important;
-    height: 40px !important;
-    margin-left: 1% !important;
-  }
+ 
   .loginContainer {
     margin-right: 1%;
   }
@@ -694,8 +786,8 @@ font-size: 1.3em !important;
   font-size: 2.2rem !important;
 }
 .carousel-item img {
-  width: 96% !important;
-  height: 60vh !important;
+  width: 92% !important;
+  height: 35vh !important;
 }
 .center p {
   font-size: 2.3rem !important;
@@ -708,21 +800,24 @@ font-size: 1.3em !important;
   /* .leftTextDesign {
     font-size: 1.2em !important;
   } */
+  .MuiInputBase-input-MuiOutlinedInput-input {
+    color: #000 !important;
+    font-size: 2rem !important;
+  }
   .leftDesign {
     width: 100%;
     height: 50%;
     margin-left: 2%;
   }
   .LoginButton {
-    width: 5 !important;
-    height: 5 !important;
-    font-size: 1em !important;
+    width: 326px !important;
+    height: 57% !important;
+    font-size: 1.7em !important;
   }
   .logo {
     display: none;
-    width: 100px !important;
-    height: 40px !important;
-    margin-left: 1% !important;
+    width: 50%;
+    height: 11vh;
   }
   .loginContainer {
     margin-right: 1%;
@@ -738,34 +833,39 @@ font-size: 1.3em !important;
 
 @media screen and (max-width: 413px) {
   .LoginButton {
-    width: 2 !important;
-    height: 2 !important;
-    font-size: 1em !important;
+    width: 326px !important;
+    height: 57% !important;
+    font-size: 1.7em !important;
   }
 
-  .logo {
-    display: none;
-    width: 150px !important;
-    height: 40px !important;
-    margin-left: 1% !important;
-  }
+ 
   .loginContainer {
     margin-right: 1%;
   }
 }
 @media (max-width: 340px) {
   .LoginButton {
-    width: 1 !important;
-    height: 1 !important;
-    font-size: 1em !important;
+    width: 326px !important;
+    height: 57% !important;
+    font-size: 1.7em !important;
   }
 
-  .logo {
-    width: 100px !important;
-    height: 20px !important;
-  }
+ 
   .loginContainer {
     margin-right: 1%;
+  }
+}
+@media (max-width: 479px) {
+  .appLogo {
+    /* width: 80px !important;
+    height: 36px !important; */
+    /* 3/3 */
+    width: 40% !important;
+    height: 20% !important;
+  }
+  .googleLogo{
+    width: 40% !important;
+    height: 20% !important;
   }
 }
 @media (max-width: 379px) {

@@ -1,11 +1,13 @@
 import React from "react";
 import "./footer.css";
 import Logo from "../../Media/Images/Logo.png";
-import GoogleLogo from "../../Media/Images/Google_logo.png";
-import fb from "../../Media/Images/fblogo.PNG";
-import AppLogo from "../../Media/Images/App_Logo.jpg";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import GoogleLogo from "../../Media/Media_Image/play-store.png";
+import AppLogo from "../../Media/Media_Image/app-store.png";
+import FB from "../../Media/Media_Image/FacebookLogo.svg";
+import IG from "../../Media/Media_Image/Instagram.svg";
+import YT from "../../Media/Media_Image/youtube.svg";
 import {Link} from 'react-router-dom';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 function Footer() {
   return (
@@ -14,9 +16,8 @@ function Footer() {
         <div class="container">
           <div class="row">
             <div class="footer-col  center">
-              <Link to="/Critical-Care"><img
+              <Link to="/web"><img
                 src={Logo}
-                // sx={{ display: { xs: "none", md: "flex" }, mr: 0 }}
                 width={250}
                 height={50}
                 className="LogoFooter"
@@ -28,7 +29,7 @@ function Footer() {
               </p>
             </div>
             <div class="footer-col center ">
-              <div className="colFooterUpper pad-line LogoBOx">
+              <div className="colFooterUpper LogoBOx">
                <a href='#'>
                 <img
                   src={GoogleLogo}
@@ -52,24 +53,30 @@ function Footer() {
                 <h4 className="text-color-white">Follow us :</h4>
                 <div>
                   <a href="#" className="sp">
-                    <img src={fb} className="BR" />
+                    <img src={FB} className="BR" />
+                    {/* <FacebookIcon className="BR fb-bg" /> */}
                   </a>
                   <a href="#">
-                    <img
+                    {/* <img
                       src="https://ik.imagekit.io/y8s2vhk66ef/image_2_Bi5cqcyBFNT.png?updatedAt=1628624823915"className="BR" 
                       alt="instagram"
-                    />
+                    /> */}
+                    {/* <InstagramIcon className="BR In-bg"/> */}
+                    <img src={IG} className="BR" />
                   </a>
                   <a href="#">
-                    <YouTubeIcon className="BR br-bg"  />
+                    {/* <YouTubeIcon className="BR br-bg"  /> */}
+                    <img src={YT} className="BR" />
                   </a>
                   <a href="#">
-                    <img src=" https://ik.imagekit.io/y8s2vhk66ef/image_3_yByOZld4XFh.png?updatedAt=1628624824789" className="BR"  />
+                  {/* <img src={TW} className="BR" /> */}
+                    <TwitterIcon className="BR tw-bg"/>
+                    {/* <img src=" https://ik.imagekit.io/y8s2vhk66ef/image_3_yByOZld4XFh.png?updatedAt=1628624824789" className="BR"  /> */}
                   </a>
                 </div>
               </div>
               <div className="col EnquiryBox">
-                <h4>For Enquiry :</h4>
+                <h4>For Enquiry :&nbsp;</h4>
                 <h4>care@360criticalcare.com</h4>
               </div>
             </div>

@@ -11,9 +11,9 @@ function Terms() {
       <Header />
       <Box className="TermsBox">
         <div className="text">
-          <h4>
-            <b>{TermsData.one.topic}</b>
-          </h4>
+          <h2>
+            TERMS AND CONDIT<span className="AquaColor">ION</span>
+          </h2>
           <p>{TermsData.one.detail}</p>
         </div>
         <div className="text">

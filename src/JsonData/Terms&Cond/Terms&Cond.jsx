@@ -1,7 +1,7 @@
 export const TermsData = {
   one: {
     topic: "TERMS AND CONDITION",
-    detail: `By accessing and using 360criticalcare.com, you agree to the following terms and conditions. Please feel free to contact us by email at 360criticalcare@gmail.com. At 360criticalcare.com we consider the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information that is collected and recorded by 360criticalcare.com and how we use it. 
+    detail: `By accessing and using 360criticalcare.com, you agree to the following terms and conditions. Please feel free to contact us by email at 360criticalcare@gmail.com. 360criticalcare.com we consider the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information that is collected and recorded by 360criticalcare.com and how we use it. 
 
         `,
   },

@@ -28,8 +28,9 @@ const DropDown = ({variant, icon}) => {
         contrastText: "#242105",
       },
       fonts: {
-        fontSize:"1.8rem",
+        fontSize:"2.8rem",
         fontWeight: 600,
+        fontFamily: "Arial, Helvetica, sans-serif "
       },
     },
   });
@@ -41,7 +42,10 @@ const DropDown = ({variant, icon}) => {
           <Button
             variant={variant}
             color="ochre"
-            style={{ fontWeight: 600, fontFamily: "Inter" }}
+            style={{ fontWeight: 600, fontFamily: "Arial, Helvetica, sans-serif" ,color:" #18568f",
+            fontSize:"1rem",
+            textTransform:"none",
+            borderColor: "#18568f"}}
             endIcon={icon}
             className="paddingDropdown"
 
@@ -52,21 +56,22 @@ const DropDown = ({variant, icon}) => {
         menu={[
           <DropdownNestedMenuItem
             label="DrNB/DM/IFCCM Critical Care"
+            className="nestedMenu"
             rightIcon={<KeyboardArrowRightIcon />}
             menu={[
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Top Long Course
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Top Short Course
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                <Link
                 to="/TopCourse"
-                style={{ color: "inherit", textDecoration: "none" }}
+                style={{ color: "inherit", textDecoration: "none",fontFamily: "Arial, Helvetica, sans-serif " }}
               >Top Crash Course</Link>
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                <Link
                 to="/Demo"
                 style={{ color: "inherit", textDecoration: "none" }}
@@ -78,29 +83,31 @@ const DropDown = ({variant, icon}) => {
           </DropdownNestedMenuItem>,
           <DropdownNestedMenuItem
             label="EDIC"
+            className="nestedMenu"
             rightIcon={<KeyboardArrowRightIcon />}
             menu={[
-              <DropdownMenuItem onClick={() => {}}> 
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1"> 
               <Link
               to="/EDIC"
               style={{ color: "inherit", textDecoration: "none" }}
             >EDIC 1</Link></DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 <Link
               to="/EDIC2"
               style={{ color: "inherit", textDecoration: "none" }}
             >EDIC 2</Link>
             </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>TRICS-I</DropdownMenuItem>,
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">TRICS-I</DropdownMenuItem>,
             ]}
           >
             Delete <DeleteForeverIcon />
           </DropdownNestedMenuItem>,
           <DropdownNestedMenuItem
             label="IDCCM"
+            className="nestedMenu"
             rightIcon={<KeyboardArrowRightIcon />}
             menu={[
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 <Link
               to="/IDCCM"
               style={{ color: "inherit", textDecoration: "none" }}
@@ -113,18 +120,19 @@ const DropDown = ({variant, icon}) => {
 
           <DropdownNestedMenuItem
             label="Other"
+            className="nestedMenu"
             rightIcon={<KeyboardArrowRightIcon />}
             menu={[
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Nephro Critical Care Review Course
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Sepsis BASIC
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Sepsis ADVANCED
               </DropdownMenuItem>,
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => {}} className="subMenuText1">
                 Critical Care Nutrition
               </DropdownMenuItem>,
             ]}

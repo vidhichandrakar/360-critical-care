@@ -1,10 +1,14 @@
 body {
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 .text-color-white {
   color: white;
+  text-align: justify !important;
+}
+.center p{
+  margin-top: 3%;
 }
 * {
   margin: 0;
@@ -15,7 +19,9 @@ body {
   max-width: 1170px;
   margin: auto;
 }
-
+.Responsivelogo{
+  display: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +31,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.margin {
+  margin: 0 18px;
+  border-radius: 6px;
 }
 .col {
   display: flex;
@@ -39,10 +49,7 @@ body {
 .fontWidth {
   font-weight: 700;
 }
-.margin {
-  margin: 0 18px;
-  border-radius: 6px;
-}
+
 .BR {
   padding: 1px 0;
   margin: 0 15px;
@@ -53,15 +60,32 @@ body {
 .margin-left {
   margin-left: 8px;
 }
+.tw-bg {
+color: #144fe4;
+}
+.In-bg {
+color: rgb(228, 38, 54);
+}
+.fb-bg {
+  background-color: white;
+  color: #0675e8;
+  margin: 3px 15px;
+  padding: 0;
+  font-weight: 10;
+}
+.FollowBox{
+margin-top: 4%;
+}
 .br-bg {
-  background-color: red;
-  color: white;
+  /* background-color: red; */
+  color: red;
   margin: 3px 15px;
   padding: 0;
   font-weight: 10;
 }
 .center {
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 ul {
   list-style: none;
@@ -73,7 +97,6 @@ ul {
 .footer-col {
   width: 50%;
   padding: 0 1px;
-  text-align: left;
 }
 .w50 {
   width: 50%;
@@ -92,6 +115,7 @@ ul {
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
+  margin-top: 1%;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -140,13 +164,30 @@ ul {
 Link .text-decoraction-none {
   text-decoration: none;
 }
-.pad-line {
-  padding: 20px 0;
+
+/* PhoneTextcss */
+.phoneTextField .MuiOutlinedInput-root{
+  font-size: 20px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .bg_color {
   background-color: black;
 }
+.AppLogo{
+  border: solid 1px white;
+}
 /*responsive*/
+@media (min-width: 700px) {
+  .row {
+    margin: 0 100px;
+  }
+  .BottomRow {
+    margin: 0 100px;
+  }
+  .pad-line {
+    margin: 0 100px;
+  }
+}
 @media (max-width: 1110px) {
   .footer-col {
     width: 40%;
@@ -185,15 +226,10 @@ Link .text-decoraction-none {
 @media (max-width: 700px) {
   .footer-col {
     width: 100%;
-    justify-content: center;
-    align-items: center;
   }
   .center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   .colFooterUpper {
     display: flex;
@@ -204,20 +240,53 @@ Link .text-decoraction-none {
   .center p {
     font-size: 1.5em;
     text-align: left;
+    margin-top: 3%;
   }
   .container {
     width: 90%;
   }
 }
-@media (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .leftTextDesign{
+    font-size: 2.2rem !important;
+      }
+  .calMsg{
+    font-size: 2.3em !important;
+  }
+  .calCount{
+    font-size: 2.8em !important;
+  }
+  .anaTypo{
+    font-size: 3em !important;
+  }
+  .Arrow1{
+    font-size: 8rem !important;
+  }
+  .Arrow2{
+    font-size: 8rem !important;
+  }
+  .analyticsCount{
+  margin-top: 5% !important;
+  }
  .BottomRow{
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left !important;
   font-size: 1.8rem;
  }
  .FollowBox{
   justify-content: left;
+ }
+ .planImg{
+  height:41vh !important;
+  width: 96% !important;
+ }
+ .planImgBottom{
+  width:36%;
+ }
+ .bottomLogoBox{
+  width: 96% !important;
+    margin-left: 2% !important;
  }
  .FollowBox h4{
   font-size: 2.2rem;
@@ -241,13 +310,11 @@ Link .text-decoraction-none {
   align-items: center;
 }
  .AppLogo{
-  width: 100%;
-  height: 14vh;
-  margin-left: -100%;
+  width: 80% !important;
+  height: 14vh !important;
+  border: solid white;
 }
-.mrlogo{
-  margin-left: -80%;
-}
+
  .BR {
   width: 60px !important;
   height: 60px !important;
@@ -255,6 +322,10 @@ Link .text-decoraction-none {
 }
 .TestimonialsHeading {
   font-size: 4rem;
+}
+.TestimonialsLeftCard .MuiBox-root{
+  height: 55vh !important;
+  max-width: 908px !important;
 }
 .TestimonialsLeftCard p {
   margin: 36px 23px;
@@ -264,18 +335,19 @@ Link .text-decoraction-none {
   margin-top: 18%;
   font-size: 2.3rem;
 }
+
 .css-1x1xx5k {
   max-width: 908px !important;
-  height: 80vh !important;
-}
+  /* height: 80vh !important; */
+} 
 .ArrowIcon{
   width: 90% !important;
   height: 10vh !important;
 }
 .LogoFooter {
-  width: 100% !important;
+  width: 50% !important;
   height: 13vh !important;
-  margin-left: -168%;
+  margin-left:-2%;
 }
 
 .planSubTextTypo {
@@ -285,16 +357,44 @@ Link .text-decoraction-none {
   width: 40%;
   margin-left: 30%;
 }
+.headSize{
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+}
+.Aboutbox{
+  margin-top: 9% !important;
+}
+.width_margin{
+  width: 82% !important;
+}
 .cardBox {
   min-width: 60%;
   margin-left: -2%;
 }
+.textLeft p{
+  font-size: 2.5rem !important;
+}
+.textHead{
+  font-size: 2.5rem !important;
+  margin: 15px !important;
+}
+.category{
+  width:100% !important;
+}
 .subCatBox {
   margin-top: 3%;
   margin-left: 5%;
-  width: 43%;
+  width: 45%;
   min-width: 31% !important;
-  height: 42%;
+  height: 59%;
+}
+.subMenuText1{
+  font-size: 2rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.nestedMenu{
+  font-size: 2rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .catHeading {
   font-size: 3em !important;
@@ -305,18 +405,49 @@ Link .text-decoraction-none {
   box-shadow: 0px 0px 0px 3px #d3d3d3 !important;
   margin-top: 10%;
 }
-.css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root{
-  font-size: 2rem !important;
+.phoneTextField .MuiOutlinedInput-root{
+  font-size: 45px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .phoneTextFieldStartIcon{
   margin-top: 16% !important; 
+  font-size: 40px !important;
+}
+.menuText {
+  color: #000 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 2.4rem !important;
+  
+}
+.liveText {
+  font-size: 2.6rem !important;
+  line-height: 49.31px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.carousel-item img{
+ height: auto !important;
+}
+
+.liveTextScnd{
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 2.2rem !important;
+}
+
+.paddingDropdown {
+  padding: 0px !important;
+  font-size: 2.4rem !important;
+  font-weight: 500 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-transform: none !important;
 }
 .phoneTextField {
   width: 95%;
+  font-size: 40px !important;
   margin-top: 2% !important;
 }
 .ReponsiveLogo{
-  width: 30% !important;
+  width: 33% !important;
 }
 .ShowButton{
   display: block;
@@ -329,5 +460,21 @@ Link .text-decoraction-none {
   font-size: 3rem;
   margin-left: 1%;
 }
-
+.Responsivelogo{ 
+  display: inline;   
+  margin-top: -2%;
+    margin-left: 6%;
+    width: 22%;
+    position: fixed;
 }
+.MuiToolbar-root {
+  
+  min-height: 85px !important;
+}
+}
+
+/* @media (max-width: 484px) {
+  .leftTextDesign{
+    font-size: 2rem !important;
+  }
+} */

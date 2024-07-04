@@ -2,45 +2,85 @@ import React, { Fragment } from "react";
 import "./ContactUs.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { FAQData } from "../../JsonData/AboutData/AboutData";
+
+import Divider from "@mui/material/Divider";
 
 function ContactUs() {
   return (
     <Fragment>
       <Header />
       <Box className="ContactBox">
+        <Box className="ContactTaxt ContactFont">
+          <h4 className="Heading Headcenter">
+            Contact <span className="AquaColor">Us</span>
+          </h4>
+          <p className="textHead">
+            This is the official page of Physics Wallah, where you can share all
+            your queries, feedback, complaints, or any concern you may have
+            about our centers, courses, and programs.
+          </p>
+          <p className="textHead">
+            Physics Wallah, India's leading student-oriented Edtech
+            organization, is here to help all the students to solve their
+            grievances. We're here to help you. We aim to solve all the queries
+            within 7 days. You can call on Physics Wallah's official Contact No.
+            07019243492, 24 x 7. If the phone is busy, we're resolving someone
+            else's queries. We request you to contact us again after 15 minutes
+            so that we can address your query or concern you may have regarding
+            lectures or course material. You may notify us in the "contact us"
+            section only. Your suggestions will help us improve and give you and
+            all the children a bright future.
+          </p>
+          <p className="textHead divider">
+            In Case of any grievance, don't hesitate to get in touch with us on
+            Physics Wallah's official contact number 07019243492. Or you can
+            write to us at support@pw.live.
+          </p>
+          <Box className="MapBox">
+            <Box className="AddressBox">
+              <h3>360 Critical Care</h3>
+              <p className="textHead">Phone: +917070993343,7608052321</p>
+              <p className="textHead">Email: 360criticalcare@gmail.com</p>
+              <p className="textHead">
+                Address: Plot/Flat no-502, Adhikary Arcade, Bariatu Road.
+              </p>
+              <p className="textHead">
+                State-Jharkhand, Dist-Ranchi, Bariantu, Landmark: In front of
+                Premsons motor.
+              </p>
+              <a href="https://maps.app.goo.gl/PWcie7SS9LYt8uht8" target="_blank"><Button  variant="outlined" className="GEtDirection">get Direction</Button></a>
+            </Box>
+            <Box>
+             
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29293.035269702268!2d85.33562851618916!3d23.40162025020351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e15783b9c0b5%3A0x5c22411ea37e8259!2sBariatu%2C%20Ranchi%2C%20Jharkhand%20834009!5e0!3m2!1sen!2sin!4v1710535703912!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </Box>
+          </Box>
+        </Box>
+        <p className="divider"></p>
         <div className="ContactTaxt">
-          <h3>
-            <b>About the Team:</b>
-          </h3>
-          <p>
+          <p className="headSize">About the Team:</p>
+          <p className="textHead">
             Our team is composed of dedicated professionals with a passion for
             education. Each member brings a unique set of skills and expertise
             to ensure the highest quality of learning for our students.
           </p>
         </div>
-        <Box className="ContactTaxt ContactFont">
-          <h3>
-            <b>Contact Us:</b>
-          </h3>
-          <p>Phone: +917070993343,7608052321</p>
-          <p>Email: 360criticalcare@gmail.com</p>
-          <p>Address: Plot/Flat no-502, Adhikary Arcade, Bariatu Road.</p>
-          <p>
-            State-Jharkhand, Dist-Ranchi, Bariantu, Landmark: In front of
-            Premsons motor.
-          </p>
-        </Box>
         <Box className="ContactTaxt">
-          <h3>
-            <b>FAQ</b>
-          </h3>
+          <p className="headSize">FAQ</p>
           <Box>
             <h5>
               <b>1. What is 360 Critical Care Academy all about?</b>
             </h5>
-            <p>
+            <p className="textHead divider">
               Critical Care Medicine has progressed to the extent that it has
               become the backbone of modern medicine and surgical practice. The
               scope and resulting practice of Critical Care are emerging
@@ -77,6 +117,7 @@ function ContactUs() {
                 <b> DrNB/DM Theory & Practical Exam </b>
               </li>
             </ul>
+            <p className="divider"></p>
           </Box>
           <Box>
             <h5>
@@ -94,6 +135,7 @@ function ContactUs() {
               Choose the course of your choice, pay for the course, and have
               access to the study materials, debrief videos and exam modules.
             </p>
+            <p className="divider"></p>
           </Box>
           <Box>
             <h5>
@@ -108,6 +150,7 @@ function ContactUs() {
               <li>• Access to debrief videos</li>
               <li>• Access to "High Probability Question Bank"</li>
             </ul>
+            <p className="divider"></p>
           </Box>
           <Box>
             <h5>
@@ -131,6 +174,7 @@ function ContactUs() {
                 Test
               </li>
             </ul>
+            <p className="divider"></p>
           </Box>
           <Box>
             <h5>
@@ -157,7 +201,9 @@ function ContactUs() {
                 tips and tricks for preparation.{" "}
               </li>
             </ul>
+            <p className="divider"></p>
           </Box>
+
           <Box>
             <h5>
               <b>7. What does the TOP Crash Course Cover?</b>
@@ -172,11 +218,31 @@ function ContactUs() {
             </p>
             <ul className="FAQList ContactFont">
               <li>“TOP” course happens in TWO phases. </li>
-              <li>The First part is “TOP Crash Course- Theory”exclusively provides review of whole theory syllabus with discussion of previous years’ theory questions in “Structured Template “STEM” pattern</li>
-              <li>The Second part is “TOP Crash Course- Practical & OSCE” exclusively provides review of all aspects of the practical exam including “Long Cases” Short Cases” and table Vivas. </li>
-              <li>This course is tailored to align with the unique requirements of the "DM/DNB-SS" exams. This specialized focus ensures that students are exposed to the precise examination format, fostering familiarity and confidence in tackling the theoretical aspects of the critical care examination.</li>
-              <li>By aligning these objectives, the course aims to not only impart knowledge but also to empower students with the strategic skills and confidence necessary to excel in the demanding field of Critical Care Medicine examinations.</li>
+              <li>
+                The First part is “TOP Crash Course- Theory”exclusively provides
+                review of whole theory syllabus with discussion of previous
+                years’ theory questions in “Structured Template “STEM” pattern
+              </li>
+              <li>
+                The Second part is “TOP Crash Course- Practical & OSCE”
+                exclusively provides review of all aspects of the practical exam
+                including “Long Cases” Short Cases” and table Vivas.{" "}
+              </li>
+              <li>
+                This course is tailored to align with the unique requirements of
+                the "DM/DNB-SS" exams. This specialized focus ensures that
+                students are exposed to the precise examination format,
+                fostering familiarity and confidence in tackling the theoretical
+                aspects of the critical care examination.
+              </li>
+              <li>
+                By aligning these objectives, the course aims to not only impart
+                knowledge but also to empower students with the strategic skills
+                and confidence necessary to excel in the demanding field of
+                Critical Care Medicine examinations.
+              </li>
             </ul>
+            <p className="divider"></p>
           </Box>
           {FAQData.map((value) => (
             <Box>
@@ -184,6 +250,7 @@ function ContactUs() {
                 <b>{value.heading}</b>
               </h5>
               <p>{value.para}</p>
+              <p className="divider"></p>
             </Box>
           ))}
         </Box>

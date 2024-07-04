@@ -12,7 +12,7 @@ function PrivacyPolicy() {
       <Header />
       <Box className="PrivacyPolicyBox">
         <Box className="PPBox PPFontSize">
-          <h2 className="PPHeadFontSize"><b>Privacy Policy</b></h2>
+          <h5 className="PPHeadFontSize"><b>Privacy Pol<span className="AquaColor">icy</span></b></h5>
           <p>
             360 Critical Care is committed to protecting the privacy of our
             users. This Privacy Policy outlines how we collect, use, disclose,

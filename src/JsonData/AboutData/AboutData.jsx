@@ -26,10 +26,7 @@ export const Aims = [
     heading: "Comprehensive Knowledge",
     para: "To provide students with a comprehensive understanding of critical care medicine, including the principles, theories, and practices involved in the care of critically ill patients.",
   },
-  {
-    heading: "Skill Development",
-    para: "To develop and enhance the clinical skills necessary for effective critical care management",
-  },
+ 
   {
     heading: "Interdisciplinary Collaboration",
     para: "Foster an appreciation for interdisciplinary collaboration by promoting teamwork and communication skills among healthcare professionals in critical care settings.",
@@ -47,6 +44,7 @@ export const Aims = [
     heading: "Leadership Development",
     para: "Encourage the development of leadership skills among students to prepare them for roles as leaders in critical care teams, including effective decision-making and conflict resolution.",
   },
+  
 ];
 export const Objectives = [
   {
@@ -55,7 +53,7 @@ export const Objectives = [
   },
   {
     heading: "Critical Thinking",
-    para: "Cultivate critical thinking skills to analyze complex clinical scenarios, interpret diagnostic data, and formulate evidence-based treatment plans.",
+    para: "Cultivate critical critic alcritical thinking skills to analyze complex clinical scenarios, interpret diagnostic data, and formulate evidence-based treatment plans.",
   },
   {
     heading: "Research Literacy",
