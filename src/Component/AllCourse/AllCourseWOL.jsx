@@ -30,7 +30,7 @@ const AllCourseWOL = () => {
                                     $30000
                                 </Typography>
                                 <Typography sx={{ml:6}}>
-                                    40% OFF
+                                    40% OFFs
                                 </Typography>
 
                                 </Box>
