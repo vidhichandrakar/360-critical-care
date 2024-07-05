@@ -1,0 +1,36 @@
+
+/* Start AllCourseWOL CSS */
+.HeadimgBox{
+    margin-top: 4%;
+}
+.CoursesCardMainBox{
+    margin: 50px;
+
+}
+.CradBox{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 18px 0px;
+    justify-content: space-around;
+    border-radius: 13px;
+}
+.CardTextBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    text-align: left;
+}
+.Price_ButtonBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+.PriceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* End AllCourseWOL CSS */
