@@ -47,24 +47,42 @@ const SubCategory = ({ categorySelected }) => {
   };
   return (
     <Fragment>
-      {categoryType[categorySelected]?.map((data) => {
-        return (
-          <Fragment>
-            <Box className="subCatBox">
-              <Typography className="subCatHead">{data}</Typography>
-              <Link
-                to={savedPath}
-                onClick={() => handleCourses({ type: data })}
-                className="subCatSubHead"
-              >
-                Explore
-              </Link>
-            </Box>
+      <div className="allExploreCatCards">
+        
+        <Box className="drNBCompleteBox">
+          <h5>DrNB/DM/IFCCM Critical Care</h5>
+          <div className="drNBSubSections">
+          <div className="drNBTwoOptions">
+          <Box className="drNBOptions">Top Long Course</Box>
+          <Box className="drNBOptions-two">Top Short Course</Box>
+          </div>
+          <Box className="drNBOptions2ndClm">Top Crash Course</Box>
+          </div>
+        </Box>
 
-            {categoryType[categorySelected].length > 2 ? <br /> : null}
-          </Fragment>
-        );
-      })}
+        <Box className="drNBCompleteBox">
+          <h5>EDIC</h5>
+          <div className="drNBSubSections">
+          <div className="drNBTwoOptions">
+          <Box className="drNBOptions">Top Long Course</Box>
+          <Box className="drNBOptions-two">Top Short Course</Box>
+          </div>
+          <Box className="drNBOptions2ndClm">Top Crash Course</Box>
+          </div>
+        </Box>
+
+        <Box className="drNBCompleteBox">
+          <h5>IDCCM</h5>
+          <div className="drNBSubSections">
+          <div className="drNBTwoOptions">
+          <Box className="drNBOptions">Top Long Course</Box>
+          <Box className="drNBOptions-two">Top Short Course</Box>
+          </div>
+          <Box className="drNBOptions2ndClm">Top Crash Course</Box>
+          </div>
+        </Box>
+    </div>
+      
     </Fragment>
   );
 };

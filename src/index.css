@@ -886,3 +886,68 @@ font-size: 1.3em !important;
     margin-left: 3%;
   }
 }
+
+/* NEW CRITICAL CARE FIRST PAGE--> SubCategory  */
+
+/* .allExploreCatCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly !important;
+} */
+.drNBCompleteBox{
+  border: 0.5px solid grey;
+    border-radius: 12px;
+    width: 27vw;
+    height: 36vh;
+    padding: 28px 0px;
+    margin-top: 22px;
+}
+.drNBSubSections{
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  gap: 20px;
+  flex-direction: column;
+}
+.drNBTwoOptions{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin-top: 4%;
+}
+.drNBOptions2ndClm{
+  border: 0.5px solid grey !important;
+  border-radius: 18px;
+  padding: 8px 0px;
+  font-size: 0.8rem;
+  width: 34%;
+  height: auto;
+  margin-left: 32px;
+}
+.drNBOptions{
+  border: 0.5px solid grey !important;
+  border-radius: 18px;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  margin-left: 24px;
+}
+.drNBOptions-two{
+  border: 0.5px solid grey !important;
+  border-radius: 18px;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  margin-right: 75px;
+}
+.allExploreCatCards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 53px !important;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* align-items: center; */
+  margin-left: 55px;
+}
+
+.powerOfMentorshipImg{
+  width: 50vw !important;
+  height: auto !important;
+}

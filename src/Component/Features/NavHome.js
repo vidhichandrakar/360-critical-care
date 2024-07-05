@@ -5,14 +5,17 @@ import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import ExpandCircleDownRoundedIcon from "@mui/icons-material/ExpandCircleDownRounded";
 import AppLogo from "../../Media/Media_Image/app-store.png";
 import GoogleLogo from "../../Media//Media_Image/play-store.png";
-import Image1 from "../../Media/Media_Image/IMG-20240207-WA0036.jpg"
+// import Image1 from "../../Media/Media_Image/IMG-20240207-WA0036.jpg"
+import Image1 from "../../Media/Images/WebsiteBanner.jpg";
+import Image2 from "../../Media/Images/HomePageSndImg.jpg"
+
 const NavHome = () => {
   return (
     <Fragment>
       <div className="homeImage">
         <img src={Image1} />
       </div>
-      <div className="cardHome">
+      {/* <div className="cardHome">
         <div className="leftDesign">
           <p className="leftTextDesign">
             THE MOST <span style={{ color: "#199884" }}>TRUSTED</span> TEACHING
@@ -46,6 +49,10 @@ const NavHome = () => {
         <div className="divHomeImage">
           <img src={AppImage} className="appImage" />
         </div>
+      </div> */}
+      <div className="cardHome">
+      {/* <div className="powerOfMentorshipImg"> */}
+      <img scr={Image2} />
       </div>
     </Fragment>
   );

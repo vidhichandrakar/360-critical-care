@@ -18,10 +18,12 @@ const CategoryBox = () => {
   return (
     <Box className="categoryMainBox">
       <Typography className="catHeading">Explore <span style={{ color: "#199884" }}>Category</span></Typography>
+      {/* <Typography>360CC is preparing students for 4 exam categories.</Typography> */}
+      <b>360CC is preparing students for 4 exam categories.</b>
       <div className="category">
         <div class="rowDesign">
         
-        <div className="cardBox">  
+        {/* <div className="cardBox">  
         <Box className={categorySelected==="Category_One"?"catDrop highlight":"catDrop"} >
             <DropdownNestedMenuItem label="DrNB/DM/IFCCM" onClick={()=>handleCategory("Category_One")}
               rightIcon={<KeyboardArrowRightIcon />}
@@ -89,7 +91,7 @@ const CategoryBox = () => {
 
               ]} />
           </Box>
-          </div>
+          </div> */}
         
        <div className=" rightBoxCat">
         <SubCategory categorySelected={categorySelected}/>
