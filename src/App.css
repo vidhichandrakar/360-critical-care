@@ -101,3 +101,35 @@
   right: 0;
   border-bottom-left-radius: 999px;
 }
+
+/* Test Portal css */
+.instructionMainBox{
+  width:95%;
+  /* height:230vh; */
+  display: block;
+  margin: auto;
+  background-color: #e0f2ef;
+}
+.headingMain{
+  font-size: 44px !important;
+  font-weight: bold !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-align: left !important;
+  padding-left: 30px !important;
+  padding-top: 91px !important;
+}
+.headingMainSub{
+  font-size: 24px !important;
+  padding-top: 5px !important;
+  color:  #5D5D5D;
+}
+
+@media (max-width:1366px) {
+  
+.headingMain{
+  font-size: 34px !important;
+}
+.headingMainSub{
+  font-size: 21px !important;
+}
+}

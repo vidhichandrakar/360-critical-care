@@ -11,6 +11,7 @@ import EDIC from './Component/AllCourse/EDIC';
 import EDIC2 from './Component/AllCourse/EDIC2';
 import IDCCM from './Component/AllCourse/IDCCM';
 import DemoApi from './Component/Service/DemoApi';
+import TestportalMain from './UserPortal/TestPortal/TestportalMain.component';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/EDIC2' Component={EDIC2}/>
         <Route path='/IDCCM' Component={IDCCM}/>
         <Route path='/Demo' Component={DemoApi}/>
+        <Route path='/user/testportal' Component={TestportalMain}/>
       </Routes>
     </div>
   );
