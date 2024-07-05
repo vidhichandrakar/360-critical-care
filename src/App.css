@@ -1,3 +1,11 @@
+
+:root {
+ --MainHeading:26px;
+ --subHeading:24px;
+ --ScndHeading:20px;
+ --Heading:18px;
+ --small:16px;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -104,14 +112,14 @@
 
 /* Test Portal css */
 .instructionMainBox{
-  width:95%;
-  /* height:230vh; */
+  /* width:95%; */
+  height:100%;
   display: block;
   margin: auto;
   background-color: #e0f2ef;
 }
 .headingMain{
-  font-size: 44px !important;
+  font-size: var(--MainHeading) !important;
   font-weight: bold !important;
   font-family: Arial, Helvetica, sans-serif !important;
   text-align: left !important;
@@ -119,17 +127,42 @@
   padding-top: 91px !important;
 }
 .headingMainSub{
-  font-size: 24px !important;
+  font-size: var(--subHeading) !important;
   padding-top: 5px !important;
   color:  #5D5D5D;
 }
-
+.instructionBox{
+  background-color: #fff !important;
+  width:95% !important;
+  border-radius: 15px !important;
+  /* padding: 20%; */
+ margin: auto; 
+ margin-top: 2% !important;
+ box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
+}
+.instructionHead{
+  font-size: var(--MainHeading) !important;
+  text-align: left !important;
+  margin-left: 3% !important;
+}
+.olList li{
+text-align: left !important;
+margin-left: 4% !important;
+margin-top: 1% !important;
+font-size: var(--Heading) !important;
+}
 @media (max-width:1366px) {
   
 .headingMain{
-  font-size: 34px !important;
+  font-size: var(--subHeading) !important;
 }
 .headingMainSub{
-  font-size: 21px !important;
+  font-size: var(--subHeading) !important;
+}
+.olList li{
+  font-size: var(--ScndHeading) !important;
+}
+.instructionHead{
+  font-size: var(--MainHeading) !important;
 }
 }
