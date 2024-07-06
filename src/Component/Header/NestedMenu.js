@@ -14,6 +14,7 @@ import {
   DropdownNestedMenuItem,
 } from "./NestedDropdown";
 import { Link } from "react-router-dom";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const DropDown = ({variant, icon}) => {
   const handleCreate = () => {
@@ -46,11 +47,12 @@ const DropDown = ({variant, icon}) => {
             fontSize:"1rem",
             textTransform:"none",
             borderColor: "#18568f"}}
-            endIcon={icon}
+            // endIcon={icon}
             className="paddingDropdown"
 
           >
             All Courses
+            <ArrowDropDownIcon/>
           </Button>
         }
         menu={[

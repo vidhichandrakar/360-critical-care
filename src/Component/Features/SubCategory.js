@@ -47,9 +47,13 @@ const SubCategory = ({ categorySelected }) => {
   };
   return (
     <Fragment>
+      {/* <div>
+        <p>thisssss</p>
+      </div> */}
       <div className="allExploreCatCards">
         
         <Box className="drNBCompleteBox">
+          <div className="drNBCompleteBox-left">
           <h5>DrNB/DM/IFCCM Critical Care</h5>
           <div className="drNBSubSections">
           <div className="drNBTwoOptions">
@@ -58,10 +62,17 @@ const SubCategory = ({ categorySelected }) => {
           </div>
           <Box className="drNBOptions2ndClm">Top Crash Course</Box>
           </div>
+          </div>
+
+          <div>
+          <Box className="blueSemiCircle">
+     <p>icon</p>
+    </Box>
+          </div>
         </Box>
 
         <Box className="drNBCompleteBox">
-          <h5>EDIC</h5>
+          <h5><b>EDIC</b></h5>
           <div className="drNBSubSections">
           <div className="drNBTwoOptions">
           <Box className="drNBOptions">Top Long Course</Box>
