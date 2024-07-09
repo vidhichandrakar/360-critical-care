@@ -8,7 +8,7 @@
 
 /* Start AllCourseWOL CSS */
 .HeadimgBox{
-    margin-top: 4%;
+    margin-top: 5%;
 }
 .CoursesCardMainBox{
     display: grid;
@@ -53,7 +53,7 @@
 .PopularCourseBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 60px;
     margin-top: 24px;
 }
 
@@ -62,12 +62,30 @@
     flex-direction: column;
     text-align: left;
     /* border: 1px solid black; */
-    padding: 13px;
+    padding: 13px 24px;
     /* justify-content: space-around; */
     border-radius: 13px;
     box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
 }
 .PopularCourseMainBox{
-    margin: 4%;
+    margin: 3% 6%;
+}
+.HeadingColor{
+    font-size: 2rem;
+    color: #24a28d;
+    font-weight: 700;
+}
+.offBox{
+    text-align: center;
+    background-color: #24a28d;
+    padding: 4px 6px;
+    font-size: 0.8rem !important;
+    border-radius: 10px;
+    color: white;
 }
 /* End AllCourseWOL CSS */
+@media (max-width: 860px) {
+    .PopularCourseBox{
+        background-color: #24a28d;
+    }
+}

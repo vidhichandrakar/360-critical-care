@@ -379,10 +379,7 @@ code {
   border-radius: 5px 5px 5px 5px;
   color: #2683DA;
 }
-/* subcategory */
-.category{
-  /* width:84% !important; */
-}
+ 
 .subCatBox {
   margin-top: 3%;
   margin-left: 5%;
@@ -663,6 +660,9 @@ font-size: 1.3em !important;
   }
 }
 @media (max-width: 990px) {
+  .PopularCourseBox{
+    grid-template-columns: 1fr 1fr !important;
+  }
   .leftSubDesign {
     font-size: 1em;
   }

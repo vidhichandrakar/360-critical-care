@@ -11,7 +11,7 @@ const AllCourseWOL = () => {
     return (
         <Fragment>
             <Box className="HeadimgBox">
-                <img src={homeimg} width="100%"/>
+                <img src={homeimg} width="100%" />
             </Box>
             <Box className="CoursesCardMainBox">
                 {AllCourseWOLCard?.length && AllCourseWOLCard?.map((item) => {
@@ -28,13 +28,13 @@ const AllCourseWOL = () => {
                                 </Typography>
                                 <Box className="PriceBox">
                                 <Typography sx={{fontWeight: 600}}>
-                                    {item.price}
+                                   $ {item.price}
                                 </Typography>
                                 <Typography sx={{ml:"100px", color: "grey",}}>
                                     $30000
                                 </Typography>
-                                <Typography sx={{ml:6}}>
-                                    40% OFFs
+                                <Typography sx={{ml:6}} className="offBox">
+                                    40% OFF
                                 </Typography>
 
                                 </Box>
@@ -51,17 +51,17 @@ const AllCourseWOL = () => {
                 <img src={JoinImg} width="100%"/>
             </Box>
             <Box className="PopularCourseMainBox">
-                <Typography>Our <span>Popular Course</span></Typography>
+                <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
                
                 <Box className="PopularCourseBox">
                      {PopularCard.map((item) => {
                     return  <Box className="PopularCardBox">
-                        <img src={cardimg} width={380} height={150}/>
+                        <img src={cardimg} width={320} height={150}/>
                         <Box>
-                            <Typography>
+                            <Typography sx={{fontWeight: 700, mt: 1, fontSize: "0.9rem"}}>
                            {item.Para1}
                             </Typography>
-                            <Typography>
+                            <Typography sx={{fontWeight: 400, fontSize: "0.8rem"}}>
                             {item.Para2}
                             </Typography>
                         </Box>
