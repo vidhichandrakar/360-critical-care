@@ -13,6 +13,7 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
+import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 
 const steps = [
   {
@@ -62,7 +63,7 @@ function Testimonials() {
 
   const handleNext = () => {
     console.log("abcc", activeStep, maxSteps);
-    if (activeStep < maxSteps-1) {
+    if (activeStep < maxSteps - 1) {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
     }
   };
@@ -75,7 +76,7 @@ function Testimonials() {
 
   return (
     <Fragment>
-      <div className="TestimonialsMain">
+      {/* <div className="TestimonialsMain">
         <h4 className="TestimonialsHeading">Testimonials</h4>
         <Container fixed>
           <Box
@@ -94,19 +95,6 @@ function Testimonials() {
         </h1>
 
         <div className="TestimonialsCard">
-          {/* <div className="TestimonialsLeftCard">
-            <p className="testimonialPara wrap1-text-50-archiver">
-              360 Critical Care has been a great contributor to the development
-              of my personality. I’ve been following Sanat sir for the past two
-              years. I also took local tuition, but I want to give full credit
-              to PW because my chemistry was very weak when I joined 360CC, and
-              it’s only because of 360CC that I got excellent chemistry marks
-              this year in JEE Advance. I am a big fan of the 360CC Star
-              faculty.
-            </p>
-            <h3 className="names">Harshil Paresh Kumar Khatri</h3>
-          </div> */}
-          {/* <div className="TestimonialsLeftCard"> */}
 
           <Box
             sx={{ maxWidth: 400, flexGrow: 1 }}
@@ -126,7 +114,6 @@ function Testimonials() {
             </p>
             <h3 className="names">{steps[activeStep]?.label}</h3>
           </Box>
-          {/* </div> */}
         </div>
 
         <div className="TestimonialsArrow">
@@ -142,7 +129,11 @@ function Testimonials() {
             disabled={activeStep === maxSteps - 1}
           />
         </div>
-      </div>
+      </div> */}
+
+      <Box>
+        <img src={NewsLetter} width="100%" />
+      </Box>
     </Fragment>
   );
 }

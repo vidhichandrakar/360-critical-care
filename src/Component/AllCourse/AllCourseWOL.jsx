@@ -28,7 +28,7 @@ const AllCourseWOL = () => {
                                 </Typography>
                                 <Box className="PriceBox">
                                 <Typography sx={{fontWeight: 600}}>
-                                   $ {item.price}
+                                    {item.price}
                                 </Typography>
                                 <Typography sx={{ml:"100px", color: "grey",}}>
                                     $30000
