@@ -5,7 +5,6 @@ import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import ExpandCircleDownRoundedIcon from "@mui/icons-material/ExpandCircleDownRounded";
 import AppLogo from "../../Media/Media_Image/app-store.png";
 import GoogleLogo from "../../Media//Media_Image/play-store.png";
-// import Image1 from "../../Media/Media_Image/IMG-20240207-WA0036.jpg"
 import Image1 from "../../Media/Images/CorrectFirstImg.jpg";
 import Image2 from "../../Media/Images/HomePageSndImg.jpg";
 
@@ -17,7 +16,10 @@ const NavHome = () => {
           <img src={Image1} />
         </div>
         <div>
-          <img src={Image2} width={1110} height={600} sx={{mt: "12%"}}/>
+          <img src={Image2} 
+          // width={1110}
+           height={600}
+            sx={{mt: "12%", width:"100%"}}/>
         </div>
       </div>
     </Fragment>

@@ -1063,15 +1063,18 @@ font-size: 1.3em !important;
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
+  margin: 74px 245px;
 }
 .studyResourceImages{
-  display: flex;
-  flex-direction: row;
-  gap: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* flex-direction: row; */
+  margin: 15px !important;
+  gap: 37px;
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-top: 18px;
+  margin-top: 18px !important;
 }
 .youtubeImages {
   display: flex;
@@ -1080,12 +1083,12 @@ font-size: 1.3em !important;
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-top: 18px;
+  margin-top: 40px;
 }
 .studyMaterials{
   border-radius: 12px;
   background-color: #DAF2FF;
-  width: 21%;
+  /* width: 50%; */
   height: 28vh;
 }
 .studyMaterials h5{
@@ -1096,7 +1099,7 @@ font-size: 1.3em !important;
 .debriefVideos{
   border-radius: 12px;
   background-color: #FFEFD2;
-  width: 21%;
+  /* width: 50%; */
   height: 28vh;
 }
 .debriefVideos h5{
@@ -1107,7 +1110,7 @@ font-size: 1.3em !important;
 .freeeMockTests {
   border-radius: 12px;
   background-color: #D3FFEE;
-  width: 21%;
+  /* width: 50%; */
   height: 28vh;
 }
 .freeeMockTests h5{
@@ -1116,19 +1119,14 @@ font-size: 1.3em !important;
     font-size: 1rem;
 }
 .youtubeImg1 {
-  /* border-radius: 12px; */
-  /* background-color: #DAF2FF; */
-  /* background-color: red; */
   width: 21%;
   height: 28vh;
 }
 .youtubeImg2{
-  /* background-color: red; */
   width: 21%;
   height: 28vh;
 }
 .youtubeImg3{
-  /* background-color: red; */
   width: 21%;
   height: 28vh;
 }
@@ -1138,4 +1136,42 @@ font-size: 1.3em !important;
   text-align: center !important;
   margin-top: 23px;
   margin-bottom: 22px;
+}
+
+/* @media (max-width: 860px) {
+  .studyResourceImages{
+    grid-template-columns: 1fr 1fr !important;
+    background-color: orange !important;
+  }
+} */
+@media (max-width: 990px) {
+  .studyResourceImages{
+    grid-template-columns: 1fr !important;
+  }
+  .studyMaterials{
+    height: 15vh !important;
+  }
+  .debriefVideos{
+    height: 15vh !important;
+  }
+  .freeeMockTests{
+    height: 15vh !important;
+  }
+
+  .allExploreCatCards{
+    grid-template-columns: 1fr !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .drNBCompleteBox{
+    height: 15vh !important;
+  }
+
+  .youtubeCompleteSection{
+    margin-bottom: -364px !important;
+  }
+  .youtubeImages{
+    grid-template-columns: 1fr !important;
+  }
 }

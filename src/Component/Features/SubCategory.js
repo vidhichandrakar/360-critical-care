@@ -48,9 +48,6 @@ const SubCategory = ({ categorySelected }) => {
   };
   return (
     <Fragment>
-      {/* <div>
-        <p>thisssss</p>
-      </div> */}
       <div className="allExploreCatCards">
         <Box className="drNBCompleteBox">
           <div className="drNBCompleteBox-left">
