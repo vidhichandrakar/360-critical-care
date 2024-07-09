@@ -893,7 +893,6 @@ font-size: 1.3em !important;
 /* NEW CRITICAL CARE FIRST PAGE--> SubCategory  */
 
 .breifesInHomePage{
-  /* border: 1px solid lightgray; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
   border-radius: 11px;
   display: flex;
@@ -908,20 +907,37 @@ font-size: 1.3em !important;
     margin-bottom: 78px !important;
     background-color: #ffffff !important;
 }
+.aboutExploreClasses {
+  display: flex;
+  flex-direction: row;
+  gap: 2% !important;
+  width: 40vw;
+    height: 19vh !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 467px;
+    margin-top: 5% !important;
+    background-color: #ffffff !important;
+}
+.exploreTechEnabledBox{
+  background-color: lightblue !important;
+  width: 100vw;
+    margin-left: -57px;
+    margin-top: 72px;
+    padding-top: 32px;
+}
+.excelInCriticalcareImg{
+  margin-left: -33px;
+  width: 100% !important;
+}
 .verticalDivider{
   background-color: #c2c2c2 !important;
   width: 2px !important;
   height: 10vh !important;
 }
-/* .allExploreCatCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly !important;
-} */
 .drNBCompleteBox{
   display: flex;
   flex-direction: row;
-  /* border: 0.5px solid grey; */
     border-radius: 12px;
     width: 27vw;
     height: 36vh;
@@ -1001,9 +1017,88 @@ font-size: 1.3em !important;
   position: sticky !important;
   border: 0.5px solid grey;
   border-radius: 15px !important;
-  /* padding: 0px 47px; */
   width: 22% !important;
   height: 10%;
   margin-left: 51px !important;
   font-size: var(--small) !important;
+}
+
+.appAdvertisement{
+  display: flex;
+  flex-direction: row;
+  align-items: start !important;
+  justify-content: start !important;
+  text-align: left !important;
+  border-radius: 10px;
+  background-color: #F1EFFF !important;
+  padding: 23px 41px;
+  width: 88%;
+    margin-left: 92px;
+}
+.appAdvertisementHead{
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-top: 23px !important;
+    margin-bottom: 12px !important;
+}
+.googlePlay-n-appStore{
+  margin-top: 23px;
+}
+.appLogo-mobAd{
+  width: 31%;
+  margin-right: 28px;
+}
+.mrlogo-mobAd{
+  width: 31%;
+}
+.studyResource {
+  font-size: 1.7em !important;
+  font-weight: bolder !important;
+}
+.studyResourceCompleteSection{
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.studyResourceImages{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 18px;
+}
+.studyMaterials{
+  border-radius: 12px;
+  background-color: #DAF2FF;
+  width: 21%;
+  height: 28vh;
+}
+.studyMaterials h5{
+  text-align: start;
+  padding: 25px 26px;
+    font-size: 1rem;
+}
+.debriefVideos{
+  border-radius: 12px;
+  background-color: #FFEFD2;
+  width: 21%;
+  height: 28vh;
+}
+.debriefVideos h5{
+  text-align: start;
+  padding: 25px 26px;
+    font-size: 1rem;
+}
+.freeeMockTests {
+  border-radius: 12px;
+  background-color: #D3FFEE;
+  width: 21%;
+  height: 28vh;
+}
+.freeeMockTests h5{
+  text-align: start;
+  padding: 25px 26px;
+    font-size: 1rem;
 }
