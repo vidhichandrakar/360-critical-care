@@ -1055,12 +1055,25 @@ font-size: 1.3em !important;
   font-size: 1.7em !important;
   font-weight: bolder !important;
 }
+.youtubeHead {
+  font-size: 1.7em !important;
+  font-weight: bolder !important;
+}
 .studyResourceCompleteSection{
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
 }
 .studyResourceImages{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 18px;
+}
+.youtubeImages {
   display: flex;
   flex-direction: row;
   gap: 1%;
@@ -1101,4 +1114,27 @@ font-size: 1.3em !important;
   text-align: start;
   padding: 25px 26px;
     font-size: 1rem;
+}
+.youtubeImg1 {
+  /* border-radius: 12px; */
+  /* background-color: #DAF2FF; */
+  /* background-color: red; */
+  width: 21%;
+  height: 28vh;
+}
+.youtubeImg2{
+  /* background-color: red; */
+  width: 21%;
+  height: 28vh;
+}
+.youtubeImg3{
+  /* background-color: red; */
+  width: 21%;
+  height: 28vh;
+}
+.youtubeCompleteSection{
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-top: 23px;
 }
