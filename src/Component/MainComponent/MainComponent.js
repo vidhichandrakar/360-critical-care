@@ -10,12 +10,14 @@ import Analytics from "../Features/AnalyticsInfo";
 import PlanDescription from "../Features/PlanDescription";
 import NeetGroupImg from "../Features/NeetGroupImg";
 import Testimonial from "../Features/Testimonial";
+import AllCourseWOL from "../AllCourse/AllCourseWOL"
 
 
 const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
+      {/* <AllCourseWOL /> */}
       <NavHome />
       <CategoryBox/>
       <Analytics/>

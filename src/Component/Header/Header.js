@@ -26,6 +26,52 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import DropDown from "./NestedMenu";
 import { Link } from "react-router-dom";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import SearchIcon from '@mui/icons-material/Search';
+import InputBase from '@mui/material/InputBase';
+
+
+const Search = styled('div')(({ theme }) => ({
+  position: 'relative',
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  '&:hover': {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+  },
+  marginLeft: 0,
+  width: '100%',
+  [theme.breakpoints.up('sm')]: {
+    marginLeft: theme.spacing(1),
+    width: 'auto',
+  },
+}));
+
+const SearchIconWrapper = styled('div')(({ theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: '100%',
+  position: 'absolute',
+  pointerEvents: 'none',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+}));
+
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  color: 'inherit',
+  width: '100%',
+  '& .MuiInputBase-input': {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create('width'),
+    [theme.breakpoints.up('sm')]: {
+      width: '12ch',
+      '&:focus': {
+        width: '20ch',
+      },
+    },
+  },
+}));
+
 
 
 function Header() {
@@ -89,6 +135,7 @@ function Header() {
               >
                 <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
               </MenuItem>
+
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
@@ -103,6 +150,7 @@ function Header() {
                   </Typography>
                 </Link>
               </MenuItem>
+
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
@@ -118,6 +166,23 @@ function Header() {
                   </Typography>
                 </Link>
               </MenuItem>
+{/* 
+              <MenuItem
+                key={1}
+                onClick={handleCloseNavMenu}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+              >
+                <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
+                  {" "}
+                  <Typography
+                    textAlign="center"
+                    className="menuText"
+                  >
+                    Blog
+                  </Typography>
+                </Link>
+              </MenuItem> */}
+
             </Menu>
           </Box>
          <Link to="/web"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
@@ -155,9 +220,10 @@ function Header() {
               sx={{
                 color: "black",
                 fontWeight: "600",
-                marginLeft: "3%",
-                fontSize: "1.1em",
-                marginTop: "1.2%",
+                marginLeft: "5%",
+                // fontSize: "1.1em",
+                marginTop: "9px",
+                fontSize: "16px",
                 fontFamily: "Arial, Helvetica, sans-serif "
               }}
             >
@@ -165,19 +231,20 @@ function Header() {
                 to="/About-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                {" "}
-                About Us{" "}
+                About Us
               </Link>
             </Typography>
+
             <Typography
               key={"3"}
               onClick={handleCloseNavMenu}
               sx={{
                 color: "black",
                 fontWeight: "600",
-                marginLeft: "3%",
-                fontSize: "1.1em",
-                marginTop: "1.2%",
+                marginLeft: "5%",
+                marginTop: "9px",
+                fontSize: "16px",
+                lineHeight: "auto",
                 fontFamily: "Arial, Helvetica, sans-serif "
               }}
             >
@@ -185,10 +252,42 @@ function Header() {
                 to="/Contact-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                {" "}
                 Contact Us
               </Link>
             </Typography>
+
+            <Typography
+              key={"3"}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: "black",
+                fontWeight: "600",
+                marginLeft: "6%",
+                marginTop: "9px",
+                fontSize: "16px",
+                fontFamily: "Arial, Helvetica, sans-serif "
+              }}
+            >
+              <Link
+                to="/Contact-us"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                Blog
+              </Link>
+            </Typography>
+
+
+            <Search className="headerSearchBar">
+            <SearchIconWrapper>
+              <SearchIcon sx={{color:"grey"}}/>
+            </SearchIconWrapper>
+
+            <StyledInputBase
+              placeholder="Search Course"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </Search>
+
           </Box>
 
           <Box sx={{ flexGrow: 0 ,position:"fixed",right:0}} className="loginContainer">

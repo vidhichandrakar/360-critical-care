@@ -8,6 +8,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { DropdownMenuItem, DropdownNestedMenuItem } from "../Header/NestedDropdown";
 import SubCategory from "./SubCategory";
 import SubCAtegoryBox from "./SubCAtegoryBox";
+import img11 from "../../Media/Images/BrainThinking.png"
 
 const CategoryBox = () => {
   const [categorySelected,setCategorySelected]=useState("Category_One");
@@ -17,11 +18,36 @@ const CategoryBox = () => {
   }
   return (
     <Box className="categoryMainBox">
+      <Box className="breifesInHomePage">
+        <Box>
+          <img scr={img11} width={50} height={50}/>
+          <p>24 X 7 Access to exam debriefs</p>
+        </Box>
+        <Box className="verticalDivider"></Box>
+        <Box>
+        <img scr={img11} width={50} height={50}/>
+          <p>Multiple Free Lectures</p>
+        </Box>
+        <Box className="verticalDivider"></Box>
+        <Box>
+        <img scr={img11} width={50} height={50}/>
+          <p>One to one Interection</p>
+        </Box>
+        <Box className="verticalDivider"></Box>
+        <Box>
+        <img scr={img11} width={50} height={50}/>
+          <p>All in one App</p>
+        </Box>
+      </Box>
+
+
       <Typography className="catHeading">Explore <span style={{ color: "#199884" }}>Category</span></Typography>
+      {/* <Typography>360CC is preparing students for 4 exam categories.</Typography> */}
+      <b>360CC is preparing students for 4 exam categories.</b>
       <div className="category">
         <div class="rowDesign">
         
-        <div className="cardBox">  
+        {/* <div className="cardBox">  
         <Box className={categorySelected==="Category_One"?"catDrop highlight":"catDrop"} >
             <DropdownNestedMenuItem label="DrNB/DM/IFCCM" onClick={()=>handleCategory("Category_One")}
               rightIcon={<KeyboardArrowRightIcon />}
@@ -89,7 +115,7 @@ const CategoryBox = () => {
 
               ]} />
           </Box>
-          </div>
+          </div> */}
         
        <div className=" rightBoxCat">
         <SubCategory categorySelected={categorySelected}/>
