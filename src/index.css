@@ -78,8 +78,9 @@ code {
   transform-style: preserve-3d;
   height: auto !important;
   width: 100%;
+  /* width: 80%; */
   z-index: 78 !important;
-  margin-top: 3%;
+  margin-top: 65px;
 }
 .cardHome {
   width: 79% !important;
@@ -171,10 +172,12 @@ code {
 /* Testimonials css start */
 
 .TestimonialsMain {
-  margin-top: 59px;
+  margin-top: 33px;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
+  padding: 30px 9px;
+  background-color: rgb(25, 152, 132);;
 }
 .boxUnderHeading {
   width: 20%;
@@ -188,6 +191,8 @@ code {
 .Arrow2 {
   margin-left: 3% !important;
   font-size: 2.8rem !important;
+  margin-top: 147px;
+  color: #ffffff;
 }
 @media (max-width: 1280px) {
   .TestimonialsMain {
@@ -237,9 +242,11 @@ code {
 }
 
 .secondHeading {
-  font-size: 1.7rem;
-  font-weight: 400%;
+  font-size: 1.7rem !important;
+  /* font-weight: 400%; */
   margin-top: 1.5%;
+ color: #ffffff;
+    font-weight: bolder !important;
 }
 
 .theMasters {
@@ -256,19 +263,23 @@ code {
   flex-direction: row;
   margin: auto;
   justify-content: center;
+  /* background-color: rgb(25, 152, 132);; */
 }
 .TestimonialsLeftCard {
   margin: 35px 36px;
-  background-color: rgb(243 243 243);
+  /* background-color: rgb(243 243 243); */
+  background-color: #ffffff;
   width: 45%;
   text-align: left;
   font-size: 1.2rem;
   font-weight: 300;
   padding: 0% 0;
+  border-radius: 10px !important;
+  height: 43vh;
 }
 
 .testimonialPara {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-bottom: 1%;
   height: 22vh;
 }
@@ -307,13 +318,15 @@ code {
 
 .Arrow1 {
   font-size: 2.8rem !important;
+  margin-top: 147px;
+  color: #ffffff;
 }
 .Arrow1:hover {
-  color:#199884;
+  /* color:#199884; */
   cursor: pointer;
 }
 .Arrow2:hover {
-  color:#199884;
+  /* color:#199884; */
   cursor: pointer;
 }
 
@@ -911,7 +924,7 @@ font-size: 1.3em !important;
   display: flex;
   flex-direction: row;
   gap: 2% !important;
-  width: 40vw;
+  width: 40vw !important;
     height: 19vh !important;
     align-items: center !important;
     justify-content: center !important;
@@ -1089,7 +1102,7 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #DAF2FF;
   /* width: 50%; */
-  height: 28vh;
+  height: 34vh;
 }
 .studyMaterials h5{
   text-align: start;
@@ -1100,7 +1113,7 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #FFEFD2;
   /* width: 50%; */
-  height: 28vh;
+  height: 34vh;
 }
 .debriefVideos h5{
   text-align: start;
@@ -1111,7 +1124,7 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #D3FFEE;
   /* width: 50%; */
-  height: 28vh;
+  height: 34vh;
 }
 .freeeMockTests h5{
   text-align: start;
@@ -1150,12 +1163,24 @@ font-size: 1.3em !important;
   }
   .studyMaterials{
     height: 15vh !important;
+    width: 71vw !important;
+  }
+  .studyMaterials h5{
+    font-size: 1.6rem !important;
   }
   .debriefVideos{
     height: 15vh !important;
+    width: 71vw !important;
+  }
+  .debriefVideos h5 {
+    font-size: 1.6rem !important;
   }
   .freeeMockTests{
     height: 15vh !important;
+    width: 71vw !important;
+  }
+  .freeeMockTests h5{
+    font-size: 1.6rem !important;
   }
 
   .allExploreCatCards{
@@ -1174,4 +1199,35 @@ font-size: 1.3em !important;
   .youtubeImages{
     grid-template-columns: 1fr !important;
   }
+
+  .breifesInHomePage{
+    height: 5vh !important;
+    margin-left: 120px !important;
+  }
+  .appAdvertisement {
+    margin-left: 52px !important;
+    width: 90% !important;
+   }
+   .exploreTechEnabledBox {
+    height: 19vh !important;
+   }
+   /* .homeImage img{
+    width: 80% !important;
+   } */
+   .aboutExploreClasses{
+    /* WHOLE WIDTH FIXED 'COZ OF THIS  */
+    width: 0% !important; 
+   } 
+   .TestimonialsLeftCard{
+    height: 14vh !important;
+   }
+
+   .verticalDivider {
+    height: 4vh !important;
+   }
+}
+
+.scndImgOfHomePage{
+  margin-top: 60px !important;
+  width: 80% !important;
 }

@@ -20,7 +20,7 @@ const CategoryBox = () => {
     <Box className="categoryMainBox">
       <Box className="breifesInHomePage">
         <Box>
-          <img scr={img11} width={50} height={50}/>
+          <img scr="b75e0c1a-6893-4b31-8d79-f37a1c72115a.png" width={50} height={50}/>
           <p>24 X 7 Access to exam debriefs</p>
         </Box>
         <Box className="verticalDivider"></Box>

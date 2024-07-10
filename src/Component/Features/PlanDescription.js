@@ -22,16 +22,16 @@ const PlanDescription = ({}) => {
 
       <Box className="studyResourceImages">
          <Box className="studyMaterials">
-           <h5>Study Materials</h5>
-           <img src={bookImg} width={90} height={90} />
+           <h5><b>Study Materials</b></h5>
+           <img src={bookImg} width={110} height={120} />
          </Box>
          <Box className="debriefVideos">
-         <h5>Debrief Videos</h5>
-         <img src={debriefImg} width={90} height={90} />
+         <h5><b>Debrief Videos</b></h5>
+         <img src={debriefImg} width={110} height={120} />
          </Box>
          <Box className="freeeMockTests">
-         <h5>Free Mock Tests</h5>
-         <img src={freeMockTest} width={90} height={90} />
+         <h5><b>Free Mock Tests</b></h5>
+         <img src={freeMockTest} width={110} height={120} />
          </Box>
       </Box>
     </Box>
