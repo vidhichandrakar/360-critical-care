@@ -40,22 +40,6 @@ const steps = [
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
   },
-  // {
-  //   id: "4",
-  //   label: "Abhinav jain",
-  //   description: `Try out different ad text to see what brings in the most customers,
-  //             and learn how to enhance your ads using features like ad extensions.
-  //             If you run into any problems with your ads, find out how to tell if
-  //             they're running and how to resolve approval issues.`,
-  // },
-  // {
-  //   id: "5",
-  //   label: "Surendra kumar",
-  //   description: `Try out different ad text to see what brings in the most customers,
-  //             and learn how to enhance your ads using features like ad extensions.
-  //             If you run into any problems with your ads, find out how to tell if
-  //             they're running and how to resolve approval issues.`,
-  // },
 ];
 
 const Analytics = ({}) => {
@@ -115,21 +99,6 @@ const Analytics = ({}) => {
       </Box>
 
       <div className="TestimonialsMain">
-        {/* <h4 className="TestimonialsHeading">Testimonials</h4> */}
-        {/* <Container fixed>
-          <Box
-            className="boxUnderHeading"
-            sx={{
-              bgcolor:
-                "linear-gradient(90deg, #18568f 0%, #18568f 35%, #199884 100%)",
-              height: "0.5vh",
-            }}
-          />
-        </Container> */}
-
-        {/* <h1 className="secondHeading">
-          <span className="hereItFrom">Students of 360 Critical Care</span>
-        </h1> */}
         <Typography className="secondHeading">
           Students of 360 Critical Care
         </Typography>
