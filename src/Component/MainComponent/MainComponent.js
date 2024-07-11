@@ -11,6 +11,7 @@ import PlanDescription from "../Features/PlanDescription";
 import NeetGroupImg from "../Features/NeetGroupImg";
 import Testimonial from "../Features/Testimonial";
 import AllCourseWOL from "../AllCourse/AllCourseWOL"
+import ComprehensivePreparatoryCourse from "../Features/ComprehensivePreparatoryCourse";
 
 
 const MainComponent = ()=>{
@@ -23,9 +24,10 @@ const MainComponent = ()=>{
       <Analytics/>
       <PlanDescription/>
       <NeetGroupImg />
-      <Testimonials/>
+      {/* <Testimonials/> */}
       {/* <Testimonial /> */}
-      <Footer />
+      {/* <ComprehensivePreparatoryCourse /> */}
+      {/* <Footer /> */}
     </Fragment>
   )
 }
