@@ -79,7 +79,7 @@ code {
   height: auto !important;
   width: 100%;
   z-index: 78 !important;
-  margin-top: 3%;
+  margin-top: 9%;
 }
 .cardHome {
   width: 79% !important;
@@ -666,6 +666,21 @@ font-size: 1.3em !important;
   .PopularCourseBox{
     grid-template-columns: 1fr 1fr !important;
   }
+  .PopularCardBox {
+    padding: 10px 20px !important;
+    width: 90%;
+}
+.Para1{
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+}
+.Para2{
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+.HeadimgBox{
+  margin-top: 9% !important;
+}
   .leftSubDesign {
     font-size: 1em;
   }
