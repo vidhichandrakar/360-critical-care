@@ -263,7 +263,6 @@ code {
   flex-direction: row;
   margin: auto;
   justify-content: center;
-  /* background-color: rgb(25, 152, 132);; */
 }
 .TestimonialsLeftCard {
   margin: 35px 36px;
@@ -1230,4 +1229,90 @@ font-size: 1.3em !important;
 .scndImgOfHomePage{
   margin-top: 60px !important;
   width: 80% !important;
+}
+
+
+/* ComprehensivePreparatoryCourse PAGE START- second page */
+.abt360CriticalCare{
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 9% !important; */
+  margin: 50px;
+}
+.abt360CriticalCare-right{
+  text-align: left !important;
+  margin-left: 31px;
+}
+
+.OurfoundersCard {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  background-color: #199884;
+}
+.OurFoundersLeftCard {
+  margin: 35px 36px;
+  /* background-color: rgb(243 243 243); */
+  background-color: #ffffff;
+  width: 45%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 2% 1%;
+  border-radius: 10px !important;
+  height: 49vh;
+  /* border: 1px solid black; */
+}
+
+.ourFoundersPara {
+  font-size: 0.9rem;
+  padding-bottom: 1%;
+  height: 22vh;
+}
+.ourFoundersHorizontalLine{
+  width: 81%;
+  height: 1px;
+  margin: 7px 34px;
+  background-color: #1B2124 !important;
+}
+.ourFounderHead {
+  font-size: 1.7em !important;
+  font-weight: bolder !important;
+  margin: 22px 0px !important;
+}
+.whyChooseUsSection{
+  display: flex;
+  flex-direction: row;
+  background-color: #002C4F;
+  color: #ffffff;
+  width: 100%;
+  height: 40vh;
+}
+.whyChooseUsHead {
+  font-size: 1.7em !important;
+  font-weight: bolder !important;
+  margin: 34px 0px !important;
+}
+.whyChooseUsVerticalLine{
+  width: 0.5px !important;
+  height: 35vh !important;
+  margin-top: 18px;
+  background-color: #ffffff !important;
+}
+.countryWiseStuBox{
+  width: 29%;
+}
+.percentageOfSuccess {
+  display: flex;
+  flex-direction: row;
+  gap: 2% !important;
+  width: 40vw !important;
+    height: 19vh !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 467px;
+    /* margin-top: 5% !important; */
+    margin: 6% 28% !important;
+    background-color: #ffffff !important;
 }

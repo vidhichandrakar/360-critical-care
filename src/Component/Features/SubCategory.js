@@ -94,13 +94,11 @@ const SubCategory = ({ categorySelected }) => {
       </div>
 
         <Box className="exploreTechEnabledBox">
-          {/* <img src={} width={} height={} /> */}
           <h2 sx={{color:"#ffffff"}}><b>Explore Tech-Enabled Online Classes</b></h2>
           <p sx={{color:"#ffffff"}}>Creating new benchmarks in learning expirences</p>
 
           <Box className="aboutExploreClasses">
             <Box sx={{backgroundColor:"#FFF3E3", borderRadius:"9px", width:"135px", height:"114px"}}>
-              {/* <img scr={img11} width={50} height={50}/> */}
               <h1>800+</h1>
               <p>Students</p>
             </Box>
@@ -120,9 +118,7 @@ const SubCategory = ({ categorySelected }) => {
           </Box>
         </Box>
 
-      {/* <div> */}
         <img src={ExcelInCC} height={240} className="excelInCriticalcareImg"/>
-      {/* </div> */}
     </Fragment>
   );
 };

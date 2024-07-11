@@ -19,14 +19,14 @@ const MainComponent = ()=>{
     <Fragment>
       <Header/>
       {/* <AllCourseWOL /> */}
-      <NavHome />
-      <CategoryBox/>
-      <Analytics/>
-      <PlanDescription/>
-      <NeetGroupImg />
+      {/* <NavHome /> */}
+      {/* <CategoryBox/> */}
+      {/* <Analytics/> */}
+      {/* <PlanDescription/> */}
+      {/* <NeetGroupImg /> */}
       {/* <Testimonials/> */}
       {/* <Testimonial /> */}
-      {/* <ComprehensivePreparatoryCourse /> */}
+      <ComprehensivePreparatoryCourse />
       {/* <Footer /> */}
     </Fragment>
   )
