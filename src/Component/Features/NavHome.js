@@ -15,12 +15,11 @@ const NavHome = () => {
         <div className="homeImage">
           <img src={Image1} />
         </div>
-        <div>
+
           <img src={Image2} 
           // width={1110}
            height={600}
-            sx={{mt: "12%", width:"100%"}}/>
-        </div>
+           className="scndImgOfHomePage"/>
       </div>
     </Fragment>
   );
