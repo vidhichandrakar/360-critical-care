@@ -21,6 +21,7 @@ const ComprehensivePreparatoryCourse = () => {
         src={PrepatoryImg}
         width={1526}
         height={360}
+        className="aboutUsFirstImg"
         //   style={Margin="23px"}
       />
 
