@@ -3,14 +3,11 @@ import React from "react";
 import GoogleLogo from "../../Media/Media_Image/play-store.png";
 import AppLogo from "../../Media/Media_Image/app-store.png";
 import Container from "@mui/material/Container";
-// import Box from "@mui/material/Box";
 import arrowright from "../../Media/Images/arrow-right.png";
 import arrowleft from "../../Media/Images/arrow-left.png";
-
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-// import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
@@ -146,20 +143,6 @@ const Analytics = ({}) => {
             disabled={activeStep === maxSteps - 1}
           />
         </div>
-
-        {/* <div className="TestimonialsArrow">
-          <KeyboardBackspaceIcon
-            className="Arrow1"
-            onClick={handleBack}
-            disabled={activeStep === 0}
-          />
-
-          <EastIcon
-            className=" Arrow2"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          />
-        </div> */}
       </div>
     </>
   );

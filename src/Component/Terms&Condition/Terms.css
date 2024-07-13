@@ -34,14 +34,12 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
-    /* color: #18568f; */
 }
 .AquaColor{
     color: #199884 !important;
 }
 .text{
     text-align: left;
-    /* margin-top: 10%; */
 }
 .text li{
     font-size: 1rem !important;

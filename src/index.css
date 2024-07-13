@@ -61,7 +61,7 @@ code {
 .LoginButton {
   width: 30;
   height: 30;
-  background-color: #18568f !important;
+  background-color: #002C4F !important;
 }
 .logo {
   width: 231px;
@@ -78,7 +78,6 @@ code {
   transform-style: preserve-3d;
   height: auto !important;
   width: 100%;
-  /* width: 80%; */
   z-index: 78 !important;
   margin-top: 65px;
 }
@@ -243,7 +242,6 @@ code {
 
 .secondHeading {
   font-size: 1.7rem !important;
-  /* font-weight: 400%; */
   margin-top: 1.5%;
  color: #ffffff;
     font-weight: bolder !important;
@@ -266,7 +264,6 @@ code {
 }
 .TestimonialsLeftCard {
   margin: 35px 36px;
-  /* background-color: rgb(243 243 243); */
   background-color: #ffffff;
   width: 45%;
   text-align: left;
@@ -349,7 +346,6 @@ code {
 .subCatHead {
   font-weight: 500 !important;
   font-family: Arial, Helvetica, sans-serif !important;
-  /* font-family: "Inter" !important; */
   font-size: 1.1em !important;
   height: 60px !important;
 }
@@ -1287,7 +1283,7 @@ font-size: 1.3em !important;
   background-color: #002C4F;
   color: #ffffff;
   width: 100%;
-  height: 40vh;
+  height: 44vh;
 }
 .whyChooseUsHead {
   font-size: 1.7em !important;
@@ -1296,8 +1292,9 @@ font-size: 1.3em !important;
 }
 .whyChooseUsVerticalLine{
   width: 0.5px !important;
-  height: 35vh !important;
+  height: 38vh !important;
   margin-top: 18px;
+  margin-right: 14%;
   background-color: #ffffff !important;
 }
 .countryWiseStuBox{
@@ -1319,17 +1316,94 @@ font-size: 1.3em !important;
 .aboutUsFirstImg{
   margin-top: 4%;
 }
+.abt360CriticalCare-typography{
+  margin-top: 3% !important;
+}
 
 @media (max-width: 990px) {
-  .OurFoundersLeftCard {
-    height: 20vh !important;
+  .OurfoundersCard {
+    /* height: 20vh !important; */
+    justify-content: center !important;
+    display: grid !important;
     grid-template-columns: 1fr !important;
+    align-items: center !important;
+    text-align: center !important;
   }
+  .OurFoundersLeftCard {
+   height: 18vh !important;
+   /* align-items: center !important; */
+   /* text-align: center !important; */
+   /* justify-content: center !important; */
+}
   .whyChooseUsSection {
-    height: 20vh !important;
+    /* height: 54vh !important; */
+    display: grid;
+    grid-template-columns: 1fr !important;
   }
   .aboutUsFirstImg {
     margin-top: 9% !important;
     width: 100% !important;
 }
+.abt360CriticalCare{
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+}
+.abt360CriticalCare-right{
+  margin-top: 36px !important;
+  font-size: 1.5rem !important;
+  text-align: center !important;
+}
+.abt360CriticalCare img {
+  width: 100% !important;
+}
+.percentageOfSuccess{
+  /* width: 64vw !important; */
+  height: 26vh !important;
+  /* margin-left: 17% !important; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10% !important;
+}
+/* .percentageOfSuccess h1{
+  font-size: 2rem !important;
+} */
+.css-r8b0qb{
+  width: 44vw !important;
+    height: 265px !important;
+}
+.css-i2a5r0{
+  width: 44vw !important;
+  height: 265px !important;
+}
+.css-147sbqb{
+  width: 44vw !important;
+  height: 265px !important;
+}
+.css-1r9j7yv{
+  width: 44vw !important;
+  height: 265px !important;
+}
+.abt360CriticalCare-typography{
+  font-size: 1.3rem !important;
+}
+.countryWiseStuBox {
+  width: 100%;
+  height: 0px !important;
+  font-size: 2.5rem !important;
+}
+.whyChooseUsVerticalLine{
+  display: none !important;
+}
+
+.ourFounderHead {
+  font-size: 2.7rem !important;
+}
+.whyChooseUsHead{
+  font-size: 2.7rem !important;
+}
+
+/* .whyChooseUsSection{
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+} */
 }

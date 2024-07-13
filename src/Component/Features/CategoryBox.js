@@ -1,7 +1,6 @@
 import { Typography, Box, Card } from "@mui/material";
 import React, { useState } from "react";
 import DropDown from "../Header/NestedMenu";
-
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -42,7 +41,6 @@ const CategoryBox = () => {
 
 
       <Typography className="catHeading">Explore <span style={{ color: "#199884" }}>Category</span></Typography>
-      {/* <Typography>360CC is preparing students for 4 exam categories.</Typography> */}
       <b>360CC is preparing students for 4 exam categories.</b>
       <div className="category">
         <div class="rowDesign">
