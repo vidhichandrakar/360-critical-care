@@ -64,9 +64,9 @@ const Analytics = ({}) => {
           <Typography className="appAdvertisementHead">
             Join 15 Million students on the app today!
           </Typography>
-          <Typography>Live & recorded classes available at ease</Typography>
-          <Typography>dashboard for progress tracking</Typography>
-          <Typography>
+          <Typography className="paraFontSize-forMobileView-common">Live & recorded classes available at ease</Typography>
+          <Typography className="paraFontSize-forMobileView-common">dashboard for progress tracking</Typography>
+          <Typography className="paraFontSize-forMobileView-common">
             Millions of practice questions at your fingertips
           </Typography>
           <div className="googlePlay-n-appStore">
@@ -99,7 +99,7 @@ const Analytics = ({}) => {
         <Typography className="secondHeading">
           Students of 360 Critical Care
         </Typography>
-        <Typography sx={{ color: "#ffffff", fontSize: "0.9rem" }}>
+        <Typography sx={{ color: "#ffffff", fontSize: "0.9rem" }} className="paraFontSize-forMobileView-common">
           Hear from our students
         </Typography>
 
@@ -109,6 +109,8 @@ const Analytics = ({}) => {
             onClick={handleBack}
             disabled={activeStep === 0}
           />
+
+          <Box className="studentsSliderBoxes">
           <Box
             sx={{ maxWidth: 400, flexGrow: 1 }}
             className="TestimonialsLeftCard"
@@ -136,6 +138,8 @@ const Analytics = ({}) => {
               <b> {steps[activeStep]?.description}</b>
             </p>
           </Box>
+          </Box>
+
 
           <ArrowForwardIosIcon
             className=" Arrow2"

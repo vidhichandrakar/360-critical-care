@@ -16,13 +16,13 @@ const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
-      <AllCourseWOL />
-      {/* <NavHome />
+      {/* <AllCourseWOL /> */}
+      <NavHome />
       <CategoryBox/>
       <Analytics/>
       <PlanDescription/>
       <NeetGroupImg />
-      <Testimonials/> */}
+      <Testimonials/>
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
       <Footer />

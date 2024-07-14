@@ -51,7 +51,7 @@ const SubCategory = ({ categorySelected }) => {
       <div className="allExploreCatCards">
         <Box className="drNBCompleteBox">
           <div className="drNBCompleteBox-left">
-            <h5>DrNB/DM/IFCCM Critical Care</h5>
+            <h5><b>DrNB/DM/IFCCM Critical Care</b></h5>
             <div className="drNBSubSections">
               <div className="drNBTwoOptions">
                 <Box className="drNBOptions">Top Long Course</Box>
@@ -82,7 +82,7 @@ const SubCategory = ({ categorySelected }) => {
         </Box>
 
         <Box className="drNBCompleteBox">
-          <h5>IDCCM</h5>
+          <h5><b>IDCCM</b></h5>
           <div className="drNBSubSections">
             <div className="drNBTwoOptions">
               <Box className="drNBOptions">Top Long Course</Box>
@@ -95,7 +95,7 @@ const SubCategory = ({ categorySelected }) => {
 
         <Box className="exploreTechEnabledBox">
           <h2 sx={{color:"#ffffff"}}><b>Explore Tech-Enabled Online Classes</b></h2>
-          <p sx={{color:"#ffffff"}}>Creating new benchmarks in learning expirences</p>
+          <p sx={{color:"#ffffff"}} className="paraFontSize-forMobileView-common">Creating new benchmarks in learning expirences</p>
 
           <Box className="aboutExploreClasses">
             <Box sx={{backgroundColor:"#FFF3E3", borderRadius:"9px", width:"135px", height:"114px"}}>

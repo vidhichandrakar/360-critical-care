@@ -262,6 +262,13 @@ code {
   margin: auto;
   justify-content: center;
 }
+.studentsSliderBoxes{
+  display: flex;
+  /* flex-direction: column !important; */
+  /* margin: auto; */
+  margin-left: 35px !important;
+  justify-content: center;
+}
 .TestimonialsLeftCard {
   margin: 35px 36px;
   background-color: #ffffff;
@@ -919,8 +926,8 @@ font-size: 1.3em !important;
   display: flex;
   flex-direction: row;
   gap: 2% !important;
-  width: 40vw !important;
-    height: 19vh !important;
+  width: 39vw !important;
+    height: 21vh !important;
     align-items: center !important;
     justify-content: center !important;
     margin-left: 467px;
@@ -929,14 +936,17 @@ font-size: 1.3em !important;
 }
 .exploreTechEnabledBox{
   background-color: lightblue !important;
-  width: 100vw;
-    margin-left: -57px;
+  /* width: 100vw; */
+  min-width: 100vw;
+    margin-left: -42px;
     margin-top: 72px;
     padding-top: 32px;
 }
 .excelInCriticalcareImg{
   margin-left: -33px;
-  width: 100% !important;
+  /* width: 100% !important; */
+  min-width: 99vw;
+  height: 32%;
 }
 .verticalDivider{
   background-color: #c2c2c2 !important;
@@ -1042,6 +1052,7 @@ font-size: 1.3em !important;
   padding: 23px 41px;
   width: 68%;
     margin-left: 260px;
+    gap: 14% !important;
 }
 .appAdvertisementHead{
   font-size: 1.5rem !important;
@@ -1145,6 +1156,9 @@ font-size: 1.3em !important;
   margin-top: 23px;
   margin-bottom: 22px;
 }
+.paraFontSize-forMobileView-common{
+  /* font-size: var(--subHeading) !important; */
+}
 
 /* @media (max-width: 860px) {
   .studyResourceImages{
@@ -1153,6 +1167,12 @@ font-size: 1.3em !important;
   }
 } */
 @media (max-width: 990px) {
+  .homeImage img {
+    height: 16vh !important;
+  }
+  .paraFontSize-forMobileView-common{
+    font-size: var(--subHeading) !important;
+  }
   .studyResourceImages{
     grid-template-columns: 1fr !important;
   }
@@ -1161,21 +1181,24 @@ font-size: 1.3em !important;
     width: 71vw !important;
   }
   .studyMaterials h5{
-    font-size: 1.6rem !important;
+    /* font-size: 1.6rem !important; */
+    font-size: var(--subHeading) !important;
   }
   .debriefVideos{
     height: 15vh !important;
     width: 71vw !important;
   }
   .debriefVideos h5 {
-    font-size: 1.6rem !important;
+    /* font-size: 1.6rem !important; */
+    font-size: var(--subHeading) !important;
   }
   .freeeMockTests{
     height: 15vh !important;
     width: 71vw !important;
   }
   .freeeMockTests h5{
-    font-size: 1.6rem !important;
+    /* font-size: 1.6rem !important; */
+    font-size: var(--subHeading) !important;
   }
 
   .allExploreCatCards{
@@ -1192,16 +1215,41 @@ font-size: 1.3em !important;
     margin-bottom: -364px !important;
   }
   .youtubeImages{
-    grid-template-columns: 1fr !important;
+    display: grid !important;
+    /* grid-template-columns: 1fr !important; */
+  }
+  .youtubeImg1 {
+    width: 21%;
+    height: 11vh;
+  }
+  .youtubeImg2{
+    width: 21%;
+    height: 11vh;
+  }
+  .youtubeImg3{
+    width: 21%;
+    height: 30vh;
+  }
+  .secondHeading {
+    font-size: 3rem !important;
+  }
+  .studentsSliderBoxes{
+    display: flex;
+    flex-direction: column !important;
+    /* margin: auto; */
+    margin-left: 0px !important;
+    justify-content: center;
+    align-items: center !important;
   }
 
   .breifesInHomePage{
-    height: 5vh !important;
+    height: 8vh !important;
     margin-left: 120px !important;
   }
   .appAdvertisement {
     margin-left: 52px !important;
     width: 90% !important;
+    margin-top: 22% !important;
    }
    .exploreTechEnabledBox {
     height: 19vh !important;
@@ -1211,7 +1259,10 @@ font-size: 1.3em !important;
    } */
    .aboutExploreClasses{
     /* WHOLE WIDTH FIXED 'COZ OF THIS  */
-    width: 0% !important; 
+    width: 6% !important;
+        height: 26vh !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
    } 
    .TestimonialsLeftCard{
     height: 14vh !important;
@@ -1220,11 +1271,25 @@ font-size: 1.3em !important;
    .verticalDivider {
     height: 4vh !important;
    }
+   .excelInCriticalcareImg{
+    height: 0% !important;
+   }
+   .catHeading {
+    font-size: 3em !important;
 }
 
 .scndImgOfHomePage{
   margin-top: 60px !important;
   width: 80% !important;
+}
+.appAdvertisementHead {
+  font-size: 2.5rem !important;
+}
+.studyResource {
+  font-size: 3em !important;
+}
+.youtubeHead {
+  font-size: 2em !important;
 }
 
 
@@ -1319,6 +1384,12 @@ font-size: 1.3em !important;
 .abt360CriticalCare-typography{
   margin-top: 3% !important;
 }
+.ourFounderAbout{
+  font-size: 0.7rem !important;
+  padding: 0px 0px !important;
+  color: #002C4F;
+}
+}
 
 @media (max-width: 990px) {
   .OurfoundersCard {
@@ -1329,8 +1400,13 @@ font-size: 1.3em !important;
     align-items: center !important;
     text-align: center !important;
   }
+  .ourFoundersHorizontalLine {
+    width: 92% !important;
+  }
   .OurFoundersLeftCard {
    height: 18vh !important;
+   width: 93% !important;
+   border-radius: 27px !important;
    /* align-items: center !important; */
    /* text-align: center !important; */
    /* justify-content: center !important; */
@@ -1357,9 +1433,7 @@ font-size: 1.3em !important;
   width: 100% !important;
 }
 .percentageOfSuccess{
-  /* width: 64vw !important; */
   height: 26vh !important;
-  /* margin-left: 17% !important; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10% !important;
@@ -1384,7 +1458,8 @@ font-size: 1.3em !important;
   height: 265px !important;
 }
 .abt360CriticalCare-typography{
-  font-size: 1.3rem !important;
+  /* font-size: 2.1rem !important; */
+  font-size: var(--MainHeading) !important;
 }
 .countryWiseStuBox {
   width: 100%;
@@ -1406,4 +1481,24 @@ font-size: 1.3em !important;
   display: grid !important;
   grid-template-columns: 1fr !important;
 } */
+.css-1x1xx5k{
+  /* max-width: none !important; */
+  min-width: 73vw !important;
 }
+.ourFounderAbout{
+  font-size: var(--subHeading) !important;
+
+}
+.TestimonialsLeftCard p {
+  /* font-size: 1.7rem !important; */
+  font-size: var(--subHeading) !important;
+}
+}
+
+:root {
+  --MainHeading:26px;
+  --subHeading:24px;
+  --ScndHeading:20px;
+  --Heading:18px;
+  --small:16px;
+ }

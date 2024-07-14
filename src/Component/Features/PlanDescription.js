@@ -15,7 +15,7 @@ const PlanDescription = ({}) => {
       <Typography className="studyResource">
         Study <span style={{ color: "#199884" }}>Resources</span>
       </Typography>
-      <Typography>
+      <Typography className="paraFontSize-forMobileView-common">
         A diverse array of laerning materials to enhance your educational
         journey.
       </Typography>

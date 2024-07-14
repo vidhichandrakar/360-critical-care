@@ -67,7 +67,9 @@ const Aboutus = () => {
           <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
             Director
           </Typography>
-          <Typography sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}>
+          <Typography 
+          // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }} 
+          className="ourFounderAbout">
             MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
             Critical care Fellowship (University of Toronto) | MBA (Healthcare
             Management) | Associate Director and HOD | Department of Critical
@@ -87,7 +89,9 @@ const Aboutus = () => {
           <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
             Director
           </Typography>
-          <Typography sx={{ fontSize: "0.7rem", color:"#002C4F" }}>
+          <Typography 
+          // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
+          className="ourFounderAbout">
             “My aim is to democratize and transform the education landscape in
             Bharat.”
           </Typography>
