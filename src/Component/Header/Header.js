@@ -74,7 +74,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 
-function Header() {
+const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -91,6 +91,7 @@ function Header() {
   };
 
   return (
+    <>
     <AppBar position="fixed" className="AppHeader">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -298,6 +299,202 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
+
+
+
+
+    <AppBar position="fixed" className="AppHeader-mobileView">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Box sx={{  display: { xs: "flex", md: "none" } }}>
+           
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon className="Hamburger"/>
+              </IconButton>
+            <Box>
+              <Link to="/Critical-Care"><img src={Logo} className="Responsivelogo"/></Link> 
+            </Box>
+            {/* <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+              className="menuSize"
+            >
+              <MenuItem
+                key={1}
+                onClick={handleCloseNavMenu}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+              >
+                <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
+              </MenuItem>
+
+              <MenuItem
+                key={1}
+                onClick={handleCloseNavMenu}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
+              > 
+                <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}> 
+                  <Typography
+                    textAlign="center"
+                    className="menuText"
+                  >
+                    About Us
+                  </Typography>
+                </Link>
+              </MenuItem>
+
+              <MenuItem
+                key={1}
+                onClick={handleCloseNavMenu}
+                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+              >
+                <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
+                  {" "}
+                  <Typography
+                    textAlign="center"
+                    className="menuText"
+                  >
+                    Contact Us
+                  </Typography>
+                </Link>
+              </MenuItem>
+
+            </Menu> */}
+          </Box>
+         <Link to="/web"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
+        
+        
+          {/* <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "Inter",
+              fontWeight: 600,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          ></Typography> */}
+          {/* <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              marginLeft: "3%",
+            }}
+          >
+            <Box>
+              <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
+            </Box>
+            <Typography
+              key={"2"}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: "black",
+                fontWeight: "600",
+                marginLeft: "5%",
+                // fontSize: "1.1em",
+                marginTop: "9px",
+                fontSize: "16px",
+                fontFamily: "Arial, Helvetica, sans-serif "
+              }}
+            >
+              <Link
+                to="/About-us"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                About Us
+              </Link>
+            </Typography>
+
+            <Typography
+              key={"3"}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: "black",
+                fontWeight: "600",
+                marginLeft: "5%",
+                marginTop: "9px",
+                fontSize: "16px",
+                lineHeight: "auto",
+                fontFamily: "Arial, Helvetica, sans-serif "
+              }}
+            >
+              <Link
+                to="/Contact-us"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                Contact Us
+              </Link>
+            </Typography>
+
+            <Typography
+              key={"3"}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: "black",
+                fontWeight: "600",
+                marginLeft: "6%",
+                marginTop: "9px",
+                fontSize: "16px",
+                fontFamily: "Arial, Helvetica, sans-serif "
+              }}
+            >
+              <Link
+                to="/Contact-us"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                Blog
+              </Link>
+            </Typography>
+
+
+            <Search className="headerSearchBar">
+            <SearchIconWrapper>
+              <SearchIcon sx={{color:"grey"}}/>
+            </SearchIconWrapper>
+
+            <StyledInputBase
+              placeholder="Search Course"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </Search>
+
+          </Box> */}
+
+          <Box sx={{ flexGrow: 0 ,position:"fixed",right:0}} className="loginContainer">
+            <Button variant="contained" className="LoginButton">
+              Login
+            </Button>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+     </>
   );
 }
 export default Header;

@@ -11,6 +11,7 @@ import {
 import SubCategory from "./SubCategory";
 import SubCAtegoryBox from "./SubCAtegoryBox";
 import img11 from "../../Media/Images/BrainThinking.png";
+import manThinking from "../../Media/Images/manBrain.png"
 
 const CategoryBox = () => {
   const [categorySelected, setCategorySelected] = useState("Category_One");
@@ -23,7 +24,7 @@ const CategoryBox = () => {
       <Box className="breifesInHomePage">
         <Box>
           <img
-            scr="b75e0c1a-6893-4b31-8d79-f37a1c72115a.png"
+            scr={manThinking}
             width={50}
             height={50}
           />

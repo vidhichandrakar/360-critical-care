@@ -1104,11 +1104,16 @@ font-size: 1.3em !important;
   text-align: center;
   margin-top: 40px;
 }
+.studyResourceImages-Img{
+  width: 12vw;
+  height: 22vh;
+}
 .studyMaterials{
   border-radius: 12px;
   background-color: #DAF2FF;
   /* width: 50%; */
-  height: 34vh;
+  height: 39vh;
+  border-radius: 15px;
 }
 .studyMaterials h5{
   text-align: start;
@@ -1119,7 +1124,8 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #FFEFD2;
   /* width: 50%; */
-  height: 34vh;
+  height: 39vh;
+  border-radius: 15px;
 }
 .debriefVideos h5{
   text-align: start;
@@ -1130,7 +1136,8 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #D3FFEE;
   /* width: 50%; */
-  height: 34vh;
+  height: 39vh;
+  border-radius: 15px;
 }
 .freeeMockTests h5{
   text-align: start;
@@ -1159,6 +1166,13 @@ font-size: 1.3em !important;
 .paraFontSize-forMobileView-common{
   /* font-size: var(--subHeading) !important; */
 }
+.scndImgOfHomePage{
+  margin-top: 42px;
+  width: 73vw;
+}
+.aboutExploreClasses-head{
+  font-size: 2rem;
+}
 
 /* @media (max-width: 860px) {
   .studyResourceImages{
@@ -1172,6 +1186,7 @@ font-size: 1.3em !important;
   }
   .paraFontSize-forMobileView-common{
     font-size: var(--subHeading) !important;
+    margin: 14px 55px !important;
   }
   .studyResourceImages{
     grid-template-columns: 1fr !important;
@@ -1200,6 +1215,16 @@ font-size: 1.3em !important;
     /* font-size: 1.6rem !important; */
     font-size: var(--subHeading) !important;
   }
+  .studyResourceImages-Img{
+    width: 24vw !important;
+    height: 10vh !important;
+  }
+  .aboutExploreClasses-head {
+    font-size: 5rem !important;
+  }
+  .aboutExploreClasses-para{
+    font-size: var(--subHeading) !important;
+  }
 
   .allExploreCatCards{
     grid-template-columns: 1fr !important;
@@ -1212,7 +1237,7 @@ font-size: 1.3em !important;
   }
 
   .youtubeCompleteSection{
-    margin-bottom: -364px !important;
+    /* margin-bottom: -364px !important; */
   }
   .youtubeImages{
     display: grid !important;
@@ -1223,10 +1248,12 @@ font-size: 1.3em !important;
     height: 11vh;
   }
   .youtubeImg2{
+    display: none !important;
     width: 21%;
     height: 11vh;
   }
   .youtubeImg3{
+    display: none !important;
     width: 21%;
     height: 30vh;
   }
@@ -1243,13 +1270,23 @@ font-size: 1.3em !important;
   }
 
   .breifesInHomePage{
-    height: 8vh !important;
-    margin-left: 120px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    height: 19vh !important;
+    margin-left: -3px !important;
+        width: 100% !important;
   }
   .appAdvertisement {
-    margin-left: 52px !important;
-    width: 90% !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-left: 37px !important;
+    width: 92% !important;
     margin-top: 22% !important;
+    height: 39vh;
+    border-radius: 35px
+   }
+   .appAdvertisement-firstSection{
+    height: 20vh !important;
    }
    .exploreTechEnabledBox {
     height: 19vh !important;
@@ -1260,7 +1297,7 @@ font-size: 1.3em !important;
    .aboutExploreClasses{
     /* WHOLE WIDTH FIXED 'COZ OF THIS  */
     width: 6% !important;
-        height: 26vh !important;
+        /* height: 26vh !important; */
         display: grid;
         grid-template-columns: 1fr 1fr !important;
    } 
@@ -1269,7 +1306,8 @@ font-size: 1.3em !important;
    }
 
    .verticalDivider {
-    height: 4vh !important;
+    display: none !important;
+    /* height: 4vh !important; */
    }
    .excelInCriticalcareImg{
     height: 0% !important;
@@ -1277,10 +1315,22 @@ font-size: 1.3em !important;
    .catHeading {
     font-size: 3em !important;
 }
+.appLogo-mobAd {
+  height: 4vh;
+  width: 33%;
+  margin-right: 28px;
+  margin-left: 56px;
+}
+.mrlogo-mobAd {
+  height: 4vh !important;
+  width: 31%;
+  /* margin-right: 28px; */
+  margin-left: 35px;
+}
 
 .scndImgOfHomePage{
   margin-top: 60px !important;
-  width: 80% !important;
+  width: 100% !important;
 }
 .appAdvertisementHead {
   font-size: 2.5rem !important;
@@ -1441,21 +1491,25 @@ font-size: 1.3em !important;
 /* .percentageOfSuccess h1{
   font-size: 2rem !important;
 } */
-.css-r8b0qb{
-  width: 44vw !important;
-    height: 265px !important;
-}
+.css-r8b0qb {
+      width: 40vw !important;
+      height: 265px !important;
+      border-radius: 23px !important;
+  }
 .css-i2a5r0{
-  width: 44vw !important;
+  width: 40vw !important;
   height: 265px !important;
+  border-radius: 23px !important;
 }
 .css-147sbqb{
-  width: 44vw !important;
-  height: 265px !important;
+  width: 40vw !important;
+      height: 265px !important;
+      border-radius: 23px !important;
 }
 .css-1r9j7yv{
-  width: 44vw !important;
+  width: 40vw !important;
   height: 265px !important;
+  border-radius: 23px !important;
 }
 .abt360CriticalCare-typography{
   /* font-size: 2.1rem !important; */
@@ -1494,6 +1548,7 @@ font-size: 1.3em !important;
   font-size: var(--subHeading) !important;
 }
 }
+
 
 :root {
   --MainHeading:26px;

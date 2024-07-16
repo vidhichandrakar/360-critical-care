@@ -99,21 +99,21 @@ const SubCategory = ({ categorySelected }) => {
 
           <Box className="aboutExploreClasses">
             <Box sx={{backgroundColor:"#FFF3E3", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>800+</h1>
-              <p>Students</p>
+              <h1 className="aboutExploreClasses-head"><b>800+</b></h1>
+              <p className="aboutExploreClasses-para"><b>Students</b></p>
             </Box>
             {/* <Box className="verticalDivider"></Box> */}
             <Box sx={{backgroundColor:"#FFEEEE", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>3+</h1>
-              <p>Glorious Years</p>
+              <h1 className="aboutExploreClasses-head"><b>3+</b></h1>
+              <p className="aboutExploreClasses-para"><b>Glorious Years</b></p>
             </Box>
             <Box sx={{backgroundColor:"#E4FAFF", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>90%</h1>
-              <p>Success Rate</p>
+              <h1 className="aboutExploreClasses-head"><b>90%</b></h1>
+              <p className="aboutExploreClasses-para"><b>Success Rate</b></p>
             </Box>
             <Box sx={{backgroundColor:"#ECE7FF", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>100+</h1>
-              <p>Teaching Videos</p>
+              <h1 className="aboutExploreClasses-head"><b>100+</b></h1>
+              <p className="aboutExploreClasses-para"><b>Teaching Videos</b></p>
             </Box>
           </Box>
         </Box>

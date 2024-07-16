@@ -16,6 +16,7 @@ import EastIcon from "@mui/icons-material/East";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import mobileImg from "../../Media/Images/mobileImg.jpg"
 
 const steps = [
   {
@@ -60,7 +61,7 @@ const Analytics = ({}) => {
   return (
     <>
       <Box className="appAdvertisement">
-        <Box>
+        <Box className="appAdvertisement-firstSection">
           <Typography className="appAdvertisementHead">
             Join 15 Million students on the app today!
           </Typography>
@@ -87,7 +88,7 @@ const Analytics = ({}) => {
 
         <Box>
           <img
-            src="Mobile Mockup .png"
+            src={mobileImg}
             width={200}
             height={200}
             sx={{ ml: "24px" }}
