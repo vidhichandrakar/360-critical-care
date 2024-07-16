@@ -64,19 +64,9 @@
   background-color: #ffffff !important;
   color: #000000 !important;
 }
-.AppHeader-mobileView{
+/* .AppHeader-mobileView{
   display: none !important;
-}
-
-/* -----------HEADER MOBILE VIEW------------ */
-@media (max-width: 990px){
-  .AppHeader-mobileView{
-   /* display: ; */
-  }
-  .AppHeader{
-    display: none !important;
-  }
-}
+} */
 
 .MuiBox-root .css-1lvtzne {
   color: #000000 !important;
