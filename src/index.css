@@ -973,14 +973,24 @@ font-size: 1.3em !important;
     position: relative; */
 }
 .drNBCompleteBox-left{
-  position: sticky;
-  z-index: 222;
+  /* position: sticky; */
+  /* z-index: 222; */
+  margin: 8px 27px;
+  /* justify-content: left !important; */
+  /* text-align: left !important; */
+  /* align-items: start !important; */
+}
+.drNB-head{
+  margin-left: -41px;
+    /* margin: 25px 0px; */
+    margin-bottom: 25px;
 }
 .drNBSubSections{
   display: flex;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  gap: 20px;
+  gap: 10px;
   flex-direction: column;
+  /* margin-left: 26px; */
 }
 .drNBTwoOptions{
   display: flex;
@@ -988,34 +998,27 @@ font-size: 1.3em !important;
   justify-content:space-around;
   margin-top: 4%;
 }
-.drNBOptions2ndClm{
-  border: 0.5px solid grey !important;
-  border-radius: 18px;
-  padding: 8px 0px;
-  font-size: 0.8rem;
-  width: 34%;
-  height: auto;
-  margin-left: 32px;
-}
-.drNBOptions{
-  border: 0.5px solid grey !important;
-  border-radius: 18px;
-  padding: 8px 20px;
-  font-size: 0.8rem;
-  margin-left: 24px;
-}
-.drNBOptions-two{
-  border: 0.5px solid grey !important;
-  border-radius: 18px;
-  padding: 8px 20px;
-  font-size: 0.8rem;
-  margin-right: 75px;
-}
 .blueSemiCircle{
-  position: absolute;
-  z-index: 111;
+  /* position: absolute; */
+  /* z-index: 111; */
   background-color: navy;
   border-radius: 50%;
+  width: 12vw;
+    margin-left: 60px;
+}
+.changedDrNBBoxes{
+  border: 0.5px solid grey !important;
+  border-radius: 18px;
+  padding: 7px 0px;
+  width: 8vw;
+  font-size: 0.8rem;
+}
+.changedDrNBBoxes-EDIC{
+  border: 0.5px solid grey !important;
+  border-radius: 18px;
+  padding: 7px 0px;
+  width: 6vw;
+  font-size: 0.8rem;
 }
 .allExploreCatCards{
   display: grid;
