@@ -8,6 +8,7 @@
 }
 .ContactBox p{
     text-align: justify;
+    letter-spacing: 0.0em;
 }
 .ContactBox li{
     text-align: justify;
@@ -263,6 +264,7 @@
     height: 46vh;
     /* margin-left: 23px !important; */
     margin-right: 29px !important;
+    margin-top: -31px !important;
   }
 
 

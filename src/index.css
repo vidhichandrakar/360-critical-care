@@ -1237,6 +1237,7 @@ font-size: 1.3em !important;
   }
   .drNBCompleteBox{
     height: 15vh !important;
+    min-width: 82vw !important;
   }
 
   .youtubeCompleteSection{
