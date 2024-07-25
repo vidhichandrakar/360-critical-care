@@ -5,6 +5,8 @@ import "./PrivacyPolicy.css";
 import { Box } from "@mui/material";
 import { PrivacyPolicyData } from "../../JsonData/AboutData/AboutData";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+
 
 function PrivacyPolicy() {
   return (
@@ -78,6 +80,7 @@ function PrivacyPolicy() {
           </Box>
         </Box>
       </Box>
+      <img src={NewsLetter} width="100%"/>
       <Footer />
     </Fragment>
   );

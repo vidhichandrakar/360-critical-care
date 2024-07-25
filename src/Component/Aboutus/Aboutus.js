@@ -9,6 +9,7 @@ import tapas from "../../Media/Images/tapas.png";
 import globalMap from "../../Media/Images/globalMap.png";
 import Footer from "../Footer/Footer";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+import "./Aboutus.css";
 
 
 
@@ -19,7 +20,7 @@ const Aboutus = () => {
 
       <img
         src={PrepatoryImg}
-        width={1526}
+        width={1697}
         height={360}
         className="aboutUsFirstImg"
         //   style={Margin="23px"}

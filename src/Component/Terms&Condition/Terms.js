@@ -4,6 +4,8 @@ import { TermsData } from "../../JsonData/Terms&Cond/Terms&Cond";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Box } from "@mui/material";
+import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+
 
 function Terms() {
   return (
@@ -162,6 +164,7 @@ function Terms() {
           </ol>
         </div>
       </Box>
+      <img src={NewsLetter} width="100%"/>
       <Footer />
     </div>
   );

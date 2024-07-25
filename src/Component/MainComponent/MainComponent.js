@@ -11,21 +11,23 @@ import PlanDescription from "../Features/PlanDescription";
 import NeetGroupImg from "../Features/NeetGroupImg";
 import Testimonial from "../Features/Testimonial";
 import AllCourseWOL from "../AllCourse/AllCourseWOL";
+import TRICKS1 from "../CourseDescription/TRICKS1";
 
 const MainComponent = ()=>{
   return(
     <Fragment>
-      <Header/>
+      {/* <Header/> */}
       {/* <AllCourseWOL /> */}
-      <NavHome />
-      <CategoryBox/>
-      <Analytics/>
-      <PlanDescription/>
-      <NeetGroupImg />
-      <Testimonials/>
+      {/* <NavHome /> */}
+      {/* <CategoryBox/> */}
+      {/* <Analytics/> */}
+      {/* <PlanDescription/> */}
+      {/* <NeetGroupImg /> */}
+      {/* <Testimonials/> */}
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
-      <Footer />
+      <TRICKS1/>
+      {/* <Footer /> */}
     </Fragment>
   )
 }
