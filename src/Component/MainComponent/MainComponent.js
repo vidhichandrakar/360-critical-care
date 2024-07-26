@@ -12,6 +12,7 @@ import NeetGroupImg from "../Features/NeetGroupImg";
 import Testimonial from "../Features/Testimonial";
 import AllCourseWOL from "../AllCourse/AllCourseWOL";
 import TRICKS1 from "../CourseDescription/TRICKS1";
+import TRICKS2 from "../CourseDescription/TRICKS2";
 
 const MainComponent = ()=>{
   return(
@@ -26,7 +27,8 @@ const MainComponent = ()=>{
       {/* <Testimonials/> */}
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
-      <TRICKS1/>
+      {/* <TRICKS1/> */}
+      <TRICKS2/>
       {/* <Footer /> */}
     </Fragment>
   )

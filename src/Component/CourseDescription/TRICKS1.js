@@ -7,10 +7,11 @@ import Sananta from "../../Media/Images/sananta.png";
 import tapas from "../../Media/Images/tapas.png";
 import BatchIncludeImg from "../../Media/Images/TRICKSBatchInclude.png";
 import SanantaTapas from "../../Media/Images/SanantaAndTapas.png";
-import "./TRICKS1.css";
+import "./TRICKS.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import TextField from "@mui/material/TextField";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const TRICKS1 = () => {
   return (
@@ -22,7 +23,7 @@ const TRICKS1 = () => {
           <b>Course Details</b>
         </Typography>
         <Typography className="courseDetailsul">
-          <ul>
+          <ul className="TRICKSDisk">
             <li>10 Section wise and 3 Whole syllabus Mock Test</li>
             <li>Convenient timing for Exam</li>
             <li>Access to debrief videos</li>
@@ -34,7 +35,7 @@ const TRICKS1 = () => {
       <Typography className="ourFacultiesHead">Our Faculties</Typography>
       <div className="OurfacultiesCard">
         <Box
-          sx={{ maxWidth: 457, flexGrow: 1 }}
+          sx={{ maxWidth: 525, flexGrow: 1 }}
           className="OurFacultiesLeftCard"
         >
           <Box className="ourFacultiesAlignment">
@@ -54,7 +55,7 @@ const TRICKS1 = () => {
         </Box>
 
         <Box
-          sx={{ maxWidth: 457, flexGrow: 1 }}
+          sx={{ maxWidth: 525, flexGrow: 1 }}
           className="OurFacultiesLeftCard"
         >
           <Box className="ourFacultiesAlignment">
@@ -118,7 +119,7 @@ const TRICKS1 = () => {
           <b>FAQ's What does the TRICKS 1 Cover?</b>
         </Typography>
         <Typography className="TRICKS-FAQs">
-          <ul>
+          <ul className="TRICKSDisk">
             <li>
               Once enrolled it will provide a detailed overview of syllabus and
               study material.
@@ -167,14 +168,14 @@ const TRICKS1 = () => {
           >
             <TextField fullWidth label="Email id" id="fullWidth">
               <Box sx={{ backgroundColor: "#199884", borderRadius: "50%" }}>
-                {/* icon  */}
+                <ChevronRightIcon/>
               </Box>
             </TextField>
           </Box>
         </Box>
 
         <Box>
-          <img src={SanantaTapas} width={1000} height={352} />
+          <img src={SanantaTapas} width={1000} height={392} />
         </Box>
       </Box>
       <Footer />

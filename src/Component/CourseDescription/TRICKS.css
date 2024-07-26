@@ -8,8 +8,10 @@
   padding: 30px;
 }
 .courseDetailsul{
-    line-height: 1em;
-    height: 10vh;
+  line-height: 1.8em !important;
+  height: 10vh;
+  padding: 10px 20px !important;
+  font-size: 13px !important;
 }
 
 
@@ -60,7 +62,7 @@
     border-radius: 15px !important;
     padding: 3px 30px !important;
     text-transform: none !important;
-    margin-top: -1% !important;
+    margin-top: 5% !important;
   }
 
   .thisBatchIncluesBox{
@@ -75,6 +77,7 @@
       padding: 27px 53px !important;
       background-color: #eaf8f4;
       min-width: 73vw;
+      line-height: 1.8em !important;
   }
   .SDPSection{
     display: flex;
@@ -105,14 +108,21 @@
     margin-top: 12px !important;
   }
   .TRICKS-FAQs{
-    line-height: 1em;
-    height: 10vh;
+    line-height: 1.6em !important;
+    height: 19vh;
+    padding: 27px 53px !important;
+    background-color: #eaf8f4;
+    min-width: 73vw;
 }
 .TRICKS-FAQsBox{
     text-align: left;
   height: 27vh;
   padding: 30px;
-  margin-top: 108px;
+  /* margin-top: 108px; */
+  margin: 139px 2px;
+}
+.TRICKSDisk {
+  list-style-type: disc;
 }
 .TRICKS-dot{
     background-color: #b7b4b4  !important;
@@ -127,21 +137,25 @@
 .TRICKFreeCourses-left{
     text-align: left;
     /* box-shadow: 1px 1px 4px 2px #d3d3d3 !important; */
-    width: 36vw;
-    padding: 66px 185px;
-    padding-left: 76px;
+    width: 32vw;
+    padding: 66px 0px;
+    padding-left: 118px;
 }
 .TRICKSfreeCourseBox{
+  border-radius: 13px;
     display: flex;
     flex-direction: row;
-    margin: -13px 38px;
+    margin: -99px 38px;
     margin-bottom: 12px;
     /* background-color: orange; */
-    height: 45vh;
+    height: 50vh;
     box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
 }
 
-
+.specialDiscountPrice{
+  font-size: 0.8rem !important;
+  text-align: center;
+}
 
 
 
@@ -150,10 +164,9 @@
         font-size: 2.7rem !important;
       }
       .OurfacultiesCard {
-        /* height: 20vh !important; */
         justify-content: center !important;
-        display: grid !important;
-        grid-template-columns: 1fr !important;
+        /* display: grid !important; */
+        /* grid-template-columns: 1fr !important; */
         align-items: center !important;
         text-align: center !important;
       }
@@ -161,17 +174,100 @@
         height: 18vh !important;
         width: 93% !important;
         border-radius: 27px !important;
-        /* align-items: center !important; */
-        /* text-align: center !important; */
-        /* justify-content: center !important; */
      }
      .ourFacultiesAbout{
         font-size: var(--subHeading) !important;
       
       }
+      .batchBuyNowCard {
+        width: 94vw;
+        height: 31vh;
+        position: absolute;
+        top: 27%;
+    }
+    .BatchIncludeImg2{
+      width: 97%;
+        height: 18vh;
+        margin-left: 13px;
+    }
+    .specialDiscountPrice{
+      font-size: var(--MainHeading) !important;
+    }
+    .courseDetailsBox{
+      margin-top: 76% !important;
+      height: 12vh;
+      font-size: var(--MainHeading) !important;
+    }
+    .buyNowBtnBatch {
+      width: 97% !important;
+    margin-left: 12px !important;
+      height: 3vh;
+      font-size: 2rem !important;
+      margin-top: 45px !important;
+    }
+    .thisBatchIncludesHead{
+      font-size: 2.7rem !important;
+    }
+    .thisBatchIncludesul-TRICKS2 {
+      /* padding: 18px 53px !important; */
+      /* background-color: #eaf8f4; */
+      /* min-width: 73vw; */
+      line-height: 2.2em !important;
+      font-size: 1.8rem !important;
   }
+  .TRICKS-FAQs {
+    line-height: 2.2rem !important;
+    font-size: 1.8rem !important;
+  }
+  .TRICKS-FAQsBox{
+    margin: 0px 2px !important;
+    height: 33vh !important;
+  }
+  .TRICKFreeCourses-left{
+    width: 62vw !important;
+  }
+  .freeResourcesText {
+    font-size: 3.5rem !important;
+}
+.TRICKSfreeCourseBox{
+  height: 22vh !important;
+}
+.SDP-offerPrice{
+  font-size: 2rem !important;
+  padding: 14px 28px;
+  border-radius: 35px;
+}
+.SDPSection{
+  font-size: 3rem !important;
+  gap: 17% !important;
+}
+  } 
 
 
+
+
+  /* -----------TRICKS 2---------- */
+
+  .thisBatchIncludesul-TRICKS2{
+    padding: 18px 53px !important;
+    background-color: #eaf8f4;
+    min-width: 73vw;
+    line-height: 1.8em !important;
+}
+
+
+ @media (max-width: 990px){
+  .TRICKS2Img{
+    width: 100%;
+    height: 20vh;
+  }
+  .sanantaAndTapasInOneFrame{
+    display: none !important;
+  }
+  .TRICKS2Img{
+    width: 100% !important;
+  }
+} 
 
 
   :root {
