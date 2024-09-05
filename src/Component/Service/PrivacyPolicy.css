@@ -38,6 +38,7 @@
     margin-top: 6%;
     font-family: Gilroy-Medium, sans-serif !important;
     line-height: var(--bs-body-line-height);
+    font-size: var(--small) !important;
 }
 
 .PPBox{
@@ -56,8 +57,14 @@
     font-size: 1rem;
 }
 .List{
-    margin-left: 2%;
+    /* margin-left: 2%; */
+    margin-top: -28px;
     list-style-type: disc;
+    line-height: 0.4;
+}
+.privacyPolicyHead{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 @media(max-width: 498px){
     .PPFontSize{
@@ -81,3 +88,14 @@
     }
    
 }
+
+
+
+
+:root {
+    --MainHeading:26px;
+    --subHeading:24px;
+    --ScndHeading:20px;
+    --Heading:18px;
+    --small:16px;
+   }

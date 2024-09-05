@@ -4,6 +4,8 @@ import { TermsData } from "../../JsonData/Terms&Cond/Terms&Cond";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Box } from "@mui/material";
+import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+
 
 function Terms() {
   return (
@@ -12,25 +14,28 @@ function Terms() {
       <Box className="TermsBox">
         <div className="text">
           <h2>
-            TERMS AND CONDIT<span className="AquaColor">ION</span>
+            Terms and<span className="AquaColor">Conditions</span>
           </h2>
           <p>{TermsData.one.detail}</p>
         </div>
+
         <div className="text">
           <p>
             <b>{TermsData.two.topic}:</b> {TermsData.two.detail}
           </p>
         </div>
+
         <div className="text">
           <p>
             <b>{TermsData.three.topic}:</b> {TermsData.three.detail}
           </p>
         </div>
+
         <div className="text">
           <p>
             <b>DoubleClick DART Cookie:</b>
           </p>
-          <ul className="List">
+          <ul className="termsList">
             <li>
               {" "}
               Google, as a third-party vendor, uses cookies to serve ads on
@@ -49,6 +54,7 @@ function Terms() {
             </li>
           </ul>
         </div>
+
         <div className="text">
           <p>{TermsData.four.detail}</p>
         </div>
@@ -77,6 +83,7 @@ function Terms() {
             <b>{TermsData.nine.topic}</b> {TermsData.nine.detail}
           </p>
         </div>
+
         <div className="text">
           <p>{TermsData.ten.detail}</p>
           <ol className="TermsList">
@@ -157,6 +164,7 @@ function Terms() {
           </ol>
         </div>
       </Box>
+      <img src={NewsLetter} width="100%"/>
       <Footer />
     </div>
   );

@@ -8,6 +8,7 @@
 }
 .ContactBox p{
     text-align: justify;
+    letter-spacing: 0.0em;
 }
 .ContactBox li{
     text-align: justify;
@@ -186,3 +187,99 @@
 .line{
     padding: 1% 4%;
 }
+
+
+
+/* NEW WEBSITE CONTACT US  */
+.contacUsFirstImg{
+    margin-top: -53px;
+    width: 99vw;
+    height: 36vh;
+    margin-left: -85px;
+}
+.getInTouchCompleteBox{
+    border: 0.5px solid grey;
+    display: flex;
+    flex-direction: row;
+    height: 67vh;
+    margin: 59px -35px;
+}
+.getInTouch{
+    width: 30vw;
+    /* height: 40vh; */
+    background-color: #002C4F;
+    color: #ffffff;
+    padding: 32px 28px;
+}
+.getInTouch-head{
+    font-size: var(--MainHeading) !important;
+    text-align: center !important;
+}
+.getInTouchPersonalInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 82px;
+    gap: 6%;
+    width: 26vw;
+}
+.getInTouchVerticalLine{
+    width: 1px;
+    height: 61px;
+    background-color: #ffffff !important;
+}
+.getInTouch-about{
+    /* margin-top: 24px; */
+}
+.getInTouchAbtSection{
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+    margin: 12px 95px;
+    align-items: center !important;
+}
+
+.getInTouch-right{
+    padding: 12px 12px;
+    margin-left: 12px;
+}
+.getInTouch-right-nameAndMob{
+    display: flex;
+    flex-direction: row;
+    margin-top: 31px;
+}
+.contactUs-sendMsgBtn {
+    /* margin-right: 3%; */
+  }
+  .sendMsgButton {
+    width: 30;
+    height: 30;
+    background-color: #002C4F !important;
+    position: absolute;
+    top: 29%;
+    left: 43%;
+    /* margin-right: 23px !important; */
+  }
+  .contactUsMap{
+    width: 90vw;
+    height: 46vh;
+    /* margin-left: 23px !important; */
+    margin-right: 29px !important;
+    margin-top: -31px !important;
+  }
+
+
+@media (max-width: 990px){
+    .getInTouchCompleteBox {
+    display: grid !important;
+    grid-template-columns: 1fr !important; 
+    }
+}
+
+
+:root {
+    --MainHeading:26px;
+    --subHeading:24px;
+    --ScndHeading:20px;
+    --Heading:18px;
+    --small:16px;
+   }

@@ -20,7 +20,7 @@ function NeetGroupImg() {
       <Typography className="youtubeHead">
         Join the most- learned educational platform in Critical Care
       </Typography>
-      <Typography sx={{fontSize:"0.9rem"}}>
+      <Typography sx={{fontSize:"0.9rem"}} className="paraFontSize-forMobileView-common">
          Explore our YouTube Channel and subscribe to get access to quility education for free.       
       </Typography>
 

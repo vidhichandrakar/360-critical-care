@@ -74,7 +74,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 
-function Header() {
+const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -91,6 +91,7 @@ function Header() {
   };
 
   return (
+    <>
     <AppBar position="fixed" className="AppHeader">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -298,6 +299,12 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
+
+
+
+
+  
+     </>
   );
 }
 export default Header;
