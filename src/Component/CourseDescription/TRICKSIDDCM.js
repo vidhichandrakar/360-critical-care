@@ -13,18 +13,20 @@ import Footer from "../Footer/Footer";
 import TextField from "@mui/material/TextField";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import TRICKSIDDCMImg from "../../Media/Images/TRICKSIDDCMImg.png";
+import DoctorCardImg from "../../Media/Images/DoctorCardImg.png";
 import mobileViewMainImg from "../../Media/Images/mobileViewMainImg.png";
 import cardImg from "../../Media/Images/cardImg.png";
 import CourseDescriptionMobileHeader from '../Header/CourseDescriptionMobileHeader';
 
 
 
-const TRICKS1 = () => {
+const TRICKSIDDCM = () => {
   return (
     <div className="tricksCompletePage">
       <Header />
       <CourseDescriptionMobileHeader />
-      <img src={TRICKS1Img} width={1695} height={355}  className="TRICKMainImg"/>
+      <img src={TRICKSIDDCMImg} width={1695} height={355} className="TRICKMainImg"/>
       <img src ={mobileViewMainImg} className="TRICKMainMobileImg"/>
       <Box className="courseDetailsBox">
         <Typography className="courseDetailsHead">
@@ -32,10 +34,10 @@ const TRICKS1 = () => {
         </Typography>
         <Typography className="courseDetailsul">
           <ul className="TRICKSDisk">
-            <li>10 Section wise and 3 Whole syllabus Mock Test</li>
-            <li>Convenient timing for Exam</li>
-            <li>Access to debrief videos</li>
-            <li>High probability questions bank</li>
+            <li>Extensive Coverage of the Curriculum Pertinent to IDCCM Syllabus.</li>
+            <li>Real time IDCCM Theory Exam Experience.</li>
+            <li>Access to debrief videos.</li>
+            <li>High probability questions bank.</li>
           </ul>
         </Typography>
       </Box>
@@ -87,23 +89,24 @@ const TRICKS1 = () => {
 
       <Box className="thisBatchIncluesBox">
         <Box>
-          <Typography sx={{ fontSize: "1.7rem", mt: 4 }}>
+          <Typography sx={{ mt: 4 }} className='thisBatchIncludesHead'>
             <b>This Batch Includes</b>
           </Typography>
           <Typography className="thisBatchIncludesul">
             <ol>
-              <li>Doubt Clearing Live Class</li>
-              <li>Online Lectures</li>
-              <li>Videos Lecture</li>
-              <li>Mock Test Set</li>
-              <li>Best Guidance</li>
-              <li>Dedicated whatsApp Group</li>
+              <li>Doubt clearing Live Class with faculties.</li>
+              <li>Online Lectures.</li>
+              <li>Videos Lectures.</li>
+              <li>Mock Test Sets.</li>
+              <li>Best guidance.</li>
+              <li>Dedicated WhatsApp group</li>
+              <li>Get Exam Tips for Your Preapration</li>
             </ol>
           </Typography>
         </Box>
 
         <Box className="batchBuyNowCard">
-          <img src={BatchIncludeImg} width={400} height={200}  className="mainCardImg"/>
+          <img src={DoctorCardImg} width={400} height={200} className="mainCardImg"/>
           <img src ={cardImg} className="cardImgDoctor" />
           <Box>
             <Typography sx={{ fontSize: "0.9rem", textAlign: "center", m: 1 }}>
@@ -124,8 +127,8 @@ const TRICKS1 = () => {
       </Box>
 
       <Box className="TRICKS-FAQsBox">
-        <Typography sx={{ fontSize: "1.7rem" }}>
-          <b>FAQ's What does the TRICKS 1 Cover?</b>
+        <Typography className='thisBatchIncludesHead'>
+          <b>FAQ's What does the TRICKS - IDCCM Theory Cover?</b>
         </Typography>
         <Typography className="TRICKS-FAQs">
           <ul className="TRICKSDisk">
@@ -134,16 +137,16 @@ const TRICKS1 = () => {
               study material.
             </li>
             <li>
-              Candidates will have access to the "TRICKS-EDIC-1 Cloud" platform.
-              It's a unique resource meant for preparation of EDIC-1.
+              Candidates will have access to the "TRICKS-IDCCM Cloud" platform.
+              It's a unique resource meant for preparation of IDCCM.
             </li>
             <li>
-              The modules are classified as per the EDIC-1 syllabus. The whole
+              The modules are classified as per the IDCCM syllabus. The whole
               course consists of 10 modules with section wise MOCK tests.
             </li>
             <li>
               Each module consists of pre-reading for a week followed by a mock
-              test as per the EDIC-1 standards.
+              test as per the IDCCM standards.
             </li>
           </ul>
         </Typography>
@@ -165,7 +168,6 @@ const TRICKS1 = () => {
             }}
           >
             <Typography>Get instant access to high</Typography>
-            {/* <Box className="TRICKS-dot"></Box> */}
             <FiberManualRecordIcon className="TRICKS-dot"/>
             <Typography>quality material</Typography>
           </Box>
@@ -193,4 +195,4 @@ const TRICKS1 = () => {
   );
 };
 
-export default TRICKS1;
+export default TRICKSIDDCM;

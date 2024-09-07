@@ -13,11 +13,20 @@ import Testimonial from "../Features/Testimonial";
 import AllCourseWOL from "../AllCourse/AllCourseWOL";
 import TRICKS1 from "../CourseDescription/TRICKS1";
 import TRICKS2 from "../CourseDescription/TRICKS2";
+import TRICKSIDDCM from "../CourseDescription/TRICKSIDDCM";
+import TOP from "../CourseDescription/TOP";
+import TOPCrashCourseTheory from "../CourseDescription/TOPCrashCourseTheory";
+import CourseDescriptionMobileHeader from "../Header/CourseDescriptionMobileHeader";
+import TOPOSCEPractical from "../CourseDescription/TOPOSCEPractical";
+import TRICKDIDDCMPracticalCourseLast from "../CourseDescription/TRICKDIDDCMPracticalCourseLast";
+import PurchesedCourse from "../CourseDescription/PurchesedCourse";
+import TestportalMain from "../../UserPortal/TestPortal/TestportalMain.component";
 
 const MainComponent = ()=>{
   return(
     <Fragment>
       {/* <Header/> */}
+      {/* <CourseDescriptionMobileHeader/> */}
       {/* <AllCourseWOL /> */}
       {/* <NavHome /> */}
       {/* <CategoryBox/> */}
@@ -28,7 +37,14 @@ const MainComponent = ()=>{
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
       {/* <TRICKS1/> */}
-      <TRICKS2/>
+      {/* <TRICKS2/> */}
+      {/* <TRICKSIDDCM/> */}
+      {/* <TOP/> */}
+      {/* <TOPCrashCourseTheory/> */}
+      {/* <TOPOSCEPractical/> */}
+      {/* <TRICKDIDDCMPracticalCourseLast /> */}
+      {/* <PurchesedCourse/> */}
+      <TestportalMain/>
       {/* <Footer /> */}
     </Fragment>
   )

@@ -12,14 +12,20 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import TextField from "@mui/material/TextField";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import mobileViewMainImg from "../../Media/Images/mobileViewMainImg.png";
+import cardImg from "../../Media/Images/cardImg.png";
+import CourseDescriptionMobileHeader from '../Header/CourseDescriptionMobileHeader';
 
 const TRICKS2 = () => {
   return (
     <div className="tricksCompletePage">
     <Header />
+    <CourseDescriptionMobileHeader />
     <img src={TRICKS2Img} width={1695} height={355} className='TRICKS2Img'/>
+    <img src ={mobileViewMainImg} className="TRICKMainMobileImg"/>
     <Box className="courseDetailsBox">
-      <Typography sx={{ fontSize: "1.7rem" }}>
+      <Typography className="courseDetailsHead">
         <b>Course Details</b>
       </Typography>
       <Typography className="courseDetailsul">
@@ -79,7 +85,7 @@ const TRICKS2 = () => {
 
     <Box className="thisBatchIncluesBox">
       <Box>
-        <Typography sx={{ fontSize: "1.7rem", mt: 4 }} className='thisBatchIncludesHead'>
+        <Typography className='thisBatchIncludesHead'>
           <b>This Batch Includes</b>
         </Typography>
         <Typography className="thisBatchIncludesul-TRICKS2">
@@ -97,12 +103,13 @@ const TRICKS2 = () => {
 
       <Box className="batchBuyNowCard">
         <img src={BatchIncludeImg2} width={400} height={200} className='BatchIncludeImg2'/>
+        <img src ={cardImg} className="cardImgDoctor" />
         <Box>
           <Typography sx={{ m: 1 }} className='specialDiscountPrice'>
             Special Discount Price
           </Typography>
           <Box className="SDPSection">
-            <Box 
+            <Box className="TRICKSMainPrice"
             // sx={{ fontSize: "1.2rem" }}
             >
               <b>₹3000</b>
@@ -118,7 +125,7 @@ const TRICKS2 = () => {
     </Box>
 
     <Box className="TRICKS-FAQsBox">
-      <Typography sx={{ fontSize: "1.7rem" }} className='thisBatchIncludesHead'>
+      <Typography className='thisBatchIncludesHead'>
         <b>FAQ's What does the TRICKS 2 Cover?</b>
       </Typography>
       <Typography className="TRICKS-FAQs">
@@ -159,7 +166,8 @@ const TRICKS2 = () => {
           }}
         >
           <Typography>Get instant access to high</Typography>
-          <Box className="TRICKS-dot"></Box>
+          {/* <Box className="TRICKS-dot"></Box> */}
+          <FiberManualRecordIcon className="TRICKS-dot"/>
           <Typography>quality material</Typography>
         </Box>
 
