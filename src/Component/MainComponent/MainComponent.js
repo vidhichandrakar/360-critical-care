@@ -25,15 +25,15 @@ import TestportalMain from "../../UserPortal/TestPortal/TestportalMain.component
 const MainComponent = ()=>{
   return(
     <Fragment>
-      {/* <Header/> */}
-      {/* <CourseDescriptionMobileHeader/> */}
+      <Header/>
+      <CourseDescriptionMobileHeader/>
       {/* <AllCourseWOL /> */}
-      {/* <NavHome /> */}
-      {/* <CategoryBox/> */}
-      {/* <Analytics/> */}
-      {/* <PlanDescription/> */}
-      {/* <NeetGroupImg /> */}
-      {/* <Testimonials/> */}
+      <NavHome />
+      <CategoryBox/>
+      <Analytics/>
+      <PlanDescription/>
+      <NeetGroupImg />
+      <Testimonials/>
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
       {/* <TRICKS1/> */}
@@ -44,8 +44,8 @@ const MainComponent = ()=>{
       {/* <TOPOSCEPractical/> */}
       {/* <TRICKDIDDCMPracticalCourseLast /> */}
       {/* <PurchesedCourse/> */}
-      <TestportalMain/>
-      {/* <Footer /> */}
+      {/* <TestportalMain/> */}
+      <Footer />
     </Fragment>
   )
 }
