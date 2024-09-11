@@ -16,7 +16,9 @@ import EastIcon from "@mui/icons-material/East";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import mobileImg from "../../Media/Images/mobileImg.jpg"
+import mobileImg from "../../Media/Images/mobileImg.jpg";
+import TransparentMobileImg from '../../Media/Images/MobileMockup  1.png';
+
 
 const steps = [
   {
@@ -88,10 +90,11 @@ const Analytics = ({}) => {
 
         <Box>
           <img
-            src={mobileImg}
-            width={200}
-            height={200}
-            sx={{ ml: "24px" }}
+            src={TransparentMobileImg}
+            width={300}
+            height={265}
+            className="transparentMobile"
+            sx={{ ml: "30px" }}
           />
         </Box>
       </Box>
