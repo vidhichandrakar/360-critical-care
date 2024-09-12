@@ -2,6 +2,12 @@ import { Typography, Box, Button, colors } from "@mui/material";
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import ExcelInCC from "../../Media/Images/ExcelInCriticalCareImg.png";
+import doctorSign from '../../Media/Images/handsAndDoctorSign.png';
+import functioning from '../../Media/Images/functioning.png';
+import robot from '../../Media/Images/robot.png';
+import building from '../../Media/Images/hospnew.png';
+import transparentOverBuilding from '../../Media/Images/Rectangle 6.png';
+
 
 const SubCategory = ({ categorySelected }) => {
   const categoryType = {
@@ -65,7 +71,7 @@ const SubCategory = ({ categorySelected }) => {
           </Box>
 
           <Box className="blueSemiCircle">
-            <p>icon</p>
+            <img src ={doctorSign} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
 
@@ -81,8 +87,8 @@ const SubCategory = ({ categorySelected }) => {
             </Box>
           </Box>
 
-          <Box className="blueSemiCircle">
-            <p>icon</p>
+          <Box className="blueSemiCircle-second">
+            <img src ={functioning} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
 
@@ -99,17 +105,20 @@ const SubCategory = ({ categorySelected }) => {
           </Box>
 
           <Box className="blueSemiCircle">
-            <p>icon</p>
+            <img src ={robot} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
       </div>
 
       <Box className="exploreTechEnabledBox">
-        <h2 sx={{ color: "#ffffff" }}>
-          <b>Explore Tech-Enabled Online Classes</b>
+        <img src ={building} className="BuildingImg"/>
+        <img src={transparentOverBuilding} className="transparentBlue"/>
+        <Box className="exploreCTechategorySection">
+        <h2 style={{ color: "#ffffff" }}>
+          <b>Explore Tech-Enabled Online &&& Classes</b>
         </h2>
         <p
-          sx={{ color: "#ffffff" }}
+          style={{ color: "#ffffff" }}
           className="paraFontSize-forMobileView-common"
         >
           Creating new benchmarks in learning expirences
@@ -177,6 +186,7 @@ const SubCategory = ({ categorySelected }) => {
               <b>Teaching Videos</b>
             </p>
           </Box>
+        </Box>
         </Box>
       </Box>
 

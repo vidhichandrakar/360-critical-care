@@ -26,7 +26,7 @@ const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
-      <CourseDescriptionMobileHeader/>
+      {/* <CourseDescriptionMobileHeader/> */}
       {/* <AllCourseWOL /> */}
       <NavHome />
       <CategoryBox/>

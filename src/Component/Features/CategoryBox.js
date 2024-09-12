@@ -11,7 +11,12 @@ import {
 import SubCategory from "./SubCategory";
 import SubCAtegoryBox from "./SubCAtegoryBox";
 import img11 from "../../Media/Images/BrainThinking.png";
-import manThinking from "../../Media/Images/manBrain.png"
+import thinking from "../../Media/Images/manBrain.png";
+import LiveRedIcon from "../../Media/Images/LiveIconRed.png";
+import WriteWithPencil from '../../Media/Images/WritingPencil.png';
+import Award from '../../Media/Images/Award.png';
+import functioning from '../../Media/Images/functioning.png';
+import "../../CSS/Courses.css";
 
 const CategoryBox = () => {
   const [categorySelected, setCategorySelected] = useState("Category_One");
@@ -24,26 +29,28 @@ const CategoryBox = () => {
       <Box className="breifesInHomePage">
         <Box>
           <img
-            scr={manThinking}
-            width={50}
-            height={50}
+            src={thinking}
+            className="CategoryImg"
           />
-          <p className="paraFontSize-forMobileView-common">24 X 7 Access to exam debriefs</p>
+          <p className="paraFontSize-forMobileView-common CategoryforMobileView">24 X 7 Access to exam debriefs</p>
         </Box>
         <Box className="verticalDivider"></Box>
         <Box>
-          <img scr={img11} width={50} height={50} />
-          <p className="paraFontSize-forMobileView-common">Multiple Free Lectures</p>
+          <img src={LiveRedIcon}
+            className="CategoryImg" />
+          <p className="paraFontSize-forMobileView-common CategoryforMobileView">Multiple Free Lectures</p>
         </Box>
         <Box className="verticalDivider"></Box>
         <Box>
-          <img scr={img11} width={50} height={50} />
-          <p className="paraFontSize-forMobileView-common">One to one Interection</p>
+          <img src={WriteWithPencil} 
+            className="CategoryImg" />
+          <p className="paraFontSize-forMobileView-common CategoryforMobileView CategoryforMobileView">One to one Interection</p>
         </Box>
         <Box className="verticalDivider"></Box>
-        <Box>
-          <img scr={img11} width={50} height={50} />
-          <p className="paraFontSize-forMobileView-common">All in one App</p>
+        <Box >
+          <img src={Award}
+            className="CategoryImg4" />
+          <p className="paraFontSize-forMobileView-common CategoryforMobileView">All in one App</p>
         </Box>
       </Box>
 
