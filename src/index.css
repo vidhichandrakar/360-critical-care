@@ -955,7 +955,7 @@ font-size: 1.3em !important;
   /* width: 100% !important; */
   min-width: 99vw;
   height: 32%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 .verticalDivider{
   background-color: #c2c2c2 !important;
@@ -1076,7 +1076,7 @@ font-size: 1.3em !important;
   display: flex;
   flex-direction: row;
   align-items: start !important;
-  justify-content: start !important;
+  justify-content: space-between !important;
   text-align: left !important;
   border-radius: 10px;
   background-color: #F1EFFF !important;
@@ -1195,9 +1195,19 @@ font-size: 1.3em !important;
   margin-top: 23px;
   margin-bottom: 22px;
 }
-/* .paraFontSize-forMobileView-common{ */
-  /* font-size: var(--subHeading) !important; */
-/* } */
+ .paraFontSize-forMobileView-common{ 
+   /* font-size: var(--subHeading) !important;  */
+   line-height: 3rem !important;
+   font-weight: 600;
+ }
+ .CategoryImg{
+  width: 22%;
+ }
+ .CategoryImg4{
+  width: 29%;
+ }
+
+
 .scndImgOfHomePage{
   margin-top: 42px;
   width: 73vw;
@@ -1205,8 +1215,12 @@ font-size: 1.3em !important;
 .aboutExploreClasses-head{
   font-size: 2rem;
 }
+.BuildingImg{
+  width: 100%;
+}
 .transparentBlue{
-  margin-top: -28%;
+  width: 100%;
+  margin-top: -33%;
 }
 
 /* @media (max-width: 860px) {
@@ -1219,10 +1233,14 @@ font-size: 1.3em !important;
   .homeImage img {
     height: 16vh !important;
   }
-  .paraFontSize-forMobileView-common{
+  /* .paraFontSize-forMobileView-common{
     font-size: var(--subHeading) !important;
+    font-size: 5rem !important;
     margin: 14px 55px !important;
-  }
+    text-align: center;
+    align-items: center;
+        
+  } */
   .studyResourceImages{
     grid-template-columns: 1fr !important;
   }
@@ -1308,10 +1326,11 @@ font-size: 1.3em !important;
   .breifesInHomePage{
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    height: 19vh !important;
+    height: 30vh !important;
     margin-left: -3px !important;
         width: 100% !important;
   }
+
   .appAdvertisement {
     display: grid;
     grid-template-columns: 1fr !important;
@@ -1323,6 +1342,7 @@ font-size: 1.3em !important;
    }
    .appAdvertisement-firstSection{
     height: 20vh !important;
+    width: 80%;
    }
    .exploreTechEnabledBox {
     height: 19vh !important;
@@ -1368,6 +1388,7 @@ font-size: 1.3em !important;
 .scndImgOfHomePage{
   margin-top: 60px !important;
   width: 100% !important;
+  height: auto;
 }
 .appAdvertisementHead {
   font-size: 2.5rem !important;
@@ -1380,7 +1401,6 @@ font-size: 1.3em !important;
 }
 
 }
-
 @media (max-width: 990px) {
   .OurfoundersCard {
     /* height: 20vh !important; */
@@ -1491,6 +1511,30 @@ font-size: 1.3em !important;
   font-size: var(--subHeading) !important;
 }
 }
+
+@media (max-width: 490px) {
+  .CategoryImg{
+    width: 40%;
+  }
+  .paraFontSize-forMobileView-common{
+    font-size: var(--subHeading) !important;
+    font-size: 5rem !important;
+    margin: 14px 55px !important;
+    text-align: center;
+    align-items: center;
+        
+  }
+
+}
+@media (max-width: 500px)  {
+   .categoryMainBox{
+    background-color: red !important;
+   }
+}
+
+.categoryMainBox{
+  background-color: blue;
+ }
 
 
 :root {

@@ -111,14 +111,14 @@ const SubCategory = ({ categorySelected }) => {
       </div>
 
       <Box className="exploreTechEnabledBox">
-        <img src ={building} width={1520} height={400}/>
-        <img src={transparentOverBuilding} width={1520} height={400} className="transparentBlue"/>
+        <img src ={building} className="BuildingImg"/>
+        <img src={transparentOverBuilding} className="transparentBlue"/>
         <Box className="exploreCTechategorySection">
-        <h2 sx={{ color: "#ffffff" }}>
-          <b>Explore Tech-Enabled Online Classes</b>
+        <h2 style={{ color: "#ffffff" }}>
+          <b>Explore Tech-Enabled Online &&& Classes</b>
         </h2>
         <p
-          sx={{ color: "#ffffff" }}
+          style={{ color: "#ffffff" }}
           className="paraFontSize-forMobileView-common"
         >
           Creating new benchmarks in learning expirences

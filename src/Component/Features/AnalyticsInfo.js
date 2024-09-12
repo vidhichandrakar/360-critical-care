@@ -67,12 +67,14 @@ const Analytics = ({}) => {
           <Typography className="appAdvertisementHead">
             Join 15 Million students on the app today!
           </Typography>
-          <Typography className="paraFontSize-forMobileView-common">Live & recorded classes available at ease</Typography>
+          <Box sx={{mt: 3}}>
+          <Typography className="paraFontSize-forMobileView-common " sx={{lineHeight: "2.5rem"}}>Live & recorded classes available at ease</Typography>
           <Typography className="paraFontSize-forMobileView-common">dashboard for progress tracking</Typography>
           <Typography className="paraFontSize-forMobileView-common">
             Millions of practice questions at your fingertips
           </Typography>
-          <div className="googlePlay-n-appStore">
+          </Box>
+          <div className="googlePlay-n-appStore" style={{marginTop: "8%"}}>
             <img
               src={GoogleLogo}
               width={100}
@@ -91,10 +93,10 @@ const Analytics = ({}) => {
         <Box>
           <img
             src={TransparentMobileImg}
-            width={300}
-            height={265}
+            width={450}
+            height={350}
             className="transparentMobile"
-            sx={{ ml: "30px" }}
+            style={{marginBottom: "-22px"}}
           />
         </Box>
       </Box>

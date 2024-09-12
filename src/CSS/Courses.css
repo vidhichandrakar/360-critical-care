@@ -89,3 +89,8 @@
         background-color: #24a28d;
     }
 }
+@media (max-width: 490px) {
+    .categoryMainBox{
+        background-color: green !important;
+       }
+}
