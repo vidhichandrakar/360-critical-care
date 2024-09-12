@@ -1523,9 +1523,9 @@ font-size: 1.3em !important;
   }
 
 }
-@media (max-width: 990px)  {
+@media (max-width: 500px)  {
    .categoryMainBox{
-    background-color: green !important;
+    background-color: red !important;
    }
 }
 
