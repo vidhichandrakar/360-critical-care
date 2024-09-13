@@ -1450,7 +1450,7 @@ font-size: 1.3em !important;
     /* height: 20vh !important; */
     justify-content: center !important;
     display: grid !important;
-    grid-template-columns: 1fr !important;
+    /* grid-template-columns: 1fr !important; */
     align-items: center !important;
     text-align: center !important;
   }
@@ -1523,22 +1523,25 @@ font-size: 1.3em !important;
   width: 100%;
   height: 0px !important;
   font-size: 2.5rem !important;
+  margin: 0px 35%;
 }
 .whyChooseUsVerticalLine{
   display: none !important;
 }
 
 .ourFounderHead {
-  font-size: 2.7rem !important;
+  font-size: 2.8em !important;
 }
 .whyChooseUsHead{
-  font-size: 2.7rem !important;
+  font-size: 2.8rem !important;
+  /* display: flex !important; */
+  /* flex-direction: row !important; */
 }
 
-/* .whyChooseUsSection{
+.whyChooseUsSection{
   display: grid !important;
   grid-template-columns: 1fr !important;
-} */
+}
 .css-1x1xx5k{
   /* max-width: none !important; */
   min-width: 73vw !important;
