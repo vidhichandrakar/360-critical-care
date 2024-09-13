@@ -1,0 +1,28 @@
+.BuildingImg{
+    width: 100%;
+    opacity: 1.9;
+    
+}
+.Imgcontainer{
+     position: relative;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white !important;
+    padding: 10px;
+    text-align: center;
+  }
+  .ImgBoxData{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+.DataCardBox{
+    border-radius: 9px;
+    width: 135px;
+    height: 114px;
+}
