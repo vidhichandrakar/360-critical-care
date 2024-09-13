@@ -17,19 +17,19 @@ import TRICKS2 from "../CourseDescription/TRICKS2";
 const MainComponent = ()=>{
   return(
     <Fragment>
-      {/* <Header/> */}
+      <Header/>
       {/* <AllCourseWOL /> */}
-      {/* <NavHome /> */}
-      {/* <CategoryBox/> */}
-      {/* <Analytics/> */}
-      {/* <PlanDescription/> */}
-      {/* <NeetGroupImg /> */}
-      {/* <Testimonials/> */}
+      <NavHome />
+      <CategoryBox/>
+      <Analytics/>
+      <PlanDescription/>
+      <NeetGroupImg />
+      <Testimonials/>
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
       {/* <TRICKS1/> */}
-      <TRICKS2/>
-      {/* <Footer /> */}
+      {/* <TRICKS2/> */}
+      <Footer />
     </Fragment>
   )
 }
