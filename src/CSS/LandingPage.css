@@ -195,7 +195,7 @@ text-align: center;
     }
     .LogoFooter{
         width: 70%;
-        height: 12vh;
+        height: auto !important;
     }
     .colFooterUpper{
         justify-content: left;
@@ -252,5 +252,15 @@ text-align: center;
     .CompanyBox{
         display: none;
     }
-
+    .col{
+        flex-direction: row;
+    }
+    .SocialMediaApp{
+        margin-top:0;
+        margin-left:0;
+    }
+    .LogoFooter{
+        margin-left: -60%;
+        width: 40%;
+    }
 }
