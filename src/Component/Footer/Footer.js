@@ -8,6 +8,7 @@ import IG from "../../Media/Media_Image/Instagram.svg";
 import YT from "../../Media/Media_Image/youtube.svg";
 import {Link} from 'react-router-dom';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { Typography } from "@mui/material";
 
 function Footer() {
   return (
@@ -18,8 +19,8 @@ function Footer() {
             <div class="footer-col  center">
               <Link to="/web"><img
                 src={Logo}
-                width={250}
-                height={50}
+                // width={250}
+                // height={50}
                 className="LogoFooter"
               /></Link>
               <p className="text-color-white">
@@ -51,7 +52,7 @@ function Footer() {
               </div>
               <div className="col FollowBox">
                 <h4 className="text-color-white">Follow us :</h4>
-                <div>
+                <div className="SocialMediaApp">
                   <a href="#" className="sp">
                     <img src={FB} className="BR" />
                     {/* <FacebookIcon className="BR fb-bg" /> */}
@@ -85,14 +86,16 @@ function Footer() {
             <hr className="footerline" />
           </div>
           <div className="BottomRow">
-            <div className="flexcol fontWidth text-color-white ">
-             <Link to="/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition |</p></Link>
-             <Link to="/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy |</p></Link> 
-             <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us |</p></Link> 
+           
+            <div className="flexcol fontWidth text-color-white CompanyServices">
+             <Link  style={{ color: 'inherit', textDecoration: 'none'}} className="CompanyBox"> <p >Company</p></Link>
+             <Link to="/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition <span className="None">|</span></p></Link>
+             <Link to="/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy  <span className="None">|</span></p></Link> 
+             <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us  <span className="None">|</span></p></Link> 
              <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Contact Us </p></Link> 
             </div>
 
-            <p className="text-color-white">
+            <p className="text-color-white CopyRight">
               Copyright @{new Date().getFullYear()} 360 Critical Care. All
               Rights Reserved.
             </p>
