@@ -1125,26 +1125,29 @@ font-size: 1.3em !important;
   font-size: 1.7em !important;
   font-weight: bolder !important;
 }
+.youtubeHeadMobileView{
+  display: none;
+}
 
-.studyResourceImages{
+/* .studyResourceImages{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* flex-direction: row; */
-  /* margin: 15px !important; */
+  flex-direction: row;
+  margin: 15px !important;
   gap: 37px;
-  /* width: 100%; */
+  width: 100%;
   justify-content: center;
   text-align: center;
   margin-top: 18px !important;
-}
+} */
 .youtubeImages {
-  display: flex;
-  flex-direction: row;
+  display: flex !important;
+  flex-direction: row !important;
   gap: 1%;
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2%;
 }
 .studyResourceImages-Img{
   width: 12vw;
@@ -1207,7 +1210,7 @@ font-size: 1.3em !important;
 }
  .paraFontSize-forMobileView-common{ 
    /* font-size: var(--subHeading) !important;  */
-   line-height: 3rem !important;
+   /* line-height: 3rem !important; */
    font-weight: 600;
  }
  .CategoryImg{
@@ -1252,9 +1255,9 @@ font-size: 1.3em !important;
     align-items: center;
         
   } */
-  .studyResourceImages{
+  /* .studyResourceImages{
     grid-template-columns: 1fr 1fr !important;
-  }
+  } */
   /* .studyMaterials{
     height: 15vh !important;
     width: 71vw !important;
@@ -1326,13 +1329,6 @@ font-size: 1.3em !important;
   height: 22vh;
 }
 
-  /* .youtubeCompleteSection{ */
-    /* margin-bottom: -364px !important; */
-  /* } */
-  .youtubeImages{
-    display: grid !important;
-    /* grid-template-columns: 1fr !important; */
-  }
   .youtubeImg1 {
     width: 21%;
     height: 11vh;
@@ -1430,9 +1426,9 @@ font-size: 1.3em !important;
 /* .studyResource {
   font-size: 3em !important;
 } */
-.youtubeHead {
+/* .youtubeHead {
   font-size: 2em !important;
-}
+} */
 
 }
 @media (max-width: 90px) {

@@ -6,6 +6,8 @@ import "../../CSS/LandingPage.css"
 import Neet2023 from "./LandingpageSubComponent/Neet2023";
 import Jion15 from "./LandingpageSubComponent/Jion15";
 import Studysource from "./LandingpageSubComponent/Studysource";
+import NeetGroupImg from "../Features/NeetGroupImg";
+import NewsLatter from "./LandingpageSubComponent/NewsLatter";
 
 const Landingpage = () => {
     return(
@@ -16,6 +18,8 @@ const Landingpage = () => {
            <Neet2023 />
            <Jion15 />
            <Studysource />
+           <NeetGroupImg />
+           <NewsLatter />
         </Fragment>
     )
 }

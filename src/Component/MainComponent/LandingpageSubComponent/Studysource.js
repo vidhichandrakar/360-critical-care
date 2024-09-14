@@ -28,8 +28,8 @@ const Studysource = () => {
               className="studyResourceImages-Img"
             />
           </Box>
-          <Box className="debriefVideos">
-            <h5>
+          <Box className="studyMaterials" sx={{backgroundColor: " #FFEFD2"}}>
+          <h5>
               <b>Debrief Videos</b>
             </h5>
             <img
@@ -39,8 +39,8 @@ const Studysource = () => {
               className="studyResourceImages-Img"
             />
           </Box>
-          <Box className="freeeMockTests">
-            <h5>
+          <Box className="studyMaterials DisplayNone" sx={{backgroundColor: " #D3FFEE"}}>
+          <h5>
               <b>Free Mock Tests</b>
             </h5>
             <img
@@ -50,7 +50,7 @@ const Studysource = () => {
               className="studyResourceImages-Img"
             />
           </Box>
-        </Box>
+          </Box>
       </Box>
     </Fragment>
   );
