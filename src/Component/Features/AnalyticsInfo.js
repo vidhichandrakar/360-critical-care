@@ -17,7 +17,7 @@ import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import mobileImg from "../../Media/Images/mobileImg.jpg";
-import TransparentMobileImg from '../../Media/Images/MobileMockup  1.png';
+// import TransparentMobileImg from '../../Media/Images/MobileMockup.png';
 
 
 const steps = [
@@ -92,7 +92,7 @@ const Analytics = ({}) => {
 
         <Box>
           <img
-            src={TransparentMobileImg}
+            // src={TransparentMobileImg}
             width={450}
             height={350}
             className="transparentMobile"

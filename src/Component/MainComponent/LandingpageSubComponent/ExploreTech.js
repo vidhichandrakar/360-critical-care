@@ -7,8 +7,8 @@ const ExploreTech = () => {
   return (
     <Fragment>
       <div class="Imgcontainer">
-        <img src={building} alt="Snow" className="BuildingImg" />
-        <img src={transparentOverBuilding} className="transparentBlue" />
+        <Box className="demo">
+        </Box>
         <div class="centered">
           <Box className="ImgBoxData">
             <Box

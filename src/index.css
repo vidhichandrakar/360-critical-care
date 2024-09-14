@@ -426,11 +426,11 @@ code {
   line-height: 1.5rem !important;
   --tw-text-opacity: 1;
 }
-.rightBoxCat {
+/* .rightBoxCat {
   display: flex;
   flex-wrap: wrap;
   min-width: 58vw;
-}
+} */
 /* .SubCategoryBox{
   display: none;
 } */
@@ -603,9 +603,9 @@ code {
   margin-top: 6%;
 } */
 .rowDesign{
-  margin-left: -12% !important;
-  width: 75%;
-  margin-top: 3%;
+  /* margin-left: -12% !important; */
+  /* width: 75%; */
+  margin-top: 3%; 
 }
 .subCatHead{
 font-size: 1.3em !important;
@@ -971,11 +971,8 @@ font-size: 1.3em !important;
   margin-top: -24%;
 }
 .excelInCriticalcareImg{
-  /* margin-left: -33px; */
   width: 100% !important;
-  /* min-width: 99vw; */
   height: 32%;
-  margin-top: -2%;
 }
 .verticalDivider{
   background-color: #c2c2c2 !important;
@@ -1093,15 +1090,15 @@ font-size: 1.3em !important;
 .appAdvertisement{
   display: flex;
   flex-direction: row;
-  align-items: start !important;
+  /* align-items: start !important; */
   justify-content: space-between !important;
   text-align: left !important;
   border-radius: 10px;
   background-color: #F1EFFF !important;
-  padding: 23px 41px;
-  width: 87%;
-    /* margin-left: 6%; */
-    margin: 5% 7%;
+  /* padding: 23px 41px; */
+  /* width: 87%; */
+  /* margin-left: 6%; */
+  margin: 5% 7%;
     gap: 14% !important;
 }
 .appAdvertisementHead{
@@ -1110,9 +1107,9 @@ font-size: 1.3em !important;
   margin-top: 23px !important;
     margin-bottom: 12px !important;
 }
-.googlePlay-n-appStore{
+/* .googlePlay-n-appStore{
   margin-top: 23px;
-}
+} */
 .appLogo-mobAd{
   width: 31%;
   margin-right: 28px;
@@ -1128,19 +1125,14 @@ font-size: 1.3em !important;
   font-size: 1.7em !important;
   font-weight: bolder !important;
 }
-.studyResourceCompleteSection{
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  margin: 74px 245px;
-}
+
 .studyResourceImages{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* flex-direction: row; */
-  margin: 15px !important;
+  /* margin: 15px !important; */
   gap: 37px;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   text-align: center;
   margin-top: 18px !important;
@@ -1162,8 +1154,8 @@ font-size: 1.3em !important;
   border-radius: 12px;
   background-color: #DAF2FF;
   /* width: 50%; */
-  height: 39vh;
-  border-radius: 15px;
+  /* height: 39vh; */
+  /* border-radius: 15px; */
 }
 .studyMaterials h5{
   text-align: start;
@@ -1261,12 +1253,12 @@ font-size: 1.3em !important;
         
   } */
   .studyResourceImages{
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
   }
-  .studyMaterials{
+  /* .studyMaterials{
     height: 15vh !important;
     width: 71vw !important;
-  }
+  } */
   .studyMaterials h5{
     /* font-size: 1.6rem !important; */
     font-size: var(--subHeading) !important;
@@ -1307,7 +1299,7 @@ font-size: 1.3em !important;
     font-size: var(--subHeading) !important;
   }
 .changedDrNBBoxes{
-  width: 14vh;
+  width: 30vw;
 }
 .changedDrNBBoxes-EDIC{
  
@@ -1320,7 +1312,7 @@ font-size: 1.3em !important;
   }
   .drNBCompleteBox{
     height: 22vh !important;
-  width: 44vh;
+    width:  95vw !important;
   }
   .drNBCompleteBox-left{
     width: 100%;
@@ -1375,7 +1367,7 @@ font-size: 1.3em !important;
         width: 100% !important;
   }
 
-  .appAdvertisement {
+  /* .appAdvertisement {
     display: grid;
     grid-template-columns: 1fr !important;
     margin-left: 37px !important;
@@ -1383,11 +1375,11 @@ font-size: 1.3em !important;
     margin-top: 22% !important;
     height: 39vh;
     border-radius: 35px
-   }
-   .appAdvertisement-firstSection{
+   } */
+   /* .appAdvertisement-firstSection{
     height: 20vh !important;
     width: 80%;
-   }
+   } */
    .exploreTechEnabledBox {
     height: 19vh !important;
    }
@@ -1411,7 +1403,7 @@ font-size: 1.3em !important;
     /* height: 4vh !important; */
    }
    .excelInCriticalcareImg{
-    height: 0% !important;
+    display: none;
    }
    .catHeading {
     font-size: 3em !important;
@@ -1434,12 +1426,10 @@ font-size: 1.3em !important;
   width: 100% !important;
   height: auto;
 }
-.appAdvertisementHead {
-  font-size: 2.5rem !important;
-}
-.studyResource {
+
+/* .studyResource {
   font-size: 3em !important;
-}
+} */
 .youtubeHead {
   font-size: 2em !important;
 }
