@@ -60,16 +60,17 @@
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
-    margin: 74px 245px;
+    margin: 74px 100px;
   }
   .studyResourceImages{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2%;
+    gap: 25px
 }
 .studyMaterials{
-     width: 85%;
-  height: 36vh;
+     /* width: 85%; */
+  height: 50vh;
 }
 .NewLetterBox{
     background-color: #24a28e;
@@ -96,9 +97,9 @@
     display: flex;
     padding: 10px 40px !important;
     align-items: center;
-    width: 95%;
+    width: 89%;
     border-radius: 100px !important;
-    margin-left: 35px;
+    margin-left: 87px;
 }
 
 
@@ -141,10 +142,8 @@
         gap: 10px;
     }
     .studyMaterials{
-        width:100%;
-     /* height: 36vh; */
-     /* margin: 0 10px; */
-   }
+     height: 29vh;
+    }
     .DisplayNone{
         display: none;
     }

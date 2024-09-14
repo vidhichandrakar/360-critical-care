@@ -1141,13 +1141,14 @@ font-size: 1.3em !important;
   margin-top: 18px !important;
 } */
 .youtubeImages {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 1%;
-  width: 100%;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  /* gap: 1%; */
+  /* width: 100%; */
   justify-content: center;
   text-align: center;
-  margin-top: 2%;
+  /* margin-top: 2%; */
+  margin: 30px 100px 100px 100px ;
 }
 .studyResourceImages-Img{
   width: 12vw;

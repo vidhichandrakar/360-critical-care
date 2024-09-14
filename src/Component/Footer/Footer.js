@@ -51,7 +51,7 @@ function Footer() {
                 </a>
               </div>
               <div className="col FollowBox">
-                <h4 className="text-color-white">Follow us :</h4>
+                <h4 className="text-color-white"><b>Follow us :</b></h4>
                 <div className="SocialMediaApp">
                   <a href="#" className="sp">
                     <img src={FB} className="BR" />
@@ -77,8 +77,8 @@ function Footer() {
                 </div>
               </div>
               <div className="col EnquiryBox">
-                <h4>For Enquiry :&nbsp;</h4>
-                <h4>care@360criticalcare.com</h4>
+                <h4><b>For Enquiry :</b>&nbsp;</h4>
+                <h4><b>care@360criticalcare.com</b></h4>
               </div>
             </div>
           </div>
@@ -96,8 +96,8 @@ function Footer() {
             </div>
 
             <p className="text-color-white CopyRight">
-              Copyright @{new Date().getFullYear()} 360 Critical Care. All
-              Rights Reserved.
+             <b> Copyright @{new Date().getFullYear()} 360 Critical Care. All
+              Rights Reserved.</b>
             </p>
           </div>
         </div>
