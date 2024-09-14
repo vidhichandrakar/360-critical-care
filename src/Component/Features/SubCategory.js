@@ -2,6 +2,12 @@ import { Typography, Box, Button, colors } from "@mui/material";
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import ExcelInCC from "../../Media/Images/ExcelInCriticalCareImg.png";
+import doctorSign from '../../Media/Images/handsAndDoctorSign.png';
+import functioning from '../../Media/Images/functioning.png';
+import robot from '../../Media/Images/robot.png';
+import building from '../../Media/Images/hospnew.png';
+import transparentOverBuilding from '../../Media/Images/Rectangle 6.png';
+
 
 const SubCategory = ({ categorySelected }) => {
   const categoryType = {
@@ -49,24 +55,24 @@ const SubCategory = ({ categorySelected }) => {
   return (
     <Fragment>
       <div className="allExploreCatCards">
-        <Box className="drNBCompleteBox">
-          <Box className="drNBCompleteBox-left">
+        <Box className="SubBoxSubBox">
+          <Box className="drNBCompleteBox">
+            <Box className="drNBCompleteBox-left">
             <h5 className="drNB-head">
               <b>DrNB/DM</b>
             </h5>
             <Box className="drNBSubSections">
-              {/* <Box className="drNBOptions">Top Long Course</Box>
-                <Box className="drNBOptions-two">Top Short Course</Box>
-                <Box className="drNBOptions2ndClm">Top Crash Course</Box> */}
               <Box className="changedDrNBBoxes">Top Long Course</Box>
               <Box className="changedDrNBBoxes">Top Short Course</Box>
               <Box className="changedDrNBBoxes">Top Crash Course</Box>
             </Box>
+            </Box>
+            <Box className="blueSemiCircle">
+            <img src ={doctorSign} width={80} height={70} className="semiCircleIcon"/>
+          </Box>
           </Box>
 
-          <Box className="blueSemiCircle">
-            <p>icon</p>
-          </Box>
+         
         </Box>
 
         <Box className="drNBCompleteBox">
@@ -75,14 +81,14 @@ const SubCategory = ({ categorySelected }) => {
               <b>EDIC</b>
             </h5>
             <Box className="drNBSubSections">
-              <Box className="changedDrNBBoxes-EDIC">TRICKS-1</Box>
-              <Box className="changedDrNBBoxes-EDIC">TRICKS-2</Box>
-              <Box className="changedDrNBBoxes-EDIC">TRICKS-i</Box>
+              <Box className="changedDrNBBoxes">TRICKS-1</Box>
+              <Box className="changedDrNBBoxes">TRICKS-2</Box>
+              <Box className="changedDrNBBoxes">TRICKS-i</Box>
             </Box>
           </Box>
 
           <Box className="blueSemiCircle">
-            <p>icon</p>
+            <img src ={functioning} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
 
@@ -99,88 +105,14 @@ const SubCategory = ({ categorySelected }) => {
           </Box>
 
           <Box className="blueSemiCircle">
-            <p>icon</p>
+            <img src ={robot} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
       </div>
+       
+      
 
-      <Box className="exploreTechEnabledBox">
-        <h2 sx={{ color: "#ffffff" }}>
-          <b>Explore Tech-Enabled Online Classes</b>
-        </h2>
-        <p
-          sx={{ color: "#ffffff" }}
-          className="paraFontSize-forMobileView-common"
-        >
-          Creating new benchmarks in learning expirences
-        </p>
-
-        <Box className="aboutExploreClasses">
-          <Box
-            sx={{
-              backgroundColor: "#FFF3E3",
-              borderRadius: "9px",
-              width: "135px",
-              height: "114px",
-            }}
-          >
-            <h1 className="aboutExploreClasses-head">
-              <b>800+</b>
-            </h1>
-            <p className="aboutExploreClasses-para">
-              <b>Students</b>
-            </p>
-          </Box>
-          {/* <Box className="verticalDivider"></Box> */}
-          <Box
-            sx={{
-              backgroundColor: "#FFEEEE",
-              borderRadius: "9px",
-              width: "135px",
-              height: "114px",
-            }}
-          >
-            <h1 className="aboutExploreClasses-head">
-              <b>3+</b>
-            </h1>
-            <p className="aboutExploreClasses-para">
-              <b>Glorious Years</b>
-            </p>
-          </Box>
-          <Box
-            sx={{
-              backgroundColor: "#E4FAFF",
-              borderRadius: "9px",
-              width: "135px",
-              height: "114px",
-            }}
-          >
-            <h1 className="aboutExploreClasses-head">
-              <b>90%</b>
-            </h1>
-            <p className="aboutExploreClasses-para">
-              <b>Success Rate</b>
-            </p>
-          </Box>
-          <Box
-            sx={{
-              backgroundColor: "#ECE7FF",
-              borderRadius: "9px",
-              width: "135px",
-              height: "114px",
-            }}
-          >
-            <h1 className="aboutExploreClasses-head">
-              <b>100+</b>
-            </h1>
-            <p className="aboutExploreClasses-para">
-              <b>Teaching Videos</b>
-            </p>
-          </Box>
-        </Box>
-      </Box>
-
-      <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" />
+      {/* <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" /> */}
     </Fragment>
   );
 };

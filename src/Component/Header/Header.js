@@ -97,16 +97,7 @@ const Header = () => {
         <Toolbar disableGutters>
           <Box sx={{  display: { xs: "flex", md: "none" } }}>
            
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon className="Hamburger"/>
-              </IconButton>
+            
             <Box>
               <Link to="/Critical-Care"><img src={Logo} className="Responsivelogo"/></Link> 
             </Box>
@@ -296,6 +287,23 @@ const Header = () => {
               Login / Register
             </Button>
           </Box>
+          <Box sx={{ mr: 3}} className="loginContainerony">
+            <Button variant="contained" className="LoginButtononly">
+              Login
+            </Button>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+              className="MenuButton"
+            >
+              <MenuIcon className="Hamburger"/>
+              </IconButton>
+          </Box>
+
         </Toolbar>
       </Container>
     </AppBar>

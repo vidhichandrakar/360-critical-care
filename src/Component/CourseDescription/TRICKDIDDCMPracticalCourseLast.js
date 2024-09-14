@@ -13,18 +13,26 @@ import Footer from "../Footer/Footer";
 import TextField from "@mui/material/TextField";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import TRICKSIDDCMImg from "../../Media/Images/TRICKSIDDCMImg.png";
+import DoctorCardImg from "../../Media/Images/DoctorCardImg.png";
+import topLongCourseImg from "../../Media/Images/topLongCourseImg.png";
+import buyTCCImg from "../../Media/Images/buyTopCrashCourseImg.png";
 import mobileViewMainImg from "../../Media/Images/mobileViewMainImg.png";
 import cardImg from "../../Media/Images/cardImg.png";
 import CourseDescriptionMobileHeader from '../Header/CourseDescriptionMobileHeader';
+import DoctorKidCard from "../../Media/Images/DoctorKidCard.png";
+import headPhonesGirlImg from "../../Media/Images/HeadphonesGirl.png"
 
 
+// ------- LAST TRICKS PAGE----------- 
 
-const TRICKS1 = () => {
+
+const TRICKDIDDCMPracticalCourseLast = () => {
   return (
     <div className="tricksCompletePage">
       <Header />
       <CourseDescriptionMobileHeader />
-      <img src={TRICKS1Img} width={1695} height={355}  className="TRICKMainImg"/>
+      <img src={TRICKSIDDCMImg} width={1695} height={355} className="TRICKMainImg"/>
       <img src ={mobileViewMainImg} className="TRICKMainMobileImg"/>
       <Box className="courseDetailsBox">
         <Typography className="courseDetailsHead">
@@ -32,10 +40,10 @@ const TRICKS1 = () => {
         </Typography>
         <Typography className="courseDetailsul">
           <ul className="TRICKSDisk">
-            <li>10 Section wise and 3 Whole syllabus Mock Test</li>
-            <li>Convenient timing for Exam</li>
-            <li>Access to debrief videos</li>
-            <li>High probability questions bank</li>
+            <li>Extensive Coverage Topics asked in IDCCM- Practicals.</li>
+            <li>Real time IDCCM Practical Exam Experience.</li>
+            <li>Access to Discussion Video</li>
+            <li>Access to High Probability Questions Bank.</li>
           </ul>
         </Typography>
       </Box>
@@ -87,23 +95,21 @@ const TRICKS1 = () => {
 
       <Box className="thisBatchIncluesBox">
         <Box>
-          <Typography sx={{ fontSize: "1.7rem", mt: 4 }}>
+          <Typography sx={{ mt: 4 }} className='thisBatchIncludesHead'>
             <b>This Batch Includes</b>
           </Typography>
           <Typography className="thisBatchIncludesul">
-            <ol>
-              <li>Doubt Clearing Live Class</li>
-              <li>Online Lectures</li>
-              <li>Videos Lecture</li>
-              <li>Mock Test Set</li>
-              <li>Best Guidance</li>
-              <li>Dedicated whatsApp Group</li>
-            </ol>
+            <ul className="TRICKSDisk">
+              <li>Extensive coverage of Table Vivas in pre recorded videos.</li>
+              <li>Mock exam 1 & 2 simulation.</li>
+              <li>Grand Mock (IDCCM pattern) for All Registered Candidated with Slot pre</li>
+              <li>Dedicated WhatsApp group for Discussion.</li>
+            </ul>
           </Typography>
         </Box>
 
         <Box className="batchBuyNowCard">
-          <img src={BatchIncludeImg} width={400} height={200}  className="mainCardImg"/>
+          <img src={headPhonesGirlImg} width={400} height={200}  className="mainCardImg"/>
           <img src ={cardImg} className="cardImgDoctor" />
           <Box>
             <Typography sx={{ fontSize: "0.9rem", textAlign: "center", m: 1 }}>
@@ -123,33 +129,26 @@ const TRICKS1 = () => {
         </Box>
       </Box>
 
-      <Box className="TRICKS-FAQsBox">
-        <Typography sx={{ fontSize: "1.7rem" }}>
-          <b>FAQ's What does the TRICKS 1 Cover?</b>
+      <Box className="TRICKS-FAQsBox-TOPCrashCourseTheory-last">
+        <Typography className='thisBatchIncludesHead'>
+          <b>FAQ's What does the TRICKS IDDCM Practical Coverage</b>
         </Typography>
-        <Typography className="TRICKS-FAQs">
+        <Typography className="TRICKS-FAQs-TOPCrashCourseTheory-last">
           <ul className="TRICKSDisk">
             <li>
-              Once enrolled it will provide a detailed overview of syllabus and
-              study material.
+              <b>Candidates will have access to the "TRICKS IDDCM Cloud" platform. It's a unique resources meant for preparation of IDDCM.</b>
             </li>
             <li>
-              Candidates will have access to the "TRICKS-EDIC-1 Cloud" platform.
-              It's a unique resource meant for preparation of EDIC-1.
+              <b>The modules are classified as per the IDDCM syllabus. The whole course consists of 10 modules with sectin wise MOCK tests.</b>
             </li>
             <li>
-              The modules are classified as per the EDIC-1 syllabus. The whole
-              course consists of 10 modules with section wise MOCK tests.
-            </li>
-            <li>
-              Each module consists of pre-reading for a week followed by a mock
-              test as per the EDIC-1 standards.
+                <b>Extensive coverage of Table Vivas in pre recorded videos.</b>
             </li>
           </ul>
         </Typography>
       </Box>
 
-      <Box className="TRICKSfreeCourseBox">
+      <Box className="TRICKSfreeCourseBox-last">
         <Box className="TRICKFreeCourses-left">
           <Typography className="freeResourcesText">
             Get Access To Our <br />
@@ -165,7 +164,6 @@ const TRICKS1 = () => {
             }}
           >
             <Typography>Get instant access to high</Typography>
-            {/* <Box className="TRICKS-dot"></Box> */}
             <FiberManualRecordIcon className="TRICKS-dot"/>
             <Typography>quality material</Typography>
           </Box>
@@ -193,4 +191,4 @@ const TRICKS1 = () => {
   );
 };
 
-export default TRICKS1;
+export default TRICKDIDDCMPracticalCourseLast;

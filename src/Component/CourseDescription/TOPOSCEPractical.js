@@ -13,18 +13,23 @@ import Footer from "../Footer/Footer";
 import TextField from "@mui/material/TextField";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import TRICKSIDDCMImg from "../../Media/Images/TRICKSIDDCMImg.png";
+import DoctorCardImg from "../../Media/Images/DoctorCardImg.png";
+import topLongCourseImg from "../../Media/Images/topLongCourseImg.png";
+import buyTCCImg from "../../Media/Images/buyTopCrashCourseImg.png";
 import mobileViewMainImg from "../../Media/Images/mobileViewMainImg.png";
 import cardImg from "../../Media/Images/cardImg.png";
 import CourseDescriptionMobileHeader from '../Header/CourseDescriptionMobileHeader';
+import DoctorKidCard from "../../Media/Images/DoctorKidCard.png";
+import headPhonesGirlImg from "../../Media/Images/HeadphonesGirl.png";
 
 
-
-const TRICKS1 = () => {
+const TOPOSCEPractical = () => {
   return (
     <div className="tricksCompletePage">
       <Header />
       <CourseDescriptionMobileHeader />
-      <img src={TRICKS1Img} width={1695} height={355}  className="TRICKMainImg"/>
+      <img src={TRICKSIDDCMImg} width={1695} height={355} className="TRICKMainImg"/>
       <img src ={mobileViewMainImg} className="TRICKMainMobileImg"/>
       <Box className="courseDetailsBox">
         <Typography className="courseDetailsHead">
@@ -32,10 +37,8 @@ const TRICKS1 = () => {
         </Typography>
         <Typography className="courseDetailsul">
           <ul className="TRICKSDisk">
-            <li>10 Section wise and 3 Whole syllabus Mock Test</li>
-            <li>Convenient timing for Exam</li>
-            <li>Access to debrief videos</li>
-            <li>High probability questions bank</li>
+            <li>Each session will focus on Table VIVA, Data Interpretation, Waveform Analysis and Other Sample Questions.</li>
+            <li>It will also include most common long cases describing about how to approach a specific case on the relevent topic exam</li>
           </ul>
         </Typography>
       </Box>
@@ -87,23 +90,19 @@ const TRICKS1 = () => {
 
       <Box className="thisBatchIncluesBox">
         <Box>
-          <Typography sx={{ fontSize: "1.7rem", mt: 4 }}>
+          <Typography sx={{ mt: 4 }} className='thisBatchIncludesHead'>
             <b>This Batch Includes</b>
           </Typography>
           <Typography className="thisBatchIncludesul">
             <ol>
-              <li>Doubt Clearing Live Class</li>
-              <li>Online Lectures</li>
-              <li>Videos Lecture</li>
-              <li>Mock Test Set</li>
-              <li>Best Guidance</li>
-              <li>Dedicated whatsApp Group</li>
+              <li>The OSCE/VIVA session will include relevent question discussion on specific course</li>
+              <li>Eight Domains of VIVA/OSCE will be Discussed for each Modules.</li>
             </ol>
           </Typography>
         </Box>
 
         <Box className="batchBuyNowCard">
-          <img src={BatchIncludeImg} width={400} height={200}  className="mainCardImg"/>
+          <img src={headPhonesGirlImg} width={400} height={200}  className="mainCardImg"/>
           <img src ={cardImg} className="cardImgDoctor" />
           <Box>
             <Typography sx={{ fontSize: "0.9rem", textAlign: "center", m: 1 }}>
@@ -123,27 +122,17 @@ const TRICKS1 = () => {
         </Box>
       </Box>
 
-      <Box className="TRICKS-FAQsBox">
-        <Typography sx={{ fontSize: "1.7rem" }}>
-          <b>FAQ's What does the TRICKS 1 Cover?</b>
+      <Box className="TRICKS-FAQsBox-TOPCrashCourseTheory">
+        <Typography className='thisBatchIncludesHead'>
+          <b>FAQ's What does the Top Crash Course Practical</b>
         </Typography>
-        <Typography className="TRICKS-FAQs">
+        <Typography className="TRICKS-FAQs-TOPCrashCourseTheory">
           <ul className="TRICKSDisk">
             <li>
-              Once enrolled it will provide a detailed overview of syllabus and
-              study material.
+              <b>The candidates will have access to the "Top Crash Coursse Practical" platform. It's a unique Crash course Practical.</b>
             </li>
             <li>
-              Candidates will have access to the "TRICKS-EDIC-1 Cloud" platform.
-              It's a unique resource meant for preparation of EDIC-1.
-            </li>
-            <li>
-              The modules are classified as per the EDIC-1 syllabus. The whole
-              course consists of 10 modules with section wise MOCK tests.
-            </li>
-            <li>
-              Each module consists of pre-reading for a week followed by a mock
-              test as per the EDIC-1 standards.
+              <b>Access to MOCK Table Vivas in pre recorded videos.</b>
             </li>
           </ul>
         </Typography>
@@ -165,7 +154,6 @@ const TRICKS1 = () => {
             }}
           >
             <Typography>Get instant access to high</Typography>
-            {/* <Box className="TRICKS-dot"></Box> */}
             <FiberManualRecordIcon className="TRICKS-dot"/>
             <Typography>quality material</Typography>
           </Box>
@@ -193,4 +181,4 @@ const TRICKS1 = () => {
   );
 };
 
-export default TRICKS1;
+export default TOPOSCEPractical;

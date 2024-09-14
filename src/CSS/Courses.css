@@ -84,8 +84,13 @@
     color: white;
 }
 /* End AllCourseWOL CSS */
-@media (max-width: 860px) {
+/* @media (max-width: 860px) {
     .PopularCourseBox{
         background-color: #24a28d;
     }
 }
+@media (max-width: 490px) {
+    .categoryMainBox{
+        background-color: green !important;
+       }
+} */
