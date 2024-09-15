@@ -16,7 +16,7 @@ const AllCourseWOL = () => {
             <Box className="CoursesCardMainBox">
                 {AllCourseWOLCard?.length && AllCourseWOLCard?.map((item) => {
                   return   <Box className="CradBox">
-                    <img src={cardimg} width={300} height={150}/>
+                    <img src={cardimg} className="CoursesCardImg"/>
                     <Box className="CardTextBox"    >
                         <Typography className="CardHeading">
                            {item.heading}

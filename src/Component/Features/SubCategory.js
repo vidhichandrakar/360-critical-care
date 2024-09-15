@@ -93,11 +93,11 @@ const SubCategory = ({ categorySelected }) => {
         </Box>
       </div>
 
-        <Box className="exploreTechEnabledBox">
-          {/* <img src={} width={} height={} /> */}
+        <Box className="exploreTechEnabledBox"> 
+          <div> 
           <h2 sx={{color:"#ffffff"}}><b>Explore Tech-Enabled Online Classes</b></h2>
           <p sx={{color:"#ffffff"}}>Creating new benchmarks in learning expirences</p>
-
+          </div>
           <Box className="aboutExploreClasses">
             <Box sx={{backgroundColor:"#FFF3E3", borderRadius:"9px", width:"135px", height:"114px"}}>
               {/* <img scr={img11} width={50} height={50}/> */}
