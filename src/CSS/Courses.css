@@ -114,12 +114,21 @@
     height: 20vh;
   }
 /* End AllCourseWOL CSS */
-@media (max-width: 860px) {
+/* @media (max-width: 860px) {
     .PopularCourseBox{
         background-color: #24a28d;
     }
+<<<<<<< HEAD
     .PopularCardBox {
         padding: 12px 19px;
         width: 90%;
     }
 }
+=======
+}
+@media (max-width: 490px) {
+    .categoryMainBox{
+        background-color: green !important;
+       }
+} */
+>>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9

@@ -3,14 +3,11 @@ import React from "react";
 import GoogleLogo from "../../Media/Media_Image/play-store.png";
 import AppLogo from "../../Media/Media_Image/app-store.png";
 import Container from "@mui/material/Container";
-// import Box from "@mui/material/Box";
 import arrowright from "../../Media/Images/arrow-right.png";
 import arrowleft from "../../Media/Images/arrow-left.png";
-
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-// import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
@@ -19,6 +16,9 @@ import EastIcon from "@mui/icons-material/East";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import mobileImg from "../../Media/Images/mobileImg.jpg";
+// import TransparentMobileImg from '../../Media/Images/MobileMockup.png';
+
 
 const steps = [
   {
@@ -63,16 +63,18 @@ const Analytics = ({}) => {
   return (
     <>
       <Box className="appAdvertisement">
-        <Box>
+        <Box className="appAdvertisement-firstSection">
           <Typography className="appAdvertisementHead">
             Join 15 Million students on the app today!
           </Typography>
-          <Typography>Live & recorded classes available at ease</Typography>
-          <Typography>dashboard for progress tracking</Typography>
-          <Typography>
+          <Box sx={{mt: 3}}>
+          <Typography className="paraFontSize-forMobileView-common " sx={{lineHeight: "2.5rem"}}>Live & recorded classes available at ease</Typography>
+          <Typography className="paraFontSize-forMobileView-common">dashboard for progress tracking</Typography>
+          <Typography className="paraFontSize-forMobileView-common">
             Millions of practice questions at your fingertips
           </Typography>
-          <div className="googlePlay-n-appStore">
+          </Box>
+          <div className="googlePlay-n-appStore" style={{marginTop: "8%"}}>
             <img
               src={GoogleLogo}
               width={100}
@@ -90,10 +92,11 @@ const Analytics = ({}) => {
 
         <Box>
           <img
-            src="Mobile Mockup .png"
-            width={200}
-            height={200}
-            sx={{ ml: "24px" }}
+            // src={TransparentMobileImg}
+            width={450}
+            height={350}
+            className="transparentMobile"
+            style={{marginBottom: "-22px"}}
           />
         </Box>
       </Box>
@@ -102,7 +105,7 @@ const Analytics = ({}) => {
         <Typography className="secondHeading">
           Students of 360 Critical Care
         </Typography>
-        <Typography sx={{ color: "#ffffff", fontSize: "0.9rem" }}>
+        <Typography sx={{ color: "#ffffff", fontSize: "0.9rem" }} className="paraFontSize-forMobileView-common">
           Hear from our students
         </Typography>
 
@@ -112,6 +115,8 @@ const Analytics = ({}) => {
             onClick={handleBack}
             disabled={activeStep === 0}
           />
+
+          <Box className="studentsSliderBoxes">
           <Box
             sx={{ maxWidth: 400, flexGrow: 1 }}
             className="TestimonialsLeftCard"
@@ -139,6 +144,8 @@ const Analytics = ({}) => {
               <b> {steps[activeStep]?.description}</b>
             </p>
           </Box>
+          </Box>
+
 
           <ArrowForwardIosIcon
             className=" Arrow2"
@@ -146,20 +153,6 @@ const Analytics = ({}) => {
             disabled={activeStep === maxSteps - 1}
           />
         </div>
-
-        {/* <div className="TestimonialsArrow">
-          <KeyboardBackspaceIcon
-            className="Arrow1"
-            onClick={handleBack}
-            disabled={activeStep === 0}
-          />
-
-          <EastIcon
-            className=" Arrow2"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          />
-        </div> */}
       </div>
     </>
   );

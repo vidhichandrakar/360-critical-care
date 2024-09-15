@@ -1,0 +1,265 @@
+.BuildingImg{
+    width: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 128, 0.6), rgba(0, 0, 128, 0.1));
+}
+.demo{
+    width:100%;
+    height: 500px;
+    background-image: 
+    radial-gradient(circle, rgba(0, 16, 31, 0.5), rgba(0, 69, 133, 0.5)),
+    url('../Media/Images/hospnew.png');
+  background-size: cover;
+  background-position: center;
+}
+.Imgcontainer{
+     position: relative;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white !important;
+    padding: 20px;
+    text-align: center;
+  }
+  .ImgBoxData{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.DataCardBox{
+    border-radius: 9px;
+    width: 220px;
+    height: 160px;
+    padding: 20px 0;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+  }
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+  }
+  .JionMainBox{
+    padding: 30px 60px;
+  }
+  .studyResourceCompleteSection{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 74px 100px;
+  }
+  .studyResourceImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2%;
+    gap: 25px
+}
+.studyMaterials{
+     /* width: 85%; */
+  height: 50vh;
+}
+.NewLetterBox{
+    background-color: #24a28e;
+    padding: 100px 42px;
+    align-items: center;
+    text-align: center;
+}
+.SubscribeFont{
+    font-family: inter !important;
+    font-size: 44px !important;
+    font-weight: 700 !important;
+    line-height: 53.25px !important;
+    color: white;
+}
+.OurNewsFont{
+    font-family: Licorice !important;
+    font-size: 130px !important;
+    font-weight: 400 !important;
+    line-height: 162.5px !important;
+    text-align: center;
+    color: white 
+}
+.GmailBox{
+    display: flex;
+    padding: 10px 40px !important;
+    align-items: center;
+    width: 89%;
+    border-radius: 100px !important;
+    margin-left: 87px;
+}
+
+
+@media (max-width:490px) {
+    .DataCardBox{
+        width: 150px;
+        height: 150px;
+    }
+    .centered{
+        top: 95%;
+    }
+    .Neet2023{
+        width: 90%;
+    }
+    .appAdvertisement{
+        flex-direction: column;        
+    }
+    .transparentMobile{
+        display: none;
+    }
+    .JionMainBox{
+        padding: 0 18px;
+    }
+    .JoinBoxSubHead{
+        margin-left: 4%;
+    }
+    .googlePlay-n-appStore{
+        margin-left: 4%;
+    }
+    .PWImg{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .studyResourceCompleteSection{
+            margin: 10px;
+    }
+
+    .studyResourceImages{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .studyMaterials{
+     height: 29vh;
+    }
+    .DisplayNone{
+        display: none;
+    }
+    .youtubeHead {
+       display: none;
+      }
+      .youtubeHeadMobileView{
+        display: block;
+        font-size: 1.6rem !important;
+        font-weight: 700 !important;
+      }
+    .youtubeImages{
+        display: none !important;
+    }
+    .YoutubBox{
+        background-color: red;
+    margin: 15px 14px;
+    padding: 50px 0px;
+    }
+    .youtubeCompleteSection{
+        margin: 5px;
+    }
+    .SubscribeFont{
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.78px;
+        color: white;
+    }
+    .NewLetterBox{
+        padding: 80px 20px;
+    }
+    .OurNewsFont{
+        font-family: Licorice;
+font-size: 70px !important;
+font-weight: 400 !important;
+line-height: 87.5px !important;
+text-align: center;
+
+    }
+    .GmailBox{
+        margin-top: 10px;
+        display: flex;
+        padding: 5px 5px !important;
+        align-items: center;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .LogoFooter{
+        width: 70%;
+        height: auto !important;
+    }
+    .colFooterUpper{
+        justify-content: left;
+    }
+    .col{
+        flex-direction: column;
+    }
+    .SocialMediaApp{
+        margin-top: -6%;
+        margin-left: -5%;
+    }
+    .EnquiryBox{
+        margin-top: 5%;
+        flex-direction: row !important;
+        justify-content: left;
+    }
+    .CompanyBox{
+        font-size: 1.7rem !important;
+        font-weight: 700;
+    }
+    .CompanyServices{
+        flex-direction: column;
+    }
+    .footerline{
+        display: none;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .margin-left{
+        margin-left: 0;
+    }
+    .None{
+        display: none;
+    }
+    .CopyRight{
+        text-align: center !important;
+    }
+}
+@media (min-width:490px) {
+    .Neet2023{
+        display: none;
+    }
+    .PWImg{
+        display: none;
+    }
+    .YoutubBox{
+        display: none;
+    }
+    .CompanyBox{
+        display: none;
+    }
+    .col{
+        flex-direction: row;
+    }
+    .SocialMediaApp{
+        margin-top:0;
+        margin-left:0;
+    }
+    .LogoFooter{
+        margin-left: -60%;
+        width: 40%;
+    }
+}

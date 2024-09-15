@@ -14,9 +14,8 @@
 }
 .text p{
     font-size: 1rem;
-    text-align: justify;
+    /* text-align: justify; */
     color: black;
-
 }
 .TermsList li{
     font-size: 1rem;
@@ -34,14 +33,12 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
-    /* color: #18568f; */
 }
 .AquaColor{
     color: #199884 !important;
 }
 .text{
     text-align: left;
-    /* margin-top: 10%; */
 }
 .text li{
     font-size: 1rem !important;
@@ -49,8 +46,16 @@
     color: black;
 }
 .TermsList{
-    margin-left: 2%;
-    list-style-type: number;
+      /* margin-left: 2%; */
+      list-style-type: number;
+      line-height: 0.5em;
+}
+.termsList{
+    margin-left: 16px;
+    /* margin-top: -28px; */
+    list-style-type: disc;
+    line-height: 1.2;
+    margin-top: -16px;
 }
 
 @media(max-width: 498px){

@@ -1,7 +1,13 @@
 import { Typography, Box, Button, colors } from "@mui/material";
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import ExcelInCC from "../../Media/Images/ExcelInCriticalCareImg.png"
+import ExcelInCC from "../../Media/Images/ExcelInCriticalCareImg.png";
+import doctorSign from '../../Media/Images/handsAndDoctorSign.png';
+import functioning from '../../Media/Images/functioning.png';
+import robot from '../../Media/Images/robot.png';
+import building from '../../Media/Images/hospnew.png';
+import transparentOverBuilding from '../../Media/Images/Rectangle 6.png';
+
 
 const SubCategory = ({ categorySelected }) => {
   const categoryType = {
@@ -49,38 +55,39 @@ const SubCategory = ({ categorySelected }) => {
   return (
     <Fragment>
       <div className="allExploreCatCards">
-        <Box className="drNBCompleteBox">
-          <div className="drNBCompleteBox-left">
-            <h5>DrNB/DM/IFCCM Critical Care</h5>
-            <div className="drNBSubSections">
-              <div className="drNBTwoOptions">
-                <Box className="drNBOptions">Top Long Course</Box>
-                <Box className="drNBOptions-two">Top Short Course</Box>
-              </div>
-              <Box className="drNBOptions2ndClm">Top Crash Course</Box>
-            </div>
-          </div>
-
-          <div>
-            <Box className="blueSemiCircle">
-              <p>icon</p>
+        <Box className="SubBoxSubBox">
+          <Box className="drNBCompleteBox">
+            <Box className="drNBCompleteBox-left">
+            <h5 className="drNB-head">
+              <b>DrNB/DM</b>
+            </h5>
+            <Box className="drNBSubSections">
+              <Box className="changedDrNBBoxes">Top Long Course</Box>
+              <Box className="changedDrNBBoxes">Top Short Course</Box>
+              <Box className="changedDrNBBoxes">Top Crash Course</Box>
             </Box>
-          </div>
+            </Box>
+            <Box className="blueSemiCircle">
+            <img src ={doctorSign} width={80} height={70} className="semiCircleIcon"/>
+          </Box>
+          </Box>
+
+         
         </Box>
 
         <Box className="drNBCompleteBox">
-          <h5>
-            <b>EDIC</b>
-          </h5>
-          <div className="drNBSubSections">
-            <div className="drNBTwoOptions">
-              <Box className="drNBOptions">Top Long Course</Box>
-              <Box className="drNBOptions-two">Top Short Course</Box>
-            </div>
-            <Box className="drNBOptions2ndClm">Top Crash Course</Box>
-          </div>
-        </Box>
+          <Box className="drNBCompleteBox-left">
+            <h5 className="drNB-head">
+              <b>EDIC</b>
+            </h5>
+            <Box className="drNBSubSections">
+              <Box className="changedDrNBBoxes">TRICKS-1</Box>
+              <Box className="changedDrNBBoxes">TRICKS-2</Box>
+              <Box className="changedDrNBBoxes">TRICKS-i</Box>
+            </Box>
+          </Box>
 
+<<<<<<< HEAD
         <Box className="drNBCompleteBox">
           <h5>IDCCM</h5>
           <div className="drNBSubSections">
@@ -117,12 +124,34 @@ const SubCategory = ({ categorySelected }) => {
               <h1>100+</h1>
               <p>Teaching Videos</p>
             </Box>
+=======
+          <Box className="blueSemiCircle">
+            <img src ={functioning} width={80} height={70} className="semiCircleIcon"/>
+>>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9
           </Box>
         </Box>
 
-      {/* <div> */}
-        <img src={ExcelInCC} height={240} className="excelInCriticalcareImg"/>
-      {/* </div> */}
+        <Box className="drNBCompleteBox">
+          <Box className="drNBCompleteBox-left">
+            <h5 className="drNB-head">
+              <b>IDCCM</b>
+            </h5>
+            <div className="drNBSubSections">
+              <Box className="changedDrNBBoxes">TRICKS-IDCCM</Box>
+              {/* <Box className="changedDrNBBoxes">Top Short Course</Box> */}
+              {/* <Box className="changedDrNBBoxes">Top Crash Course</Box> */}
+            </div>
+          </Box>
+
+          <Box className="blueSemiCircle">
+            <img src ={robot} width={80} height={70} className="semiCircleIcon"/>
+          </Box>
+        </Box>
+      </div>
+       
+      
+
+      {/* <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" /> */}
     </Fragment>
   );
 };

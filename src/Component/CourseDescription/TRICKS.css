@@ -1,0 +1,443 @@
+.tricksCompletePage{
+    margin-top: 65px;
+}
+.courseDetailsBox{
+  background-color: #f4efef !important;
+  text-align: left;
+  height: 27vh;
+  padding: 30px;
+}
+.courseDetailsul{
+  line-height: 1.8em !important;
+  height: 10vh;
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+}
+
+
+.ourFacultiesHead {
+    font-size: 1.7em !important;
+    font-weight: bolder !important;
+    margin: 22px 37px !important;
+    text-align: left;
+  }
+  .OurfacultiesCard {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .ourFacultiesAlignment{
+    text-align: left !important;
+  }
+  .OurFacultiesLeftCard {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 36px;
+    background-color: #ffffff;
+    width: 45%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 10px !important;
+    height: 20vh;
+    padding: 29px 24px;
+    box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+  }
+  .ourFacultiesAbout{
+    font-size: 0.7rem !important;
+    padding: 0px 0px !important;
+    color: #002C4F;
+  }
+  .knowMoreBtnOne{
+    background-color: #199884 !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+    padding: 3px 30px !important;
+    text-transform: none !important;
+    margin-top: 9% !important;
+  }
+  .knowMoreBtnTwo{
+    background-color: #199884 !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+    padding: 3px 30px !important;
+    text-transform: none !important;
+    margin-top: 5% !important;
+  }
+
+  .thisBatchIncluesBox{
+    text-align: left;
+    height: 27vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .thisBatchIncludesul{
+      padding: 27px 53px !important;
+      background-color: #eaf8f4;
+      min-width: 73vw;
+      line-height: 1.8em !important;
+      /* font-size: 1.1rem !important; */
+      font-size: var(--ScndHeading) !important;
+  }
+  .batchSubCategory-a{
+    margin: 3px 24px;
+  }
+  .SDPSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .SDP-offerPrice{
+    padding: 1px 14px;
+    background-color: #199884;
+    color: #ffffff;
+    border-radius: 14px;
+    font-size: 0.9rem;
+  }
+  .batchBuyNowCard{
+    width: 24vw;
+    height: 44vh;
+    padding: 8px 5px;
+    /* border-radius: 25px; */
+    box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+    margin-top: -16px;
+  }
+  .buyNowBtnBatch{
+    background-color: #002C4F !important;
+    color: #ffffff !important;
+    /* border-radius: 19px !important; */
+    text-transform: none !important;
+    width: 100% !important;
+    margin-top: 31px !important;
+  }
+  .TRICKS-FAQs{
+    line-height: 1.6em !important;
+    height: 19vh;
+    padding: 27px 53px !important;
+    background-color: #eaf8f4;
+    min-width: 73vw;
+}
+.TRICKS-FAQs-TOPCrashCourseTheory{
+  line-height: 1.6em !important;
+  height: 19vh;
+  padding: 27px 53px !important;
+  background-color: #eaf8f4;
+  min-width: 73vw;
+}
+.TRICKS-FAQs-TOPCrashCourseTheory-last{
+  line-height: 1.6em !important;
+  height: 19vh;
+  padding: 27px 53px !important;
+  background-color: #eaf8f4;
+  min-width: 73vw;
+}
+.TRICKS-FAQsBox{
+    text-align: left;
+  height: 27vh;
+  padding: 30px;
+  /* margin-top: 108px; */
+  margin: 139px 2px;
+}
+.TRICKS-FAQsBox-TOPCrashCourseTheory {
+  text-align: left;
+  height: 27vh;
+  padding: 30px;
+  /* margin-top: 108px; */
+  margin: 251px 2px;
+}
+.TRICKSDisk {
+  list-style-type: disc;
+}
+.TRICKS-dot{
+    background-color: #b7b4b4  !important;
+    border-radius: 50%;
+    width: 0.3vw !important;
+    height: 0.6vh !important;
+    margin: 10px 8px;
+}
+.freeResourcesText{
+    font-size: 2.5rem !important;
+}
+.TRICKFreeCourses-left{
+    text-align: left;
+    /* box-shadow: 1px 1px 4px 2px #d3d3d3 !important; */
+    width: 32vw;
+    padding: 66px 0px;
+    padding-left: 118px;
+}
+.TRICKSfreeCourseBox{
+  border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    margin: -99px 38px;
+    margin-bottom: 12px;
+    /* background-color: orange; */
+    height: 50vh;
+    box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+}
+.TRICKSfreeCourseBox-last{
+  border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    margin: -99px 38px;
+    margin-bottom: 12px;
+    /* background-color: orange; */
+    height: 50vh;
+    box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
+}
+
+.specialDiscountPrice{
+  font-size: 0.8rem !important;
+  text-align: center;
+}
+.TRICKSMainPrice{
+  font-size: 1.2rem;
+}
+/* .TRICKMainMobileImg{
+  display: none !important;
+} */
+.cardImgDoctor{
+  display: none ;
+}
+.courseDetailsHead{
+  font-size: 1.7rem !important;
+}
+.AppHeader-CourseDescriptionMobileHeader {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.thisBatchIncludesHead{
+  /* ....ONLY FOR FONT SIZE......  */
+  font-size: 1.7rem !important;
+}
+
+
+
+  @media (max-width: 990px) {
+    .hiSheikh{
+      display: flex;
+      flex-direction: row;
+      margin-left: 35% !important;
+      font-size: 2.3rem !important;
+      gap: 28px
+    }
+    .TRICKMainImg{
+      /* width: 100% !important; */
+      display: none !important;
+    }
+    .TRICKMainMobileImg{
+      margin-top: 6% !important;
+      width: 100% !important;
+    }
+    .mainCardImg{
+      display: none !important;
+    }
+    .cardImgDoctor{
+      width: 100% !important;
+      justify-content: center !important;
+      display: block;
+    }
+    .TRICKSMainPrice {
+      font-size: 2.7rem !important;
+  }
+    .ourFacultiesHead {
+        font-size: 2.7rem !important;
+      }
+      .OurfacultiesCard {
+        justify-content: center !important;
+        /* display: grid !important; */
+        /* grid-template-columns: 1fr !important; */
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .OurFacultiesLeftCard {
+        height: 20vh !important;
+        width: 93% !important;
+        border-radius: 27px !important;
+     }
+     .ourFacultiesAbout{
+        font-size: var(--subHeading) !important;
+      
+      }
+      .batchBuyNowCard {
+        border-radius: 25px;
+        width: 94vw;
+        height: 46vh;
+        position: absolute;
+        top: 34%;
+        padding: 39px 24px !important;
+    }
+    .BatchIncludeImg2{
+      display: none;
+      width: 97%;
+        height: 18vh;
+        margin-left: 13px;
+    }
+    .specialDiscountPrice{
+      font-size: var(--MainHeading) !important;
+    }
+    .courseDetailsBox{
+      margin-top: 98% !important;
+      height: 22vh;
+      font-size: var(--MainHeading) !important;
+    }
+    .buyNowBtnBatch {
+      border-radius: 19px !important;
+      width: 97% !important;
+      margin-left: 12px !important;
+      height: 4vh;
+      font-size: 2.7rem !important;
+      margin-top: 45px !important;
+    }
+    .thisBatchIncludesHead{
+      /* .......ONLY FOR FONT SIZE........  */
+      font-size: 2.7rem !important;
+    }
+    .thisBatchIncludesul-TRICKS2 {
+      /* padding: 18px 53px !important; */
+      /* background-color: #eaf8f4; */
+      /* min-width: 73vw; */
+      line-height: 2.2em !important;
+      font-size: 1.8rem !important;
+  }
+  .TRICKS-FAQs {
+    line-height: 2.2rem !important;
+    font-size: 1.8rem !important;
+  }
+  .TRICKS-FAQs-TOPCrashCourseTheory {
+    line-height: 2.2rem !important;
+    font-size: 1.8rem !important;
+    height: 10vh !important;
+}
+.TRICKS-FAQs-TOPCrashCourseTheory-last {
+  line-height: 2.2rem !important;
+  font-size: 1.8rem !important;
+  height: 15vh !important;
+}
+.TRICKS-FAQsBox{
+  margin: -16px 2px !important;
+  height: 33vh !important;
+}
+  .TRICKS-FAQsBox-TOPCrashCourseTheory{
+    margin: -16px 2px !important;
+    height: 21vh !important;
+  }
+  .TRICKS-FAQsBox-TOPCrashCourseTheory-last{
+    margin: -16px 2px !important;
+    height: 21vh !important;
+  }
+  .TRICKFreeCourses-left{
+    width: 62vw !important;
+  }
+  .freeResourcesText {
+    font-size: 3.5rem !important;
+}
+.sanantaAndTapas{
+  display: none !important;
+}
+.TRICKSfreeCourseBox{
+  height: 22vh !important;
+}
+.TRICKSfreeCourseBox-last {
+  margin-top: 37px;
+  height: 22vh !important;
+}
+.SDP-offerPrice{
+  font-size: 2rem !important;
+  padding: 14px 28px;
+  border-radius: 35px;
+}
+.SDPSection{
+  font-size: 3rem !important;
+  gap: 17% !important;
+}
+.courseDetailsul{
+  line-height: 1.8em !important;
+  height: 10vh;
+  padding: 10px 20px !important;
+  font-size: 1.8rem !important;
+}
+.courseDetailsHead{
+  font-size: 2.7rem !important;
+}
+.AppHeader-CourseDescriptionMobileHeader{
+  height: 6vh !important;
+}
+.logo-CourseDescriptionMobileHeader {
+  width: 336px !important;
+  height: 103px !important;
+  margin-left: 2% !important;
+        margin-top: 12px !important;
+}
+  } 
+
+
+
+  /* -----------TRICKS 2---------- */
+
+  .thisBatchIncludesul-TRICKS2{
+    padding: 18px 53px !important;
+    background-color: #eaf8f4;
+    min-width: 73vw;
+    line-height: 1.8em !important;
+}
+
+
+ @media (max-width: 990px){
+  .TRICKS2Img{
+    width: 100%;
+    height: 20vh;
+  }
+  .sanantaAndTapasInOneFrame{
+    display: none !important;
+  }
+  .TRICKS2Img{
+    display: none;
+    width: 100% !important;
+  }
+} 
+
+
+/* ---------PURCHASED COURSE---------  */
+.TRICKSMyCourse{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 0.5px solid grey;
+  width: 91vw;
+  height: 34vh;
+  margin: 45px 69px;
+    border-radius: 10px;
+    border-bottom-color: aqua;
+  }
+.myCourseExploreNowBtn{
+  background-color: #002C4F !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+  margin: 33% 0% !important;
+    align-items: end;
+    justify-content: right;
+    text-align: right !important;
+
+}
+.myCourseRightSection{
+  /* align-items: center !important; */
+  /* text-align: center !important; */
+  /* justify-content: center !important; */
+  margin: 19px 379px;
+}
+.myCourse-text{
+  font-size: 1.7rem !important;
+}
+
+
+
+  :root {
+    --MainHeading:26px;
+    --subHeading:24px;
+    --ScndHeading:20px;
+    --Heading:18px;
+    --small:16px;
+   }

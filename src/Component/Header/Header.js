@@ -74,7 +74,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 
-function Header() {
+const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -91,21 +91,13 @@ function Header() {
   };
 
   return (
+    <>
     <AppBar position="fixed" className="AppHeader">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{  display: { xs: "flex", md: "none" } }}>
            
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon className="Hamburger"/>
-              </IconButton>
+            
             <Box>
               <Link to="/Critical-Care"><img src={Logo} className="Responsivelogo"/></Link> 
             </Box>
@@ -295,9 +287,32 @@ function Header() {
               Login / Register
             </Button>
           </Box>
+          <Box sx={{ mr: 3}} className="loginContainerony">
+            <Button variant="contained" className="LoginButtononly">
+              Login
+            </Button>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+              className="MenuButton"
+            >
+              <MenuIcon className="Hamburger"/>
+              </IconButton>
+          </Box>
+
         </Toolbar>
       </Container>
     </AppBar>
+
+
+
+
+  
+     </>
   );
 }
 export default Header;
