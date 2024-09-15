@@ -21,19 +21,21 @@ import TOPOSCEPractical from "../CourseDescription/TOPOSCEPractical";
 import TRICKDIDDCMPracticalCourseLast from "../CourseDescription/TRICKDIDDCMPracticalCourseLast";
 import PurchesedCourse from "../CourseDescription/PurchesedCourse";
 import TestportalMain from "../../UserPortal/TestPortal/TestportalMain.component";
+import Landingpage from "./Landingpage";
 
 const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
+      <Landingpage />
       {/* <CourseDescriptionMobileHeader/> */}
       {/* <AllCourseWOL /> */}
-      <NavHome />
+      {/* <NavHome />
       <CategoryBox/>
       <Analytics/>
       <PlanDescription/>
       <NeetGroupImg />
-      <Testimonials/>
+      <Testimonials/> */}
       {/* <Testimonial /> */}
       {/* <Aboutus /> */}
       {/* <TRICKS1/> */}

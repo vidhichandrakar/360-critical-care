@@ -60,81 +60,12 @@ const CategoryBox = () => {
       <b className="paraFontSize-forMobileView-common">360CC is preparing students for 4 exam categories.</b>
       <div className="category">
         <div class="rowDesign">
-          {/* <div className="cardBox">  
-        <Box className={categorySelected==="Category_One"?"catDrop highlight":"catDrop"} >
-            <DropdownNestedMenuItem label="DrNB/DM/IFCCM" onClick={()=>handleCategory("Category_One")}
-              rightIcon={<KeyboardArrowRightIcon />}
-              menu={[
-                <DropdownMenuItem onClick={() => { }}>
-                  <Typography className="dropDownText"> Top Long Course</Typography>
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  Top Short Course
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                 Top Crash Course
-                </DropdownMenuItem>
-              ]}>
-              Delete <DeleteForeverIcon />
-            </DropdownNestedMenuItem>
-          </Box>
-
-          <Box className={categorySelected==="Category_Two"?"catDrop highlight":"catDrop"} >
-            <DropdownNestedMenuItem label="EDIC" onClick={()=>handleCategory("Category_Two")}
-              rightIcon={<KeyboardArrowRightIcon />}
-              menu={[
-                <DropdownMenuItem onClick={() => { }}>
-                  EDIC 1
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  EDIC 2
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  TRICS-I
-                </DropdownMenuItem>
-              ]}>
-              Delete <DeleteForeverIcon />
-            </DropdownNestedMenuItem>
-          </Box>
-          <Box className={categorySelected==="Category_Three"?"catDrop highlight":"catDrop"} >
-            <DropdownNestedMenuItem label="IDCCM" onClick={()=>handleCategory("Category_Three")}
-              rightIcon={<KeyboardArrowRightIcon />}
-              menu={[
-                <DropdownMenuItem onClick={() => { }}>
-                  TRICS-IDCCM
-                </DropdownMenuItem>
-
-              ]}>
-              Delete <DeleteForeverIcon />
-            </DropdownNestedMenuItem>
-          </Box>
-          <Box className={categorySelected==="Category_Four"?"catDrop highlight":"catDrop"} >
-            <DropdownNestedMenuItem onClick={()=>handleCategory("Category_Four")}
-              label="Other"
-              rightIcon={<KeyboardArrowRightIcon />}
-              menu={[
-                <DropdownMenuItem onClick={() => { }}>
-                  Nephro Critical Care Review Course
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  Sepsis BASIC
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  Sepsis ADVANCED
-                </DropdownMenuItem>,
-                <DropdownMenuItem onClick={() => { }}>
-                  Critical Care Nutrition
-                </DropdownMenuItem>,
-
-              ]} />
-          </Box>
-          </div> */}
-
+        
           <div className=" rightBoxCat">
             <SubCategory categorySelected={categorySelected} />
           </div>
         </div>
-        <SubCAtegoryBox />
+        {/* <SubCAtegoryBox /> */}
         <div></div>
       </div>
     </Box>
