@@ -27,15 +27,28 @@ const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
+<<<<<<< HEAD
       {/* <Landingpage /> */}
+=======
+<<<<<<< HEAD
+      <AllCourseWOL />
+=======
+      <Landingpage />
+>>>>>>> b47aa19dc03aee81ebce2ac74754b0987f1b7655
       {/* <CourseDescriptionMobileHeader/> */}
       {/* <AllCourseWOL /> */}
+>>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9
       {/* <NavHome />
       <CategoryBox/>
       <Analytics/>
       <PlanDescription/>
+<<<<<<< HEAD
+      <NeetGroupImg /> */}
+      {/* <Testimonials/> */}
+=======
       <NeetGroupImg />
       <Testimonials/> */}
+>>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9
       {/* <Testimonial /> */}
       <Aboutus />
       {/* <TRICKS1/> */}
