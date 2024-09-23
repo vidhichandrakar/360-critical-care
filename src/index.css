@@ -1336,10 +1336,6 @@ font-size: 1.3em !important;
 .changedDrNBBoxes{
   width: 30vw;
 }
-.changedDrNBBoxes-EDIC{
- 
-  /* width: 20vw; */
-}
   .allExploreCatCards{
     grid-template-columns: 1fr !important;
     gap: 5px !important;
@@ -1450,6 +1446,38 @@ font-size: 1.3em !important;
   margin: 0;
   padding: 0 8px;
 }
+.countryWiseStudent{
+  /* font-size: 1.5rem !important;
+  margin: 20px 2px !important; */
+  font-family: Inter !important;
+font-size: 23px !important;
+font-weight: 700 !important;
+line-height: 21.78px !important;
+text-align: center !important;
+margin: 24px 0px !important;
+}
+.countryWiseStuBox{
+  min-width: 100% !important;
+  /* width: 29% !important; */
+  /* margin-top: 94px; */
+  margin-top: -81px !important;
+  /* margin: 50%; */
+  padding: 85px !important;
+}
+/* .countryWiseStuBox ul li{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10%;
+} */
+/* .countries{
+  width: 100% !important;
+} */
+.countryNames{
+  margin: 0px 36px !important;
+}
+.whyChooseUsVerticalLine{
+  display: none !important;
+}
 /* .mobileViewText{
   font-size: 1rem !important;
 } */
@@ -1471,10 +1499,10 @@ font-size: 1.3em !important;
    width: 93% !important;
    border-radius: 27px !important;
 } */
-  .whyChooseUsSection {
+  /* .whyChooseUsSection {
     display: grid;
     grid-template-columns: 1fr !important;
-  }
+  } */
   .aboutUsFirstImg {
     /* margin-top: 9% !important; */
     /* width: 100% !important; */
@@ -1511,6 +1539,9 @@ font-size: 1.3em !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10% !important;
+  background-color: white !important;
+  padding: 20px !important;
+  text-align: center;
 }
 .css-r8b0qb {
       width: 40vw !important;
@@ -1539,15 +1570,14 @@ font-size: 1.3em !important;
 .mobileViewText{
   font-size: var(--MainHeading) !important;
 }
-.countryWiseStuBox {
+/* .countryWiseStuBox {
   width: 100%;
   height: 0px !important;
-  /* font-size: 2.5rem !important; */
   margin: 0px 35%;
-}
-.whyChooseUsVerticalLine{
-  display: none !important;
-}
+  padding: 0px !important;
+} */
+
+
 .globally{
   width: 100%;
   height: 24vh;
@@ -1562,7 +1592,8 @@ font-size: 1.3em !important;
 .whyChooseUsSection{
   display: grid !important;
   grid-template-columns: 1fr !important;
-  gap: 49%;
+  gap: 0%; 
+  /* height: 100vh !important; */
 }
 .css-1x1xx5k{
   min-width: 73vw !important;
