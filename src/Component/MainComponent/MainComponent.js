@@ -48,6 +48,7 @@ const MainComponent = ()=>{
       {/* <PurchesedCourse/> */}
       {/* <TestportalMain/> */}
       <Footer />
+       
     </Fragment>
   )
 }

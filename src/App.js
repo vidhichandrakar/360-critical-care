@@ -12,6 +12,8 @@ import EDIC2 from './Component/AllCourse/EDIC2';
 import IDCCM from './Component/AllCourse/IDCCM';
 import DemoApi from './Component/Service/DemoApi';
 import TestportalMain from './UserPortal/TestPortal/TestportalMain.component';
+import Blog from './Component/AllCourse/Blog';
+import AllCourseWOL from './Component/AllCourse/AllCourseWOL';
 
 function App() {
   return (
@@ -21,12 +23,14 @@ function App() {
         <Route path='/About-us' Component={Aboutus}/>
         <Route path='/Terms-&-Condition' Component={Terms}/>
         <Route path='/Contact-us' Component={ContactUs}/>
+        <Route path='/Blog' Component={Blog}/>
         <Route path='/Privacy-policy' Component={PrivacyPolicy }/>
         <Route path='/TopCourse' Component={TopCourse}/>
         <Route path='/EDIC' Component={EDIC}/>
         <Route path='/EDIC2' Component={EDIC2}/>
         <Route path='/IDCCM' Component={IDCCM}/>
         <Route path='/Demo' Component={DemoApi}/>
+        <Route path='/AllCourse' Component={AllCourseWOL}/>
         <Route path='/user/testportal' Component={TestportalMain}/>
       </Routes>
     </div>

@@ -7,6 +7,8 @@ import functioning from '../../Media/Images/functioning.png';
 import robot from '../../Media/Images/robot.png';
 import building from '../../Media/Images/hospnew.png';
 import transparentOverBuilding from '../../Media/Images/Rectangle 6.png';
+import { useEffect } from "react";
+import { getCategory } from "../ApiFactory/ApiAction";
 
 
 const SubCategory = ({ categorySelected }) => {
@@ -23,6 +25,13 @@ const SubCategory = ({ categorySelected }) => {
   };
 
   const [savedPath, setSavedPath] = useState("");
+  const [categoreData, setCategoreData] = useState([])
+
+  useEffect(()=>{
+    getCategory({callBack: (response) => {
+      setCategoreData(response.data)
+    } })
+  },[])
 
   const handleCourses = ({ type }) => {
     // console.log(type);
@@ -61,6 +70,7 @@ const SubCategory = ({ categorySelected }) => {
             <h5 className="drNB-head">
               <b>DrNB/DM</b>
             </h5>
+            {console.log(categoreData, "line73")}
             <Box className="drNBSubSections">
               <Box className="changedDrNBBoxes">Top Long Course</Box>
               <Box className="changedDrNBBoxes">Top Short Course</Box>
@@ -86,13 +96,12 @@ const SubCategory = ({ categorySelected }) => {
               <Box className="changedDrNBBoxes">TRICKS-i</Box>
             </Box>
           </Box>
-
           <Box className="blueSemiCircle">
             <img src ={functioning} width={80} height={70} className="semiCircleIcon"/>
           </Box>
-        </Box>
+          </Box>
 
-        <Box className="drNBCompleteBox">
+          <Box className="drNBCompleteBox">
           <Box className="drNBCompleteBox-left">
             <h5 className="drNB-head">
               <b>IDCCM</b>
@@ -108,12 +117,16 @@ const SubCategory = ({ categorySelected }) => {
             <img src ={robot} width={80} height={70} className="semiCircleIcon"/>
           </Box>
         </Box>
+       
+       
       </div>
+
+       
+
        
       
 
-      {/* <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" /> */}
-    </Fragment>
+       </Fragment>
   );
 };
 export default SubCategory;

@@ -4,34 +4,52 @@ import homeimg from "../../Media/ProjectImage/AllCourseHome.jpg";
 import cardimg from "../../Media/ProjectImage/AllCourseCard.jpg";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import JoinImg from "../../Media/ProjectImage/AllCourseImg4.jpg";
+import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png"
 import "../../CSS/Courses.css";
 import {AllCourseWOLCard , PopularCard} from "../../JsonData/JsonData"
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
+import { getAllCourses } from "../ApiFactory/ApiAction";
+import { useState } from "react";
+import { useEffect } from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AllCourseWOL = () => {
+    
+  const [allCourseData, setAllCourseData] = useState([])
+
+    useEffect(()=>{
+        getAllCourses({callBack: (response) => {
+            setAllCourseData(response.data)
+        } })
+      },[])
     return (
         <Fragment>
+            <Header />
             <Box className="HeadimgBox">
-                <img src={homeimg} width="100%" />
+                <img src={homeimg} width="100%"  className="WebViewImg"/>
+                <img src={MobileViewHeadimg} className="MobileViewImg"/>
             </Box>
+            {console.log(allCourseData, "allCourseData")}
             <Box className="CoursesCardMainBox">
-                {AllCourseWOLCard?.length && AllCourseWOLCard?.map((item) => {
+                {allCourseData?.length && allCourseData?.map((item) => {
                   return   <Box className="CradBox">
-                    <img src={cardimg} width={300} height={150}/>
+                    <img src={item.thumbnail_path} className="CoursesCardImg"/>
                     <Box className="CardTextBox"    >
-                        <Typography className="CardHeading">
-                           {item.heading}
+                        <Typography className="CardHeading .wrap-text-50 ">
+                           {item.course_name}
                         </Typography>
                         <Box className="Price_ButtonBox">
                             <Box >
                                 <Typography sx={{fontWeight: 600}}>
-                                   {item.Special}
+                                Special Discounted Price
                                 </Typography>
                                 <Box className="PriceBox">
                                 <Typography sx={{fontWeight: 600}}>
-                                    {item.price}
+                                    {item.durations[0].offer_price}
                                 </Typography>
-                                <Typography sx={{ml:"100px", color: "grey",}}>
-                                    $30000
+                                <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
+                                {item.durations[0].price}
                                 </Typography>
                                 <Typography sx={{ml:6}} className="offBox">
                                     40% OFF
@@ -39,7 +57,7 @@ const AllCourseWOL = () => {
 
                                 </Box>
                             </Box>
-                            <Button variant="contained">
+                            <Button variant="contained" className="ExploreButton">
                                 Explore Now
                             </Button>
                         </Box>
@@ -47,21 +65,23 @@ const AllCourseWOL = () => {
                 </Box>
                 })}
             </Box>
-            <Box>
-                <img src={JoinImg} width="100%"/>
+            <Box className="JoinContainer">
+               <Typography className="JoinHeading">Join Our Free Webinar</Typography>
+                <Button className="Joincentered" variant="contained"><span className="JoinNow">Join Now</span><span className="Subscribe">Subscribe</span></Button>
             </Box>
+            
             <Box className="PopularCourseMainBox">
                 <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
                
                 <Box className="PopularCourseBox">
                      {PopularCard.map((item) => {
                     return  <Box className="PopularCardBox">
-                        <img src={cardimg} width={320} height={150}/>
+                        <img src={cardimg} className="Cardimgs"/>
                         <Box>
-                            <Typography sx={{fontWeight: 700, mt: 1, fontSize: "0.9rem"}}>
-                           {item.Para1}
+                            <Typography className="Para1" sx={{mt: 1}}>
+                            {item.Para1}
                             </Typography>
-                            <Typography sx={{fontWeight: 400, fontSize: "0.8rem"}}>
+                            <Typography className="Para2">
                             {item.Para2}
                             </Typography>
                         </Box>
@@ -72,10 +92,8 @@ const AllCourseWOL = () => {
                     </Box>
                     
             </Box>
-            <Box>
-                        <img src={NewsLetter} width="100%"/>
-                    </Box>
-        </Fragment>
+            <NewsLatter />
+           <Footer /> </Fragment>
     )
 }
 

@@ -7,13 +7,15 @@ import AppLogo from "../../Media/Media_Image/app-store.png";
 import GoogleLogo from "../../Media//Media_Image/play-store.png";
 import Image1 from "../../Media/Images/CorrectFirstImg.jpg";
 import Image2 from "../../Media/Images/HomePageSndImg.jpg";
+import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png"
 
 const NavHome = () => {
   return (
     <Fragment>
       <div>
         <div className="homeImage">
-          <img src={Image1} />
+          <img src={Image1} className="WebViewImg"/>
+          <img src={MobileViewHeadimg} className="MobileViewImg" />
         </div>
 
           <img src={Image2} 

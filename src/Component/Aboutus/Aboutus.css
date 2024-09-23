@@ -42,7 +42,7 @@
     background-color: #1B2124 !important;
   }
   .ourFounderHead {
-    font-size: 1.7em;
+    font-size: 1.7em !important;
     font-weight: bolder !important;
     margin: 22px 0px !important;
   }
@@ -55,7 +55,7 @@
     height: 44vh;
   }
   .whyChooseUsHead {
-    font-size: 1.7em;
+    font-size: 1.7em !important;
     font-weight: bolder !important;
     margin: 34px 0px !important;
   }
@@ -84,6 +84,7 @@
   }
   .aboutUsFirstImg{
     margin-top: 65px;
+    width: 100%;
   }
   .abt360CriticalCare-typography{
     margin-top: 3% !important;

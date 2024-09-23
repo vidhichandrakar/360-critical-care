@@ -82,7 +82,7 @@ code {
   height: auto !important;
   width: 100%;
   z-index: 78 !important;
-  margin-top: 65px;
+  margin-top: 4%;
 }
 .cardHome {
   width: 79% !important;
@@ -380,6 +380,7 @@ code {
   margin-top: 5%;
 }
 .catHeading {
+  margin-top: 2% !important;
   font-size: 2em !important;
   /* font-family: "Inter" !important; */
   /* font-family: Gilroy, "sans-serif" !important; */
@@ -429,9 +430,15 @@ code {
 /* .rightBoxCat {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
+  justify-content: center;
+}
+.SubCategoryBox{
+=======
   min-width: 58vw;
 } */
 /* .SubCategoryBox{
+>>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9
   display: none;
 } */
 .SubBox{
@@ -572,6 +579,10 @@ code {
   .liveTextScnd{
     font-size: 24px !important; 
   }
+    .CradBox {
+      flex-direction: column !important;
+      padding: 30px !important;
+  }
   .leftTextDesign{
     font-size: 24px !important;
     font-weight: 800 !important;
@@ -681,9 +692,30 @@ font-size: 1.3em !important;
   }
 }
 @media (max-width: 990px) {
+  .CradBox{
+    flex-direction: column !important;
+    padding: 30px !important;
+  }
+} 
+@media (max-width: 990px) {
   .PopularCourseBox{
     grid-template-columns: 1fr 1fr !important;
   }
+  .PopularCardBox {
+    padding: 10px 20px !important;
+    width: 90%;
+}
+.Para1{
+  font-weight: 700 !important;
+  /* font-size: 126px !important; */
+}
+.Para2{
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+.HeadimgBox{
+  margin-top: 9% !important;
+}
   .leftSubDesign {
     font-size: 1em;
   }
@@ -778,7 +810,7 @@ font-size: 1.3em !important;
     transform-style: preserve-3d;
     height: auto !important;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 13%;
   }
  .loginContainerony{
 
@@ -939,7 +971,7 @@ font-size: 1.3em !important;
     justify-content: center;
     margin-left: 224px;
     margin-top: -9% !important;
-    margin-bottom: 78px !important;
+    /* margin-bottom: 78px !important; */
     background-color: #ffffff !important;
     position: relative;
     z-index: 999;
@@ -986,7 +1018,7 @@ font-size: 1.3em !important;
     width: 27vw;
     height: 32vh;
     margin-top: 22px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 4px 0px #2125294a !important;
 
     /* background-color: white;
     border-radius: 10px;
@@ -1290,15 +1322,15 @@ font-size: 1.3em !important;
   .ImgBoxData{
     grid-template-columns: 1fr 1fr !important;
 }
-.centered {
+/* .centered {
   /* position: absolute;
   top: 100% !important;
   left: 50%;
   transform: translate(-50%, -50%); */
-  background-color: white !important;
+  /* background-color: white !important;
   padding: 10px;
-  text-align: center;
-}
+  text-align: center; */
+/* } */ */
   .aboutExploreClasses-para{
     font-size: var(--subHeading) !important;
   }
@@ -1403,7 +1435,12 @@ font-size: 1.3em !important;
     display: none;
    }
    .catHeading {
-    font-size: 3em !important;
+    font-family: Inter !important;
+font-size: 18px !important;
+font-weight: 700 !important;
+line-height: 21.78px !important;
+text-align: center;
+ margin-top: 5% !important;
 }
 .appLogo-mobAd {
   height: 4vh;
@@ -1419,7 +1456,7 @@ font-size: 1.3em !important;
 }
 
 .scndImgOfHomePage{
-  margin-top: 60px !important;
+  margin-top: 0px !important;
   width: 100% !important;
   height: auto;
 }

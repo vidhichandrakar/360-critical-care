@@ -13,15 +13,15 @@ import AllCourseWOL from "../AllCourse/AllCourseWOL";
 const Landingpage = () => {
     return(
         <Fragment>
-            <AllCourseWOL />
-           {/* <NavHome />
+            {/* <AllCourseWOL /> */}
+           <NavHome />
            <CategoryBox />
            <ExploreTech />
            <Neet2023 />
            <Jion15 />
            <Studysource />
            <NeetGroupImg />
-           <NewsLatter /> */}
+           <NewsLatter />
         </Fragment>
     )
 }
