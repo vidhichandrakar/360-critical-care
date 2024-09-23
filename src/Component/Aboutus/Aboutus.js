@@ -10,8 +10,7 @@ import globalMap from "../../Media/Images/globalMap.png";
 import Footer from "../Footer/Footer";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import "./Aboutus.css";
-
-
+import PWRedImg from "../../Media/Images/MobileViewPWRedImg.png";
 
 const Aboutus = () => {
   return (
@@ -27,7 +26,14 @@ const Aboutus = () => {
       />
 
       <Box className="abt360CriticalCare">
-        <img src={Stethoscope} width={530} height={350}/>
+        <img
+          src={Stethoscope}
+          width={530}
+          height={350}
+          className="stethoscopeImg"
+        />
+
+        <img src={PWRedImg} width={200} height={150} className="PWSRedImg"/>
         <Box className="abt360CriticalCare-right">
           <Typography className="youtubeHead">
             About <span className="AquaColor">360 Critical Care</span>
@@ -52,13 +58,37 @@ const Aboutus = () => {
           <Typography className="abt360CriticalCare-typography">
             The idea of this endeavor originated with Our Founders
           </Typography>
+
+          <Typography sx={{fontSize: "0.8rem"}}
+          //  className="mobileViewText"
+           >
+            360CC Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. 
+          </Typography>
+          <Typography sx={{fontSize: "0.8rem"}} 
+          // className="mobileViewText"
+          >
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book.
+          </Typography>
         </Box>
       </Box>
 
-      <Typography className="ourFounderHead">Our <span className="AquaColor">Founders</span></Typography>
+      <Typography className="ourFounderHead">
+        Our <span className="AquaColor">Founders</span>
+      </Typography>
       <div className="OurfoundersCard">
         <Box
-          sx={{ maxWidth: 400, flexGrow: 1 }}
+          sx={{ flexGrow: 1 }}
           className="OurFoundersLeftCard"
         >
           <img src={tapas} width={70} height={70} />
@@ -68,9 +98,10 @@ const Aboutus = () => {
           <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
             Director
           </Typography>
-          <Typography 
-          // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }} 
-          className="ourFounderAbout">
+          <Typography
+            // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
+            className="ourFounderAbout"
+          >
             MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
             Critical care Fellowship (University of Toronto) | MBA (Healthcare
             Management) | Associate Director and HOD | Department of Critical
@@ -80,7 +111,7 @@ const Aboutus = () => {
         </Box>
 
         <Box
-          sx={{ maxWidth: 400, flexGrow: 1 }}
+          // sx={{ flexGrow: 1 }}
           className="OurFoundersLeftCard"
         >
           <img src={Sananta} width={70} height={70} />
@@ -90,9 +121,10 @@ const Aboutus = () => {
           <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
             Director
           </Typography>
-          <Typography 
-          // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
-          className="ourFounderAbout">
+          <Typography
+            // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
+            className="ourFounderAbout"
+          >
             “My aim is to democratize and transform the education landscape in
             Bharat.”
           </Typography>
@@ -100,41 +132,128 @@ const Aboutus = () => {
         </Box>
       </div>
 
-      <Typography className="whyChooseUsHead">Why <span className="AquaColor">Choose Us?</span></Typography>
+      <Typography className="whyChooseUsHead">
+        Why <span className="AquaColor">Choose Us?</span>
+      </Typography>
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
-            <ul><Typography sx={{fontSize:"1.3rem", margin:"20px 2px"}}><b>Country Wise Student</b></Typography>
-             <li>India - 2,000</li>
-             <li>UAE - 1,300</li>
-             <li>USA - 6,060</li>
-             <li>Australia - 2,700</li>
-            </ul>
+          <ul type="disc">
+            <Typography className="countryWiseStudent">
+              <b>Country Wise Student</b>
+            </Typography>
+            <li><span className="countryNames">India</span> - 2,000</li>
+            <li><span className="countryNames">UAE</span> - 1,300</li>
+            <li><span className="countryNames">USA</span> - 6,060</li>
+            <li><span className="countryNames">Australia</span> - 2,700</li>
+          </ul>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
-        <img src={globalMap} width={600} height={290}/>
+        <img src={globalMap} className="globally" />
       </Box>
 
-      <Box className="percentageOfSuccess">
-            <Box sx={{backgroundColor:"#FFF3E3", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1 style={{marginTop:4}}>800+</h1>
-              <p style={{fontSize:"0.8rem"}}>Students</p>
+       <Box className="percentageOfSuccess">
+        {/* <Box
+          sx={{
+            backgroundColor: "#FFF3E3",
+            borderRadius: "9px",
+            width: "135px",
+            height: "114px",
+          }}
+        >
+          <h1 style={{ marginTop: 4 }}>800+</h1>
+          <p style={{ fontSize: "0.8rem" }}>Students</p>
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#FFEEEE",
+            borderRadius: "9px",
+            width: "135px",
+            height: "114px",
+          }}
+        >
+          <h1>3+</h1>
+          <p style={{ fontSize: "0.8rem" }}>Glorious Years</p>
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#E4FAFF",
+            borderRadius: "9px",
+            width: "135px",
+            height: "114px",
+          }}
+        >
+          <h1>90%</h1>
+          <p style={{ fontSize: "0.8rem" }}>Success Rate</p>
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#ECE7FF",
+            borderRadius: "9px",
+            width: "135px",
+            height: "114px",
+          }}
+        >
+          <h1>100+</h1>
+          <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
+        </Box> */}
+        <Box className="ImgBoxData">
+            <Box
+              sx={{
+                backgroundColor: "#FFF3E3",             
+              }}
+               className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>800+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Students</b>
+              </p>
             </Box>
-            <Box sx={{backgroundColor:"#FFEEEE", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>3+</h1>
-              <p style={{fontSize:"0.8rem"}}>Glorious Years</p>
+            <Box
+              sx={{
+                backgroundColor: "#ffeeee",
+               }}
+                className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>3+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Glorious Years</b>
+              </p>
             </Box>
-            <Box sx={{backgroundColor:"#E4FAFF", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>90%</h1>
-              <p style={{fontSize:"0.8rem"}}>Success Rate</p>
+            <Box
+             className="DataCardBox"
+              sx={{
+                backgroundColor: "#e4faff",
+                  }}
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>90%</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Success Rate</b>
+              </p>
             </Box>
-            <Box sx={{backgroundColor:"#ECE7FF", borderRadius:"9px", width:"135px", height:"114px"}}>
-              <h1>100+</h1>
-              <p style={{fontSize:"0.8rem"}}>Teaching Videos</p>
+            <Box
+              sx={{
+                backgroundColor: "#ece7ff",
+              }}
+              className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>100+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Teaching Videos</b>
+              </p>
             </Box>
           </Box>
+      </Box> 
 
-          <img src={NewsLetter} width="100%"/>
-          <Footer/>
+      <img src={NewsLetter} width="100%" />
+      {/* <Footer/> */}
     </>
   );
 };

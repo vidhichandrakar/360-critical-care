@@ -10,9 +10,13 @@
   }
   
   .OurfoundersCard {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;  */
+    /* flex-direction: row;  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 0px; */
     margin: auto;
+    padding: 0px 212px;
     justify-content: center;
     background-color: #199884;
   }
@@ -20,7 +24,7 @@
     margin: 35px 36px;
     /* background-color: rgb(243 243 243); */
     background-color: #ffffff;
-    width: 45%;
+    /* width: 45%; */
     text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
@@ -52,7 +56,8 @@
     background-color: #002C4F;
     color: #ffffff;
     width: 100%;
-    height: 44vh;
+    /* height: 44vh; */
+    height: 58vh;
   }
   .whyChooseUsHead {
     font-size: 1.7em !important;
@@ -60,14 +65,18 @@
     margin: 34px 0px !important;
   }
   .whyChooseUsVerticalLine{
+    display: block;
     width: 0.5px !important;
-    height: 38vh !important;
+    height: 52vh !important;
     margin-top: 18px;
     margin-right: 14%;
     background-color: #ffffff !important;
   }
   .countryWiseStuBox{
     width: 29%;
+    /* margin-top: 94px; */
+    padding: 85px;
+    /* height: 20%; */
   }
   .percentageOfSuccess {
     display: flex;
@@ -81,18 +90,30 @@
       /* margin-top: 5% !important; */
       margin: 6% 28% !important;
       background-color: #ffffff !important;
+      padding: 20px;
+      text-align: center;
   }
   .aboutUsFirstImg{
     margin-top: 65px;
     width: 100%;
   }
+  .PWSRedImg{
+    display: none;
+  }
   .abt360CriticalCare-typography{
     margin-top: 3% !important;
+  }
+  .mobileViewText{
+    display: none;
   }
   .ourFounderAbout{
     font-size: 0.7rem !important;
     padding: 0px 0px !important;
     color: #002C4F;
+  }
+  .countryWiseStudent{
+    font-size: 1rem;
+    margin: 20px 2px;
   }
 
 /* END OF ABOUT US  */

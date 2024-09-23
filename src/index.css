@@ -812,9 +812,9 @@ font-size: 1.3em !important;
     width: 100%;
     margin-top: 13%;
   }
- .loginContainerony{
+ /* .loginContainerony{
 
- }
+ } */
   .loginContainer {
     margin-right: 1%;
   }
@@ -1337,10 +1337,6 @@ font-size: 1.3em !important;
 .changedDrNBBoxes{
   width: 30vw;
 }
-.changedDrNBBoxes-EDIC{
- 
-  /* width: 20vw; */
-}
   .allExploreCatCards{
     grid-template-columns: 1fr !important;
     gap: 5px !important;
@@ -1382,7 +1378,6 @@ font-size: 1.3em !important;
   .studentsSliderBoxes{
     display: flex;
     flex-direction: column !important;
-    /* margin: auto; */
     margin-left: 0px !important;
     justify-content: center;
     align-items: center !important;
@@ -1395,26 +1390,9 @@ font-size: 1.3em !important;
     margin-left: -3px !important;
         width: 100% !important;
   }
-
-  /* .appAdvertisement {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    margin-left: 37px !important;
-    width: 92% !important;
-    margin-top: 22% !important;
-    height: 39vh;
-    border-radius: 35px
-   } */
-   /* .appAdvertisement-firstSection{
-    height: 20vh !important;
-    width: 80%;
-   } */
    .exploreTechEnabledBox {
     height: 19vh !important;
    }
-   /* .homeImage img{
-    width: 80% !important;
-   } */
    .aboutExploreClasses{
     /* WHOLE WIDTH FIXED 'COZ OF THIS  */
     width: 6% !important;
@@ -1429,7 +1407,6 @@ font-size: 1.3em !important;
 
    .verticalDivider {
     display: none !important;
-    /* height: 4vh !important; */
    }
    .excelInCriticalcareImg{
     display: none;
@@ -1451,7 +1428,6 @@ text-align: center;
 .mrlogo-mobAd {
   height: 4vh !important;
   width: 31%;
-  /* margin-right: 28px; */
   margin-left: 35px;
 }
 
@@ -1460,65 +1436,119 @@ text-align: center;
   width: 100% !important;
   height: auto;
 }
+.mobileViewText{
+  display: block !important;
+}
+.OurfoundersCard{
+  grid-template-columns: 1fr !important;
+  padding: 15px 15px !important;
+  gap: 10px;
+}
+.OurFoundersLeftCard{
+  height: 35vh !important;
+  margin: 0px 0px !important;
+}
+.abt360CriticalCare{
+  margin: 0;
+  padding: 0 8px;
+}
+.countryWiseStudent{
+  /* font-size: 1.5rem !important;
+  margin: 20px 2px !important; */
+  font-family: Inter !important;
+font-size: 23px !important;
+font-weight: 700 !important;
+line-height: 21.78px !important;
+text-align: center !important;
+margin: 24px 0px !important;
+}
+.countryWiseStuBox{
+  min-width: 100% !important;
+  /* width: 29% !important; */
+  /* margin-top: 94px; */
+  margin-top: -81px !important;
+  /* margin: 50%; */
+  padding: 85px !important;
+}
+/* .countryWiseStuBox ul li{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10%;
+} */
+/* .countries{
+  width: 100% !important;
+} */
+.countryNames{
+  margin: 0px 36px !important;
+}
+.whyChooseUsVerticalLine{
+  display: none !important;
+}
+/* .mobileViewText{
+  font-size: 1rem !important;
+} */
 
-/* .studyResource {
-  font-size: 3em !important;
-} */
-/* .youtubeHead {
-  font-size: 2em !important;
-} */
 
 }
-@media (max-width: 90px) {
-  .OurfoundersCard {
-    /* height: 20vh !important; */
+@media (max-width: 990px) {
+  /* .OurfoundersCard {
     justify-content: center !important;
     display: grid !important;
-    /* grid-template-columns: 1fr !important; */
     align-items: center !important;
     text-align: center !important;
-  }
+  } */
   .ourFoundersHorizontalLine {
     width: 92% !important;
   }
-  .OurFoundersLeftCard {
+  /* .OurFoundersLeftCard {
    height: 18vh !important;
    width: 93% !important;
    border-radius: 27px !important;
-   /* align-items: center !important; */
-   /* text-align: center !important; */
-   /* justify-content: center !important; */
-}
-  .whyChooseUsSection {
-    /* height: 54vh !important; */
+} */
+  /* .whyChooseUsSection {
     display: grid;
     grid-template-columns: 1fr !important;
-  }
+  } */
   .aboutUsFirstImg {
-    margin-top: 9% !important;
-    width: 100% !important;
+    /* margin-top: 9% !important; */
+    /* width: 100% !important; */
+    display: none !important;
+}
+.stethoscopeImg{
+  display: none !important;
 }
 .abt360CriticalCare{
-  display: grid !important;
-  grid-template-columns: 1fr !important;
+  display: grid !important; 
+  grid-template-columns: 1fr !important; 
+  /* width: 100% !important; */
+  margin: 39px !important;
 }
 .abt360CriticalCare-right{
   margin-top: 36px !important;
+  margin-left: -29px !important;
   font-size: 1.5rem !important;
   text-align: center !important;
 }
 .abt360CriticalCare img {
-  width: 100% !important;
+  width: 412px !important;
+  height: 184px !important;
+  /* display: none !important; */
+  /* margin-left: -47px; */
+  /* margin-top: 19px; */
+  margin: 19px -47px;
+}
+.PWSRedImg{
+  display: block !important;
 }
 .percentageOfSuccess{
   height: 26vh !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10% !important;
+  background-color: white !important;
+  padding: 20px !important;
+  text-align: center;
 }
-/* .percentageOfSuccess h1{
-  font-size: 2rem !important;
-} */
 .css-r8b0qb {
       width: 40vw !important;
       height: 265px !important;
@@ -1540,34 +1570,38 @@ text-align: center;
   border-radius: 23px !important;
 }
 .abt360CriticalCare-typography{
-  /* font-size: 2.1rem !important; */
-  font-size: var(--MainHeading) !important;
-}
-.countryWiseStuBox {
-  width: 100%;
-  height: 0px !important;
-  font-size: 2.5rem !important;
-  margin: 0px 35%;
-}
-.whyChooseUsVerticalLine{
+  /* font-size: var(--MainHeading) !important; */
   display: none !important;
 }
+.mobileViewText{
+  font-size: var(--MainHeading) !important;
+}
+/* .countryWiseStuBox {
+  width: 100%;
+  height: 0px !important;
+  margin: 0px 35%;
+  padding: 0px !important;
+} */
 
+
+.globally{
+  width: 100%;
+  height: 24vh;
+}
 .ourFounderHead {
   font-size: 2.8em !important;
 }
 .whyChooseUsHead{
   font-size: 2.8rem !important;
-  /* display: flex !important; */
-  /* flex-direction: row !important; */
 }
 
 .whyChooseUsSection{
   display: grid !important;
   grid-template-columns: 1fr !important;
+  gap: 0%; 
+  /* height: 100vh !important; */
 }
 .css-1x1xx5k{
-  /* max-width: none !important; */
   min-width: 73vw !important;
 }
 .ourFounderAbout{
@@ -1575,7 +1609,6 @@ text-align: center;
 
 }
 .TestimonialsLeftCard p {
-  /* font-size: 1.7rem !important; */
   font-size: var(--subHeading) !important;
 }
 }
