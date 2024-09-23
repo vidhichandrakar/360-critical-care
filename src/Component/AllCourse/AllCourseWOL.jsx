@@ -16,7 +16,7 @@ const AllCourseWOL = () => {
             <Box className="CoursesCardMainBox">
                 {AllCourseWOLCard?.length && AllCourseWOLCard?.map((item) => {
                   return   <Box className="CradBox">
-                    <img src={cardimg} width={300} height={150}/>
+                    <img src={cardimg} className="CoursesCardImg"/>
                     <Box className="CardTextBox"    >
                         <Typography className="CardHeading">
                            {item.heading}
@@ -47,8 +47,9 @@ const AllCourseWOL = () => {
                 </Box>
                 })}
             </Box>
-            <Box>
+            <Box className="JoinContainer">
                 <img src={JoinImg} width="100%"/>
+                <Button className="Joincentered" variant="contained">Join Now</Button>
             </Box>
             <Box className="PopularCourseMainBox">
                 <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
@@ -58,10 +59,10 @@ const AllCourseWOL = () => {
                     return  <Box className="PopularCardBox">
                         <img src={cardimg} width={320} height={150}/>
                         <Box>
-                            <Typography sx={{fontWeight: 700, mt: 1, fontSize: "0.9rem"}}>
-                           {item.Para1}
+                            <Typography className="Para1" sx={{mt: 1}}>
+                            {item.Para1}
                             </Typography>
-                            <Typography sx={{fontWeight: 400, fontSize: "0.8rem"}}>
+                            <Typography className="Para2">
                             {item.Para2}
                             </Typography>
                         </Box>

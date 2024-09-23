@@ -24,13 +24,13 @@ function NeetGroupImg() {
 
       <Box className="youtubeImages">
          <Box className="youtubeImg1">
-           <img src={youTube} width={310} height={180} />
+           <img src={youTube} width={450} height={250} />
          </Box>
          <Box className="youtubeImg2">
-         <img src={youTube2} width={310} height={180} />
+         <img src={youTube2} width={450} height={250} />
           </Box>
          <Box className="youtubeImg3">
-         <img src={youTube3} width={310} height={180} />
+         <img src={youTube3} width={450} height={250} />
          </Box>
       </Box>
       <Box className="YoutubBox">

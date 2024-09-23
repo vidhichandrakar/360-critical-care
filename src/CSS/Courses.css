@@ -8,7 +8,7 @@
 
 /* Start AllCourseWOL CSS */
 .HeadimgBox{
-    margin-top: 5%;
+    margin-top: 4.5%;
 }
 .CoursesCardMainBox{
     display: grid;
@@ -83,6 +83,36 @@
     border-radius: 10px;
     color: white;
 }
+.JoinContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+.Joincentered {
+    background-color: white !important;
+    color: #24a28d !important;
+    padding: 22px 77px !important;
+    position: absolute !important;
+    top: 63% !important;
+    left: 49.5% !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+  }
+  .Para1{
+    font-weight: 700;
+    font-size: 1rem ;
+  }
+  .Para2{
+    font-weight: 400 ;
+    font-size: 0.8rem;
+  }
+  .CoursesCardImg{
+    width: 24%;
+    height: 20vh;
+  }
 /* End AllCourseWOL CSS */
 /* @media (max-width: 860px) {
     .PopularCourseBox{

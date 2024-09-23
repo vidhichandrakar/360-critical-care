@@ -10,6 +10,7 @@ body {
   text-align: justify !important;
 }
 .center p{
+  font-size: 1.2rem !important;
   margin-top: 3%;
 }
 * {
@@ -18,8 +19,8 @@ body {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1170px;
-  margin: auto;
+  max-width: 1500px;
+  /* margin: auto; */
 }
 .Responsivelogo{
   display: none;
