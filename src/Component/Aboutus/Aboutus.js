@@ -138,21 +138,21 @@ const Aboutus = () => {
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
           <ul type="disc">
-            <Typography sx={{ fontSize: "1rem", margin: "20px 2px" }}>
+            <Typography className="countryWiseStudent">
               <b>Country Wise Student</b>
             </Typography>
-            <li>India - 2,000</li>
-            <li>UAE - 1,300</li>
-            <li>USA - 6,060</li>
-            <li>Australia - 2,700</li>
+            <li><span className="countryNames">India</span> - 2,000</li>
+            <li><span className="countryNames">UAE</span> - 1,300</li>
+            <li><span className="countryNames">USA</span> - 6,060</li>
+            <li><span className="countryNames">Australia</span> - 2,700</li>
           </ul>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
         <img src={globalMap} className="globally" />
       </Box>
 
-      {/* <Box className="percentageOfSuccess">
-        <Box
+       <Box className="percentageOfSuccess">
+        {/* <Box
           sx={{
             backgroundColor: "#FFF3E3",
             borderRadius: "9px",
@@ -195,8 +195,62 @@ const Aboutus = () => {
         >
           <h1>100+</h1>
           <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
-        </Box>
-      </Box> */}
+        </Box> */}
+        <Box className="ImgBoxData">
+            <Box
+              sx={{
+                backgroundColor: "#FFF3E3",             
+              }}
+               className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>800+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Students</b>
+              </p>
+            </Box>
+            <Box
+              sx={{
+                backgroundColor: "#ffeeee",
+               }}
+                className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>3+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Glorious Years</b>
+              </p>
+            </Box>
+            <Box
+             className="DataCardBox"
+              sx={{
+                backgroundColor: "#e4faff",
+                  }}
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>90%</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Success Rate</b>
+              </p>
+            </Box>
+            <Box
+              sx={{
+                backgroundColor: "#ece7ff",
+              }}
+              className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>100+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>Teaching Videos</b>
+              </p>
+            </Box>
+          </Box>
+      </Box> 
 
       <img src={NewsLetter} width="100%" />
       {/* <Footer/> */}
