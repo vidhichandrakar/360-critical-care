@@ -89,10 +89,10 @@ function Footer() {
            
             <div className="flexcol fontWidth text-color-white CompanyServices">
              <Link  style={{ color: 'inherit', textDecoration: 'none'}} className="CompanyBox"> <p >Company</p></Link>
-             <Link to="/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition <span className="None">|</span></p></Link>
-             <Link to="/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy  <span className="None">|</span></p></Link> 
-             <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us  <span className="None">|</span></p></Link> 
-             <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Contact Us </p></Link> 
+             <Link to="/Critical-care/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition <span className="None">|</span></p></Link>
+             <Link to="/Critical-care/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy  <span className="None">|</span></p></Link> 
+             <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us  <span className="None">|</span></p></Link> 
+             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Contact Us </p></Link> 
             </div>
 
             <p className="text-color-white CopyRight">

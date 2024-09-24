@@ -137,6 +137,9 @@
   font-size: 0.9rem !important;
 }
 @media (max-width: 490px) {
+  .menuText{
+    font-size: 1.3rem !important;
+  }
   .PopularCourseBox {
     display: grid;
     grid-template-columns: 1fr !important;
