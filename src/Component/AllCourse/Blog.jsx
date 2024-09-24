@@ -51,7 +51,8 @@ const Blog = () => {
           {blogData.map((item) => {
             return (
               <Box className="PopularCardBox">
-                <img src={cardimg} className="Cardimgs" />
+                {/* <img src={item.image_url} className="Cardimgs" /> */}
+                {item.image_url != null ? (<img src={item.image_url} className="Cardimgs" /> )  : (<img src={cardimg} className="Cardimgs" />) }
                 <Box>
                   <Typography className="Para1" sx={{ mt: 1 }}>
                     {item.title}

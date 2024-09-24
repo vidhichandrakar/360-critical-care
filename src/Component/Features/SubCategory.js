@@ -67,14 +67,14 @@ const SubCategory = ({ categorySelected }) => {
         <Box className="SubBoxSubBox">
           <Box className="drNBCompleteBox">
             <Box className="drNBCompleteBox-left">
-            <h5 className="drNB-head">
-              <b>DrNB/DM</b>
+            <h5 className="drNB-head">  
+              <b>{categoreData[0]?.category_name}</b>
             </h5>
             {console.log(categoreData, "line73")}
             <Box className="drNBSubSections">
-              <Box className="changedDrNBBoxes">Top Long Course</Box>
-              <Box className="changedDrNBBoxes">Top Short Course</Box>
-              <Box className="changedDrNBBoxes">Top Crash Course</Box>
+              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[0]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[2]?.category_name}</Box>
             </Box>
             </Box>
             <Box className="blueSemiCircle">
@@ -88,12 +88,12 @@ const SubCategory = ({ categorySelected }) => {
         <Box className="drNBCompleteBox">
           <Box className="drNBCompleteBox-left">
             <h5 className="drNB-head">
-              <b>EDIC</b>
+            <b>{categoreData[1]?.category_name}</b>
             </h5>
             <Box className="drNBSubSections">
-              <Box className="changedDrNBBoxes">TRICKS-1</Box>
-              <Box className="changedDrNBBoxes">TRICKS-2</Box>
-              <Box className="changedDrNBBoxes">TRICKS-i</Box>
+              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[0]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[1]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
             </Box>
           </Box>
           <Box className="blueSemiCircle">
@@ -104,12 +104,12 @@ const SubCategory = ({ categorySelected }) => {
           <Box className="drNBCompleteBox">
           <Box className="drNBCompleteBox-left">
             <h5 className="drNB-head">
-              <b>IDCCM</b>
+            <b>{categoreData[2]?.category_name}</b>
             </h5>
             <div className="drNBSubSections">
-              <Box className="changedDrNBBoxes">TRICKS-IDCCM</Box>
-              {/* <Box className="changedDrNBBoxes">Top Short Course</Box> */}
-              {/* <Box className="changedDrNBBoxes">Top Crash Course</Box> */}
+            <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[0]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
             </div>
           </Box>
 

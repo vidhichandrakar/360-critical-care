@@ -20,18 +20,18 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/Critical-Care' exact Component={MainComponent}/>
-        <Route path='/About-us' Component={Aboutus}/>
-        <Route path='/Terms-&-Condition' Component={Terms}/>
-        <Route path='/Contact-us' Component={ContactUs}/>
-        <Route path='/Blog' Component={Blog}/>
-        <Route path='/Privacy-policy' Component={PrivacyPolicy }/>
-        <Route path='/TopCourse' Component={TopCourse}/>
-        <Route path='/EDIC' Component={EDIC}/>
-        <Route path='/EDIC2' Component={EDIC2}/>
-        <Route path='/IDCCM' Component={IDCCM}/>
-        <Route path='/Demo' Component={DemoApi}/>
-        <Route path='/AllCourse' Component={AllCourseWOL}/>
-        <Route path='/user/testportal' Component={TestportalMain}/>
+        <Route path='/Critical-Care/About-us' Component={Aboutus}/>
+        <Route path='/Critical-Care/Terms-&-Condition' Component={Terms}/>
+        <Route path='/Critical-Care/Contact-us' Component={ContactUs}/>
+        <Route path='/Critical-Care/Blog' Component={Blog}/>
+        <Route path='/Critical-Care/Privacy-policy' Component={PrivacyPolicy }/>
+        <Route path='/Critical-Care/TopCourse' Component={TopCourse}/>
+        <Route path='/Critical-Care/EDIC' Component={EDIC}/>
+        <Route path='/Critical-Care/EDIC2' Component={EDIC2}/>
+        <Route path='/Critical-Care/IDCCM' Component={IDCCM}/>
+        <Route path='/Critical-Care/Demo' Component={DemoApi}/>
+        <Route path='/Critical-Care/AllCourse' Component={AllCourseWOL}/>
+        <Route path='/Critical-Care/user/testportal' Component={TestportalMain}/>
       </Routes>
     </div>
   );
