@@ -19,19 +19,19 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/Critical-Care' exact Component={MainComponent}/>
-        <Route path='/Critical-Care/About-us' Component={Aboutus}/>
-        <Route path='/Critical-Care/Terms-&-Condition' Component={Terms}/>
-        <Route path='/Critical-Care/Contact-us' Component={ContactUs}/>
-        <Route path='/Critical-Care/Blog' Component={Blog}/>
-        <Route path='/Critical-Care/Privacy-policy' Component={PrivacyPolicy }/>
-        <Route path='/Critical-Care/TopCourse' Component={TopCourse}/>
-        <Route path='/Critical-Care/EDIC' Component={EDIC}/>
-        <Route path='/Critical-Care/EDIC2' Component={EDIC2}/>
-        <Route path='/Critical-Care/IDCCM' Component={IDCCM}/>
-        <Route path='/Critical-Care/Demo' Component={DemoApi}/>
-        <Route path='/Critical-Care/AllCourse' Component={AllCourseWOL}/>
-        <Route path='/Critical-Care/user/testportal' Component={TestportalMain}/>
+        <Route path='/Critical-care' exact Component={MainComponent}/>
+        <Route path='/Critical-care/About-us' Component={Aboutus}/>
+        <Route path='/Critical-care/Terms-&-Condition' Component={Terms}/>
+        <Route path='/Critical-care/Contact-us' Component={ContactUs}/>
+        <Route path='/Critical-care/Blog' Component={Blog}/>
+        <Route path='/Critical-care/Privacy-policy' Component={PrivacyPolicy }/>
+        <Route path='/Critical-care/TopCourse' Component={TopCourse}/>
+        <Route path='/Critical-care/EDIC' Component={EDIC}/>
+        <Route path='/Critical-care/EDIC2' Component={EDIC2}/>
+        <Route path='/Critical-care/IDCCM' Component={IDCCM}/>
+        <Route path='/Critical-care/Demo' Component={DemoApi}/>
+        <Route path='/Critical-care/AllCourse' Component={AllCourseWOL}/>
+        <Route path='/Critical-care/user/testportal' Component={TestportalMain}/>
       </Routes>
     </div>
   );
