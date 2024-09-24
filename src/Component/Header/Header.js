@@ -203,7 +203,7 @@ const Header = () => {
               marginLeft: "3%",
             }}
           >
-            <Box>
+          
             <Typography
               key={"2"}
               onClick={handleCloseNavMenu}
@@ -224,7 +224,7 @@ const Header = () => {
         {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
          </Link>
          </Typography>
-            </Box>
+         
             <Typography
               key={"2"}
               onClick={handleCloseNavMenu}
