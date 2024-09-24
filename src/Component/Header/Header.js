@@ -23,7 +23,7 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import DropDown from "./NestedMenu";
+// import DropDown from "./NestedMenu";
 import { Link } from "react-router-dom";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import SearchIcon from '@mui/icons-material/Search';
@@ -125,7 +125,7 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
-                <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
+                {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
               </MenuItem>
 
               <MenuItem
@@ -177,7 +177,7 @@ const Header = () => {
 
             </Menu>
           </Box>
-         <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
+         <Link to="/Critical-Care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
         
         
           <Typography
@@ -203,9 +203,28 @@ const Header = () => {
               marginLeft: "3%",
             }}
           >
-            <Box>
-              <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
-            </Box>
+          
+            <Typography
+              key={"2"}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: "black",
+                fontWeight: "600",
+                marginLeft: "5%",
+                // fontSize: "1.1em",
+                marginTop: "9px",
+                fontSize: "16px",
+                fontFamily: "Arial, Helvetica, sans-serif "
+              }}
+            >
+            <Link
+          to="/AllCourse"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >  All Courses
+        {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
+         </Link>
+         </Typography>
+         
             <Typography
               key={"2"}
               onClick={handleCloseNavMenu}
@@ -261,7 +280,7 @@ const Header = () => {
               }}
             >
               <Link
-                to="/Contact-us"
+                to="/Blog"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Blog

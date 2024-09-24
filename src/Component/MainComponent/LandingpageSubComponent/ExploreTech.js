@@ -10,6 +10,15 @@ const ExploreTech = () => {
         <Box className="demo">
         </Box>
         <div class="centered">
+          <Box className="CenteredHeading">
+          <Typography className="ExploreHead">
+           Explore Tech-Enabled Online CLasses
+          </Typography>
+          <Typography className="ExplorePara">
+           Creating new Benchmarks in Learning experiences
+          </Typography>
+          </Box>
+        <div class="centeredBox">
           <Box className="ImgBoxData">
             <Box
               sx={{
@@ -64,6 +73,7 @@ const ExploreTech = () => {
               </p>
             </Box>
           </Box>
+        </div>
         </div>
       </div>
       <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" /> 

@@ -1,126 +1,231 @@
 :root {
-    --MainHeading:26px;
-    --subHeading:24px;
-    --ScndHeading:20px;
-    --Heading:18px;
-    --small:16px;
-   }
+  --MainHeading: 26px;
+  --subHeading: 24px;
+  --ScndHeading: 20px;
+  --Heading: 18px;
+  --small: 16px;
+}
 
 /* Start AllCourseWOL CSS */
-.HeadimgBox{
-    margin-top: 4.5%;
+.HeadimgBox {
+  margin-top: 4.5%;
 }
-.CoursesCardMainBox{
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    margin: 50px;
-    
+.CoursesCardMainBox {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  margin: 50px;
+}
+.CradBox {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  padding: 18px 0px;
+  justify-content: space-around;
+  border-radius: 13px;
 
+  box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
 }
-.CradBox{
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid black; */
-    padding: 18px 0px;
-    justify-content: space-around;
-    border-radius: 13px;
-    
- box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
+.CardTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  text-align: left;
 }
-.CardTextBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
-    text-align: left;
+.Cardimgs {
+    width: 450px;
+    height: 225px;
 }
-.Price_ButtonBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+.Price_ButtonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
 }
-.PriceBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.PriceBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.CardHeading{
-    font-size: 25px !important;
-    font-weight: 700 !important;
+.CardHeading {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  overflow: hidden  !important;
+  text-overflow: ellipsis !important;
+  /* max-width: 1099ch !important; */
 }
-.PopularCourseBox{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
-    margin-top: 24px;
+.Subscribe {
+  display: none;
+}
+.JoinNow {
+  display: block;
+}
+.MobileViewImg {
+  display: none;
+}
+.WebViewImg {
+  display: block;
+}
+.PopularCourseBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
 }
 
-.PopularCardBox{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    /* border: 1px solid black; */
-    padding: 13px 24px;
-    /* justify-content: space-around; */
-    border-radius: 13px;
-    box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
+.PopularCardBox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* border: 1px solid black; */
+  padding: 15px 15px;
+  /* justify-content: space-around; */
+  border-radius: 13px;
+  box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
 }
-.PopularCourseMainBox{
-    margin: 3% 6%;
+.PopularCourseMainBox {
+  margin:28px;
 }
-.HeadingColor{
-    font-size: 2rem;
-    color: #24a28d;
-    font-weight: 700;
+.HeadingColor {
+  font-size: 2rem;
+  color: #24a28d;
+  font-weight: 700;
 }
-.offBox{
-    text-align: center;
-    background-color: #24a28d;
-    padding: 4px 6px;
-    font-size: 0.8rem !important;
-    border-radius: 10px;
-    color: white;
+.offBox {
+  text-align: center;
+  background-color: #24a28d;
+  padding: 4px 6px;
+  font-size: 0.8rem !important;
+  border-radius: 10px;
+  color: white;
 }
 .JoinContainer {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 100%;
-  }
+  height: 50vh;
+  background-color: #002c4f;
+  color: white;
+}
 .Joincentered {
+  background-color: white !important;
+  color: #24a28d !important;
+  padding: 10px 50px !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+}
+.JoinHeading {
+  padding-top: 6%;
+  font-size: 4rem !important;
+}
+.Para1 {
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.47px;
+    text-align: left;
+    
+}
+.Para2 {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.CoursesCardImg {
+  border-radius: 10px;
+  max-width: 20%;
+  height: 20vh;
+}
+.wrap-text-50 {
+  /* display: inline-block; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 19ch;
+  color: #918d8d;
+  font-size: 0.9rem !important;
+}
+/* /* End AllCourseWOL CSS */
+@media (max-width: 490px) {
+  .PopularCourseBox {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 60px;
+    margin-top: 24px;
+  }
+  .PopularCourseMainBox {
+    margin: 10px 20px;
+  }
+  .PopularCardBox {
+    width: 100%;
+    padding: 6px 10px;
+  }
+  .CoursesCardMainBox {
+    margin: 30px 10px;
+    gap: 35px;
+  }
+  .Price_ButtonBox {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+  }
+  .PriceBox {
+    margin-top: 1%;
+  }
+  .CardTextBox {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .Cardimgs {
+    width: 334px;
+  }
+  .CoursesCardImg {
+    max-width: 100%;
+    height: 24vh;
+  }
+  .CradBox {
+    width: 40.5%;
+    padding: 15px !important;
+  }
+  .ExploreButton {
+    background-color: #002c4f !important;
+    /* position: absolute !important; */
+    left: 58%;
+    top: 35%;
+    width: 42% !important;
+  }
+  .CardHeading {
+    margin-top: 2% !important;
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+  .Joincentered {
     background-color: white !important;
     color: #24a28d !important;
-    padding: 22px 77px !important;
-    position: absolute !important;
-    top: 63% !important;
-    left: 49.5% !important;
-    transform: translate(-50%, -50%) !important;
-    font-size: 1.5rem !important;
-    font-weight: 700 !important;
-    border-radius: 10px !important;
+    padding: 2px 14px !important;
+    /* position: absolute !important; */
+    /* font-size: 0.8rem !important; */
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    margin-top: 5% !important;
   }
-  .Para1{
-    font-weight: 700;
-    font-size: 1rem ;
+  .JoinContainer {
+    padding: 20px 6px;
   }
-  .Para2{
-    font-weight: 400 ;
-    font-size: 0.8rem;
+  .JoinHeading {
+    margin-top: 20% !important;
+    font-size: 3rem !important;
   }
-  .CoursesCardImg{
-    width: 24%;
-    height: 20vh;
+  .Subscribe {
+    display: block;
   }
-/* End AllCourseWOL CSS */
-/* @media (max-width: 860px) {
-    .PopularCourseBox{
-        background-color: #24a28d;
-    }
+  .JoinNow {
+    display: none;
+  }
+  .MobileViewImg {  
+    display: block;
+   width: 100%;
+   height: 30vh;
+  }
+  .WebViewImg {
+    display: none;
+  }
 }
-@media (max-width: 490px) {
-    .categoryMainBox{
-        background-color: green !important;
-       }
-} */

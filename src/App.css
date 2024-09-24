@@ -138,11 +138,11 @@
 }
 .instructionBox{
   background-color: #fff !important;
-  width:95% !important;
+  /* width:95% !important; */
   border-radius: 15px !important;
   /* padding: 20%; */
- margin: auto; 
- margin-top: 2% !important;
+ /* margin: auto;  */
+ /* margin-top: 2% !important; */
  box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
 }
 .instructionHead{
