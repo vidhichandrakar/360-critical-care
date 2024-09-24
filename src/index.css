@@ -737,7 +737,6 @@ font-size: 1.3em !important;
     padding: 2%;
     padding-bottom: 9% !important;
     border-radius: 25px 25px 25px 25px;
-    /* transform: translateY(-28%) !important; */
     flex-direction: row;
     box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
   }
@@ -770,18 +769,14 @@ font-size: 1.3em !important;
   .subCatBox {
     height: 59%;
   }
-  /* .rowDesign{
-    display: none;
-  }  */
+
   .SubCategoryBox{
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
   }
   .cardHome {
-    /* width: 71% !important; */
     height: 70% !important;
-    /* 5/3  */
     width: 84% !important;
     overflow: visible;
     display: flex;
@@ -789,7 +784,6 @@ font-size: 1.3em !important;
     background-color: white;
     padding: 2%;
     border-radius: 25px 25px 25px 25px;
-    /* transform: translateY(-28%) !important; */
     flex-direction: row;
     box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
   }
@@ -798,11 +792,7 @@ font-size: 1.3em !important;
     height: 57% !important;
     font-size: 1.7em !important;
   }
-  /* .leftDesign {
-    width: 100%;
-    height: 50%;
-    margin-left: 10% !important;
-  } */
+
   .appImage {
     display: none;
   }
@@ -812,9 +802,7 @@ font-size: 1.3em !important;
     width: 100%;
     margin-top: 13%;
   }
- /* .loginContainerony{
 
- } */
   .loginContainer {
     margin-right: 1%;
   }
@@ -844,17 +832,13 @@ font-size: 1.3em !important;
   width: 92% !important;
   height: 35vh !important;
 }
-/* .center p {
-  font-size: 2.3rem !important;
-} */
+
   .liveBoxrev {
     flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 475px) {
-  /* .leftTextDesign {
-    font-size: 1.2em !important;
-  } */
+
   .MuiInputBase-input-MuiOutlinedInput-input {
     color: #000 !important;
     font-size: 2rem !important;
@@ -927,9 +911,6 @@ font-size: 1.3em !important;
 }
 @media (max-width: 479px) {
   .appLogo {
-    /* width: 80px !important;
-    height: 36px !important; */
-    /* 3/3 */
     width: 40% !important;
     height: 20% !important;
   }
@@ -940,24 +921,16 @@ font-size: 1.3em !important;
 }
 @media (max-width: 379px) {
   .appLogo {
-    /* width: 80px !important;
-    height: 36px !important; */
-    /* 3/3 */
     width: 40% !important;
     height: 20% !important;
   }
 
   .googleLogo {
-    /* width: 80px !important;
-    height: 36px !important; */
-    /* 3/3 */
     width: 40% !important;
     height: 20% !important; 
     margin-left: 3%;
   }
 }
-
-/* NEW CRITICAL CARE FIRST PAGE--> SubCategory  */
 
 .breifesInHomePage{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
@@ -971,7 +944,6 @@ font-size: 1.3em !important;
     justify-content: center;
     margin-left: 224px;
     margin-top: -9% !important;
-    /* margin-bottom: 78px !important; */
     background-color: #ffffff !important;
     position: relative;
     z-index: 999;
@@ -979,27 +951,14 @@ font-size: 1.3em !important;
 .aboutExploreClasses {
   display: flex;
   flex-direction: row;
-  /* gap: 2% !important;
-  width: 39vw !important;
-    height: 21vh !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-left: 467px;
-    margin-top: 5% !important;
-    background-color: #ffffff !important;
-    position: relative;
-    z-index: 999; */
 }
 .exploreTechEnabledBox{
   background-color: lightblue !important;
-  /* width: 100vw; */
   min-width: 100vw;
     margin-left: -42px;
     margin-top: 72px;
-    /* padding-top: 32px; */
 }
 .exploreCTechategorySection{
-  /* height: 12px; */
   margin-top: -24%;
 }
 .excelInCriticalcareImg{
@@ -1020,28 +979,12 @@ font-size: 1.3em !important;
     margin-top: 22px;
     box-shadow: 0 0 4px 0px #2125294a !important;
 
-    /* background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 30%;
-    text-align: center;
-    padding: 20px;
-    position: relative; */
 }
 .drNBCompleteBox-left{
-  /* position: sticky; */
-  /* z-index: 222; */
   margin:35px 27px;
   width: 70%;
-  /* justify-content: left !important; */
   text-align: left !important;
-  /* align-items: start !important; */
 }
-/* .drNB-head{
-  margin-left: -41px;
-    /* margin: 25px 0px; */
-    /* margin-bottom: 25px; */
 
 .drNBSubSections{
   display: grid;
@@ -1063,8 +1006,6 @@ font-size: 1.3em !important;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 0;
   transform: rotate(360deg);
-  /* margin-left: 29%; */
-  /* margin-top: -16px; */
 }
 .blueSemiCircle-second{
   width: 116px;
@@ -1075,7 +1016,6 @@ font-size: 1.3em !important;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 0;
   transform: rotate(360deg);
-  /* margin-left: 36%; */
   margin-top: -16px;
 }
 .semiCircleIcon{
@@ -1116,20 +1056,14 @@ font-size: 1.3em !important;
   margin-left: 51px !important;
   font-size: var(--small) !important;
 }
-/* .transparentMobile{ */
 
-/* } */
 .appAdvertisement{
   display: flex;
   flex-direction: row;
-  /* align-items: start !important; */
   justify-content: space-between !important;
   text-align: left !important;
   border-radius: 10px;
   background-color: #F1EFFF !important;
-  /* padding: 23px 41px; */
-  /* width: 87%; */
-  /* margin-left: 6%; */
   margin: 5% 7%;
     gap: 14% !important;
 }
@@ -1139,9 +1073,7 @@ font-size: 1.3em !important;
   margin-top: 23px !important;
     margin-bottom: 12px !important;
 }
-/* .googlePlay-n-appStore{
-  margin-top: 23px;
-} */
+
 .appLogo-mobAd{
   width: 31%;
   margin-right: 28px;
@@ -1161,25 +1093,11 @@ font-size: 1.3em !important;
   display: none;
 }
 
-/* .studyResourceImages{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  flex-direction: row;
-  margin: 15px !important;
-  gap: 37px;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  margin-top: 18px !important;
-} */
 .youtubeImages {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr !important;
-  /* gap: 1%; */
-  /* width: 100%; */
   justify-content: center;
   text-align: center;
-  /* margin-top: 2%; */
   margin: 30px 100px 100px 100px ;
 }
 .studyResourceImages-Img{
@@ -1189,9 +1107,6 @@ font-size: 1.3em !important;
 .studyMaterials{
   border-radius: 12px;
   background-color: #DAF2FF;
-  /* width: 50%; */
-  /* height: 39vh; */
-  /* border-radius: 15px; */
 }
 .studyMaterials h5{
   text-align: start;
@@ -1201,7 +1116,6 @@ font-size: 1.3em !important;
 .debriefVideos{
   border-radius: 12px;
   background-color: #FFEFD2;
-  /* width: 50%; */
   height: 39vh;
   border-radius: 15px;
 }
@@ -1213,7 +1127,6 @@ font-size: 1.3em !important;
 .freeeMockTests {
   border-radius: 12px;
   background-color: #D3FFEE;
-  /* width: 50%; */
   height: 39vh;
   border-radius: 15px;
 }
@@ -1242,8 +1155,6 @@ font-size: 1.3em !important;
   margin-bottom: 22px;
 }
  .paraFontSize-forMobileView-common{ 
-   /* font-size: var(--subHeading) !important;  */
-   /* line-height: 3rem !important; */
    font-weight: 600;
  }
  .CategoryImg{
@@ -1270,33 +1181,12 @@ font-size: 1.3em !important;
   margin-top: -33%;
 }
 
-/* @media (max-width: 860px) {
-  .studyResourceImages{
-    grid-template-columns: 1fr 1fr !important;
-    background-color: orange !important;
-  }
-} */
 @media (max-width: 490px) {
   .homeImage img {
     height: 16vh !important;
   }
-  /* .paraFontSize-forMobileView-common{
-    font-size: var(--subHeading) !important;
-    font-size: 5rem !important;
-    margin: 14px 55px !important;
-    text-align: center;
-    align-items: center;
-        
-  } */
-  /* .studyResourceImages{
-    grid-template-columns: 1fr 1fr !important;
-  } */
-  /* .studyMaterials{
-    height: 15vh !important;
-    width: 71vw !important;
-  } */
+
   .studyMaterials h5{
-    /* font-size: 1.6rem !important; */
     font-size: var(--subHeading) !important;
   }
   .debriefVideos{
@@ -1304,7 +1194,6 @@ font-size: 1.3em !important;
     width: 71vw !important;
   }
   .debriefVideos h5 {
-    /* font-size: 1.6rem !important; */
     font-size: var(--subHeading) !important;
   }
   .freeeMockTests{
@@ -1330,7 +1219,7 @@ font-size: 1.3em !important;
   /* background-color: white !important;
   padding: 10px;
   text-align: center; */
-/* } */ */
+/* } */
   .aboutExploreClasses-para{
     font-size: var(--subHeading) !important;
   }

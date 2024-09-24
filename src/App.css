@@ -41,14 +41,11 @@
   margin-top: 1%;
 }
 .Hamburger {
-  /* width: 100% !important; */
-  /* height: 20vh !important; */
-  /* border: solid 2px black; */
   font-size: 4rem !important;
   position: absolute;
   left: 0;  
 }
-/* Top Crash Course CSS End*/
+
 
 .DemoBox {
   margin: 10%;
@@ -67,9 +64,7 @@
   background-color: #ffffff !important;
   color: #000000 !important;
 }
-/* .AppHeader-mobileView{
-  display: none !important;
-} */
+
 
 .MuiBox-root .css-1lvtzne {
   color: #000000 !important;
@@ -115,9 +110,8 @@
   border-bottom-left-radius: 999px;
 }
 
-/* Test Portal css */
+
 .instructionMainBox{
-  /* width:95%; */
   height:100%;
   display: block;
   margin: auto;
@@ -138,11 +132,7 @@
 }
 .instructionBox{
   background-color: #fff !important;
-  /* width:95% !important; */
   border-radius: 15px !important;
-  /* padding: 20%; */
- /* margin: auto;  */
- /* margin-top: 2% !important; */
  box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
 }
 .instructionHead{
