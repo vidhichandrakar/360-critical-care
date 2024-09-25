@@ -27,7 +27,7 @@ const MainComponent = ()=>{
   return(
     <Fragment>
       <Header/>
-      {/* <Landingpage /> */}
+      <Landingpage />
       {/* <CourseDescriptionMobileHeader/> */}
       {/* <AllCourseWOL /> */}
       {/* <NavHome />
@@ -37,7 +37,7 @@ const MainComponent = ()=>{
       <NeetGroupImg />
       <Testimonials/> */}
       {/* <Testimonial /> */}
-      <Aboutus />
+      {/* <Aboutus /> */}
       {/* <TRICKS1/> */}
       {/* <TRICKS2/> */}
       {/* <TRICKSIDDCM/> */}
@@ -48,6 +48,7 @@ const MainComponent = ()=>{
       {/* <PurchesedCourse/> */}
       {/* <TestportalMain/> */}
       <Footer />
+       
     </Fragment>
   )
 }

@@ -12,22 +12,26 @@ import EDIC2 from './Component/AllCourse/EDIC2';
 import IDCCM from './Component/AllCourse/IDCCM';
 import DemoApi from './Component/Service/DemoApi';
 import TestportalMain from './UserPortal/TestPortal/TestportalMain.component';
+import Blog from './Component/AllCourse/Blog';
+import AllCourseWOL from './Component/AllCourse/AllCourseWOL';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/Critical-Care' exact Component={MainComponent}/>
-        <Route path='/About-us' Component={Aboutus}/>
-        <Route path='/Terms-&-Condition' Component={Terms}/>
-        <Route path='/Contact-us' Component={ContactUs}/>
-        <Route path='/Privacy-policy' Component={PrivacyPolicy }/>
-        <Route path='/TopCourse' Component={TopCourse}/>
-        <Route path='/EDIC' Component={EDIC}/>
-        <Route path='/EDIC2' Component={EDIC2}/>
-        <Route path='/IDCCM' Component={IDCCM}/>
-        <Route path='/Demo' Component={DemoApi}/>
-        <Route path='/user/testportal' Component={TestportalMain}/>
+        <Route path='/Critical-care' exact Component={MainComponent}/>
+        <Route path='/Critical-care/About-us' Component={Aboutus}/>
+        <Route path='/Critical-care/Terms-&-Condition' Component={Terms}/>
+        <Route path='/Critical-care/Contact-us' Component={ContactUs}/>
+        <Route path='/Critical-care/Blog' Component={Blog}/>
+        <Route path='/Critical-care/Privacy-policy' Component={PrivacyPolicy }/>
+        <Route path='/Critical-care/TopCourse' Component={TopCourse}/>
+        <Route path='/Critical-care/EDIC' Component={EDIC}/>
+        <Route path='/Critical-care/EDIC2' Component={EDIC2}/>
+        <Route path='/Critical-care/IDCCM' Component={IDCCM}/>
+        <Route path='/Critical-care/Demo' Component={DemoApi}/>
+        <Route path='/Critical-care/AllCourse' Component={AllCourseWOL}/>
+        <Route path='/Critical-care/user/testportal' Component={TestportalMain}/>
       </Routes>
     </div>
   );

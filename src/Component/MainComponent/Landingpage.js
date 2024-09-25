@@ -8,10 +8,12 @@ import Jion15 from "./LandingpageSubComponent/Jion15";
 import Studysource from "./LandingpageSubComponent/Studysource";
 import NeetGroupImg from "../Features/NeetGroupImg";
 import NewsLatter from "./LandingpageSubComponent/NewsLatter";
+import AllCourseWOL from "../AllCourse/AllCourseWOL";
 
 const Landingpage = () => {
     return(
         <Fragment>
+            {/* <AllCourseWOL /> */}
            <NavHome />
            <CategoryBox />
            <ExploreTech />

@@ -1,0 +1,31 @@
+import axios from "axios"
+import { APIS } from "./ApiConstant";
+
+export const getCategory = ({ callBack }) => {
+    const url = APIS.getCategory;
+    axios.get(url).then((response) => {
+      callBack(response);
+    });
+  };    
+export const getBlog = ({ callBack }) => {
+    const url = APIS.getBlog;
+    axios.get(url).then((response) => {
+      callBack(response);
+    });
+  };    
+
+export const getAllCourses = ({callBack, searchString, error }) => {
+    let url = new URL(`${APIS.allCourses}`);
+    if(searchString){
+      url.searchParams.set("course_name", searchString);
+    }  
+    axios
+      .get(url)
+      .then((response) => {
+  
+        callBack(response);
+      })
+      .catch((errorMessage) => {
+        error(errorMessage);
+      });
+  };

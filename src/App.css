@@ -1,10 +1,13 @@
 
 :root {
+ --large:3rem;
+ --medium:2.5rem;
+ --small:2.2rem;
  --MainHeading:26px;
  --subHeading:24px;
  --ScndHeading:20px;
  --Heading:18px;
- --small:16px;
+
 }
 .App {
   font-family: sans-serif;
@@ -38,14 +41,11 @@
   margin-top: 1%;
 }
 .Hamburger {
-  /* width: 100% !important; */
-  /* height: 20vh !important; */
-  /* border: solid 2px black; */
   font-size: 4rem !important;
   position: absolute;
   left: 0;  
 }
-/* Top Crash Course CSS End*/
+
 
 .DemoBox {
   margin: 10%;
@@ -64,9 +64,7 @@
   background-color: #ffffff !important;
   color: #000000 !important;
 }
-/* .AppHeader-mobileView{
-  display: none !important;
-} */
+
 
 .MuiBox-root .css-1lvtzne {
   color: #000000 !important;
@@ -112,9 +110,8 @@
   border-bottom-left-radius: 999px;
 }
 
-/* Test Portal css */
+
 .instructionMainBox{
-  /* width:95%; */
   height:100%;
   display: block;
   margin: auto;
@@ -135,11 +132,7 @@
 }
 .instructionBox{
   background-color: #fff !important;
-  width:95% !important;
   border-radius: 15px !important;
-  /* padding: 20%; */
- margin: auto; 
- margin-top: 2% !important;
  box-shadow: 1px 1px 1px 1px #d3d3d3 !important;
 }
 .instructionHead{
@@ -149,22 +142,23 @@
 }
 .olList li{
 text-align: left !important;
-margin-left: 4% !important;
+margin-left: 5% !important;
 margin-top: 1% !important;
 font-size: var(--Heading) !important;
 }
 @media (max-width:1366px) {
   
 .headingMain{
-  font-size: var(--subHeading) !important;
+  font-size: var(--large) !important;
 }
 .headingMainSub{
-  font-size: var(--subHeading) !important;
+  font-size: var(--medium) !important;
 }
 .olList li{
-  font-size: var(--ScndHeading) !important;
+  font-size: var(--small) !important;
+  margin-left: 8% !important;
 }
 .instructionHead{
-  font-size: var(--MainHeading) !important;
+  font-size: var(--large) !important;
 }
 }
