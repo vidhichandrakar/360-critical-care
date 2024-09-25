@@ -252,7 +252,7 @@ const Aboutus = () => {
           </Box>
       </Box> 
 
-      <img src={NewsLetter} width="100%" />
+      <img src={NewsLetter} width="100%" className="newsLetterImg"/>
       {/* <Footer/> */}
     </>
   );

@@ -212,7 +212,7 @@ text-align: center;
         justify-content: left;
     }
     .CompanyBox{
-        font-size: 1.7rem !important;
+        font-size: 1.3rem !important;
         font-weight: 700;
     }
     .CompanyServices{
@@ -236,6 +236,9 @@ text-align: center;
     }
     .CopyRight{
         text-align: center !important;
+        font-size: 0.8rem;
+        margin-top: 24px;
+        margin-bottom: -35px;
     }
 }
 @media (min-width:490px) {

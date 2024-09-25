@@ -1320,6 +1320,7 @@ font-size: 1.3em !important;
   }
   .ImgBoxData{
     grid-template-columns: 1fr 1fr !important;
+    height: 19vh;
 }
 .centered {
   /* position: absolute;
@@ -1331,7 +1332,12 @@ font-size: 1.3em !important;
   text-align: center;
 }
   .aboutExploreClasses-para{
-    font-size: var(--subHeading) !important;
+    /* font-size: var(--subHeading) !important; */
+  }
+  .newsLetterImg{
+    width: 100%;
+    height: 27vh;
+    margin-top: 33% !important;
   }
 .changedDrNBBoxes{
   width: 30vw;
