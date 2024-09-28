@@ -10,7 +10,7 @@ body {
   text-align: justify !important;
 }
 .center p{
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   margin-top: 3%;
 }
 * {
@@ -246,8 +246,8 @@ Link .text-decoraction-none {
     align-items: center;
   }
   .center p {
-    font-size: 1.2em;
-    text-align: left;
+    font-size: 0.8em !important;
+    text-align: left !important;
     margin-top: 3%;
   }
   .container {

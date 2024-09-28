@@ -1070,7 +1070,7 @@ font-size: 1.3em !important;
     gap: 14% !important;
 }
 .appAdvertisementHead{
-  font-size: 1.5rem !important;
+  font-size: 0.9rem !important;
   font-weight: 600 !important;
   margin-top: 23px !important;
     margin-bottom: 12px !important;
@@ -1185,11 +1185,12 @@ font-size: 1.3em !important;
 
 @media (max-width: 490px) {
   .homeImage img {
-    height: 16vh !important;
+    /* height: 16vh !important; */
   }
 
   .studyMaterials h5{
-    font-size: var(--subHeading) !important;
+    /* font-size: var(--subHeading) !important; */
+    font-size: 1.1rem !important;
   }
   .debriefVideos{
     height: 15vh !important;
@@ -1212,6 +1213,11 @@ font-size: 1.3em !important;
   }
   .ImgBoxData{
     grid-template-columns: 1fr 1fr !important;
+    height: 19vh;
+}
+.studyResource {
+  font-size: 1.3em !important;
+  font-weight: bolder !important;
 }
 /* .centered {
   /* position: absolute;
@@ -1223,7 +1229,12 @@ font-size: 1.3em !important;
   text-align: center; */
 /* } */
   .aboutExploreClasses-para{
-    font-size: var(--subHeading) !important;
+    /* font-size: var(--subHeading) !important; */
+  }
+  .newsLetterImg{
+    width: 100%;
+    height: 27vh;
+    margin-top: 33% !important;
   }
 .changedDrNBBoxes{
   width: 30vw;
@@ -1277,10 +1288,17 @@ font-size: 1.3em !important;
   .breifesInHomePage{
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    height: 45vh !important;
+    height: 26vh !important;
     margin-left: -3px !important;
         width: 100% !important;
   }
+  .paraFontSize-forMobileView-common-text {
+    /* font-weight: 600; */
+    font-size: 0.8rem !important;
+}
+.paraFontSize-forMobileView-common {
+  font-size: 0.9rem !important;
+}
    .exploreTechEnabledBox {
     height: 19vh !important;
    }
@@ -1303,8 +1321,8 @@ font-size: 1.3em !important;
     display: none;
    }
    .catHeading {
-    font-family: Inter !important;
-font-size: 18px !important;
+    /* font-family: Inter !important; */
+font-size: 20px !important;
 font-weight: 700 !important;
 line-height: 21.78px !important;
 text-align: center;
@@ -1465,7 +1483,7 @@ margin: 24px 0px !important;
   display: none !important;
 }
 .mobileViewText{
-  font-size: var(--MainHeading) !important;
+  /* font-size: var(--MainHeading) !important; */
 }
 /* .countryWiseStuBox {
   width: 100%;

@@ -19,8 +19,6 @@ function Footer() {
             <div class="footer-col  center">
               <Link to="/Critical-Care"><img
                 src={Logo}
-                // width={250}
-                // height={50}
                 className="LogoFooter"
               /></Link>
               <p className="text-color-white">
@@ -34,7 +32,6 @@ function Footer() {
                <a href='#'>
                 <img
                   src={GoogleLogo}
-                  // sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
                   width={100}
                   height={40}
                   className="margin AppLogo"
@@ -43,7 +40,6 @@ function Footer() {
                 <a href='#'>
                 <img
                   src={AppLogo}
-                  // sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
                   width={100}
                   height={40}
                   className="margin AppLogo mrlogo"
@@ -55,7 +51,6 @@ function Footer() {
                 <div className="SocialMediaApp">
                   <a href="#" className="sp">
                     <img src={FB} className="BR" />
-                    {/* <FacebookIcon className="BR fb-bg" /> */}
                   </a>
                   <a href="#">
                     {/* <img
@@ -66,13 +61,10 @@ function Footer() {
                     <img src={IG} className="BR" />
                   </a>
                   <a href="#">
-                    {/* <YouTubeIcon className="BR br-bg"  /> */}
                     <img src={YT} className="BR" />
                   </a>
                   <a href="#">
-                  {/* <img src={TW} className="BR" /> */}
                     <TwitterIcon className="BR tw-bg"/>
-                    {/* <img src=" https://ik.imagekit.io/y8s2vhk66ef/image_3_yByOZld4XFh.png?updatedAt=1628624824789" className="BR"  /> */}
                   </a>
                 </div>
               </div>
@@ -89,10 +81,10 @@ function Footer() {
            
             <div className="flexcol fontWidth text-color-white CompanyServices">
              <Link  style={{ color: 'inherit', textDecoration: 'none'}} className="CompanyBox"> <p >Company</p></Link>
-             <Link to="/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition <span className="None">|</span></p></Link>
-             <Link to="/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy  <span className="None">|</span></p></Link> 
-             <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us  <span className="None">|</span></p></Link> 
-             <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Contact Us </p></Link> 
+             <Link to="/Critical-care/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p >Terms and Condition <span className="None">|</span></p></Link>
+             <Link to="/Critical-care/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Privacy Policy  <span className="None">|</span></p></Link> 
+             <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">About Us  <span className="None">|</span></p></Link> 
+             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left">Contact Us </p></Link> 
             </div>
 
             <p className="text-color-white CopyRight">

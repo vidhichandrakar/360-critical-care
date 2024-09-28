@@ -60,7 +60,7 @@ const Aboutus = () => {
           </Typography>
 
           <Typography sx={{fontSize: "0.8rem"}}
-          //  className="mobileViewText"
+           className="mobileViewText" 
            >
             360CC Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
@@ -252,8 +252,8 @@ const Aboutus = () => {
           </Box>
       </Box> 
 
-      <img src={NewsLetter} width="100%" />
-      {/* <Footer/> */}
+      <img src={NewsLetter} width="100%" className="newsLetterImg"/>
+      <Footer/> 
     </>
   );
 };

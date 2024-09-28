@@ -12,7 +12,7 @@ const ExploreTech = () => {
         <div class="centered">
           <Box className="CenteredHeading">
           <Typography className="ExploreHead">
-           Explore Tech-Enabled Online CLasses
+           Explore Tech-Enabled Online Classes
           </Typography>
           <Typography className="ExplorePara">
            Creating new Benchmarks in Learning experiences

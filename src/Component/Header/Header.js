@@ -125,6 +125,13 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
+                  <Link
+          to="/Critical-care/AllCourse"
+          style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
+          className="menuText"
+        >  All Courses
+        {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
+         </Link>
                 {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
               </MenuItem>
 
@@ -133,7 +140,7 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
               > 
-                <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}> 
+                <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}> 
                   <Typography
                     textAlign="center"
                     className="menuText"
@@ -148,7 +155,7 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
-                <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
+                <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
                   {" "}
                   <Typography
                     textAlign="center"
@@ -158,13 +165,13 @@ const Header = () => {
                   </Typography>
                 </Link>
               </MenuItem>
-{/* 
+
               <MenuItem
                 key={1}
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
-                <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}>
+                <Link to="/Critical-care/Blog" style={{ color: 'inherit', textDecoration: 'none'}}>
                   {" "}
                   <Typography
                     textAlign="center"
@@ -173,7 +180,7 @@ const Header = () => {
                     Blog
                   </Typography>
                 </Link>
-              </MenuItem> */}
+              </MenuItem>
 
             </Menu>
           </Box>
@@ -218,7 +225,7 @@ const Header = () => {
               }}
             >
             <Link
-          to="/AllCourse"
+          to="/Critical-care/AllCourse"
           style={{ color: "inherit", textDecoration: "none" }}
         >  All Courses
         {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
@@ -239,7 +246,7 @@ const Header = () => {
               }}
             >
               <Link
-                to="/About-us"
+                to="/Critical-care/About-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 About Us
@@ -260,7 +267,7 @@ const Header = () => {
               }}
             >
               <Link
-                to="/Contact-us"
+                to="/Critical-care/Contact-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Contact Us
@@ -280,7 +287,7 @@ const Header = () => {
               }}
             >
               <Link
-                to="/Blog"
+                to="/Critical-care/Blog"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Blog
