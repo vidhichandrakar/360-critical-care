@@ -425,7 +425,7 @@ function ContactUs() {
           ></iframe>
         </Box>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 }
