@@ -201,7 +201,7 @@
     border: 0.5px solid grey;
     display: flex;
     flex-direction: row;
-    height: 67vh;
+    height: 76vh;
     margin: 59px -35px;
 }
 .getInTouch{
@@ -246,6 +246,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 31px;
+    width: 50vw;
 }
 .contactUs-sendMsgBtn {
     /* margin-right: 3%; */
@@ -256,15 +257,16 @@
     background-color: #002C4F !important;
     position: absolute;
     top: 29%;
-    left: 43%;
+    left: 42%;
     /* margin-right: 23px !important; */
   }
   .contactUsMap{
-    width: 90vw;
+    width: 94vw;
     height: 46vh;
     /* margin-left: 23px !important; */
-    margin-right: 29px !important;
-    margin-top: -31px !important;
+    /* margin-right: 29px !important; */
+    /* margin-top: -31px !important; */
+    margin: -35px;
   }
 
 
