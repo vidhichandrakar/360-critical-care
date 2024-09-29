@@ -864,9 +864,11 @@ font-size: 1.3em !important;
   background-color: #002C4F !important;
   }
   .logo {
-    display: none;
-    width: 50%;
-    height: 11vh;
+    width: 135px !important;
+    height: 35px !important;
+    top: 13px !important;
+    left: 14px !important;
+    margin-left: 0;
   }
   .loginContainer {
     margin-right: 1%;
