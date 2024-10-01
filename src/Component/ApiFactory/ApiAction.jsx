@@ -29,3 +29,15 @@ export const getAllCourses = ({callBack, searchString, error }) => {
         error(errorMessage);
       });
   };
+
+  export const addNewsLetter = ({payload, callBack, error }) => {
+    const url = APIS.addNewsLetter;
+    axios
+      .post(url, payload)
+      .then((response) => {
+        callBack(response);
+      })
+      .catch((errorMessage) => {
+        error(errorMessage);
+      });
+  };

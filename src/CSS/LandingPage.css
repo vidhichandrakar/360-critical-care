@@ -8,7 +8,7 @@
 }
 .demo {
   width: 100%;
-  height: 218px;
+  height: 428px;
   background-image: radial-gradient(
       circle,
       rgba(0, 16, 31, 0.5),
@@ -33,7 +33,7 @@
 }
 .ExploreHead {
   font-family: Inter !important;
-  font-size: 44px !important;
+  /* font-size: 144px !important; */
   font-weight: 700 !important;
   line-height: 53.25px !important;
   text-align: center !important;
@@ -46,7 +46,7 @@
   text-align: center;
 }
 .centeredBox {
-  margin-top: 17%;
+  margin-top: 15%;
   background-color: white !important;
   padding: 20px;
   text-align: center;
@@ -130,9 +130,9 @@
   display: flex;
   padding: 10px 40px !important;
   align-items: center;
-  width: 89%;
+  width: 70% !important;
   border-radius: 100px !important;
-  margin-left: 87px;
+  margin-left: 200px !important;
 }
 
 .FeaturesBLog{    
@@ -155,6 +155,11 @@
   .DataCardBox {
     width: 150px;
     height: 150px;
+  }
+  .EnquiryBox {
+    margin-top: 5%;
+    flex-direction: row !important;
+    justify-content: left;
   }
   .centered {
     top: 80%;
@@ -195,6 +200,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+  .colFooterUpper {
+    justify-content: left;
+  }
+  
   .studyMaterials {
     height: 29vh;
   }
@@ -292,6 +301,10 @@ text-align: center;
     .None{
         display: none;
     }
+    .rIGHTlINE{
+      border-right: 1px solid white !important;
+      padding-right: 0;
+    }
     .CopyRight{
         text-align: center !important;
         font-size: 0.8rem;
@@ -326,21 +339,19 @@ text-align: center;
     line-height: 87.5px !important;
     text-align: center;
   }
-  .GmailBox {
+  /* .GmailBox {
     margin-top: 10px;
     display: flex;
     padding: 5px 5px !important;
     align-items: center;
     width: 100% !important;
     margin-left: 0 !important;
-  }
+  } */
   .LogoFooter {
     width: 70%;
     height: auto !important;
   }
-  .colFooterUpper {
-    justify-content: left;
-  }
+  
   .col {
     flex-direction: column;
   }
@@ -348,33 +359,29 @@ text-align: center;
     margin-top: -6%;
     margin-left: -5%;
   }
-  .EnquiryBox {
-    margin-top: 5%;
-    flex-direction: row !important;
-    justify-content: left;
-  }
+ 
   .CompanyBox {
     font-size: 1.7rem !important;
     font-weight: 700;
   }
-  .CompanyServices {
+  /* .CompanyServices {
     flex-direction: column;
-  }
+  } */
   .footerline {
     display: none;
   }
   .row {
-    margin-left: 0;
-    margin-right: 0;
+    border-bottom: 2px solid #eee;
   }
   .container {
     margin: 0;
   }
-  .margin-left {
-    margin-left: 0;
-  }
   .None {
     display: none;
+  }
+  .rIGHTlINE{
+    padding-right: 8px;
+    border-right: 2px solid;
   }
   .CopyRight {
     text-align: center !important;
@@ -404,6 +411,7 @@ text-align: center;
   .PWImg {
     display: none;
   }
+ 
   .YoutubBox {
     display: none;
   }
@@ -417,6 +425,7 @@ text-align: center;
     margin-top: 0;
     margin-left: 0;
   }
+
   .LogoFooter {
     margin-left: -60%;
     width: 40%;
