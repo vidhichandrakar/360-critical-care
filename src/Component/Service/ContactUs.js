@@ -348,7 +348,7 @@ function ContactUs() {
                 <Stack
                   component="form"
                   sx={{
-                    width: "61ch",
+                    width: "47ch",
                   }}
                   spacing={2}
                   noValidate
@@ -370,7 +370,7 @@ function ContactUs() {
               <Stack
                 component="form"
                 sx={{
-                  width: "122ch",
+                  width: "108ch",
                   height: "8ch",
                 }}
                 spacing={2}
@@ -392,7 +392,7 @@ function ContactUs() {
               <Stack
                 component="form"
                 sx={{
-                  width: "122ch",
+                  width: "108ch",
                   // padding: "20px"
                 }}
                 spacing={2}
@@ -415,7 +415,7 @@ function ContactUs() {
         </Box>
 
         {/* MAP  */}
-        {/* <Box>
+        <Box>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29293.035269702268!2d85.33562851618916!3d23.40162025020351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e15783b9c0b5%3A0x5c22411ea37e8259!2sBariatu%2C%20Ranchi%2C%20Jharkhand%20834009!5e0!3m2!1sen!2sin!4v1710535703912!5m2!1sen!2sin"
             className="contactUsMap"
@@ -423,9 +423,9 @@ function ContactUs() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-        </Box> */}
+        </Box>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 }

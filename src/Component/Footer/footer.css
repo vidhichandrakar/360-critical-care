@@ -12,6 +12,7 @@ body {
 .center p{
   font-size: 1.1rem !important;
   margin-top: 3%;
+  margin: 12px 111px;
 }
 * {
   margin: 0;
