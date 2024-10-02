@@ -44,6 +44,11 @@ body {
   flex-direction: row;
   justify-content: right;
 }
+.SocialBoxcol {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
 .flexcol{
   display: flex;
   flex-direction: row;
@@ -202,9 +207,9 @@ Link .text-decoraction-none {
     padding: 0 1px;
     text-align: left;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 }
 @media (max-width: 890px) {
   .footer-col {
@@ -212,9 +217,9 @@ Link .text-decoraction-none {
     padding: 0 1px;
     text-align: left;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
   .row {
     justify-content: center;
   }
@@ -224,9 +229,9 @@ Link .text-decoraction-none {
     width: 50%;
     margin-bottom: 30px;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
   .col {
     justify-content: center;
   }
@@ -250,9 +255,9 @@ Link .text-decoraction-none {
     text-align: left !important;
     margin-top: 3%;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 }
 
 

@@ -67,12 +67,12 @@ const Jion15 = () => {
             <img
               src={GoogleLogo}
               width={100}
-              height={40}
+              height="auto"
             />
             <img
               src={AppLogo}
               width={100}
-              height={40}
+              height= "auto"
               style={{marginLeft: "15px"}}
             />
           </div>

@@ -99,7 +99,7 @@ const Header = () => {
            
             
             <Box>
-              <Link to="/Critical-Care"><img src={Logo} className="Responsivelogo"/></Link> 
+              <Link to="/Critical-care"><img src={Logo} className="Responsivelogo"/></Link> 
             </Box>
             <Menu
               id="menu-appbar"
@@ -184,7 +184,7 @@ const Header = () => {
 
             </Menu>
           </Box>
-         <Link to="/Critical-Care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
+         <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
         
         
           <Typography

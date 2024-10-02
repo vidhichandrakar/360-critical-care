@@ -17,7 +17,7 @@ function Footer() {
         <div class="container">
           <div class="row">
             <div class="footer-col  center">
-              <Link to="/Critical-Care"><img
+              <Link to="/Critical-care"><img
                 src={Logo}
                 className="LogoFooter"
               /></Link>
@@ -46,7 +46,7 @@ function Footer() {
                 />
                 </a>
               </div>
-              <div className="col FollowBox">
+              <div className="SocialBoxcol FollowBox">
                 <h4 className="text-color-white"><b>Follow us :</b></h4>
                 <div className="SocialMediaApp">
                   <a href="#" className="sp">

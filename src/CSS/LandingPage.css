@@ -103,7 +103,7 @@
   gap: 25px;
 }
 .studyMaterials {
-  height: 50vh;
+  height: 45vh;
 }
 .NewLetterBox {
   background-color: #24a28e;
@@ -128,11 +128,19 @@
 }
 .GmailBox {
   display: flex;
-  padding: 10px 40px !important;
+  padding: 5px 6px !important;
   align-items: center;
   width: 70% !important;
   border-radius: 100px !important;
   margin-left: 200px !important;
+}
+.SubscribeButton{
+  background-color: #002C4F !important;
+  border-radius: 100px !important;
+  width: 20% !important;
+  color: white !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
 }
 
 .FeaturesBLog{    
@@ -270,8 +278,8 @@ text-align: center;
         flex-direction: column;
     }
     .SocialMediaApp{
-        margin-top: -6%;
-        margin-left: -5%;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
     }
     .EnquiryBox{
         margin-top: 5%;

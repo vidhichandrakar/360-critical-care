@@ -976,22 +976,25 @@ font-size: 1.3em !important;
   display: flex;
   flex-direction: row;
     border-radius: 12px;
-    width: 27vw;
+    width: 23vw;
     height: 32vh;
     margin-top: 22px;
     box-shadow: 0 0 4px 0px #2125294a !important;
+    border-left-style: solid;
+    border-left-color: #199884;
 
 }
 .drNBCompleteBox-left{
   margin:35px 27px;
   width: 70%;
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .drNBSubSections{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin-top: 10%
 }
 .drNBTwoOptions{
   display: flex;
@@ -1040,9 +1043,9 @@ font-size: 1.3em !important;
 }
 .allExploreCatCards{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin: 15px 105px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 15px 20px;
 }
 
 .powerOfMentorshipImg{
@@ -1067,10 +1070,9 @@ font-size: 1.3em !important;
   border-radius: 10px;
   background-color: #F1EFFF !important;
   margin: 5% 7%;
-    gap: 14% !important;
 }
 .appAdvertisementHead{
-  font-size: 0.9rem !important;
+  font-size: 32px!important;
   font-weight: 600 !important;
   margin-top: 23px !important;
     margin-bottom: 12px !important;
@@ -1103,15 +1105,17 @@ font-size: 1.3em !important;
   margin: 30px 100px 100px 100px ;
 }
 .studyResourceImages-Img{
+  margin-top: 5%;
   width: 12vw;
   height: 22vh;
 }
 .studyMaterials{
   border-radius: 12px;
   background-color: #DAF2FF;
+  text-align: center;
 }
 .studyMaterials h5{
-  text-align: start;
+  /* text-align: start; */
   padding: 25px 26px;
     font-size: 1rem;
 }
