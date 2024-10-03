@@ -203,86 +203,6 @@
     background-color: red;
     margin: 15px 14px;
     padding: 50px 0px;
-<<<<<<< HEAD
-    }
-    .youtubeCompleteSection{
-        margin: 5px;
-    }
-    .SubscribeFont{
-        font-family: inter;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.78px;
-        color: white;
-    }
-    .NewLetterBox{
-        padding: 80px 20px;
-    }
-    .OurNewsFont{
-        font-family: Licorice;
-font-size: 70px !important;
-font-weight: 400 !important;
-line-height: 87.5px !important;
-text-align: center;
-
-    }
-    .GmailBox{
-        margin-top: 10px;
-        display: flex;
-        padding: 5px 5px !important;
-        align-items: center;
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
-    .LogoFooter{
-        width: 70%;
-        height: auto !important;
-    }
-    .colFooterUpper{
-        justify-content: left;
-    }
-    .col{
-        flex-direction: column;
-    }
-    .SocialMediaApp{
-        margin-top: -6%;
-        margin-left: -5%;
-    }
-    .EnquiryBox{
-        margin-top: 5%;
-        flex-direction: row !important;
-        justify-content: left;
-    }
-    .CompanyBox{
-        font-size: 1.3rem !important;
-        font-weight: 700;
-    }
-    .CompanyServices{
-        flex-direction: column;
-    }
-    .footerline{
-        display: none;
-    }
-    .row{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .container{
-        margin: 0;
-    }
-    .margin-left{
-        margin-left: 0;
-    }
-    .None{
-        display: none;
-    }
-    .CopyRight{
-        text-align: center !important;
-        font-size: 0.8rem;
-        margin-top: 24px;
-        margin-bottom: -35px;
-    }
-=======
   }
   .youtubeCompleteSection {
     margin: 5px;
@@ -399,5 +319,4 @@ text-align: center;
     margin-left: -60%;
     width: 40%;
   }
->>>>>>> f01187f48473e71b5a1a0aa3fb4999356388bc92
 }
