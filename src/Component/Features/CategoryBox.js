@@ -57,7 +57,7 @@ const CategoryBox = () => {
       <Typography className="catHeading">
         Explore <span style={{ color: "#199884" }}>Category</span>
       </Typography>
-      <b className="paraFontSize-forMobileView-common">360CC is preparing students for 4 exam categories.</b>
+      <b className="paraFontSize-forMobileView-common-text">360CC is preparing students for 4 exam categories.</b>
       <div className="category">
         <div class="rowDesign">
         

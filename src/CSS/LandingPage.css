@@ -8,7 +8,7 @@
 }
 .demo {
   width: 100%;
-  height: 500px;
+  height: 428px;
   background-image: radial-gradient(
       circle,
       rgba(0, 16, 31, 0.5),
@@ -33,7 +33,7 @@
 }
 .ExploreHead {
   font-family: Inter !important;
-  font-size: 44px !important;
+  /* font-size: 144px !important; */
   font-weight: 700 !important;
   line-height: 53.25px !important;
   text-align: center !important;
@@ -46,11 +46,18 @@
   text-align: center;
 }
 .centeredBox {
-  margin-top: 17%;
+  margin-top: 15%;
   background-color: white !important;
   padding: 20px;
   text-align: center;
 }
+/* .demo {
+  width: 100%;
+  height: 453px;
+  background-image: radial-gradient(circle, rgba(0, 16, 31, 0.5), rgba(0, 69, 133, 0.5)), url(http://localhost:3000/Critical-care/static/media/hospnew.137ff33….png);
+  background-size: cover;
+  background-position: center;
+} */
 .ImgBoxData {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -123,9 +130,9 @@
   display: flex;
   padding: 10px 40px !important;
   align-items: center;
-  width: 89%;
+  width: 70% !important;
   border-radius: 100px !important;
-  margin-left: 87px;
+  margin-left: 200px !important;
 }
 
 .FeaturesBLog{    
@@ -149,11 +156,17 @@
     width: 150px;
     height: 150px;
   }
+  .EnquiryBox {
+    margin-top: 5%;
+    flex-direction: row !important;
+    justify-content: left;
+  }
   .centered {
     top: 80%;
   }
   .Neet2023 {
     width: 90%;
+    margin-top: 60% !important;
   }
   .appAdvertisement {
     flex-direction: column;
@@ -177,11 +190,20 @@
   .studyResourceCompleteSection {
     margin: 10px;
   }
-
+  .centeredBox {
+    margin-top: 17%;
+    background-color: white !important;
+    padding: 20px;
+    text-align: center;
+}
   .studyResourceImages {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+  .colFooterUpper {
+    justify-content: left;
+  }
+  
   .studyMaterials {
     height: 29vh;
   }
@@ -189,7 +211,11 @@
     display: none;
   }
   .youtubeHead {
-    display: none;
+    font-size: 1.3rem !important;
+    text-align: center;
+    margin: 2px !important;
+    /* display: none; */
+    margin-top: 24px !important;
   }
   .youtubeHeadMobileView {
     display: block;
@@ -203,6 +229,95 @@
     background-color: red;
     margin: 15px 14px;
     padding: 50px 0px;
+    }
+    .youtubeCompleteSection{
+        margin: 5px;
+    }
+    .SubscribeFont{
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.78px;
+        color: white;
+    }
+    .NewLetterBox{
+        padding: 80px 20px;
+    }
+    .OurNewsFont{
+        font-family: Licorice;
+font-size: 70px !important;
+font-weight: 400 !important;
+line-height: 87.5px !important;
+text-align: center;
+
+    }
+    .GmailBox{
+        margin-top: 10px;
+        display: flex;
+        padding: 5px 5px !important;
+        align-items: center;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .LogoFooter{
+        width: 70%;
+        height: auto !important;
+    }
+    .colFooterUpper{
+        justify-content: left;
+    }
+    .col{
+        flex-direction: column;
+    }
+    .SocialMediaApp{
+        margin-top: -6%;
+        margin-left: -5%;
+    }
+    .EnquiryBox{
+        margin-top: 5%;
+        flex-direction: row !important;
+        justify-content: left;
+    }
+    .CompanyBox{
+        font-size: 1.3rem !important;
+        font-weight: 700;
+    }
+    .CompanyServices{
+        flex-direction: column;
+    }
+    .footerline{
+        display: none;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .margin-left{
+        margin-left: 0;
+    }
+    .None{
+        display: none;
+    }
+    .rIGHTlINE{
+      border-right: 1px solid white !important;
+      padding-right: 0;
+    }
+    .CopyRight{
+        text-align: center !important;
+        font-size: 0.8rem;
+        margin-top: 24px;
+        margin-bottom: -35px;
+    }
+    /* .demo {
+      width: 100%;
+      height: 453px;
+      background-image: radial-gradient(circle, rgba(0, 16, 31, 0.5), rgba(0, 69, 133, 0.5)), url(http://localhost:3000/Critical-care/static/media/hospnew.137ff33….png);
+      background-size: cover;
+      background-position: center;
+    }  */
   }
   .youtubeCompleteSection {
     margin: 5px;
@@ -224,21 +339,21 @@
     line-height: 87.5px !important;
     text-align: center;
   }
-  .GmailBox {
+  /* .GmailBox {
     margin-top: 10px;
     display: flex;
     padding: 5px 5px !important;
     align-items: center;
     width: 100% !important;
     margin-left: 0 !important;
-  }
+  } */
   .LogoFooter {
-    width: 70%;
-    height: auto !important;
+    /* width: 70%;
+    height: auto !important; */
+    margin-left: -39% !important;
+    width: 35% !important;
   }
-  .colFooterUpper {
-    justify-content: left;
-  }
+  
   .col {
     flex-direction: column;
   }
@@ -246,33 +361,29 @@
     margin-top: -6%;
     margin-left: -5%;
   }
-  .EnquiryBox {
-    margin-top: 5%;
-    flex-direction: row !important;
-    justify-content: left;
-  }
+ 
   .CompanyBox {
     font-size: 1.7rem !important;
     font-weight: 700;
   }
-  .CompanyServices {
+  /* .CompanyServices {
     flex-direction: column;
-  }
+  } */
   .footerline {
     display: none;
   }
   .row {
-    margin-left: 0;
-    margin-right: 0;
+    border-bottom: 2px solid #eee;
   }
   .container {
     margin: 0;
   }
-  .margin-left {
-    margin-left: 0;
-  }
   .None {
     display: none;
+  }
+  .rIGHTlINE{
+    padding-right: 8px;
+    border-right: 2px solid;
   }
   .CopyRight {
     text-align: center !important;
@@ -294,7 +405,7 @@
   .FeaturesBLog{
     display: none;
   }
-}
+/* } */
 @media (min-width: 490px) {
   .Neet2023 {
     display: none;
@@ -302,6 +413,7 @@
   .PWImg {
     display: none;
   }
+ 
   .YoutubBox {
     display: none;
   }
@@ -315,6 +427,7 @@
     margin-top: 0;
     margin-left: 0;
   }
+
   .LogoFooter {
     margin-left: -60%;
     width: 40%;

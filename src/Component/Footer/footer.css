@@ -12,6 +12,7 @@ body {
 .center p{
   font-size: 1.1rem !important;
   margin-top: 3%;
+  margin: 12px 111px;
 }
 * {
   margin: 0;
@@ -96,7 +97,7 @@ ul {
 .footer {
   /* background-color:  black; */
   background-color:  white;
-  padding: 70px 0;
+  padding: 70px 0px;
 }
 .footer-col {
   width: 50%;
@@ -190,7 +191,7 @@ Link .text-decoraction-none {
     margin: 0 100px;
   }
   .BottomRow {
-    margin: 0 100px;
+    margin: 30px 100px;
   }
   .pad-line {
     margin: 0 100px;
