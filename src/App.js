@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/Critical-care' exact Component={MainComponent}/>
+        <Route path='/Critical-care/' exact Component={MainComponent}/>
         <Route path='/Critical-care/About-us' Component={Aboutus}/>
         <Route path='/Critical-care/Terms-&-Condition' Component={Terms}/>
         <Route path='/Critical-care/Contact-us' Component={ContactUs}/>

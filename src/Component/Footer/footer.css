@@ -12,7 +12,7 @@ body {
 .center p{
   font-size: 1.1rem !important;
   margin-top: 3%;
-  margin: 12px 111px;
+  /* margin: 12px 111px; */
 }
 * {
   margin: 0;
@@ -41,6 +41,11 @@ body {
   border-radius: 6px;
 }
 .col {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.SocialBoxcol {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -203,9 +208,9 @@ Link .text-decoraction-none {
     padding: 0 1px;
     text-align: left;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 }
 @media (max-width: 890px) {
   .footer-col {
@@ -213,9 +218,9 @@ Link .text-decoraction-none {
     padding: 0 1px;
     text-align: left;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
   .row {
     justify-content: center;
   }
@@ -225,9 +230,9 @@ Link .text-decoraction-none {
     width: 50%;
     margin-bottom: 30px;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
   .col {
     justify-content: center;
   }
@@ -251,9 +256,9 @@ Link .text-decoraction-none {
     text-align: left !important;
     margin-top: 3%;
   }
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 }
 
 

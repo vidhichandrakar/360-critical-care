@@ -41,7 +41,7 @@ const NewsLatter = () => {
             inputProps={{ "aria-label": "search google maps" }}
             onChange={handleEmailidchange}
           />
-          <Button variant="contained" sx={{ p: "10px" }} aria-label="search"
+          <Button variant="contained" sx={{ p: "10px" }} aria-label="search" className="SubscribeButton"
           onClick={handleEmailId}>
             Subscribe
           </Button>

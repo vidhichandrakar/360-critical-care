@@ -77,9 +77,6 @@ const SubCategory = ({ categorySelected }) => {
               <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[2]?.category_name}</Box>
             </Box>
             </Box>
-            <Box className="blueSemiCircle">
-            <img src ={doctorSign} width={80} height={70} className="semiCircleIcon"/>
-          </Box>
           </Box>
 
          
@@ -96,9 +93,6 @@ const SubCategory = ({ categorySelected }) => {
               <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
             </Box>
           </Box>
-          <Box className="blueSemiCircle">
-            <img src ={functioning} width={80} height={70} className="semiCircleIcon"/>
-          </Box>
           </Box>
 
           <Box className="drNBCompleteBox">
@@ -112,9 +106,17 @@ const SubCategory = ({ categorySelected }) => {
               <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
             </div>
           </Box>
-
-          <Box className="blueSemiCircle">
-            <img src ={robot} width={80} height={70} className="semiCircleIcon"/>
+        </Box>
+          <Box className="drNBCompleteBox">
+          <Box className="drNBCompleteBox-left">
+            <h5 className="drNB-head">
+            <b>{categoreData[3]?.category_name}</b>
+            </h5>
+            <div className="drNBSubSections">
+            <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[0]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
+              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
+            </div>
           </Box>
         </Box>
        
