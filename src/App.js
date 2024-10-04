@@ -21,18 +21,18 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/Critical-care/' exact Component={MainComponent}/>
-        <Route path='/Critical-care/About-us' Component={Aboutus}/>
-        <Route path='/Critical-care/Terms-&-Condition' Component={Terms}/>
-        <Route path='/Critical-care/Contact-us' Component={COntactus}/>
-        <Route path='/Critical-care/Blog' Component={Blog}/>
-        <Route path='/Critical-care/Privacy-policy' Component={PrivacyPolicy }/>
-        <Route path='/Critical-care/TopCourse' Component={TopCourse}/>
-        <Route path='/Critical-care/EDIC' Component={EDIC}/>
-        <Route path='/Critical-care/EDIC2' Component={EDIC2}/>
-        <Route path='/Critical-care/IDCCM' Component={IDCCM}/>
-        <Route path='/Critical-care/Demo' Component={DemoApi}/>
-        <Route path='/Critical-care/AllCourse' Component={AllCourseWOL}/>
-        <Route path='/Critical-care/user/testportal' Component={TestportalMain}/>
+        <Route path='/Critical-care/About-us' exact Component={Aboutus}/>
+        <Route path='/Critical-care/Terms-&-Condition' exact Component={Terms}/>
+        <Route path='/Critical-care/Contact-us' exact Component={COntactus}/>
+        <Route path='/Critical-care/Blog' exact Component={Blog}/>
+        <Route path='/Critical-care/Privacy-policy' exact Component={PrivacyPolicy }/>
+        <Route path='/Critical-care/TopCourse' exact Component={TopCourse}/>
+        <Route path='/Critical-care/EDIC' exact Component={EDIC}/>
+        <Route path='/Critical-care/EDIC2' exact Component={EDIC2}/>
+        <Route path='/Critical-care/IDCCM' exact Component={IDCCM}/>
+        <Route path='/Critical-care/Demo' exact Component={DemoApi}/>
+        <Route path='/Critical-care/AllCourse' exact Component={AllCourseWOL}/>
+        <Route path='/Critical-care/user/testportal' exact Component={TestportalMain}/>
       </Routes>
     </div>
   );
