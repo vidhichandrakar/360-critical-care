@@ -126,7 +126,7 @@ const Header = () => {
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
                   <Link
-          to="/Critical-care/AllCourse"
+          to="/AllCourse"
           style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
           className="menuText"
         >  All Courses
@@ -225,7 +225,7 @@ const Header = () => {
               }}
             >
             <Link
-          to="/Critical-care/AllCourse"
+          to="/AllCourse"
           style={{ color: "inherit", textDecoration: "none" }}
         >  All Courses
         {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
