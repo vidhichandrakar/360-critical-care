@@ -1358,7 +1358,7 @@ text-align: center;
   gap: 10px;
 }
 .OurFoundersLeftCard{
-  height: 35vh !important;
+  height: 40vh !important;
   margin: 0px 0px !important;
 }
 .abt360CriticalCare{
@@ -1434,17 +1434,17 @@ margin: 24px 0px !important;
   display: grid !important; 
   grid-template-columns: 1fr !important; 
   /* width: 100% !important; */
-  margin: 39px !important;
+  margin: 0px !important;
 }
 .abt360CriticalCare-right{
-  margin-top: 36px !important;
-  margin-left: -29px !important;
+  /* margin-top: 36px !important; */
+  margin-left: 0px !important;
   font-size: 1.5rem !important;
   text-align: center !important;
 }
 .abt360CriticalCare img {
   width: 412px !important;
-  height: 184px !important;
+  height: auto !important;
   /* display: none !important; */
   /* margin-left: -47px; */
   /* margin-top: 19px; */

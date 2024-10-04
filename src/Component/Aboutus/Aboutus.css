@@ -42,7 +42,7 @@
   .ourFoundersHorizontalLine{
     width: 81%;
     height: 1px;
-    margin: 7px 34px;
+    margin: 10px 10px;
     background-color: #1B2124 !important;
   }
   .ourFounderHead {
@@ -101,7 +101,13 @@
     display: none;
   }
   .abt360CriticalCare-typography{
-    margin-top: 3% !important;
+    /* margin-top: 3% !important; */
+    font-family: Inter;
+font-size: 12px !important;
+font-weight: 400 !important;
+line-height: 14.52px !important;
+text-align: justified !important;
+
   }
   .mobileViewText{
     display: none;
