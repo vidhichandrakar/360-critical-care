@@ -196,17 +196,16 @@
 
 /* NEW WEBSITE CONTACT US  */
 .contacUsFirstImg{
-    margin-top: -53px;
-    width: 99vw;
-    height: 36vh;
-    margin-left: -85px;
+   margin-top: 5%;
+   width: 100%;
+   height: auto;
 }
 .getInTouchCompleteBox{
     border: 0.5px solid grey;
     display: flex;
     flex-direction: row;
-    height: 76vh;
-    margin: 59px -35px;
+    /* height: 76vh; */
+    /* margin: 59px -35px; */
 }
 .getInTouch{
     /* width: 30vw; */
@@ -214,7 +213,16 @@
     background-color: #002C4F;
     color: #ffffff;
     padding: 32px 28px;
+    width: 35%;
 }
+.textfieldName{
+    width: 26vw;
+    background-color: rgba(144, 143, 143, 0.748);
+}
+.DetailsFormBox{
+    margin: 50px;
+}
+
 .getInTouch-head{
     font-size: var(--MainHeading) !important;
     text-align: center !important;
@@ -256,31 +264,62 @@
     /* margin-right: 3%; */
   }
   .sendMsgButton {
-    width: 30;
-    height: 30;
+    width: 24%;
+    height: 6vh;
     background-color: #002C4F !important;
-    position: absolute;
-    top: 29%;
-    left: 42%;
-    /* margin-right: 23px !important; */
+    top: 3%;
+    left: 38%;
   }
   .contactUsMap{
-    width: 94vw;
-    height: 46vh;
-    /* margin-left: 23px !important; */
-    /* margin-right: 29px !important; */
-    /* margin-top: -31px !important; */
-    margin: -35px;
+    width: 100%;
+    height: 50vh;
+    margin-top: 3% !important;
+  }
+  .ContactMainBox{
+    margin: 50px;
+  }
+  .FormBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    border: 1px solid;
   }
 
 
-@media (max-width: 990px){
+@media (max-width: 490px){
     .getInTouchCompleteBox {
-    display: grid !important;
-    grid-template-columns: 1fr !important; 
+        flex-direction: column;
+    }
+    .getInTouch-right-nameAndMob{
+        flex-direction: column;
+    }
+    .FormBox{
+        flex-direction: column;
+        border: 1px solid white;
+        margin-top: 0;
+    }
+    .DetailsFormBox{
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .ContactMainBox{
+        margin: 0;
+    }
+    .sendMsgButton{
+        width: 50%;
+        height: 6vh;
+        background-color: #002C4F !important;
+        top: 10% !important;
+        left: 0;
+    }
+    .textfieldName{
+        width: 44vw;
+    }
+    .getInTouch{
+        padding: 13px 8px;
+        width: 100%;
     }
 }
-
 
 :root {
     --MainHeading:26px;

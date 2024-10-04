@@ -14,6 +14,7 @@ import DemoApi from './Component/Service/DemoApi';
 import TestportalMain from './UserPortal/TestPortal/TestportalMain.component';
 import Blog from './Component/AllCourse/Blog';
 import AllCourseWOL from './Component/AllCourse/AllCourseWOL';
+import COntactus from './Component/Service/COntactus.jsx';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path='/Critical-care/' exact Component={MainComponent}/>
         <Route path='/Critical-care/About-us' Component={Aboutus}/>
         <Route path='/Critical-care/Terms-&-Condition' Component={Terms}/>
-        <Route path='/Critical-care/Contact-us' Component={ContactUs}/>
+        <Route path='/Critical-care/Contact-us' Component={COntactus}/>
         <Route path='/Critical-care/Blog' Component={Blog}/>
         <Route path='/Critical-care/Privacy-policy' Component={PrivacyPolicy }/>
         <Route path='/Critical-care/TopCourse' Component={TopCourse}/>
