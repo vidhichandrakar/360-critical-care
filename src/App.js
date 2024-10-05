@@ -16,24 +16,27 @@ import Blog from './Component/AllCourse/Blog';
 import AllCourseWOL from './Component/AllCourse/AllCourseWOL';
 import COntactus from './Component/Service/COntactus.jsx';
 
+import { BrowserRouter } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path='/Critical-care/' exact Component={MainComponent}/>
-        <Route path='/Critical-care/About-us/' Component={Aboutus}/>
-        <Route path='/Critical-care/Terms-&-Condition/' Component={Terms}/>
-        <Route path='/Critical-care/Contact-us/' Component={COntactus}/>
-        <Route path='/Critical-care/Blog/' Component={Blog}/>
-        <Route path='/Critical-care/Privacy-policy/' Component={PrivacyPolicy }/>
-        <Route path='/Critical-care/TopCourse/' Component={TopCourse}/>
-        <Route path='/Critical-care/EDIC/' Component={EDIC}/>
-        <Route path='/Critical-care/EDIC2/' Component={EDIC2}/>
-        <Route path='/Critical-care/IDCCM/' Component={IDCCM}/>
-        <Route path='/Critical-care/Demo/' Component={DemoApi}/>
-        <Route path='/Critical-care/AllCourse/' Component={AllCourseWOL}/>
-        <Route path='/Critical-care/user/testportal' Component={TestportalMain}/>
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/Critical-care/' exact Component={MainComponent} />
+          <Route path='/Critical-care/About-us/' Component={Aboutus} />
+          <Route path='/Critical-care/Terms-&-Condition/' Component={Terms} />
+          <Route path='/Critical-care/Contact-us/' Component={COntactus} />
+          <Route path='/Critical-care/Blog/' Component={Blog} />
+          <Route path='/Critical-care/Privacy-policy/' Component={PrivacyPolicy} />
+          <Route path='/Critical-care/TopCourse/' Component={TopCourse} />
+          <Route path='/Critical-care/EDIC/' Component={EDIC} />
+          <Route path='/Critical-care/EDIC2/' Component={EDIC2} />
+          <Route path='/Critical-care/IDCCM/' Component={IDCCM} />
+          <Route path='/Critical-care/Demo/' Component={DemoApi} />
+          <Route path='/Critical-care/AllCourse/' Component={AllCourseWOL} />
+          <Route path='/Critical-care/user/testportal' Component={TestportalMain} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
