@@ -123,6 +123,31 @@
   font-weight: 400;
   font-size: 0.8rem;
 }
+.featuredStory{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  margin: 29px;
+  padding: 29px 64px;
+}
+.featuredStoryVerticalLine{
+  background-color: #ccc9c9;
+  width: 0.3vw;
+  height: 32vh;
+  margin-left: 39px;
+}
+.featuredStoryRight{
+  margin: 37px -14px
+}
+.featuredStoryHaed{
+  font-size: 1.4rem !important;
+}
+.featuredStoryPara{
+  font-size: 0.8rem !important;
+  padding: 10px 2px;
+  margin: 0px 76px !important;
+}
 .CoursesCardImg {
   border-radius: 10px;
   max-width: 20%;
@@ -137,6 +162,9 @@
   font-size: 0.9rem !important;
 }
 @media (max-width: 490px) {
+  .blogPage{
+    width: 100% !important;
+  }
   .menuText{
     font-size: 1.3rem !important;
   }
@@ -220,5 +248,8 @@
   }
   .WebViewImg {
     display: none;
+  }
+  .featuredStory{
+    display: none !important;
   }
 }

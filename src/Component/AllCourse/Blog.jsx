@@ -23,12 +23,26 @@ const Blog = () => {
   },[])
   return (
     <Fragment>
+      
       <Header />
+      <div className="blogPage">
       <Box className="HeadimgBox">
         {console.log(blogData, "blogData")}
         <img src={homeimg} width="100%" className="WebViewImg" />
         <img src={MobileViewHeadimg} className="MobileViewImg" />
       </Box>
+
+      <Box className="featuredStory">
+        <Box>
+          <img src={cardimg} className="Cardimgs"/>
+        </Box>
+        <Box className="featuredStoryVerticalLine"/>
+        <Box className="featuredStoryRight">
+          <Typography className="featuredStoryHaed">SBI CLERK 1ST WAITING LIST 2023 OUT, CHECK ALLOTMENT LIST</Typography>
+          <Typography className="featuredStoryPara">The State Bank of India (SBI) has issued the SBI Clerk 1st Waiting List 2023. If you participated in the main examination and missed the SBI Clerk Result 2023 by just a few marks, you still have a chance.  SBI Clerk Result 2023 by just a few marks</Typography>
+        </Box>
+      </Box>
+
       <Box className="FeaturesBLog">
         <Typography>
           Featured story
@@ -44,8 +58,8 @@ const Blog = () => {
       </Typography>
       </Box>
      </Box>
-      
-      </Box>
+    </Box>
+    
       <Box className="PopularCourseMainBox">
         <Box className="PopularCourseBox">
           {blogData.map((item) => {
@@ -75,7 +89,7 @@ const Blog = () => {
 
       <Box className="PopularCourseMainBox">
         <Typography sx={{ fontSize: "2rem", fontWeight: 700 }}>
-          Our <span className="HeadingColor">Popular Course</span>
+          Our <span className="HeadingColor">Popular Blogs</span>
         </Typography>
 
         <Box className="PopularCourseBox">
@@ -97,6 +111,7 @@ const Blog = () => {
       <NewsLatter />
 
       <Footer />
+    </div>
     </Fragment>
   );
 };
