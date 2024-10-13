@@ -210,6 +210,7 @@
   }
   .colFooterUpper {
     justify-content: left;
+    margin-left: -20px;
   }
   
   .studyMaterials {
@@ -222,7 +223,6 @@
     font-size: 1.3rem !important;
     text-align: center;
     margin: 2px !important;
-    /* display: none; */
     margin-top: 24px !important;
   }
   .youtubeHeadMobileView {
@@ -381,7 +381,7 @@ text-align: center;
     display: none;
   }
   .row {
-    border-bottom: 2px solid #eee;
+    border-bottom: 1.6px solid #c2c2c2;
   }
   .container {
     margin: 0;

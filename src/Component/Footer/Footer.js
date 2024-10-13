@@ -13,6 +13,10 @@ import WhatsappImg from "./../../Media/Images/WhatsappImg.png";
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+// import Tooltip from '@mui/material/Tooltip';
 
 function Footer() {
   return (
@@ -87,11 +91,24 @@ function Footer() {
           <div className="pad-line">
             <hr className="footerline" />
             
-            <Tooltip title="Join our WhatsApp Group" className="whatsappTooltip">
+            {/* <Tooltip title="Join our WhatsApp Group" className="whatsappTooltip">
               <IconButton>
               <img src={WhatsappImg} className="whatsappImgg" />
               </IconButton>
+            </Tooltip> */}
+            <Grid
+          item
+          container
+          xs={6}
+          direction="column"
+          sx={{ alignItems: 'flex-end' }}
+        >
+          <Grid item>
+            <Tooltip title="Join our WhatsApp Group" placement="top" className="whatsapptooltip">
+            <img src={WhatsappImg} className="whatsappImgg" />
             </Tooltip>
+          </Grid>
+        </Grid>
           </div>
 
           <div className="BottomRow">
@@ -132,14 +149,24 @@ function Footer() {
                 to="/Critical-care/Contact-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                <p className="margin-left ">Contact Us </p>
+                <p className="margin-left ">
+                  Contact Us <span className="None">|</span>
+                  </p>
+              </Link>
+              <Link
+                to="/Critical-care/Blog"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <p className="margin-left rIGHTlINE">
+                  Blog 
+                </p>
               </Link>
             </div>
 
             <p className="text-color-white CopyRight">
               <b>
                 {" "}
-                Copyright @{new Date().getFullYear()} 360 Critical Care. All
+                Copyright @{new Date().getFullYear()} <span className="None">|</span> 360 Critical Care. All
                 Rights Reserved.
               </b>
             </p>

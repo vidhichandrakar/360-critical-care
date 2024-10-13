@@ -14,7 +14,7 @@ function Terms() {
       <Box className="TermsBox">
         <div className="text">
           <h2>
-            Terms and<span className="AquaColor">Conditions</span>
+            Terms and <span className="AquaColor">Conditions</span>
           </h2>
           <p>{TermsData.one.detail}</p>
         </div>

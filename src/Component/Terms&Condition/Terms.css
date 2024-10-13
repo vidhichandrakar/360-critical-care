@@ -73,13 +73,14 @@
         font-size: 2.6rem;
     }
     .List li{
-        font-size: 2.6rem !important;
+        /* font-size: 2.6rem !important; */
     }
     .TermsList li{
         font-size: 2.6rem !important;
     }
     .TermsBox{
         margin-top: 15% !important;
+        font-size: 0.9rem !important;
     }
 
 }

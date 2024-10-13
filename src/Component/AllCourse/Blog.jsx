@@ -32,6 +32,8 @@ const Blog = () => {
         <img src={MobileViewHeadimg} className="MobileViewImg" />
       </Box>
 
+     <Box className="featuredStoryTag">Featured Story</Box>
+
       <Box className="featuredStory">
         <Box>
           <img src={cardimg} className="Cardimgs"/>

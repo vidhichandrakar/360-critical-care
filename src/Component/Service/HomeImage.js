@@ -34,8 +34,6 @@ const images = [
   label: 'Goč, Serbia',
   imgPath:img2
 },
-
-
 ];
 
 
