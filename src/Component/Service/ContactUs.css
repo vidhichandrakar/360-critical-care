@@ -321,10 +321,10 @@
     }
 }
 
-:root {
+:root  {
     --MainHeading:26px;
     --subHeading:24px;
     --ScndHeading:20px;
     --Heading:18px;
     --small:16px;
-   }
+   }  
