@@ -158,7 +158,9 @@
   padding-right: 21px;
   border-right: 3px solid #eee;
 }
-
+.BGColor{
+  background-color: rgba(254, 18, 18, 0.57) !important;
+}
 @media (max-width: 490px) {
   .DataCardBox {
     width: 150px;
