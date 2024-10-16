@@ -1249,9 +1249,10 @@ font-size: 1.3em !important;
     margin: 2px;
   }
   .drNBCompleteBox{
-    height: 22vh !important;
+   min-height: 22vh !important;
     width:  95vw !important;
   }
+ 
   .drNBCompleteBox-left{
     width: 100%;
     margin: 20px 10px;
@@ -1292,8 +1293,8 @@ font-size: 1.3em !important;
   .breifesInHomePage{
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    height: 26vh !important;
-    margin-left: -3px !important;
+    height: 36vh !important;
+    margin-left: 0px !important;
         width: 100% !important;
   }
   .paraFontSize-forMobileView-common-text {

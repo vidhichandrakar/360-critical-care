@@ -119,7 +119,7 @@
   color: white;
 }
 .OurNewsFont {
-  font-family: Licorice !important;
+  font-family: Licorice Regular !important;
   font-size: 130px !important;
   font-weight: 400 !important;
   line-height: 162.5px !important;
@@ -165,7 +165,7 @@
     height: 150px;
   }
   .EnquiryBox {
-    margin-top: 5%;
+    /* margin-top: 5%; */
     flex-direction: row !important;
     justify-content: left;
   }
@@ -282,16 +282,23 @@ text-align: center;
         margin-left: 0 !important;
     }
     .EnquiryBox{
-        margin-top: 5%;
+        /* margin-top: 5%; */
         flex-direction: row !important;
         justify-content: left;
+        padding: 0;
     }
     .CompanyBox{
         font-size: 1.3rem !important;
         font-weight: 700;
     }
+    .SocialBoxcol{
+      justify-content: left;
+    }
     .CompanyServices{
         flex-direction: column;
+    }
+    .row {
+      border-bottom: none !important;
     }
     .footerline{
         display: none;
@@ -319,7 +326,13 @@ text-align: center;
         margin-top: 24px;
         margin-bottom: -35px;
     }
-    /* .demo {
+    .drNBSubSections{
+      gap: 25px;
+    }
+    .SubscribeButton{
+      width: 100% !important;
+    }
+    /* .demo { 
       width: 100%;
       height: 453px;
       background-image: radial-gradient(circle, rgba(0, 16, 31, 0.5), rgba(0, 69, 133, 0.5)), url(http://localhost:3000/Critical-care/static/media/hospnew.137ff33….png);
