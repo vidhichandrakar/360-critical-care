@@ -41,3 +41,15 @@ export const getAllCourses = ({callBack, searchString, error }) => {
         error(errorMessage);
       });
   };
+
+export const banner = ({ callBack, error }) => {
+  const url = APIS.banner;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      error(errorMessage);
+    });
+};

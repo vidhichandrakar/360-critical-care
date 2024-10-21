@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import NavHome from "../Features/NavHome";
 import CategoryBox from "../Features/CategoryBox";
 import ExploreTech from "./LandingpageSubComponent/ExploreTech";
@@ -11,6 +11,8 @@ import NewsLatter from "./LandingpageSubComponent/NewsLatter";
 import AllCourseWOL from "../AllCourse/AllCourseWOL";
 
 const Landingpage = () => {
+
+
     return(
         <Fragment>
             {/* <AllCourseWOL /> */}
