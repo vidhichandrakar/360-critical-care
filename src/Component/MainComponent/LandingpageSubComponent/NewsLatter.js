@@ -37,7 +37,7 @@ const NewsLatter = () => {
         >
           <InputBase
             sx={{ ml: 1, flex: 1 }}
-            placeholder="Search Google Maps"
+            placeholder="critical.care123@gmail.com"
             inputProps={{ "aria-label": "search google maps" }}
             onChange={handleEmailidchange}
           />

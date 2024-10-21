@@ -50,6 +50,7 @@
   font-weight: 700 !important;
   overflow: hidden  !important;
   text-overflow: ellipsis !important;
+  max-width: 70ch !important;
 }
 .Subscribe {
   display: none;

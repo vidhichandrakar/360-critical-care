@@ -15,7 +15,7 @@ const NavHome = () => {
       <div>
         <div className="homeImage">
           <img src={Image1} className="WebViewImg"/>
-          <img src={MobileViewHeadimg} className="MobileViewImg" />
+          <img src={Image1} className="MobileViewImg" />
         </div>
 
           <img src={Image2} 

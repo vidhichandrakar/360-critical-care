@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Licorice-Regular';
+  src: url('../../public/fonts/Licorice-Regular.ttf') format('truetype');
+}
+
 .BuildingImg {
   width: 100%;
   background: radial-gradient(
@@ -24,7 +29,7 @@
 }
 .centered {
   position: absolute;
-  top: 56%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -35,7 +40,7 @@
   font-family: Inter !important;
   /* font-size: 144px !important; */
   font-weight: 700 !important;
-  line-height: 53.25px !important;
+  /* line-height: 53.25px !important; */
   text-align: center !important;
 }
 .ExplorePara {
@@ -46,7 +51,7 @@
   text-align: center;
 }
 .centeredBox {
-  margin-top: 15%;
+  margin-top: 5%;
   background-color: white !important;
   padding: 20px;
   text-align: center;
@@ -119,7 +124,7 @@
   color: white;
 }
 .OurNewsFont {
-  font-family: Licorice Regular !important;
+  font-family: "Licorice-Regular" !important;
   font-size: 130px !important;
   font-weight: 400 !important;
   line-height: 162.5px !important;
@@ -130,9 +135,9 @@
   display: flex;
   padding: 5px 6px !important;
   align-items: center;
-  width: 70% !important;
+  width: 63% !important;
   border-radius: 100px !important;
-  margin-left: 200px !important;
+  margin-left: 250px !important;
 }
 .SubscribeButton{
   background-color: #002C4F !important;
@@ -194,9 +199,12 @@
     margin-left: 4%;
   }
   .PWImg {
+    width: 325px;
+    height: auto;
     margin-top: 10%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
   }
+  
   .studyResourceCompleteSection {
     margin: 10px;
   }
@@ -334,6 +342,9 @@ text-align: center;
     .SubscribeButton{
       width: 100% !important;
     }
+    .aaplogo{
+      margin-top: 5%;
+    }
     /* .demo { 
       width: 100%;
       height: 453px;
@@ -413,16 +424,16 @@ text-align: center;
   }
   .ExploreHead {
     font-family: Inter !important;
-    font-size: 18px !important;
+    font-size: 33px !important;
     font-weight: 700 !important;
-    line-height: 21.78px !important;
+    /* line-height: 21.78px !important; */
     text-align: center !important;
   }
   .ExplorePara {
     font-family: Inter !important;
-    font-size: 12px !important;
+    font-size: 21px !important;
     font-weight: 500 !important;
-    line-height: 14.52px !important;
+    /* line-height: 14.52px !important; */
     text-align: center !important;
   }
   .FeaturesBLog{
@@ -435,6 +446,9 @@ text-align: center;
   }
   .PWImg {
     display: none;
+  }
+  .aaplogo{
+    margin-left: 15px;
   }
  
   .YoutubBox {
