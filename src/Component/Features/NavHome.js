@@ -71,6 +71,7 @@ const NavHome = () => {
                       src={link.banner_url}
                       className="WebViewImg"
                       alt="Web View Banner"
+                      style={{ width: "100%", height: "326px" }}
                     />
                     <img
                       src={link.banner_url}
@@ -91,9 +92,10 @@ const NavHome = () => {
                     <div key={link._id}>
                       {/* You can verify banner_url by placing it directly into an <img> */}
                       <img
+                        className="WebViewImg"
                         src={link.banner_url}
                         alt="Slider Banner"
-                        style={{ width: "100%", height: "auto" }} // Ensure images fit within the slider
+                        style={{ width: "100%", height: "326px" }} // Ensure images fit within the slider
                       />
                     </div>
                   ))}
