@@ -40,8 +40,6 @@ const NavHome = () => {
   // Get the last banner entry
   const lastBanner = bannerAPI.length > 0 ? bannerAPI[bannerAPI.length - 1] : null;
 
-  // Get the last banner entry
-  //const lastBanner = bannerAPI.length > 0 ? bannerAPI[0] : null;
 
   console.log("Last Banner ", lastBanner);
 
