@@ -1559,3 +1559,18 @@ margin: 24px 0px !important;
   --Heading:18px;
   --small:16px;
  }
+ .sliderFlex{
+  display: flex !important;
+  flex-direction: row !important;
+ }
+ .testimonialBox{
+  padding: 5% !important;
+  min-height: 230px;
+  /* width:32%; */
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+ }
+ .topComma{
+  margin-top: 2% !important;
+ }

@@ -6,4 +6,5 @@ export const APIS = {
     getBlog: REACT_APP_API + "/blog/bloglist",
     addNewsLetter: REACT_APP_API + "/blog/newsletter",
     contactUS: REACT_APP_API + "/contactUs/form",
+    testimonials: REACT_APP_API + "/testimonial"
 }
