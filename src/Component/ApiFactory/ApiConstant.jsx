@@ -5,4 +5,5 @@ export const APIS = {
     allCourses: REACT_APP_API + "/course",
     getBlog: REACT_APP_API + "/blog/bloglist",
     addNewsLetter: REACT_APP_API + "/blog/newsletter",
+    testimonials: REACT_APP_API + "/testimonial"
 }

@@ -137,6 +137,23 @@
   color: #918d8d;
   font-size: 0.9rem !important;
 }
+.wrap-text-testimonial {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #918d8d;
+  font-size: 0.9rem !important;
+  text-align: left;
+  margin-top: 2% !important;
+}
+.author{
+  color: #918d8d;
+  font-size: 0.9rem !important;
+  text-align: left;
+  margin-top: 5% !important;
+}
 @media (max-width: 490px) {
   .menuText{
     font-size: 1.3rem !important;
