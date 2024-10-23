@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Licorice-Regular';
-  src: url('../../public/fonts/Licorice-Regular.ttf') format('truetype');
+  font-family: 'Licorice-Regular' !important;
+  src: url('../../public/fonts/Licorice-Regular.ttf') format('truetype') !important;
 }
 
 .BuildingImg {
@@ -37,14 +37,17 @@
   color: white;
 }
 .ExploreHead {
-  font-family: Inter !important;
+  font-family: "Inter-Regular" !important;
   /* font-size: 144px !important; */
   font-weight: 700 !important;
   /* line-height: 53.25px !important; */
   text-align: center !important;
 }
+.disc{
+  list-style: circle;
+}
 .ExplorePara {
-  font-family: Inter !important;
+  font-family: "Inter-Regular" !important;
   font-size: 18px !important;
   font-weight: 500 !important;
   line-height: 21.78px !important;
@@ -117,7 +120,7 @@
   text-align: center;
 }
 .SubscribeFont {
-  font-family: inter !important;
+  font-family: "Inter-Regular" !important;
   font-size: 44px !important;
   font-weight: 700 !important;
   line-height: 53.25px !important;
@@ -252,7 +255,7 @@
         margin: 5px;
     }
     .SubscribeFont{
-        font-family: inter;
+        font-family: "Inter-Regular";
         font-size: 18px;
         font-weight: 700;
         line-height: 21.78px;
@@ -357,7 +360,7 @@ text-align: center;
     margin: 5px;
   }
   .SubscribeFont {
-    font-family: inter;
+    font-family: "Inter-Regular";
     font-size: 18px;
     font-weight: 700;
     line-height: 21.78px;
@@ -423,14 +426,14 @@ text-align: center;
     text-align: center !important;
   }
   .ExploreHead {
-    font-family: Inter !important;
+    font-family: "Inter-Regular" !important;
     font-size: 33px !important;
     font-weight: 700 !important;
     /* line-height: 21.78px !important; */
     text-align: center !important;
   }
   .ExplorePara {
-    font-family: Inter !important;
+    font-family: "Inter-Regular" !important;
     font-size: 21px !important;
     font-weight: 500 !important;
     /* line-height: 14.52px !important; */

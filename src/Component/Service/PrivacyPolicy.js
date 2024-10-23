@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import { PrivacyPolicyData } from "../../JsonData/AboutData/AboutData";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 
 function PrivacyPolicy() {
@@ -80,7 +81,7 @@ function PrivacyPolicy() {
           </Box>
         </Box>
       </Box>
-      <img src={NewsLetter} width="100%"/>
+      <NewsLatter />
       <Footer />
     </Fragment>
   );

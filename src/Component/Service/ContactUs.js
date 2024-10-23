@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 import contacUsFirstImg from "../../Media/Images/contactUsFirstImg.png";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 function ContactUs() {
   return (
@@ -416,6 +417,7 @@ function ContactUs() {
           ></iframe>
         </Box>
       </Box>
+      <NewsLatter />
       <Footer />
     </Fragment>
   );

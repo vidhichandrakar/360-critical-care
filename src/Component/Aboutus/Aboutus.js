@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import "./Aboutus.css";
 import PWRedImg from "../../Media/Images/MobileViewPWRedImg.png";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 const Aboutus = () => {
   return (
@@ -137,10 +138,10 @@ const Aboutus = () => {
       </Typography>
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
-          <ul type="disc">
-            <Typography className="countryWiseStudent">
+        <Typography className="countryWiseStudent">
               <b>Country Wise Student</b>
             </Typography>
+          <ul type="disc">
             <li><span className="countryNames">India</span> - 2,000</li>
             <li><span className="countryNames">UAE</span> - 1,300</li>
             <li><span className="countryNames">USA</span> - 6,060</li>
@@ -251,8 +252,7 @@ const Aboutus = () => {
             </Box>
           </Box>
       </Box> 
-
-      <img src={NewsLetter} width="100%" className="newsLetterImg"/>
+       <NewsLatter />
       <Footer/> 
     </>
   );

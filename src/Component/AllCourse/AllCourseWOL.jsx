@@ -34,10 +34,12 @@ const AllCourseWOL = () => {
             <Box className="CoursesCardMainBox">
                 {allCourseData?.length && allCourseData?.map((item) => {
                   return   <Box className="CradBox">
+                    <Box sx={{width: "25%"}}>
                     <img src={item.thumbnail_path} className="CoursesCardImg"/>
+                    </Box>
                     <Box className="CardTextBox"    >
                         <Typography className="CardHeading .wrap-text-50 ">
-                           {item.course_name}
+                           {item?.course_name}
                         </Typography>
                         <Box className="Price_ButtonBox">
                             <Box >
@@ -46,10 +48,10 @@ const AllCourseWOL = () => {
                                 </Typography>
                                 <Box className="PriceBox">
                                 <Typography sx={{fontWeight: 600}}>
-                                    {item.durations[0].offer_price}
+                                    {item.durations?.length ? item.durations[0]?.offer_price : ""}
                                 </Typography>
                                 <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
-                                {item.durations[0].price}
+                                {item.durations[0]?.price}
                                 </Typography>
                                 <Typography sx={{ml:6}} className="offBox">
                                     40% OFF
@@ -79,10 +81,10 @@ const AllCourseWOL = () => {
                         <img src={cardimg} className="Cardimgs"/>
                         <Box>
                             <Typography className="Para1" sx={{mt: 1}}>
-                            {item.Para1}
+                            {item?.Para1}
                             </Typography>
                             <Typography className="Para2">
-                            {item.Para2}
+                            {item?.Para2}
                             </Typography>
                         </Box>
                     </Box>

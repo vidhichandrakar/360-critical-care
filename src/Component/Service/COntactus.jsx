@@ -10,6 +10,7 @@ import contacUsFirstImg from "../../Media/Images/contactUsFirstImg.png";
 import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 
 const COntactus = () => {
@@ -130,6 +131,7 @@ const COntactus = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </Box>
+        <NewsLatter />
       <Footer />
       </Fragment>
     )

@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Box } from "@mui/material";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 
 function Terms() {
@@ -164,7 +165,7 @@ function Terms() {
           </ol>
         </div>
       </Box>
-      <img src={NewsLetter} width="100%"/>
+     <NewsLatter />
       <Footer />
     </div>
   );
