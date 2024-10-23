@@ -7,12 +7,14 @@ export const getCategory = ({ callBack }) => {
       callBack(response);
     });
   };    
-export const getBlog = ({ callBack }) => {
+export const getBlog = ({ callBack, onError }) => {
     const url = APIS.getBlog;
-    axios.get(url).then((response) => {
-      callBack(response);
+  axios.get(url).then((response) => {
+    callBack(response);
+  }).catch((error) => {
+    onError(error);
     });
-  };    
+};
 
 export const getAllCourses = ({callBack, searchString, error }) => {
     let url = new URL(`${APIS.allCourses}`);

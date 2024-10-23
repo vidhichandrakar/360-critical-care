@@ -22,6 +22,7 @@ const NavHome = () => {
       onError: (err) => {
         setError("Failed to fetch banners");
         setIsLoading(false);
+        setBannerAPI([]); // Reset banner API to avoid stale data
       }
     });
   }, []);
@@ -35,11 +36,17 @@ const NavHome = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false
   };
 
-  // Get the last banner entry
-  const lastBanner = bannerAPI.length > 0 ? bannerAPI[bannerAPI.length - 1] : null;
+  // Filter banners where webpage_text is "Landing Page"
+  const landingPageBanners = bannerAPI.filter(banner => banner.webpage_text === "Landing Page");
 
+  // Get the last banner from the filtered banners
+  const lastBanner = landingPageBanners.length > 0 ? landingPageBanners[landingPageBanners.length - 1] : null;
+
+  // Get the last banner entry
+  //const lastBanner = bannerAPI.length > 0 ? bannerAPI[bannerAPI.length - 1] : null;
 
   console.log("Last Banner ", lastBanner);
 
@@ -47,31 +54,21 @@ const NavHome = () => {
     <Fragment>
       <div>
         {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
-        {error && <p>{error}</p>} {/* Display error if occurs */}
+        {error && <p>{error}</p>} {/* Display error if it occurs */}
 
-        {!isLoading && !error && lastBanner && (
+        {!isLoading && !error && lastBanner && lastBanner.webpage_text === "Landing Page" && (
           <Fragment>
             {/*Check if the web_banner_type_text is "Banner"*/}
             {lastBanner.web_banner_type_text === "Banner" && (
               <div className="homeImage">
-                {/* <img
-                    src={Image1}
-                    className="WebViewImg"
-                    alt="First Image"
-                  />
-                  <img
-                    src={MobileViewHeadimg}
-                    className="MobileViewImg"
-                    alt="Mobile View Header"
-                  /> */}
-                {lastBanner.web_banner_links.map((link) => (
+                {lastBanner.web_banner_links?.map((link) => (
                   <Fragment key={link._id}>
                     {/* Display web banner images */}
                     <img
                       src={link.banner_url}
                       className="WebViewImg"
                       alt="Web View Banner"
-                      style={{ width: "100%", height: "326px" }}
+                      style={{ width: "100%", height: "auto" }}
                     />
                     <img
                       src={link.banner_url}
@@ -84,18 +81,16 @@ const NavHome = () => {
             )}
 
             {/*Check if the web_banner_type_text is "Slider"*/}
-            {/* Slider Rendering */}
             {lastBanner.web_banner_type_text === "Slider" && lastBanner.web_banner_links && (
-              <div className="slider-container" style={{ marginTop: "20px", width: "100%" }}>
+              <div className="slider-container" style={{ marginTop: "60px", width: "100%" }}>
                 <Slider {...settings}>
                   {lastBanner.web_banner_links.map((link) => (
                     <div key={link._id}>
-                      {/* You can verify banner_url by placing it directly into an <img> */}
                       <img
                         className="WebViewImg"
                         src={link.banner_url}
                         alt="Slider Banner"
-                        style={{ width: "100%", height: "326px" }} // Ensure images fit within the slider
+                        style={{ width: "100%", height: "auto" }}
                       />
                     </div>
                   ))}
