@@ -1,0 +1,26 @@
+/* Component/WhatsAppIcon.css */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    /* Position from the bottom */
+    right: 20px;
+    /* Position from the right */
+    width: 60px;
+    /* Size of the icon */
+    height: 60px;
+    /* Size of the icon */
+    z-index: 1000;
+    /* Ensure it appears on top of other elements */
+    transition: transform 0.3s ease;
+    /* Animation for hover */
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    /* Optional hover effect */
+}

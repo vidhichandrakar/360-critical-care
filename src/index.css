@@ -1,8 +1,16 @@
+@font-face {
+  font-family: defaultFamily;
+  src: url('./Assets/Inter-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
+  font-family: defaultFamily !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow: visible !important;
-  font-family: "Inter" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -430,15 +438,9 @@ code {
 /* .rightBoxCat {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   justify-content: center;
 }
 .SubCategoryBox{
-=======
-  min-width: 58vw;
-} */
-/* .SubCategoryBox{
->>>>>>> e8061e367094456d6d95f1d7a8c4d7f28a2b0ac9
   display: none;
 } */
 .SubBox{
@@ -1559,6 +1561,34 @@ margin: 24px 0px !important;
   --Heading:18px;
   --small:16px;
  }
+ @font-face {
+  font-family: CustomFont;
+  src: url('./Assets/Licorice-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: CustomFont2;
+  src: url('./Assets/times\ new\ roman\ bold\ italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.JoinHeading{
+  font-family: CustomFont2 !important;
+  font-size: 130px !important;
+  font-weight: 400 !important;
+  line-height: 162.5px !important;
+  text-align: center;
+  color: white;
+}
+.OurNewsFont {
+  font-family: CustomFont !important;
+  font-size: 130px !important;
+  font-weight: 400 !important;
+  line-height: 162.5px !important;
+  text-align: center;
+  color: white;
+}
  .sliderFlex{
   display: flex !important;
   flex-direction: row !important;

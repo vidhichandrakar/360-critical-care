@@ -1,16 +1,20 @@
 import axios from "axios";
 import { APIS } from "./ApiConstant";
 
-export const getCategory = ({ callBack }) => {
+export const getCategory = ({ callBack, error }) => {
   const url = APIS.getCategory;
   axios.get(url).then((response) => {
     callBack(response);
+  }) .catch((errorMessage) => {
+    error(errorMessage);
   });
 };
-export const getBlog = ({ callBack }) => {
+export const getBlog = ({ callBack, error }) => {
   const url = APIS.getBlog;
   axios.get(url).then((response) => {
     callBack(response);
+  }).catch((errorMessage) => {
+    error(errorMessage);
   });
 };
 
@@ -53,7 +57,17 @@ export const contactUsDetails = ({ payload, callBack, error }) => {
     });
 };
 
-  
+export const banner = ({ callBack, error }) => {
+  const url = APIS.banner;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      error(errorMessage);
+    });
+};
   export const getAllTestimonials = ({callBack, error }) => {
     const url = new URL(`${APIS.testimonials}`);
     axios

@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Licorice-Regular';
-  src: url('../../public/fonts/Licorice-Regular.ttf') format('truetype');
-}
+
 
 .BuildingImg {
   width: 100%;
@@ -123,14 +120,7 @@
   line-height: 53.25px !important;
   color: white;
 }
-.OurNewsFont {
-  font-family: "Licorice-Regular" !important;
-  font-size: 130px !important;
-  font-weight: 400 !important;
-  line-height: 162.5px !important;
-  text-align: center;
-  color: white;
-}
+
 .GmailBox {
   display: flex;
   padding: 5px 6px !important;
@@ -262,7 +252,6 @@
         padding: 80px 20px;
     }
     .OurNewsFont{
-        font-family: Licorice;
 font-size: 70px !important;
 font-weight: 400 !important;
 line-height: 87.5px !important;
@@ -367,7 +356,6 @@ text-align: center;
     padding: 80px 20px;
   }
   .OurNewsFont {
-    font-family: Licorice;
     font-size: 70px !important;
     font-weight: 400 !important;
     line-height: 87.5px !important;
