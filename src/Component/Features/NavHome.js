@@ -40,7 +40,7 @@ const NavHome = () => {
   };
 
   // Filter banners where webpage_text is "Landing Page"
-  const landingPageBanners = bannerAPI.filter(banner => banner.webpage_text === "Landing Page");
+  const landingPageBanners = bannerAPI.filter(banner => banner.webpage_text === "About Us" && banner.web_banner_position_text === "Top");
 
   // Get the last banner from the filtered banners
   const lastBanner = landingPageBanners.length > 0 ? landingPageBanners[landingPageBanners.length - 1] : null;
