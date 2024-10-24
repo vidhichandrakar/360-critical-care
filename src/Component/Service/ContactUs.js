@@ -395,8 +395,9 @@ function ContactUs() {
                 spacing={2}
                 noValidate
                 autoComplete="off"
+                 className="BGColor"
               >
-                <TextField hiddenLabel id="filled-hidden-label-normal" />
+                <TextField  id="filled-basic" label="Filled" variant="filled" className="BGColor" />
               </Stack>
             </Box>
             <Button variant="contained" className="sendMsgButton">

@@ -9,6 +9,7 @@ import Studysource from "./LandingpageSubComponent/Studysource";
 import NeetGroupImg from "../Features/NeetGroupImg";
 import NewsLatter from "./LandingpageSubComponent/NewsLatter";
 import AllCourseWOL from "../AllCourse/AllCourseWOL";
+import LandingTestimonial from "../Features/LandingTestimonial";
 
 const Landingpage = () => {
 
@@ -21,6 +22,7 @@ const Landingpage = () => {
            <ExploreTech />
            <Neet2023 />
            <Jion15 />
+           <LandingTestimonial/>
            <Studysource />
            <NeetGroupImg />
            <NewsLatter />

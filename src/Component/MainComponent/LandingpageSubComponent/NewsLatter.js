@@ -29,7 +29,7 @@ const NewsLatter = () => {
     <Fragment>
       <Box className="NewLetterBox">
         <Typography className="SubscribeFont">Subscribe to</Typography>
-        <Typography className="OurNewsFont">Our newsletter</Typography>
+        <Typography className="OurNewsFont">Our Newsletter</Typography>
         <Paper
           component="form"
           className="GmailBox"
@@ -37,7 +37,7 @@ const NewsLatter = () => {
         >
           <InputBase
             sx={{ ml: 1, flex: 1 }}
-            placeholder="Search Google Maps"
+            placeholder="critical.care123@gmail.com"
             inputProps={{ "aria-label": "search google maps" }}
             onChange={handleEmailidchange}
           />
