@@ -104,7 +104,7 @@ const COntactus = () => {
                     hiddenLabel
                     id="filled-hidden-label-small"
                     size="small"
-                    sx={{backgroundColor: "rgba(144, 143, 143, 0.748)"}}
+                    sx={{backgroundColor: "rgba(232, 232, 232, 0.549)"}}
                   />
                 </Box>
                 <Box sx={{display: "flex", flexDirection: "column", textAlign: "left", mt: 2}}>
@@ -112,7 +112,7 @@ const COntactus = () => {
                    <TextField
                     id="outlined-multiline-flexible"
                     multiline
-                    sx={{backgroundColor: "rgba(144, 143, 143, 0.748)"}}
+                    sx={{backgroundColor: "rgba(232, 232, 232, 0.549)"}}
                     rows={5}
                   />
                 </Box>
