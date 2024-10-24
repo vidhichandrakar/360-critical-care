@@ -439,6 +439,21 @@ text-align: center;
     /* line-height: 14.52px !important; */
     text-align: center !important;
   }
+  .TestimonialHead {
+    font-family: Inter !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    line-height: 21.78px !important;
+    text-align: center !important;
+  }
+  .TestimonialPara {
+    font-family: Inter !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 14.52px !important;
+    text-align: center !important;
+    margin-top: 1% !important;
+  }
   .FeaturesBLog{
     display: none;
   }

@@ -42,17 +42,19 @@ const AllCourseWOL = () => {
                            {item?.course_name}
                         </Typography>
                         <Box className="Price_ButtonBox">
-                            <Box >
+                            <Box>
                                 <Typography sx={{fontWeight: 600}}>
                                 Special Discounted Price
                                 </Typography>
                                 <Box className="PriceBox">
+                                <Box sx={{display: "flex", flexDirection: "row"}}>
                                 <Typography sx={{fontWeight: 600}}>
                                     {item.durations?.length ? item.durations[0]?.offer_price : ""}
                                 </Typography>
                                 <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
                                 {item.durations[0]?.price}
                                 </Typography>
+                                </Box>
                                 <Typography sx={{ml:6}} className="offBox">
                                     40% OFF
                                 </Typography>
