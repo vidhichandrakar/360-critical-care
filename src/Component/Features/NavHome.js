@@ -55,10 +55,10 @@ const NavHome = () => {
       <div>
         {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
         {error && <p>{error}</p>} {/* Display error if it occurs */}
-        <div className="homeImage">
+        {/* <div className="homeImage">
           <img src={Image1} className="WebViewImg"/>
           <img src={Image1} className="MobileViewImg" />
-        </div>
+        </div> */}
 
         {!isLoading && !error && lastBanner && lastBanner.webpage_text === "Landing Page" && (
           <Fragment>

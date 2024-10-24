@@ -24,6 +24,7 @@ const Aboutus = () => {
   const [error, setError] = useState(null); // Error state
 
   useEffect(() => {
+    console.log("check")
     banner({
       callBack: (response) => {
         console.log("API response:", response.data);
