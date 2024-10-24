@@ -42,7 +42,7 @@
   .ourFoundersHorizontalLine{
     width: 81%;
     height: 1px;
-    margin: 10px 10px;
+    margin: 20px 44px;
     background-color: #1B2124 !important;
   }
   .ourFounderHead {
@@ -78,6 +78,12 @@
     padding: 85px;
     /* height: 20%; */
   }
+  .ReadmoreBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+  }
   .percentageOfSuccess {
     display: flex;
     flex-direction: row;
@@ -102,12 +108,15 @@
   }
   .abt360CriticalCare-typography{
     /* margin-top: 3% !important; */
-    font-family: Inter;
-font-size: 12px !important;
+font-size: 20px !important;
 font-weight: 400 !important;
-line-height: 14.52px !important;
-text-align: justified !important;
+line-height: 26.63px !important;
+text-align: justify !important;
 
+  }
+  .stethoscopeImg{
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px 2px #d3d3d3 !important;
   }
   .mobileViewText{
     display: none;
@@ -293,6 +302,9 @@ text-align: justified !important;
     .Aboutbox{
         margin: 0;
     }
+    .ourFoundersHorizontalLine{
+        margin: 20px 18px;
+    }
 }
 
 @media(max-width: 300px){
@@ -305,7 +317,6 @@ text-align: justified !important;
 
 
 .aboutSection{
-    font-family: Arial, Helvetica, sans-serif !important;
     /* this font is from PW  */
 }            
 

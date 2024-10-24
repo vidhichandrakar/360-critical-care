@@ -1,8 +1,16 @@
+@font-face {
+  font-family: defaultFamily;
+  src: url('./Assets/Inter-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
+  font-family: defaultFamily !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow: visible !important;
-  font-family: "Inter-Regular" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,10 +58,6 @@ body {
 html {
   overflow: auto !important;
 }
-
-code {
-  font-family: "Inter-Regular" !important ;
-}
 .static {
   position: sticky !important;
   top: 0 !important;
@@ -82,7 +86,7 @@ code {
   height: auto !important;
   width: 100%;
   z-index: 78 !important;
-  margin-top: 4%;
+  margin-top: 14%;
 }
 .cardHome {
   width: 79% !important;
@@ -175,7 +179,6 @@ code {
 
 .TestimonialsMain {
   margin-top: 33px;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   /* padding-bottom: 2%; */
   padding: 30px 9px;
@@ -382,8 +385,6 @@ code {
 .catHeading {
   margin-top: 6% !important;
   font-size: 2em !important;
-  font-family: "Inter-Regular" !important;
-  /* font-family: Gilroy, "sans-serif" !important; */
   font-weight: bolder !important;
 }
 .cardBox .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
@@ -453,7 +454,6 @@ code {
   display: none;
   font-size: 2.3rem !important;
   color: #2683DA !important;
-  font-family: Arial, Helvetica, sans-serif;
 
 }
 .SubBox{
@@ -527,9 +527,7 @@ code {
 .planSubTextTypo {
   font-size: 1.2em !important;
   margin-top: 10px !important;
-  font-family: "Inter-Regular" !important;
   color:#199884 !important;
-  font-family: Arial, Helvetica, sans-serif!important;
 }
 
 /* Live */
@@ -546,8 +544,6 @@ code {
 }
 .liveText {
   color: #18568f !important;
-  font-family: "Inter-Regular" !important;
-  /* font-family: Gilroy, "sans-serif" !important; */
   font-size: 28px !important;
   font-weight: 700 !important;
   line-height: 36.31px !important;
@@ -558,7 +554,6 @@ code {
   font-size: 18px !important;
   font-weight: 400 !important;
   color: #00000078;
-  font-family: "Inter-Regular" !important;
   text-align: justify;
 }
 
@@ -1096,7 +1091,7 @@ font-size: 1.3em !important;
   grid-template-columns: 1fr 1fr 1fr !important;
   justify-content: center;
   text-align: center;
-  margin: 30px 100px 100px 100px ;
+  margin: 30px 170px;
 }
 .studyResourceImages-Img{
   margin-top: 5%;
@@ -1325,7 +1320,6 @@ font-size: 1.3em !important;
     display: none;
    }
    .catHeading {
-    font-family: "Inter-Regular" !important;
 font-size: 20px !important;
 font-weight: 700 !important;
 line-height: 21.78px !important;
@@ -1358,7 +1352,7 @@ text-align: center;
   gap: 10px;
 }
 .OurFoundersLeftCard{
-  height: 40vh !important;
+  height: 50vh !important;
   margin: 0px 0px !important;
 }
 .abt360CriticalCare{
@@ -1368,7 +1362,6 @@ text-align: center;
 .countryWiseStudent{
   /* font-size: 1.5rem !important;
   margin: 20px 2px !important; */
-  font-family: "Inter-Regular" !important;
 font-size: 23px !important;
 font-weight: 700 !important;
 line-height: 21.78px !important;
@@ -1412,6 +1405,7 @@ margin: 24px 0px !important;
   } */
   .ourFoundersHorizontalLine {
     width: 92% !important;
+    margin: 20px 18px !important;
   }
   /* .OurFoundersLeftCard {
    height: 18vh !important;
@@ -1451,7 +1445,7 @@ margin: 24px 0px !important;
   margin: 19px -47px;
 }
 .PWSRedImg{
-  display: block !important;
+  display: none !important;
 }
 .percentageOfSuccess{
   height: 26vh !important;
@@ -1558,6 +1552,34 @@ margin: 24px 0px !important;
   --Heading:18px;
   --small:16px;
  }
+ @font-face {
+  font-family: CustomFont;
+  src: url('./Assets/Licorice-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: CustomFont2;
+  src: url('./Assets/times\ new\ roman\ bold\ italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.JoinHeading{
+  font-family: CustomFont2 !important;
+  font-size: 130px !important;
+  font-weight: 400 !important;
+  line-height: 162.5px !important;
+  text-align: center;
+  color: white;
+}
+.OurNewsFont {
+  font-family: CustomFont !important;
+  font-size: 130px !important;
+  font-weight: 400 !important;
+  line-height: 162.5px !important;
+  text-align: center;
+  color: white;
+}
  .sliderFlex{
   display: flex !important;
   flex-direction: row !important;

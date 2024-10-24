@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'Licorice-Regular' !important;
-  src: url('../../public/fonts/Licorice-Regular.ttf') format('truetype') !important;
-}
 
 .BuildingImg {
   width: 100%;
@@ -37,17 +33,16 @@
   color: white;
 }
 .ExploreHead {
-  font-family: "Inter-Regular" !important;
   /* font-size: 144px !important; */
   font-weight: 700 !important;
   /* line-height: 53.25px !important; */
   text-align: center !important;
 }
 .disc{
-  list-style: circle;
+  list-style: disc;
+  text-align: left;
 }
 .ExplorePara {
-  font-family: "Inter-Regular" !important;
   font-size: 18px !important;
   font-weight: 500 !important;
   line-height: 21.78px !important;
@@ -120,20 +115,12 @@
   text-align: center;
 }
 .SubscribeFont {
-  font-family: "Inter-Regular" !important;
   font-size: 44px !important;
   font-weight: 700 !important;
   line-height: 53.25px !important;
   color: white;
 }
-.OurNewsFont {
-  font-family: "Licorice-Regular" !important;
-  font-size: 130px !important;
-  font-weight: 400 !important;
-  line-height: 162.5px !important;
-  text-align: center;
-  color: white;
-}
+
 .GmailBox {
   display: flex;
   padding: 5px 6px !important;
@@ -181,6 +168,9 @@
   }
   .centered {
     top: 80%;
+  }
+  .percentageOfSuccess{
+    margin-bottom: 55% !important;
   }
   .Neet2023 {
     width: 90%;
@@ -255,7 +245,6 @@
         margin: 5px;
     }
     .SubscribeFont{
-        font-family: "Inter-Regular";
         font-size: 18px;
         font-weight: 700;
         line-height: 21.78px;
@@ -265,7 +254,6 @@
         padding: 80px 20px;
     }
     .OurNewsFont{
-        font-family: Licorice;
 font-size: 70px !important;
 font-weight: 400 !important;
 line-height: 87.5px !important;
@@ -343,7 +331,8 @@ text-align: center;
       gap: 25px;
     }
     .SubscribeButton{
-      width: 100% !important;
+      width: 29% !important;
+      font-size: 13px !important
     }
     .aaplogo{
       margin-top: 5%;
@@ -360,7 +349,6 @@ text-align: center;
     margin: 5px;
   }
   .SubscribeFont {
-    font-family: "Inter-Regular";
     font-size: 18px;
     font-weight: 700;
     line-height: 21.78px;
@@ -370,7 +358,6 @@ text-align: center;
     padding: 80px 20px;
   }
   .OurNewsFont {
-    font-family: Licorice;
     font-size: 70px !important;
     font-weight: 400 !important;
     line-height: 87.5px !important;
@@ -426,14 +413,12 @@ text-align: center;
     text-align: center !important;
   }
   .ExploreHead {
-    font-family: "Inter-Regular" !important;
     font-size: 33px !important;
     font-weight: 700 !important;
     /* line-height: 21.78px !important; */
     text-align: center !important;
   }
   .ExplorePara {
-    font-family: "Inter-Regular" !important;
     font-size: 21px !important;
     font-weight: 500 !important;
     /* line-height: 14.52px !important; */
@@ -486,5 +471,8 @@ text-align: center;
   .LogoFooter {
     margin-left: -60%;
     width: 40%;
+  }
+  .CategoryimgBox{
+    width: 20%;
   }
 }
