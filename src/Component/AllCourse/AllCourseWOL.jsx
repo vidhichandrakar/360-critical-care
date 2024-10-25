@@ -134,7 +134,7 @@ const AllCourseWOL = () => {
             <Box className="CoursesCardMainBox">
                 {allCourseData?.length && allCourseData?.map((item) => {
                   return   <Box className="CradBox">
-                    <Box sx={{width: "25%"}}>
+                    <Box className="CardBoxImg">
                     <img src={item.thumbnail_path} className="CoursesCardImg"/>
                     </Box>
                     <Box className="CardTextBox"    >

@@ -26,6 +26,9 @@
 
   box-shadow: 2px 3px 14px 3px #d3d3d3 !important;
 }
+.CardBoxImg{
+  width: 25% !important;
+}
 .CardTextBox {
   display: flex;
   flex-direction: column;
@@ -197,8 +200,11 @@
     height: 24vh;
   }
   .CradBox {
-    width: 40.5%;
+    width: 69.5%;
     padding: 15px !important;
+  }
+  .CardBoxImg{
+    width: 100% !important;
   }
   .ExploreButton {
     background-color: #002c4f !important;

@@ -789,7 +789,7 @@ font-size: 1.3em !important;
     transform-style: preserve-3d;
     height: auto !important;
     width: 100%;
-    margin-top: 14%;
+    margin-top: 15%;
   }
 
   .loginContainer {
@@ -1341,6 +1341,11 @@ text-align: center;
 }
 .mobileViewText{
   display: block !important;
+  text-align: justify;
+  padding: 10px 10px;
+}
+.sendMsgButton{
+  margin-top: 5% !important;
 }
 .OurfoundersCard{
   grid-template-columns: 1fr !important;

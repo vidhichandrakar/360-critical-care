@@ -86,7 +86,10 @@
     }
     .contactUsMap{
         width: 100% !important;
-        height: 20vh !important;
+        height: 30vh !important;
+    }
+    .MapBox{
+        padding: 20px 15px !important;
     }
 }
 
@@ -313,7 +316,7 @@
         left: 0;
     }
     .textfieldName{
-        width: 44vw;
+        width: 45vw;
     }
     .getInTouch{
         padding: 13px 8px;

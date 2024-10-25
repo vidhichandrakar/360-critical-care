@@ -154,7 +154,7 @@ const Aboutus = () => {
             The idea of this endeavor originated with Our Founders
           </Typography>
 
-          <Typography sx={{fontSize: "0.8rem"}}
+          <Typography sx={{fontSize: "1rem"}}
            className="mobileViewText" 
            >
             360CC Lorem Ipsum is simply dummy text of the printing and
@@ -164,7 +164,7 @@ const Aboutus = () => {
             survived not only five centuries, but also the leap into electronic
             typesetting, remaining essentially unchanged. 
           </Typography>
-          <Typography sx={{fontSize: "0.8rem"}} 
+          <Typography sx={{fontSize: "1rem"}} 
           className="mobileViewText"
           >
           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
