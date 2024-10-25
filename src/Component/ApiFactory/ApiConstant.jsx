@@ -5,5 +5,7 @@ export const APIS = {
     allCourses: REACT_APP_API + "/course",
     getBlog: REACT_APP_API + "/blog/bloglist",
     addNewsLetter: REACT_APP_API + "/blog/newsletter",
-    testimonials: REACT_APP_API + "/testimonial"
+    contactUS: REACT_APP_API + "/contactUs/form",
+    testimonials: REACT_APP_API + "/testimonial",
+    banner: REACT_APP_API + "/webbanner"
 }
