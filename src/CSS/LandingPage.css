@@ -177,6 +177,7 @@
     margin-top: 60% !important;
   }
   .appAdvertisement {
+    margin-top: 246px !important;
     flex-direction: column;
   }
   .transparentMobile {
@@ -189,6 +190,8 @@
     margin-left: 4%;
   }
   .googlePlay-n-appStore {
+    display: flex;
+    flex-direction: column;
     margin-left: 4%;
   }
   .PWImg {

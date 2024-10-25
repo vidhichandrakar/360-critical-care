@@ -149,10 +149,10 @@ const AllCourseWOL = () => {
                                 <Box className="PriceBox">
                                 <Box sx={{display: "flex", flexDirection: "row"}}>
                                 <Typography sx={{fontWeight: 600}}>
-                                    {item.durations?.length ? item.durations[0]?.offer_price : ""}
+                                ₹{item.durations?.length ? item.durations[0]?.offer_price : ""}
                                 </Typography>
                                 <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
-                                {item.durations[0]?.price}
+                                ₹{item.durations[0]?.price}
                                 </Typography>
                                 </Box>
                                 <Typography sx={{ml:6}} className="offBox">

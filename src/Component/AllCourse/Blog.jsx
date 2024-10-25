@@ -176,9 +176,9 @@ const Blog = () => {
         </Box>
       </Box>
       <Box className="JoinContainer">
-        <Typography className="JoinHeading">Join Our Free Webinar</Typography>
+        <Typography className="JoinHeading" style={{fontFamily: "CustomFont"}}>Join Our Free Webinar</Typography>
         <Button className="Joincentered" variant="contained">
-          <span className="JoinNow">Join Now</span>
+          <span className="JoinNow" >Join Now</span>
           <span className="Subscribe">Subscribe</span>
         </Button>
       </Box>

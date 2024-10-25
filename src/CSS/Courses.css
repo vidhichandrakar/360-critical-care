@@ -230,11 +230,14 @@
     padding: 20px 6px;
   }
   .JoinHeading {
-    margin-top: 20% !important;
-    font-size: 3rem !important;
+    /* margin-top: 20% !important; */
+    font-family: CustomFont !important;
+    font-size: 4rem !important;
+    line-height: 100px !important;
   }
   .Subscribe {
     display: block;
+    border-radius: 30px !important;
   }
   .JoinNow {
     display: none;
