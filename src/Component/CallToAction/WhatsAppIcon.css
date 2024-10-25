@@ -1,18 +1,20 @@
-/* Component/WhatsAppIcon.css */
-.whatsapp-icon {
+/* WhatsAppIcon.css */
+.whatsapp-icon-container {
     position: fixed;
     bottom: 20px;
-    /* Position from the bottom */
-    right: 20px;
-    /* Position from the right */
+    right: 70px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centering the icon and tooltip */
+        justify-content: center;
+    }
+    
+    .whatsapp-icon {
     width: 60px;
-    /* Size of the icon */
     height: 60px;
-    /* Size of the icon */
-    z-index: 1000;
-    /* Ensure it appears on top of other elements */
     transition: transform 0.3s ease;
-    /* Animation for hover */
 }
 
 .whatsapp-icon img {
@@ -22,5 +24,42 @@
 
 .whatsapp-icon:hover {
     transform: scale(1.1);
-    /* Optional hover effect */
+}
+
+/* Tooltip styling */
+.whatsapp-tooltip {
+    visibility: hidden;
+    width: 190px;
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    /* Dark text for contrast */
+    text-align: center;
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 5px;
+    position: absolute;
+    bottom: 80px;
+    /* Adjust to place above icon */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for better visibility */
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    /* Center the text in the tooltip */
+    align-items: center;
+    /* Center the tooltip vertically */
+    font-family: 'Inter', sans-serif;
+    /* Applying Inter font */
+    font-weight: 700;
+    /* Bold weight */
+}
+
+/* Show the tooltip on hover */
+.whatsapp-icon-container:hover .whatsapp-tooltip {
+    visibility: visible;
+    opacity: 1;
 }

@@ -68,15 +68,15 @@ export const banner = ({ callBack, error }) => {
       error(errorMessage);
     });
 };
-  export const getAllTestimonials = ({callBack, error }) => {
-    const url = new URL(`${APIS.testimonials}`);
-    axios
-      .get(url)
-      .then((response) => {
-  
-        callBack(response);
-      })
-      .catch((errorMessage) => {
-        error(errorMessage);
-      });
-  };
+export const getAllTestimonials = ({ callBack, error }) => {
+  const url = new URL(`${APIS.testimonials}`);
+  axios
+    .get(url)
+    .then((response) => {
+
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      error(errorMessage);
+    });
+};
