@@ -86,7 +86,7 @@ html {
   height: auto !important;
   width: 100%;
   z-index: 78 !important;
-  margin-top: 14%;
+  margin-top: 4%;
 }
 .cardHome {
   width: 79% !important;
@@ -789,7 +789,7 @@ font-size: 1.3em !important;
     transform-style: preserve-3d;
     height: auto !important;
     width: 100%;
-    margin-top: 13%;
+    margin-top: 14%;
   }
 
   .loginContainer {
@@ -1182,10 +1182,6 @@ font-size: 1.3em !important;
 }
 
 @media (max-width: 490px) {
-  .homeImage img {
-    /* height: 16vh !important; */
-  }
-
   .studyMaterials h5{
     /* font-size: var(--subHeading) !important; */
     font-size: 1.1rem !important;
@@ -1352,7 +1348,7 @@ text-align: center;
   gap: 10px;
 }
 .OurFoundersLeftCard{
-  height: 50vh !important;
+  height: 60vh !important;
   margin: 0px 0px !important;
 }
 .abt360CriticalCare{
@@ -1506,7 +1502,7 @@ margin: 24px 0px !important;
   display: grid !important;
   grid-template-columns: 1fr !important;
   gap: 0%; 
-  /* height: 100vh !important; */
+  height: 75vh !important;
 }
 .css-1x1xx5k{
   min-width: 73vw !important;

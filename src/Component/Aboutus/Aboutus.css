@@ -21,6 +21,9 @@
     background-color: #199884;
   }
   .OurFoundersLeftCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 35px 36px;
     /* background-color: rgb(243 243 243); */
     background-color: #ffffff;
@@ -73,6 +76,9 @@
     background-color: #ffffff !important;
   }
   .countryWiseStuBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 29%;
     /* margin-top: 94px; */
     padding: 85px;
@@ -122,7 +128,7 @@ text-align: justify !important;
     display: none;
   }
   .ourFounderAbout{
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
     padding: 0px 0px !important;
     color: #002C4F;
   }

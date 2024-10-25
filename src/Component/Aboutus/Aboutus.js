@@ -186,6 +186,7 @@ const Aboutus = () => {
           sx={{ flexGrow: 1 }}
           className="OurFoundersLeftCard"
         >
+          <Box>
           <img src={tapas} width={70} height={70} />
           <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
             <b>Dr. Tapas Kumar Sahoo</b>
@@ -202,14 +203,18 @@ const Aboutus = () => {
             Management) | Associate Director and HOD | Department of Critical
             Care | Medanta Hospital, Ranch
           </Typography>
+          </Box>
+          <Box>
           <Box className="ourFoundersHorizontalLine"></Box>
           <Box  className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+          </Box>
         </Box>
 
         <Box
           // sx={{ flexGrow: 1 }}
           className="OurFoundersLeftCard"
         >
+          <Box>
           <img src={Sananta} width={70} height={70} />
           <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
             <b>Dr. Sananta Kumar Dash</b>
@@ -224,8 +229,11 @@ const Aboutus = () => {
             “My aim is to democratize and transform the education landscape in
             Bharat.”
           </Typography>
+          </Box>
+          <Box>
           <Box className="ourFoundersHorizontalLine"></Box>
           <Box className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+          </Box>
         </Box>
       </div>
 
@@ -236,13 +244,15 @@ const Aboutus = () => {
         <Box className="countryWiseStuBox">
         <Typography className="countryWiseStudent">
               <b>Country Wise Student</b>
-            </Typography>
+        </Typography>
+        <Box sx={{display:"flex", justifyContent: "center"}}>
           <ul className="disc">
-            <li><span className="countryNames">India</span> - 2,000</li>
-            <li><span className="countryNames">UAE</span> - 1,300</li>
-            <li><span className="countryNames">USA</span> - 6,060</li>
-            <li><span className="countryNames">Australia</span> - 2,700</li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">India</p> <span>- 2,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">UAE</p> <span>- 4,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">USA</p> <span>- 1,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">Australia</p> <span>- 2,00</span></div></li>
           </ul>
+        </Box>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
         <img src={globalMap} className="globally" />
