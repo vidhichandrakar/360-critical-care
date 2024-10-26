@@ -1566,7 +1566,7 @@ margin: 24px 0px !important;
   font-style: normal;
 }
 .JoinHeading{
-  /* font-family: CustomFont2 !important; */
+  font-family: CustomFont !important;
   font-size: 130px !important;
   font-weight: 400 !important;
   line-height: 162.5px !important;
