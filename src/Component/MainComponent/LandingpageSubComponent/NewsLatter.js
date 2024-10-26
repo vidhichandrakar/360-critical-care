@@ -9,7 +9,8 @@ import { addNewsLetter } from "../../ApiFactory/ApiAction";
 import { useState } from "react";
 
 const NewsLatter = () => {
-  const [emailidnewsLetter, setEmailidnewsLetter] = useState("")
+  const [emailidnewsLetter, setEmailidnewsLetter] = useState("")  
+  const [error, setError] = useState(null); // Error state
 
   const handleEmailidchange = (e) => {
     setEmailidnewsLetter(e.target.value)
@@ -21,7 +22,10 @@ const NewsLatter = () => {
     }
     addNewsLetter({
       payload,
-      callBack: (response) => {}
+      callBack: (response) => {},
+      error: (err) => {
+        setError("Failed to send Data");
+    }
     })
   }
 

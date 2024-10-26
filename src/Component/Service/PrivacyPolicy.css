@@ -71,11 +71,11 @@
         /* padding-bottom: 5% !important; */
     }
     .PPFontSize p{
-      text-align: justify;
+      text-align: left;
     }
-    /* .PPHeadFontSize{
-        font-size: 3rem !important;
-    } */
+    .PPHeadFontSize{
+        margin-top: 4% !important;
+    }
         /* .PrivacyTextBox{
             font-size: 4.6rem !important;
         } */

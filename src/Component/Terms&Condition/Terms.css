@@ -72,7 +72,7 @@
         font-size: 2.6rem;
     } */
     .List li{
-        text-align: justify !important;
+        text-align: left !important;
     }
     /* .TermsList li{
         font-size: 2.6rem !important;
