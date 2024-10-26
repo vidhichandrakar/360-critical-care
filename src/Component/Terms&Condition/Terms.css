@@ -13,7 +13,7 @@
 }
 .text p{
     font-size: 1rem;
-    /* text-align: justify; */
+    text-align: justify;
     color: black;
 }
 .TermsList li{
@@ -47,7 +47,7 @@
 .TermsList{
       /* margin-left: 2%; */
       list-style-type: number;
-      line-height: 0.5em;
+      line-height: 0.8em;
 }
 .termsList{
     margin-left: 16px;
@@ -61,22 +61,22 @@
     .ContactFont{    
          font-size: 2.6rem
     }
-    .text h2{
+    /* .text h2{
         font-size: 2.8rem !important;
         padding-bottom: 2% !important;
-    }
+    } */
     .text li{
         font-size: 3rem;
     }
-    .text p{
+    /* .text p{
         font-size: 2.6rem;
-    }
+    } */
     .List li{
-        font-size: 2.6rem !important;
+        text-align: justify !important;
     }
-    .TermsList li{
+    /* .TermsList li{
         font-size: 2.6rem !important;
-    }
+    } */
     .TermsBox{
         margin-top: 15% !important;
     }

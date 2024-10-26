@@ -68,6 +68,11 @@ const AllCourseWOL = () => {
         })
     }, [])
 
+    const handleDiscountPercent = (price, offer_price) => {
+        console.log(price, offer_price, (price - offer_price) / price);
+        return Math.floor(((price - offer_price) / price) * 100) + " %";
+      };
+
     console.log("allCourseData : ", allCourseData)
     return (
         <Fragment>
@@ -147,7 +152,7 @@ const AllCourseWOL = () => {
                                 Special Discounted Price
                                 </Typography>
                                 <Box className="PriceBox">
-                                <Box sx={{display: "flex", flexDirection: "row"}}>
+                                <Box sx={{display: "flex", flexDirection: "row", width: "60%"}}>
                                 <Typography sx={{fontWeight: 600}}>
                                 ₹{item.durations?.length ? item.durations[0]?.offer_price : ""}
                                 </Typography>
@@ -156,7 +161,17 @@ const AllCourseWOL = () => {
                                 </Typography>
                                 </Box>
                                 <Typography sx={{ml:6}} className="offBox">
-                                    40% OFF
+                                    {/* 40% OFF */}
+                                    {item.durations[item?.durations?.length - 1]
+                            ?.offer_price &&
+                          item.durations[item?.durations?.length - 1]?.price
+                            ? handleDiscountPercent(
+                                item.durations[item?.durations?.length - 1]
+                                  .price,
+                                item.durations[item?.durations?.length - 1]
+                                  .offer_price
+                              )
+                            : null}
                                 </Typography>
 
                                     </Box>
