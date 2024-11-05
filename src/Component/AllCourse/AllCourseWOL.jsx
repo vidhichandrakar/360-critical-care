@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { banner } from "../ApiFactory/ApiAction";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const AllCourseWOL = () => {
 
@@ -27,6 +28,8 @@ const AllCourseWOL = () => {
     const [isLoading, setIsLoading] = useState(true); // Loading state
     const [error, setError] = useState(null); // Error state
 
+    const navigate = useNavigate();
+    
     useEffect(() => {
         banner({
             callBack: (response) => {
@@ -71,6 +74,11 @@ const AllCourseWOL = () => {
     const handleDiscountPercent = (price, offer_price) => {
         console.log(price, offer_price, (price - offer_price) / price);
         return Math.floor(((price - offer_price) / price) * 100) + " %";
+      };
+
+      const handleExplore = (courseId) => {
+        navigate("/Critical-care/ExploreCourses", { state: { courseId: courseId } });
+        console.log("moded", courseId);
       };
 
     console.log("allCourseData : ", allCourseData)
@@ -176,9 +184,12 @@ const AllCourseWOL = () => {
 
                                     </Box>
                                 </Box>
-                                <Button variant="contained" className="ExploreButton">
+                                {/* <Link to="/Critical-care/user/ExploreCourses"> */}
+                                <Button variant="contained" className="ExploreButton" 
+                                    onClick={() => handleExplore(item?.course_id)}>
                                     Explore Now
                                 </Button>
+                                {/* </Link>s */}
                             </Box>
                         </Box>
                     </Box>

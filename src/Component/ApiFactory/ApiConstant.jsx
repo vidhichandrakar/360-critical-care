@@ -7,5 +7,6 @@ export const APIS = {
     addNewsLetter: REACT_APP_API + "/blog/newsletter",
     contactUS: REACT_APP_API + "/contactUs/form",
     testimonials: REACT_APP_API + "/testimonial",
-    banner:REACT_APP_API + "/webbanner"
+    banner:REACT_APP_API + "/webbanner",
+    duration: REACT_APP_API + "/duration",
 }

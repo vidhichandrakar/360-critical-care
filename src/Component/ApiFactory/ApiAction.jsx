@@ -80,3 +80,22 @@ export const getAllTestimonials = ({ callBack, error }) => {
       error(errorMessage);
     });
 };
+
+export const buyCourse = ({ courseId, callBack, error }) => {
+  const url = APIS.allCourses + "/" + courseId;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      // error(errorMessage);
+    });
+};
+
+export const duration = ({ callBack }) => {
+  const url = APIS.duration;
+  axios.get(url).then((response) => {
+    callBack(response);
+  });
+};

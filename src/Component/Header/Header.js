@@ -23,7 +23,7 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-// import DropDown from "./NestedMenu";
+import DropDown from "./NestedMenu";
 import { Link } from "react-router-dom";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import SearchIcon from '@mui/icons-material/Search';
@@ -125,14 +125,15 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
-                  <Link
+                  {/* <Link
           to="/Critical-care/AllCourse/"
           style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
           className="menuText"
-        >  All Courses
-        {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
-         </Link>
-                {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
+        >  */}
+         {/* All Courses */}
+        <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
+                <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
+                {/* </Link> */}
               </MenuItem>
 
               <MenuItem
@@ -217,19 +218,20 @@ const Header = () => {
               sx={{
                 color: "black",
                 fontWeight: "600",
-                marginLeft: "5%",
+                // marginLeft: "5%",
                 // fontSize: "1.1em",
-                marginTop: "9px",
-                fontSize: "16px",
+                // marginTop: "9px",
+                // fontSize: "16px",
                 fontFamily: "Arial, Helvetica, sans-serif "
               }}
             >
-            <Link
+            {/* <Link
           to="/Critical-care/AllCourse/"
           style={{ color: "inherit", textDecoration: "none" }}
-        >  All Courses
-        {/* <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/> */}
-         </Link>
+        >   */}
+        {/* All Courses */}
+        <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
+         {/* </Link> */}
          </Typography>
          
             <Typography
