@@ -15,6 +15,7 @@ import TestportalMain from './UserPortal/TestPortal/TestportalMain.component';
 import Blog from './Component/AllCourse/Blog';
 import AllCourseWOL from './Component/AllCourse/AllCourseWOL';
 import COntactus from './Component/Service/COntactus.jsx';
+import WhatsAppIcon from './Component/CallToAction/WhatsAppIcon.jsx';
 
 import { BrowserRouter } from 'react-router-dom'
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path='/Critical-care/AllCourse/' Component={AllCourseWOL} />
           <Route path='/Critical-care/user/testportal' Component={TestportalMain} />
         </Routes>
+        <WhatsAppIcon /> {/* Include the WhatsApp icon here */}
       </BrowserRouter>
     </div>
   );

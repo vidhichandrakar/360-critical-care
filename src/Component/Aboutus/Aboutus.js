@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Header from "../Header/Header";
 import { Box, Typography } from "@mui/material";
 import Stethoscope from "../../Media/Images/StethoscopeImg.png";
@@ -12,18 +12,112 @@ import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import "./Aboutus.css";
 import PWRedImg from "../../Media/Images/MobileViewPWRedImg.png";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { banner } from "../ApiFactory/ApiAction";
+
 const Aboutus = () => {
+
+  const [bannerAPI, setBannerAPI] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Loading state
+  const [error, setError] = useState(null); // Error state
+
+  useEffect(() => {
+    console.log("check")
+    banner({
+      callBack: (response) => {
+        console.log("API response:", response.data);
+        setBannerAPI(response.data);
+        setIsLoading(false);
+      },
+      error: (err) => {
+        setError("Failed to fetch banners");
+        setIsLoading(false);
+        setBannerAPI([]); // Reset banner API to avoid stale data
+      }
+    });
+  }, []);
+
+  // Slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false
+  };
+
+  // Filter banners where webpage_text is "Landing Page"
+  const aboutUsBanners = bannerAPI.filter(banner => banner.webpage_text === "About Us");
+
+  // Get the last banner from the filtered banners
+  const lastBanner = aboutUsBanners.length > 0 ? aboutUsBanners[aboutUsBanners.length - 1] : null;
+
   return (
     <>
       <Header />
+      <Fragment>
+        <div>
+          {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
+          {error && <p>{error}</p>} {/* Display error if it occurs */}
 
-      <img
+          {!isLoading && !error && lastBanner && (
+            <Fragment>
+              {/*Check if the web_banner_type_text is "Banner"*/}
+              {lastBanner.web_banner_type_text === "Banner" && (
+                <div className="homeImage">
+                  {lastBanner.web_banner_links?.map((link) => (
+                    <Fragment key={link._id}>
+                      {/* Display web banner images */}
+                      <img
+                        src={link.banner_url}
+                        className="WebViewImg"
+                        alt="Web View Banner"
+                        style={{ width: "100%", height: "auto" }}
+                      />
+                      <img
+                        src={link.banner_url}
+                        className="MobileViewImg"
+                        alt="Mobile View Banner"
+                      />
+                    </Fragment>
+                  ))}
+                </div>
+              )}
+
+              {/*Check if the web_banner_type_text is "Slider"*/}
+              {lastBanner.web_banner_type_text === "Slider" && lastBanner.web_banner_links && (
+                <div className="slider-container" style={{ marginTop: "60px", width: "100%" }}>
+                  <Slider {...settings}>
+                    {lastBanner.web_banner_links.map((link) => (
+                      <div key={link._id}>
+                        <img
+                          className="WebViewImg"
+                          src={link.banner_url}
+                          alt="Slider Banner"
+                          style={{ width: "100%", height: "auto" }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
+              )}
+            </Fragment>
+          )}
+        </div>
+      </Fragment>
+
+      {/* <img
         src={PrepatoryImg}
         width={1697}
         height={360}
         className="aboutUsFirstImg"
         //   style={Margin="23px"}
-      />
+      /> */}
 
       <Box className="abt360CriticalCare">
         <img

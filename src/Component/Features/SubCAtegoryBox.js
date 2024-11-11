@@ -6,7 +6,7 @@ const SubCAtegoryBox = () => {
   const [show, SetShow] = useState(false);
   const [showButton, setShowButton] = useState("View More");
 
-  function toggle() {
+  const toggle= () => {
     SetShow((show) => !show);
     if (!show === true) {
       setShowButton("View Less");

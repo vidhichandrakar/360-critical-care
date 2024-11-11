@@ -217,7 +217,7 @@
 }
 .textfieldName{
     width: 26vw;
-    background-color: rgb(241 236 236 / 75%);
+    background-color: rgba(232, 232, 232, 0.549);
 }
 .DetailsFormBox{
     margin: 50px;
@@ -321,10 +321,10 @@
     }
 }
 
-:root {
+:root  {
     --MainHeading:26px;
     --subHeading:24px;
     --ScndHeading:20px;
     --Heading:18px;
     --small:16px;
-   }
+   }  

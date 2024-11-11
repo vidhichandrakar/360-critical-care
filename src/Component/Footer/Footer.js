@@ -36,21 +36,21 @@ function Footer() {
             </div>
             <div class="footer-col center ">
               <div className="colFooterUpper LogoBOx">
-                <a href="#">
-                  <img
-                    src={GoogleLogo}
-                    width={100}
-                    height={40}
-                    className="margin AppLogo"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src={AppLogo}
-                    width={100}
-                    height={40}
-                    className="margin AppLogo mrlogo"
-                  />
+               <a href='#'>
+                <img
+                  src={GoogleLogo}
+                  width={140}
+                  height="auto"
+                  className="AppLogo"
+                />
+                </a> 
+                <a href='#'>
+                <img
+                  src={AppLogo}
+                  width={140}
+                  height= "auto"
+                  className="margin AppLogo mrlogo"
+                />
                 </a>
               </div>
               <div className="SocialBoxcol FollowBox">
@@ -113,54 +113,12 @@ function Footer() {
 
           <div className="BottomRow">
             <div className="flexcol fontWidth text-color-white CompanyServices">
-              <Link
-                style={{ color: "inherit", textDecoration: "none" }}
-                className="CompanyBox"
-              >
-                {" "}
-                <p>Company</p>
-              </Link>
-              <Link
-                to="/Critical-care/Terms-&-Condition"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                {" "}
-                <p className="rIGHTlINE">
-                  Terms and Condition <span className="None">|</span>
-                </p>
-              </Link>
-              <Link
-                to="/Critical-care/Privacy-policy"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <p className="margin-left rIGHTlINE">
-                  Privacy Policy <span className="None">|</span>
-                </p>
-              </Link>
-              <Link
-                to="/Critical-care/About-us"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <p className="margin-left rIGHTlINE">
-                  About Us <span className="None">|</span>
-                </p>
-              </Link>
-              <Link
-                to="/Critical-care/Contact-us"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <p className="margin-left ">
-                  Contact Us <span className="None">|</span>
-                  </p>
-              </Link>
-              <Link
-                to="/Critical-care/Blog"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                <p className="margin-left rIGHTlINE">
-                  Blog 
-                </p>
-              </Link>
+             <Link  style={{ color: 'inherit', textDecoration: 'none'}} className="CompanyBox"> <p>Company</p></Link>
+             <Link to="/Critical-care/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p  className="rIGHTlINE">Terms and Condition </p></Link>
+             <Link to="/Critical-care/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Privacy Policy  </p></Link> 
+             <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">About Us </p></Link> 
+             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Contact Us</p></Link> 
+             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left ">Blog </p></Link> 
             </div>
 
             <p className="text-color-white CopyRight">

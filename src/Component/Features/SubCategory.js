@@ -30,7 +30,7 @@ const SubCategory = ({ categorySelected }) => {
   useEffect(()=>{
     getCategory({callBack: (response) => {
       setCategoreData(response.data)
-    } })
+    },error:()=>{} })
   },[])
 
   const handleCourses = ({ type }) => {
