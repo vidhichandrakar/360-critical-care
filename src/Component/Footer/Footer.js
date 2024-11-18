@@ -103,11 +103,11 @@ function Footer() {
           direction="column"
           sx={{ alignItems: 'flex-end' }}
         >
-          <Grid item>
+          {/* <Grid item>
             <Tooltip title="Join our WhatsApp Group" placement="top" className="whatsapptooltip">
             <img src={WhatsappImg} className="whatsappImgg" />
             </Tooltip>
-          </Grid>
+          </Grid> */}
         </Grid>
           </div>
 
@@ -118,7 +118,7 @@ function Footer() {
              <Link to="/Critical-care/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Privacy Policy  </p></Link> 
              <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">About Us </p></Link> 
              <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Contact Us</p></Link> 
-             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left ">Blog </p></Link> 
+             <Link to="/Critical-care/Blog/" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left ">Blog </p></Link> 
             </div>
 
             <p className="text-color-white CopyRight">

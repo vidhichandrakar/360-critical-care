@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: -8px 98px !important;
+  margin: 32px 98px !important;
 }
 .margin {
   margin: 0 18px;
@@ -94,7 +94,6 @@ margin-top: 4%;
 }
 .center {
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif !important;
 }
 ul {
   list-style: none;
@@ -141,8 +140,6 @@ ul {
 }
 .whatsappTooltip{
   background-color: #ffffff !important;
-  /* width: 20vw; */
-  /* height: 20vh; */
   margin-right: -69rem;
   margin-top: -30px;
 }
@@ -198,7 +195,6 @@ Link .text-decoraction-none {
 /* PhoneTextcss */
 .phoneTextField .MuiOutlinedInput-root{
   font-size: 20px !important;
-  font-family: Arial, Helvetica, sans-serif !important;
 }
 .bg_color {
   background-color: black;

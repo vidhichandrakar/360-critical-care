@@ -80,7 +80,6 @@ h2::after {
 }
 .carousel .testimonial p::before {
 	content: "\201D";
-  	font-family: Arial,sans-serif;
     color: #fff;
     font-weight: bold;
     font-size: 68px;

@@ -11,20 +11,22 @@ import Footer from "../Footer/Footer";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import "./Aboutus.css";
 import PWRedImg from "../../Media/Images/MobileViewPWRedImg.png";
-
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { banner } from "../ApiFactory/ApiAction";
+import { banner, getCountryNames } from "../ApiFactory/ApiAction";
+import { useAsyncError } from "react-router";
 
 const Aboutus = () => {
-
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [error, setError] = useState(null); // Error state
+  const [countryNames, setCountryNames] = useState([]);
 
   useEffect(() => {
-    console.log("check")
+    console.log("check");
     banner({
       callBack: (response) => {
         console.log("API response:", response.data);
@@ -35,8 +37,17 @@ const Aboutus = () => {
         setError("Failed to fetch banners");
         setIsLoading(false);
         setBannerAPI([]); // Reset banner API to avoid stale data
-      }
+      },
     });
+    getCountryNames({
+      callBack: (response) => {
+        console.log("resp", response);
+        setCountryNames(response.data);
+      },
+      error: (err) => {
+        console.log("error");
+      }
+    })
   }, []);
 
   // Slider settings
@@ -48,23 +59,28 @@ const Aboutus = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    arrows: false,
   };
 
   // Filter banners where webpage_text is "Landing Page"
-  const aboutUsBanners = bannerAPI.filter(banner => banner.webpage_text === "About Us");
+  const aboutUsBanners = bannerAPI.filter(
+    (banner) => banner.webpage_text === "About Us"
+  );
 
   // Get the last banner from the filtered banners
-  const lastBanner = aboutUsBanners.length > 0 ? aboutUsBanners[aboutUsBanners.length - 1] : null;
+  const lastBanner =
+    aboutUsBanners.length > 0
+      ? aboutUsBanners[aboutUsBanners.length - 1]
+      : null;
 
   return (
     <>
       <Header />
       <Fragment>
         <div>
-          {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
+          {isLoading && <p>Loading banners...</p>}{" "}
+          {/* Display loading message */}
           {error && <p>{error}</p>} {/* Display error if it occurs */}
-
           {!isLoading && !error && lastBanner && (
             <Fragment>
               {/*Check if the web_banner_type_text is "Banner"*/}
@@ -90,22 +106,26 @@ const Aboutus = () => {
               )}
 
               {/*Check if the web_banner_type_text is "Slider"*/}
-              {lastBanner.web_banner_type_text === "Slider" && lastBanner.web_banner_links && (
-                <div className="slider-container" style={{ marginTop: "60px", width: "100%" }}>
-                  <Slider {...settings}>
-                    {lastBanner.web_banner_links.map((link) => (
-                      <div key={link._id}>
-                        <img
-                          className="WebViewImg"
-                          src={link.banner_url}
-                          alt="Slider Banner"
-                          style={{ width: "100%", height: "auto" }}
-                        />
-                      </div>
-                    ))}
-                  </Slider>
-                </div>
-              )}
+              {lastBanner.web_banner_type_text === "Slider" &&
+                lastBanner.web_banner_links && (
+                  <div
+                    className="slider-container"
+                    style={{ marginTop: "60px", width: "100%" }}
+                  >
+                    <Slider {...settings}>
+                      {lastBanner.web_banner_links.map((link) => (
+                        <div key={link._id}>
+                          <img
+                            className="WebViewImg"
+                            src={link.banner_url}
+                            alt="Slider Banner"
+                            style={{ width: "100%", height: "auto" }}
+                          />
+                        </div>
+                      ))}
+                    </Slider>
+                  </div>
+                )}
             </Fragment>
           )}
         </div>
@@ -127,7 +147,7 @@ const Aboutus = () => {
           className="stethoscopeImg"
         />
 
-        <img src={PWRedImg} width={200} height={150} className="PWSRedImg"/>
+        <img src={PWRedImg} width={200} height={150} className="PWSRedImg" />
         <Box className="abt360CriticalCare-right">
           <Typography className="youtubeHead">
             About <span className="AquaColor">360 Critical Care</span>
@@ -149,30 +169,26 @@ const Aboutus = () => {
             knowledge and skills, ultimately improving patient outcomes in
             intensive care settings.
           </Typography>
-          <Typography className="abt360CriticalCare-typography">
+          <Typography className="abt360CriticalCare-typography" sx={{ mt: 2 }}>
             The idea of this endeavor originated with Our Founders
           </Typography>
 
-          <Typography sx={{fontSize: "0.8rem"}}
-           className="mobileViewText" 
-           >
+          <Typography sx={{ fontSize: "1rem" }} className="mobileViewText">
             360CC Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book. It has
             survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. 
+            typesetting, remaining essentially unchanged.
           </Typography>
-          <Typography sx={{fontSize: "0.8rem"}} 
-          // className="mobileViewText"
-          >
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book.
+          <Typography sx={{ fontSize: "1rem" }} className="mobileViewText">
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum. Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book.
           </Typography>
         </Box>
       </Box>
@@ -181,48 +197,61 @@ const Aboutus = () => {
         Our <span className="AquaColor">Founders</span>
       </Typography>
       <div className="OurfoundersCard">
-        <Box
-          sx={{ flexGrow: 1 }}
-          className="OurFoundersLeftCard"
-        >
-          <img src={tapas} width={70} height={70} />
-          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
-            <b>Dr. Tapas Kumar Sahoo</b>
-          </Typography>
-          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
-            Director
-          </Typography>
-          <Typography
-            // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
-            className="ourFounderAbout"
-          >
-            MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
-            Critical care Fellowship (University of Toronto) | MBA (Healthcare
-            Management) | Associate Director and HOD | Department of Critical
-            Care | Medanta Hospital, Ranch
-          </Typography>
-          <Box className="ourFoundersHorizontalLine"></Box>
+        <Box sx={{ flexGrow: 1 }} className="OurFoundersLeftCard">
+          <Box>
+            <img src={tapas} width={70} height={70} />
+            <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+              <b>Dr. Tapas Kumar Sahoo</b>
+            </Typography>
+            <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+              Director
+            </Typography>
+            <Typography
+              // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
+              className="ourFounderAbout"
+            >
+              MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
+              Critical care Fellowship (University of Toronto) | MBA (Healthcare
+              Management) | Associate Director and HOD | Department of Critical
+              Care | Medanta Hospital, Ranch
+            </Typography>
+          </Box>
+          <Box>
+            <Box className="ourFoundersHorizontalLine"></Box>
+            <Box className="ReadmoreBox">
+              <Typography>Read more</Typography>
+              <KeyboardArrowUpIcon />
+            </Box>
+          </Box>
         </Box>
 
         <Box
           // sx={{ flexGrow: 1 }}
           className="OurFoundersLeftCard"
         >
-          <img src={Sananta} width={70} height={70} />
-          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
-            <b>Dr. Sananta Kumar Dash</b>
-          </Typography>
-          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
-            Director
-          </Typography>
-          <Typography
-            // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
-            className="ourFounderAbout"
-          >
-            “My aim is to democratize and transform the education landscape in
-            Bharat.”
-          </Typography>
-          <Box className="ourFoundersHorizontalLine"></Box>
+          <Box>
+            <img src={Sananta} width={70} height={70} />
+            <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+              <b>Dr. Sananta Kumar Dash</b>
+            </Typography>
+            <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+              Director
+            </Typography>
+            <Typography
+              // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
+              className="ourFounderAbout"
+            >
+              “My aim is to democratize and transform the education landscape in
+              Bharat.”
+            </Typography>
+          </Box>
+          <Box>
+            <Box className="ourFoundersHorizontalLine"></Box>
+            <Box className="ReadmoreBox">
+              <Typography>Read more</Typography>
+              <KeyboardArrowUpIcon />
+            </Box>
+          </Box>
         </Box>
       </div>
 
@@ -231,21 +260,84 @@ const Aboutus = () => {
       </Typography>
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
-          <ul type="disc">
-            <Typography className="countryWiseStudent">
-              <b>Country Wise Student</b>
-            </Typography>
-            <li><span className="countryNames">India</span> - 2,000</li>
-            <li><span className="countryNames">UAE</span> - 1,300</li>
-            <li><span className="countryNames">USA</span> - 6,060</li>
-            <li><span className="countryNames">Australia</span> - 2,700</li>
-          </ul>
+          <Typography className="countryWiseStudent">
+            <b>Country Wise Student</b>
+          </Typography>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            {/* {countryNames((item) => {
+              return( */}
+                <ul className="disc">
+                <li>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <p className="countryNames">
+                      {countryNames?.Country_name}
+                    </p> 
+                    <span>{countryNames?.student_count}</span>
+                  </div>
+                </li>
+              </ul>
+              {/* );
+            })} */}
+            {/* <ul className="disc">
+              <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">India</p> 
+                  <span>- 2,000</span>
+                </div>
+              </li>
+              <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">UAE</p> <span>- 4,000</span>
+                </div>
+              </li>
+              <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">USA</p> <span>- 1,000</span>
+                </div>
+              </li>
+              <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">Australia</p> <span>- 2,00</span>
+                </div>
+              </li>
+            </ul> */}
+          </Box>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
         <img src={globalMap} className="globally" />
       </Box>
 
-       <Box className="percentageOfSuccess">
+      <Box className="percentageOfSuccess">
         {/* <Box
           sx={{
             backgroundColor: "#FFF3E3",
@@ -291,63 +383,62 @@ const Aboutus = () => {
           <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
         </Box> */}
         <Box className="ImgBoxData">
-            <Box
-              sx={{
-                backgroundColor: "#FFF3E3",             
-              }}
-               className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>800+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Students</b>
-              </p>
-            </Box>
-            <Box
-              sx={{
-                backgroundColor: "#ffeeee",
-               }}
-                className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>3+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Glorious Years</b>
-              </p>
-            </Box>
-            <Box
-             className="DataCardBox"
-              sx={{
-                backgroundColor: "#e4faff",
-                  }}
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>90%</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Success Rate</b>
-              </p>
-            </Box>
-            <Box
-              sx={{
-                backgroundColor: "#ece7ff",
-              }}
-              className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>100+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Teaching Videos</b>
-              </p>
-            </Box>
+          <Box
+            sx={{
+              backgroundColor: "#FFF3E3",
+            }}
+            className="DataCardBox"
+          >
+            <h1 className="aboutExploreClasses-head">
+              <b>800+</b>
+            </h1>
+            <p className="aboutExploreClasses-para">
+              <b>Students</b>
+            </p>
           </Box>
-      </Box> 
-
-      <img src={NewsLetter} width="100%" className="newsLetterImg"/>
-      <Footer/> 
+          <Box
+            sx={{
+              backgroundColor: "#ffeeee",
+            }}
+            className="DataCardBox"
+          >
+            <h1 className="aboutExploreClasses-head">
+              <b>3+</b>
+            </h1>
+            <p className="aboutExploreClasses-para">
+              <b>Glorious Years</b>
+            </p>
+          </Box>
+          <Box
+            className="DataCardBox"
+            sx={{
+              backgroundColor: "#e4faff",
+            }}
+          >
+            <h1 className="aboutExploreClasses-head">
+              <b>90%</b>
+            </h1>
+            <p className="aboutExploreClasses-para">
+              <b>Success Rate</b>
+            </p>
+          </Box>
+          <Box
+            sx={{
+              backgroundColor: "#ece7ff",
+            }}
+            className="DataCardBox"
+          >
+            <h1 className="aboutExploreClasses-head">
+              <b>100+</b>
+            </h1>
+            <p className="aboutExploreClasses-para">
+              <b>Teaching Videos</b>
+            </p>
+          </Box>
+        </Box>
+      </Box>
+      <NewsLatter />
+      <Footer />
     </>
   );
 };

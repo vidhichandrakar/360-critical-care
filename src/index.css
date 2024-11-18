@@ -24,7 +24,7 @@ body {
 }
 .menuText {
   color: #000 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
   font-weight: 600 !important;
   font-size: 1.8rem !important;
   
@@ -57,10 +57,6 @@ body {
 }
 html {
   overflow: auto !important;
-}
-
-code {
-  font-family: "Inter" !important ;
 }
 .static {
   position: sticky !important;
@@ -165,25 +161,24 @@ code {
   font-size: 20px !important;
   font-weight: 500 !important;
   margin-top: 30% !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
 }
 .leftSubDesign {
   font-weight: 500;
   font-size: 0.8em !important;
   color: black !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
 }
 .leftTextDesign {
   font-size: 1em;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
 }
 
 /* Testimonials css start */
 
 .TestimonialsMain {
   margin-top: 33px;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   /* padding-bottom: 2%; */
   padding: 30px 9px;
@@ -306,7 +301,7 @@ code {
 .TestimonialsLeftCard p {
   margin: 36px 23px;
   
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
 }
 .TestimonialsLeftCard h3 {
   margin: 36px 23px;
@@ -363,7 +358,7 @@ code {
 }
 .subCatHead {
   font-weight: 500 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
   font-size: 1.1em !important;
   height: 60px !important;
 }
@@ -375,7 +370,7 @@ code {
 }
 
 .catDrop .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */
   font-weight: bold !important;
 }
 .catDrop{
@@ -390,8 +385,6 @@ code {
 .catHeading {
   margin-top: 6% !important;
   font-size: 2em !important;
-  /* font-family: "Inter" !important; */
-  /* font-family: Gilroy, "sans-serif" !important; */
   font-weight: bolder !important;
 }
 .cardBox .css-1spzyyw-MuiButtonBase-root-MuiMenuItem-root {
@@ -425,12 +418,12 @@ code {
 }
 .subMenuText1{
   font-size: 1rem !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
 }
 .nestedMenu{
   font-size: 1rem !important;
   font-weight: 550 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
+  /* width: 70%; */;
   color: #1B2124 !important;
   line-height: 1.5rem !important;
   --tw-text-opacity: 1;
@@ -461,7 +454,6 @@ code {
   display: none;
   font-size: 2.3rem !important;
   color: #2683DA !important;
-  font-family: Arial, Helvetica, sans-serif;
 
 }
 .SubBox{
@@ -535,9 +527,7 @@ code {
 .planSubTextTypo {
   font-size: 1.2em !important;
   margin-top: 10px !important;
-  /* font-family: "Inter" !important; */
   color:#199884 !important;
-  font-family: Arial, Helvetica, sans-serif!important;
 }
 
 /* Live */
@@ -554,8 +544,6 @@ code {
 }
 .liveText {
   color: #18568f !important;
-  /* font-family: "Inter" !important; */
-  /* font-family: Gilroy, "sans-serif" !important; */
   font-size: 28px !important;
   font-weight: 700 !important;
   line-height: 36.31px !important;
@@ -566,7 +554,6 @@ code {
   font-size: 18px !important;
   font-weight: 400 !important;
   color: #00000078;
-  font-family: "Inter" !important;
   text-align: justify;
 }
 
@@ -704,7 +691,7 @@ font-size: 1.3em !important;
     grid-template-columns: 1fr 1fr !important;
   }
   .PopularCardBox {
-    padding: 10px 20px !important;
+    padding: 10px 10px !important;
     width: 90%;
 }
 .Para1{
@@ -749,7 +736,7 @@ font-size: 1.3em !important;
     padding: 0px !important;
     font-size: 1.4rem !important;
     font-weight: 600 !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    /* width: 70%; */;
     text-transform: none !important;
   }
 }
@@ -802,7 +789,7 @@ font-size: 1.3em !important;
     transform-style: preserve-3d;
     height: auto !important;
     width: 100%;
-    margin-top: 13%;
+    margin-top: 15%;
   }
 
   .loginContainer {
@@ -1104,7 +1091,7 @@ font-size: 1.3em !important;
   grid-template-columns: 1fr 1fr 1fr !important;
   justify-content: center;
   text-align: center;
-  margin: 30px 100px 100px 100px ;
+  margin: 30px 170px;
 }
 .studyResourceImages-Img{
   margin-top: 5%;
@@ -1155,6 +1142,11 @@ font-size: 1.3em !important;
   width: 21%;
   height: 28vh;
 }
+.aboutUsFirstImg{
+  margin-top: 65px;
+    width: 100%;
+    height: auto;
+}
 .youtubeCompleteSection{
   justify-content: center !important;
   align-items: center !important;
@@ -1190,10 +1182,6 @@ font-size: 1.3em !important;
 }
 
 @media (max-width: 490px) {
-  .homeImage img {
-    /* height: 16vh !important; */
-  }
-
   .studyMaterials h5{
     /* font-size: var(--subHeading) !important; */
     font-size: 1.1rem !important;
@@ -1328,7 +1316,6 @@ font-size: 1.3em !important;
     display: none;
    }
    .catHeading {
-    /* font-family: Inter !important; */
 font-size: 20px !important;
 font-weight: 700 !important;
 line-height: 21.78px !important;
@@ -1354,6 +1341,11 @@ text-align: center;
 }
 .mobileViewText{
   display: block !important;
+  text-align: justify;
+  padding: 10px 10px;
+}
+.sendMsgButton{
+  margin-top: 5% !important;
 }
 .OurfoundersCard{
   grid-template-columns: 1fr !important;
@@ -1361,7 +1353,7 @@ text-align: center;
   gap: 10px;
 }
 .OurFoundersLeftCard{
-  height: 40vh !important;
+  height: 43vh !important;
   margin: 0px 0px !important;
 }
 .abt360CriticalCare{
@@ -1371,7 +1363,6 @@ text-align: center;
 .countryWiseStudent{
   /* font-size: 1.5rem !important;
   margin: 20px 2px !important; */
-  font-family: Inter !important;
 font-size: 23px !important;
 font-weight: 700 !important;
 line-height: 21.78px !important;
@@ -1415,6 +1406,7 @@ margin: 24px 0px !important;
   } */
   .ourFoundersHorizontalLine {
     width: 92% !important;
+    margin: 20px 18px !important;
   }
   /* .OurFoundersLeftCard {
    height: 18vh !important;
@@ -1454,7 +1446,7 @@ margin: 24px 0px !important;
   margin: 19px -47px;
 }
 .PWSRedImg{
-  display: block !important;
+  display: none !important;
 }
 .percentageOfSuccess{
   height: 26vh !important;
@@ -1515,7 +1507,7 @@ margin: 24px 0px !important;
   display: grid !important;
   grid-template-columns: 1fr !important;
   gap: 0%; 
-  /* height: 100vh !important; */
+  height: 75vh !important;
 }
 .css-1x1xx5k{
   min-width: 73vw !important;
@@ -1574,7 +1566,7 @@ margin: 24px 0px !important;
   font-style: normal;
 }
 .JoinHeading{
-  font-family: CustomFont2 !important;
+  font-family: CustomFont !important;
   font-size: 130px !important;
   font-weight: 400 !important;
   line-height: 162.5px !important;

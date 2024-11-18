@@ -12,8 +12,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
 import { getBlog } from "../ApiFactory/ApiAction";
+import { getBlogCards } from "../ApiFactory/ApiAction";
 import { useEffect } from "react";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,10 +22,10 @@ import { banner } from "../ApiFactory/ApiAction";
 const Blog = () => {
 
   const [blogData, setBlogData] = useState([])
-
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [error, setError] = useState(null); // Error state
+  const [blogCards, setBlogCards] = useState([]);
 
 
   useEffect(() => {
@@ -34,6 +34,14 @@ const Blog = () => {
         setBlogData(response.data)
       }
     })
+    getBlogCards({
+      callBack: (response) => {
+        setBlogCards(response.data)
+      },
+      error: (err) => {
+        setError("Blog Error");
+      }
+    });
   }, [])
 
   console.log("Blogdata :", blogData)
@@ -77,45 +85,6 @@ const Blog = () => {
     <Fragment>
       
       <Header />
-<<<<<<< HEAD
-      <div className="blogPage">
-      <Box className="HeadimgBox">
-        {console.log(blogData, "blogData")}
-        <img src={homeimg} width="100%" className="WebViewImg" />
-        <img src={MobileViewHeadimg} className="MobileViewImg" />
-      </Box>
-
-     <Box className="featuredStoryTag">Featured Story</Box>
-
-      <Box className="featuredStory">
-        <Box>
-          <img src={cardimg} className="Cardimgs"/>
-        </Box>
-        <Box className="featuredStoryVerticalLine"/>
-        <Box className="featuredStoryRight">
-          <Typography className="featuredStoryHaed">SBI CLERK 1ST WAITING LIST 2023 OUT, CHECK ALLOTMENT LIST</Typography>
-          <Typography className="featuredStoryPara">The State Bank of India (SBI) has issued the SBI Clerk 1st Waiting List 2023. If you participated in the main examination and missed the SBI Clerk Result 2023 by just a few marks, you still have a chance.  SBI Clerk Result 2023 by just a few marks</Typography>
-        </Box>
-      </Box>
-
-      <Box className="FeaturesBLog">
-        <Typography>
-          Featured story
-        </Typography>
-     <Box className="FeaturesDataBox">
-     <img src={cardimg} className="Cardimgs"/>
-      <Box sx={{ml:2}}>
-        <Typography>
-        Sbi clark first waitng list nvkdnvkdjvh cdbncjkds ndhbv vbfhdkn bdjrlfng vjfheje vkdj 
-      </Typography>
-        <Typography>
-        Sbi clark first waitng list nvkdnvkdjvh cdbncjkds ndhbv vbfhdkn bdjrlfng vjfheje vkdj 
-      </Typography>
-      </Box>
-     </Box>
-    </Box>
-    
-=======
 
       <Fragment>
         <div>
@@ -192,7 +161,6 @@ const Blog = () => {
         </Box>
 
       </Box> */}
->>>>>>> c428030de3e5990a33ac1f6b457cd2718f82d177
       <Box className="PopularCourseMainBox">
         <Box className="PopularCourseBox">
           {blogData.map((item) => {
@@ -208,7 +176,9 @@ const Blog = () => {
                   <Typography className="Para1" sx={{ mt: 1 }}>
                     {item.title}
                   </Typography>
-                  <Typography className="Para2">{item.description}</Typography>
+                  <Typography className="Para2">
+                    {item.description}
+                    </Typography>
                 </Box>
               </Box>
             );
@@ -216,10 +186,11 @@ const Blog = () => {
 
         </Box>
       </Box>
+      
       <Box className="JoinContainer">
-        <Typography className="JoinHeading">Join Our Free Webinar</Typography>
+        <Typography className="JoinHeading" style={{fontFamily: "CustomFont"}}>Join Our Free Webinar</Typography>
         <Button className="Joincentered" variant="contained">
-          <span className="JoinNow">Join Now</span>
+          <span className="JoinNow" >Join Now</span>
           <span className="Subscribe">Subscribe</span>
         </Button>
       </Box>
@@ -230,17 +201,35 @@ const Blog = () => {
         </Typography>
 
         <Box className="PopularCourseBox">
-          {PopularCard.map((item) => {
+          {blogCards.map((item) => {
             return (
-              <Box className="PopularCardBox">
+              // <Box className="PopularCardBox">
+              //   <img src={cardimg} className="Cardimgs" />
+              //   <Box>
+              //     <Typography className="Para1" sx={{ mt: 1 }}>
+              //       {item.Para1}
+              //     </Typography>
+              //     <Typography className="Para2">{item.Para2}</Typography>
+              //   </Box>
+              // </Box>
+              <Box key={item.id} className="PopularCardBox">
+              {item.image_url != null ? (
+                <img src={item.image_url} className="Cardimgs" />
+              ) : (
                 <img src={cardimg} className="Cardimgs" />
-                <Box>
-                  <Typography className="Para1" sx={{ mt: 1 }}>
-                    {item.Para1}
+              )}
+              <Box>
+                <Typography className="Para1" sx={{ mt: 1 }}>
+                  {item.title}
+                </Typography>
+                <Typography className="Para2">
+                  {item.description}
+                  {/* This blog explores the rich history and evolution of anime, from classic series like 'Naruto' and 'Dragon Ball' to modern masterpieces such as 'Attack on Titan' and 'Demon Slayer.' Discover how anime has transformed over the years, its impact on global pop culture, and why it continues to captivate audiences worldwide. */}
+                  {/* This blog explores the rich history and evolution of anime, from classic series like 'Naruto' and 'Dragon Ball' to modern masterpieces such as 'Attack on Titan' and 'Demon Slayer.' Discover how anime has transformed over the years, its impact on global pop culture, and why it continues to captivate audiences worldwide. */}
                   </Typography>
-                  <Typography className="Para2">{item.Para2}</Typography>
-                </Box>
               </Box>
+            </Box>
+
             );
           })}
         </Box>
@@ -248,7 +237,7 @@ const Blog = () => {
       <NewsLatter />
 
       <Footer />
-    </div>
+    {/* </div> */}
     </Fragment>
   );
 };

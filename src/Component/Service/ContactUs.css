@@ -45,17 +45,17 @@
     }
     .ContactBox h3{
         font-size: 3.2rem;
-        font-family: Arial, Helvetica, sans-serif  !important;
+      /* width: 70%; */;
     }
     .ContactBox h5{
         font-size: 2.6rem;
-        font-family: Arial, Helvetica, sans-serif  !important;
+      /* width: 70%; */;
     }
     .ContactBox p{
         margin-top: 2%;
         font-size: 2.6rem;
         font-weight: 300;
-        font-family: Arial, Helvetica, sans-serif  !important;
+      /* width: 70%; */;
     }
     .ContactBox{
         margin-top: 13% !important;
@@ -86,7 +86,10 @@
     }
     .contactUsMap{
         width: 100% !important;
-        height: 20vh !important;
+        height: 30vh !important;
+    }
+    .MapBox{
+        padding: 20px 15px !important;
     }
 }
 
@@ -97,12 +100,12 @@
 
 
 .allContactUs{
-    font-family:Arial, Helvetica, sans-serif;
+    /* width: 70%; */
     font-size: small;
     margin: 50px;
 }
 .contactUsHeading{
-    font-family:Arial, Helvetica, sans-serif;
+    /* width: 70%; */
     font-size: 500%;
     margin-top: 3%;
 }
@@ -119,7 +122,7 @@
 .contactUs1{
      text-align: left;
      padding: 2% 2%;
-     font-family:Arial, Helvetica, sans-serif;
+     /* width: 70%; */;
      font-size:xx-large;
 }
 
@@ -129,7 +132,7 @@
     width: 39%;
      text-align: left;
      padding: 2% 2%;
-     font-family:Arial, Helvetica, sans-serif;    
+     /* width: 70%; */;    
      font-size: small;
 }
 
@@ -176,7 +179,7 @@
     margin-top: 1%;
     text-align: left;
     padding: 2% 2%;
-    font-family:Arial, Helvetica, sans-serif;
+    /* width: 70%; */;
 }
 
 .fAQHeading{
@@ -184,7 +187,7 @@
 }
 
 .qna{
-    font-family:Arial, Helvetica, sans-serif;
+    /* width: 70%; */
     font-size: xx-large;
 }
 
@@ -313,7 +316,7 @@
         left: 0;
     }
     .textfieldName{
-        width: 44vw;
+        width: 45vw;
     }
     .getInTouch{
         padding: 13px 8px;

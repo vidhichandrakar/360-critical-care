@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Box } from "@mui/material";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 
 
 function Terms() {
@@ -14,7 +15,7 @@ function Terms() {
       <Box className="TermsBox">
         <div className="text">
           <h2>
-            Terms and <span className="AquaColor">Conditions</span>
+            Terms and<span className="AquaColor"> Conditions</span>
           </h2>
           <p>{TermsData.one.detail}</p>
         </div>
@@ -164,7 +165,7 @@ function Terms() {
           </ol>
         </div>
       </Box>
-      <img src={NewsLetter} width="100%"/>
+     <NewsLatter />
       <Footer />
     </div>
   );

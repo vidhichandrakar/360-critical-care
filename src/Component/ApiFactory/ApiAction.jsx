@@ -17,6 +17,16 @@ export const getBlog = ({ callBack, error }) => {
     error(errorMessage);
   });
 };
+export const getBlogCards = ({ callBack, error }) => {
+  const url = APIS.getBlogCards;
+  axios.get(url)
+  .then((response)=> {
+    callBack(response);
+  })
+  .catch((errorMessage) => {
+    error(errorMessage);
+  })
+};
 
 export const getAllCourses = ({ callBack, searchString, error }) => {
   let url = new URL(`${APIS.allCourses}`);
@@ -31,6 +41,28 @@ export const getAllCourses = ({ callBack, searchString, error }) => {
     .catch((errorMessage) => {
       error(errorMessage);
     });
+};
+
+export const getPopularCourse = ({ callBack, error }) => {
+  const url = APIS.getPopularCourse;
+  axios.get(url)
+  .then((response)=> {
+    callBack(response);
+  })
+  .catch((errorMessage) => {
+    error(errorMessage);
+  })
+};
+
+export const getCountryNames = ({ callBack, error }) => {
+  const url = APIS.getCountryNames;
+  axios.get(url)
+  .then((response)=> {
+    callBack(response);
+  })
+  .catch((errorMessage) => {
+    error(errorMessage);
+  })
 };
 
 export const addNewsLetter = ({ payload, callBack, error }) => {
@@ -79,4 +111,23 @@ export const getAllTestimonials = ({ callBack, error }) => {
     .catch((errorMessage) => {
       error(errorMessage);
     });
+};
+
+export const buyCourse = ({ courseId, callBack, error }) => {
+  const url = APIS.allCourses + "/" + courseId;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      // error(errorMessage);
+    });
+};
+
+export const duration = ({ callBack }) => {
+  const url = APIS.duration;
+  axios.get(url).then((response) => {
+    callBack(response);
+  });
 };

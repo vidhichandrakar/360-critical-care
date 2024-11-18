@@ -4,6 +4,7 @@ import TransparentMobileImg from '../../../Media/Images/MobileMockup1.png';
 import GoogleLogo from "../../../Media/Media_Image/play-store.png";
 import AppLogo from "../../../Media/Media_Image/app-store.png";
 import pwimg from "../../../Media/Images/PWImg.png"
+import Mobilemockup from "../../../Media/Images/MobileMockup.png"
 
 const Jion15 = () => {
     return(
@@ -41,12 +42,12 @@ const Jion15 = () => {
         </Box>
         <Box>
           <img
-            src={TransparentMobileImg}
+            src={Mobilemockup}
             width={450}
             height={350}
             className="transparentMobile"
           />
-          <img src={TransparentMobileImg} className="PWImg"/>
+          <img src={Mobilemockup} className="PWImg"/>
           </Box>
       </Box>
         </Fragment>

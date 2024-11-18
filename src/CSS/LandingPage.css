@@ -1,5 +1,4 @@
 
-
 .BuildingImg {
   width: 100%;
   background: radial-gradient(
@@ -34,14 +33,16 @@
   color: white;
 }
 .ExploreHead {
-  font-family: Inter !important;
   /* font-size: 144px !important; */
   font-weight: 700 !important;
   /* line-height: 53.25px !important; */
   text-align: center !important;
 }
+.disc{
+  list-style: disc;
+  text-align: left;
+}
 .ExplorePara {
-  font-family: Inter !important;
   font-size: 18px !important;
   font-weight: 500 !important;
   line-height: 21.78px !important;
@@ -114,7 +115,6 @@
   text-align: center;
 }
 .SubscribeFont {
-  font-family: inter !important;
   font-size: 44px !important;
   font-weight: 700 !important;
   line-height: 53.25px !important;
@@ -169,11 +169,15 @@
   .centered {
     top: 80%;
   }
+  .percentageOfSuccess{
+    margin-bottom: 55% !important;
+  }
   .Neet2023 {
     width: 90%;
     margin-top: 60% !important;
   }
   .appAdvertisement {
+    margin-top: 246px !important;
     flex-direction: column;
   }
   .transparentMobile {
@@ -186,6 +190,8 @@
     margin-left: 4%;
   }
   .googlePlay-n-appStore {
+    display: flex;
+    flex-direction: column;
     margin-left: 4%;
   }
   .PWImg {
@@ -242,7 +248,6 @@
         margin: 5px;
     }
     .SubscribeFont{
-        font-family: inter;
         font-size: 18px;
         font-weight: 700;
         line-height: 21.78px;
@@ -329,7 +334,8 @@ text-align: center;
       gap: 25px;
     }
     .SubscribeButton{
-      width: 100% !important;
+      width: 29% !important;
+      font-size: 13px !important
     }
     .aaplogo{
       margin-top: 5%;
@@ -346,7 +352,6 @@ text-align: center;
     margin: 5px;
   }
   .SubscribeFont {
-    font-family: inter;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.78px;
@@ -411,14 +416,12 @@ text-align: center;
     text-align: center !important;
   }
   .ExploreHead {
-    font-family: Inter !important;
     font-size: 33px !important;
     font-weight: 700 !important;
     /* line-height: 21.78px !important; */
     text-align: center !important;
   }
   .ExplorePara {
-    font-family: Inter !important;
     font-size: 21px !important;
     font-weight: 500 !important;
     /* line-height: 14.52px !important; */
@@ -471,5 +474,8 @@ text-align: center;
   .LogoFooter {
     margin-left: -60%;
     width: 40%;
+  }
+  .CategoryimgBox{
+    width: 20%;
   }
 }

@@ -1,5 +1,4 @@
 .allPrivacyPolicy{
-    font-family:Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 2%;
 }
@@ -8,7 +7,6 @@
 }
 .privacyPolicyHeading{
     /* text-align: center; */
-    font-family:Arial, Helvetica, sans-serif;
     font-size: xx-large;
     font-weight: bold;
     /* font-size: 320%; */
@@ -36,7 +34,6 @@
 .PrivacyPolicyBox{
     margin: 4%;
     margin-top: 6%;
-    font-family: Gilroy-Medium, sans-serif !important;
     line-height: var(--bs-body-line-height);
     font-size: var(--small) !important;
 }
@@ -60,7 +57,7 @@
     /* margin-left: 2%; */
     margin-top: -28px;
     list-style-type: disc;
-    line-height: 0.4;
+    /* line-height: 0.4; */
 }
 .privacyPolicyHead{
     font-size: 1.5rem;
@@ -74,11 +71,10 @@
         /* padding-bottom: 5% !important; */
     }
     .PPFontSize p{
-        /* font-size: 2.6rem !important; */
-
+      text-align: left;
     }
     .PPHeadFontSize{
-        font-size: 3rem !important;
+        margin-top: 4% !important;
     }
         /* .PrivacyTextBox{
             font-size: 4.6rem !important;

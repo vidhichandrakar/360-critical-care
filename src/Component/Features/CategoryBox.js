@@ -27,7 +27,7 @@ const CategoryBox = () => {
   return (
     <Box className="categoryMainBox">
       <Box className="breifesInHomePage">
-        <Box sx={{width: "20%"}}>
+        <Box className="CategoryimgBox">
           <img
             src={thinking}
             className="CategoryImg"
@@ -35,19 +35,19 @@ const CategoryBox = () => {
           <p className="paraFontSize-forMobileView-common CategoryforMobileView">24 X 7 Access to exam debriefs</p>
         </Box>
         <Box className="verticalDivider"></Box>
-        <Box sx={{width: "20%"}}>
+        <Box className="CategoryimgBox">
           <img src={LiveRedIcon}
             className="CategoryImg" />
           <p className="paraFontSize-forMobileView-common CategoryforMobileView">Multiple Free Lectures</p>
         </Box>
         <Box className="verticalDivider"></Box>
-        <Box sx={{width: "20%"}}>
+        <Box className="CategoryimgBox">
           <img src={WriteWithPencil} 
             className="CategoryImg" />
           <p className="paraFontSize-forMobileView-common CategoryforMobileView CategoryforMobileView">One to one Interection</p>
         </Box>
         <Box className="verticalDivider"></Box>
-        <Box sx={{width: "20%"}}>
+        <Box className="CategoryimgBox">
           <img src={Award}
             className="CategoryImg4" />
           <p className="paraFontSize-forMobileView-common CategoryforMobileView">All in one App</p>

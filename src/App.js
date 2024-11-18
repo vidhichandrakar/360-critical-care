@@ -18,6 +18,7 @@ import COntactus from './Component/Service/COntactus.jsx';
 import WhatsAppIcon from './Component/CallToAction/WhatsAppIcon.jsx';
 
 import { BrowserRouter } from 'react-router-dom'
+import ExploreCourses from './Component/Features/ExploreCourses.js';
 function App() {
   return (
     <div className="App">
@@ -35,7 +36,8 @@ function App() {
           <Route path='/Critical-care/IDCCM/' Component={IDCCM} />
           <Route path='/Critical-care/Demo/' Component={DemoApi} />
           <Route path='/Critical-care/AllCourse/' Component={AllCourseWOL} />
-          <Route path='/Critical-care/user/testportal' Component={TestportalMain} />
+          <Route path='/Critical-care/testportal' Component={TestportalMain} />
+          <Route path='/Critical-care/ExploreCourses' Component={ExploreCourses} />
         </Routes>
         <WhatsAppIcon /> {/* Include the WhatsApp icon here */}
       </BrowserRouter>

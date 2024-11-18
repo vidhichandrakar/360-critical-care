@@ -9,20 +9,12 @@ import Divider from "@mui/material/Divider";
 import contacUsFirstImg from "../../Media/Images/contactUsFirstImg.png";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
-import Paper from '@mui/material/Paper';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
-import img1 from "./../../Media/Images/img1.jpg"
-import img2 from "./../../Media/Images/img2.jpg"
-import HomeImage from "./HomeImage";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
-
-// import img3 from "../../../Images/image3.jpeg"
-// import img4 from "../../../Images/image4.jpeg"
+import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
+import Paper from "@mui/material/Paper";
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
+import InputBase from '@mui/material/InputBase';
+import homeimg from "../../Media/ProjectImage/AllCourseHome.jpg";
 
 
 function ContactUs() {
@@ -78,7 +70,7 @@ function ContactUs() {
           className="contacUsFirstImg"
         />
         <div className="main-title homeImage">
-          <HomeImage />
+          <homeimg/>
         </div>
         <Box className="getInTouchCompleteBox">
           <Box className="getInTouch">
@@ -232,6 +224,7 @@ function ContactUs() {
           ></iframe>
         </Box>
       </Box>
+      <NewsLatter />
       <Footer />
     </Fragment>
   );
