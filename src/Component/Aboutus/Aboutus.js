@@ -12,7 +12,11 @@ import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import "./Aboutus.css";
 import PWRedImg from "../../Media/Images/MobileViewPWRedImg.png";
 import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
+<<<<<<< HEAD
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+=======
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -169,11 +173,21 @@ const Aboutus = () => {
             knowledge and skills, ultimately improving patient outcomes in
             intensive care settings.
           </Typography>
+<<<<<<< HEAD
           <Typography className="abt360CriticalCare-typography" sx={{ mt: 2 }}>
             The idea of this endeavor originated with Our Founders
           </Typography>
 
           <Typography sx={{ fontSize: "1rem" }} className="mobileViewText">
+=======
+          <Typography className="abt360CriticalCare-typography" sx={{mt: 2}}>
+            The idea of this endeavor originated with Our Founders
+          </Typography>
+
+          <Typography sx={{fontSize: "1rem"}}
+           className="mobileViewText" 
+           >
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
             360CC Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
@@ -181,6 +195,7 @@ const Aboutus = () => {
             survived not only five centuries, but also the leap into electronic
             typesetting, remaining essentially unchanged.
           </Typography>
+<<<<<<< HEAD
           <Typography sx={{ fontSize: "1rem" }} className="mobileViewText">
             It was popularised in the 1960s with the release of Letraset sheets
             containing Lorem Ipsum passages, and more recently with desktop
@@ -189,6 +204,18 @@ const Aboutus = () => {
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book.
+=======
+          <Typography sx={{fontSize: "1rem"}} 
+          className="mobileViewText"
+          >
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book.
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
           </Typography>
         </Box>
       </Box>
@@ -197,6 +224,7 @@ const Aboutus = () => {
         Our <span className="AquaColor">Founders</span>
       </Typography>
       <div className="OurfoundersCard">
+<<<<<<< HEAD
         <Box sx={{ flexGrow: 1 }} className="OurFoundersLeftCard">
           <Box>
             <img src={tapas} width={70} height={70} />
@@ -222,6 +250,33 @@ const Aboutus = () => {
               <Typography>Read more</Typography>
               <KeyboardArrowUpIcon />
             </Box>
+=======
+        <Box
+          sx={{ flexGrow: 1 }}
+          className="OurFoundersLeftCard"
+        >
+          <Box>
+          <img src={tapas} width={70} height={70} />
+          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+            <b>Dr. Tapas Kumar Sahoo</b>
+          </Typography>
+          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+            Director
+          </Typography>
+          <Typography
+            // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
+            className="ourFounderAbout"
+          >
+            MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
+            Critical care Fellowship (University of Toronto) | MBA (Healthcare
+            Management) | Associate Director and HOD | Department of Critical
+            Care | Medanta Hospital, Ranch
+          </Typography>
+          </Box>
+          <Box>
+          <Box className="ourFoundersHorizontalLine"></Box>
+          <Box  className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
           </Box>
         </Box>
 
@@ -230,6 +285,7 @@ const Aboutus = () => {
           className="OurFoundersLeftCard"
         >
           <Box>
+<<<<<<< HEAD
             <img src={Sananta} width={70} height={70} />
             <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
               <b>Dr. Sananta Kumar Dash</b>
@@ -251,6 +307,26 @@ const Aboutus = () => {
               <Typography>Read more</Typography>
               <KeyboardArrowUpIcon />
             </Box>
+=======
+          <img src={Sananta} width={70} height={70} />
+          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+            <b>Dr. Sananta Kumar Dash</b>
+          </Typography>
+          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+            Director
+          </Typography>
+          <Typography
+            // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
+            className="ourFounderAbout"
+          >
+            “My aim is to democratize and transform the education landscape in
+            Bharat.”
+          </Typography>
+          </Box>
+          <Box>
+          <Box className="ourFoundersHorizontalLine"></Box>
+          <Box className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
           </Box>
         </Box>
       </div>
@@ -260,6 +336,7 @@ const Aboutus = () => {
       </Typography>
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
+<<<<<<< HEAD
           <Typography className="countryWiseStudent">
             <b>Country Wise Student</b>
           </Typography>
@@ -332,6 +409,19 @@ const Aboutus = () => {
               </li>
             </ul> */}
           </Box>
+=======
+        <Typography className="countryWiseStudent">
+              <b>Country Wise Student</b>
+        </Typography>
+        <Box sx={{display:"flex", justifyContent: "center"}}>
+          <ul className="disc">
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">India</p> <span>- 2,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">UAE</p> <span>- 4,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">USA</p> <span>- 1,000</span></div></li>
+            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">Australia</p> <span>- 2,00</span></div></li>
+          </ul>
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
+        </Box>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
         <img src={globalMap} className="globally" />
@@ -396,6 +486,7 @@ const Aboutus = () => {
               <b>Students</b>
             </p>
           </Box>
+<<<<<<< HEAD
           <Box
             sx={{
               backgroundColor: "#ffeeee",
@@ -439,6 +530,11 @@ const Aboutus = () => {
       </Box>
       <NewsLatter />
       <Footer />
+=======
+      </Box> 
+       <NewsLatter />
+      <Footer/> 
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
     </>
   );
 };

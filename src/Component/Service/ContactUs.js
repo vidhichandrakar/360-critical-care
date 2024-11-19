@@ -10,12 +10,15 @@ import contacUsFirstImg from "../../Media/Images/contactUsFirstImg.png";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
+<<<<<<< HEAD
 import Paper from "@mui/material/Paper";
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import homeimg from "../../Media/ProjectImage/AllCourseHome.jpg";
 
+=======
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
 
 function ContactUs() {
   const theme = useTheme();

@@ -32,7 +32,10 @@ const ExploreCourses = () => {
   console.log("idd",courseId)
   const navigate = useNavigate();
   const [durationData, setDuration] = useState([]);
+<<<<<<< HEAD
   
+=======
+>>>>>>> 5e9f7ec90f667d77456e250140d5fb32c4476cf1
   useEffect(() => {
     console.log("idd",courseId)
   //  setLoaderState(true);

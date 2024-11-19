@@ -29,21 +29,21 @@ const AllCourseWOL = () => {
   const [popularCourse, setPopularCourse] = useState([]);
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    banner({
-      callBack: (response) => {
-        console.log("Banner API response:", response.data);
-        setBannerAPI(response.data);
-        setIsLoading(false);
-      },
-      error: (err) => {
-        setError("Failed to fetch banners");
-        setIsLoading(false);
-        setBannerAPI([]); // Reset banner API to avoid stale data
-      },
-    });
-  }, []);
+    
+    useEffect(() => {
+        banner({
+            callBack: (response) => {
+                console.log("Banner API response:", response.data);
+                setBannerAPI(response.data);
+                setIsLoading(false);
+            },
+            error: (err) => {
+                setError("Failed to fetch banners");
+                setIsLoading(false);
+                setBannerAPI([]); // Reset banner API to avoid stale data
+            }
+        });
+    }, []);
 
   // Slider settings
   const settings = {
@@ -79,22 +79,19 @@ const AllCourseWOL = () => {
     })
   }, []);
 
-  const handleDiscountPercent = (price, offer_price) => {
-    console.log(price, offer_price, (price - offer_price) / price);
-    return Math.floor(((price - offer_price) / price) * 100) + " %";
-  };
+    const handleDiscountPercent = (price, offer_price) => {
+        console.log(price, offer_price, (price - offer_price) / price);
+        return Math.floor(((price - offer_price) / price) * 100) + " %";
+      };
 
-  const handleExplore = (courseId) => {
-    navigate("/Critical-care/ExploreCourses", {
-      state: { courseId: courseId },
-    });
-    console.log("moded", courseId);
-  };
+      const handleExplore = (courseId) => {
+        navigate("/Critical-care/ExploreCourses", { state: { courseId: courseId } });
+        console.log("moded", courseId);
+      };
 
-  console.log("allCourseData : ", allCourseData);
-  return (
-    <Fragment>
-      <Header />
+    console.log("allCourseData : ", allCourseData)
+    return (
+  
       <Fragment>
         <div>
           {isLoading && <p>Loading banners...</p>}{" "}
@@ -153,14 +150,84 @@ const AllCourseWOL = () => {
                 <img src={homeimg} width="100%" className="WebViewImg" />
                 <img src={MobileViewHeadimg} className="MobileViewImg" />
             </Box> */}
-      {console.log(allCourseData, "allCourseData")}
-      <Box className="CoursesCardMainBox">
-        {allCourseData?.length &&
-          allCourseData?.map((item) => {
-            return (
-              <Box className="CradBox">
-                <Box className="CardBoxImg">
-                  <img src={item.thumbnail_path} className="CoursesCardImg" />
+            {console.log(allCourseData, "allCourseData")}
+
+            <Box className="CoursesCardMainBox">
+                {allCourseData?.length && allCourseData?.map((item) => {
+                  return   <Box className="CradBox">
+                    <Box className="CardBoxImg">
+                    <img src={item.thumbnail_path} className="CoursesCardImg"/>
+                    </Box>
+                    <Box className="CardTextBox"    >
+                        <Typography className="CardHeading .wrap-text-50 ">
+                           {item?.course_name}
+                        </Typography>
+                        <Box className="Price_ButtonBox">
+                            <Box>
+                                <Typography sx={{fontWeight: 600}}>
+                                Special Discounted Price
+                                </Typography>
+                                <Box className="PriceBox">
+                                <Box sx={{display: "flex", flexDirection: "row", width: "60%"}}>
+                                <Typography sx={{fontWeight: 600}}>
+                                ₹{item.durations?.length ? item.durations[0]?.offer_price : ""}
+                                </Typography>
+                                <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
+                                ₹{item.durations[0]?.price}
+                                </Typography>
+                                </Box>
+                                <Typography sx={{ml:6}} className="offBox">
+                                    {/* 40% OFF */}
+                                    {item.durations[item?.durations?.length - 1]
+                            ?.offer_price &&
+                          item.durations[item?.durations?.length - 1]?.price
+                            ? handleDiscountPercent(
+                                item.durations[item?.durations?.length - 1]
+                                  .price,
+                                item.durations[item?.durations?.length - 1]
+                                  .offer_price
+                              )
+                            : null}
+                                </Typography>
+
+                                    </Box>
+                                </Box>
+                                {/* <Link to="/Critical-care/user/ExploreCourses"> */}
+                                <Button variant="contained" className="ExploreButton" 
+                                    onClick={() => handleExplore(item?.course_id)}>
+                                    Explore Now
+                                </Button>
+                                {/* </Link>s */}
+                            </Box>
+                        </Box>
+                    </Box>
+                })}
+            </Box>
+            <Box className="JoinContainer">
+                <Typography className="JoinHeading">Join Our Free Webinar</Typography>
+                <Button className="Joincentered" variant="contained"><span className="JoinNow">Join Now</span><span className="Subscribe">Subscribe</span></Button>
+            </Box>
+            
+            <Box className="PopularCourseMainBox">
+                <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
+               
+                <Box className="PopularCourseBox">
+                     {PopularCard.map((item) => {
+                    return  <Box className="PopularCardBox">
+                        <img src={cardimg} className="Cardimgs"/>
+                        <Box>
+                            <Typography className="Para1" sx={{mt: 1}}>
+                            {item?.Para1}
+                            </Typography>
+                            <Typography className="Para2">
+                            {item?.Para2}
+                            </Typography>
+                        </Box>
+                    </Box>
+
+          
+
+                    })}
                 </Box>
                 <Box className="CardTextBox">
                   <Typography className="CardHeading .wrap-text-50 ">
@@ -223,7 +290,7 @@ const AllCourseWOL = () => {
                 </Box>
               </Box>
             );
-          })}
+        
       </Box>
       <Box className="JoinContainer">
         <Typography className="JoinHeading">Join Our Free Webinar</Typography>
@@ -270,7 +337,7 @@ const AllCourseWOL = () => {
 
       <NewsLatter />
       <Footer />{" "}
-    </Fragment>
+  
   );
 };
 
