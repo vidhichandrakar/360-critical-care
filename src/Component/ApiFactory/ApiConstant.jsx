@@ -13,4 +13,5 @@ export const APIS = {
     testimonials: REACT_APP_API + "/testimonial",
     banner:REACT_APP_API + "/webbanner",
     duration: REACT_APP_API + "/duration",
+    onlineCourseCount: REACT_APP_API + "/count",
 }

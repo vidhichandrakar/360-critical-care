@@ -7,17 +7,20 @@ import ExcelInCC from "../../../Media/Images/ExcelInCriticalCareImg.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { banner } from "../../ApiFactory/ApiAction";
+import { banner, getOnlineCourseCount } from "../../ApiFactory/ApiAction";
 
 const ExploreTech = () => {
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
+  const [onlineCourseCount, SetOnlineCourseCount] = useState([]);
+  const [data, setData] = useState([]);
   const [error, setError] = useState(null); // Error state
+
+  const bgColor = ["#FFF3E3","#ffeeee","#e4faff","#ece7ff"];
 
   useEffect(() => {
     banner({
       callBack: (response) => {
-        console.log("API response:", response.data);
         setBannerAPI(response.data);
         setIsLoading(false);
       },
@@ -25,7 +28,18 @@ const ExploreTech = () => {
         setError("Failed to fetch banners");
         setIsLoading(false);
         setBannerAPI([]); // Reset banner API to avoid stale data
-      }
+      },
+    });
+  }, []);
+
+  useEffect(() => {
+    getOnlineCourseCount({
+      callBack: (response) => {
+        SetOnlineCourseCount(response.data);
+      },
+      error: (err) => {
+        setError("Online course Error");
+      },
     });
   }, []);
 
@@ -38,25 +52,26 @@ const ExploreTech = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    arrows: false,
   };
 
   // Filter banners where webpage_text is "About Us" and web_banner_position_text is "Middle"
-  const landingPageMiddleBanners = bannerAPI.filter(banner =>
-    banner.webpage_text === "Landing Page" && banner.web_banner_position_text === "Middle"
+  const landingPageMiddleBanners = bannerAPI.filter(
+    (banner) =>
+      banner.webpage_text === "Landing Page" &&
+      banner.web_banner_position_text === "Middle"
   );
 
   // Get the last banner from the filtered banners
-  const lastBanner = landingPageMiddleBanners.length > 0 ? landingPageMiddleBanners[landingPageMiddleBanners.length - 1] : null;
-
-
-
+  const lastBanner =
+    landingPageMiddleBanners.length > 0
+      ? landingPageMiddleBanners[landingPageMiddleBanners.length - 1]
+      : null;
 
   return (
     <Fragment>
       <div class="Imgcontainer">
-        <Box className="demo">
-        </Box>
+        <Box className="demo"></Box>
         <div class="centered">
           <Box className="CenteredHeading">
             <Typography className="ExploreHead">
@@ -66,19 +81,37 @@ const ExploreTech = () => {
               Creating new Benchmarks in Learning experiences
             </Typography>
           </Box>
+
           <div class="centeredBox">
             <Box className="ImgBoxData">
-              <Box
+              {onlineCourseCount?.map((item, index) => (
+                <Box
+                key={index}
+                  sx={{
+                    backgroundColor: bgColor[index],
+                  }}
+                  className="DataCardBox"
+                >
+                  <h1 className="aboutExploreClasses-head">
+                    <b>{item.count_value}+</b>
+                  </h1>
+                  <p className="aboutExploreClasses-para">
+                    <b>{item.count_name}</b>
+                  </p>
+                </Box>
+))}
+              
+              {/* <Box
                 sx={{
                   backgroundColor: "#FFF3E3",
                 }}
                 className="DataCardBox"
               >
                 <h1 className="aboutExploreClasses-head">
-                  <b>800+</b>
+                  <b>{onlineCourseCount[0]?.count_value}+</b>
                 </h1>
                 <p className="aboutExploreClasses-para">
-                  <b>Students</b>
+                  <b>{onlineCourseCount[0]?.count_name}</b>
                 </p>
               </Box>
               <Box
@@ -88,10 +121,10 @@ const ExploreTech = () => {
                 className="DataCardBox"
               >
                 <h1 className="aboutExploreClasses-head">
-                  <b>3+</b>
+                  <b>{onlineCourseCount[1]?.count_value}+</b>
                 </h1>
                 <p className="aboutExploreClasses-para">
-                  <b>Glorious Years</b>
+                  <b>{onlineCourseCount[1]?.count_name}</b>
                 </p>
               </Box>
               <Box
@@ -101,10 +134,10 @@ const ExploreTech = () => {
                 }}
               >
                 <h1 className="aboutExploreClasses-head">
-                  <b>90%</b>
+                  <b>{onlineCourseCount[2]?.count_value}%</b>
                 </h1>
                 <p className="aboutExploreClasses-para">
-                  <b>Success Rate</b>
+                  <b>{onlineCourseCount[2]?.count_name}</b>
                 </p>
               </Box>
               <Box
@@ -114,12 +147,12 @@ const ExploreTech = () => {
                 className="DataCardBox"
               >
                 <h1 className="aboutExploreClasses-head">
-                  <b>100+</b>
+                  <b>{onlineCourseCount[3]?.count_value}+</b>
                 </h1>
                 <p className="aboutExploreClasses-para">
-                  <b>Teaching Videos</b>
+                  <b>{onlineCourseCount[3]?.count_name}</b>
                 </p>
-              </Box>
+              </Box> */}
             </Box>
           </div>
         </div>
@@ -127,9 +160,9 @@ const ExploreTech = () => {
 
       <Fragment>
         <div>
-          {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
+          {isLoading && <p>Loading banners...</p>}{" "}
+          {/* Display loading message */}
           {error && <p>{error}</p>} {/* Display error if it occurs */}
-
           {!isLoading && !error && lastBanner && (
             <Fragment>
               {/*Check if the web_banner_type_text is "Banner"*/}
@@ -155,30 +188,29 @@ const ExploreTech = () => {
               )}
 
               {/*Check if the web_banner_type_text is "Slider"*/}
-              {lastBanner.web_banner_type_text === "Slider" && lastBanner.web_banner_links && (
-                <div className="slider-container">
-                  <Slider {...settings}>
-                    {lastBanner.web_banner_links.map((link) => (
-                      <div key={link._id}>
-                        <img
-                          className="WebViewImg"
-                          src={link.banner_url}
-                          alt="Slider Banner"
-                          style={{ width: "100%", height: "auto" }}
-                        />
-                      </div>
-                    ))}
-                  </Slider>
-                </div>
-              )}
+              {lastBanner.web_banner_type_text === "Slider" &&
+                lastBanner.web_banner_links && (
+                  <div className="slider-container">
+                    <Slider {...settings}>
+                      {lastBanner.web_banner_links.map((link) => (
+                        <div key={link._id}>
+                          <img
+                            className="WebViewImg"
+                            src={link.banner_url}
+                            alt="Slider Banner"
+                            style={{ width: "100%", height: "auto" }}
+                          />
+                        </div>
+                      ))}
+                    </Slider>
+                  </div>
+                )}
             </Fragment>
           )}
         </div>
       </Fragment>
 
       {/* <img src={ExcelInCC} height={240} className="excelInCriticalcareImg" /> */}
-
-
     </Fragment>
   );
 };

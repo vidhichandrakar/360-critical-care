@@ -9,6 +9,15 @@ export const getCategory = ({ callBack, error }) => {
     error(errorMessage);
   });
 };
+
+export const getOnlineCourseCount = ({ callBack, error }) => {
+  const url = APIS.onlineCourseCount;
+  axios.get(url).then((response) => {
+    callBack(response);
+  }) .catch((errorMessage) => {
+    error(errorMessage);
+  });
+};
 export const getBlog = ({ callBack, error }) => {
   const url = APIS.getBlog;
   axios.get(url).then((response) => {

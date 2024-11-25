@@ -13,7 +13,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
+import CriticalCareReportImg from "../../Media/Images/CriticalCareWrittingBoard.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,10 +73,10 @@ const AllCourseWOL = () => {
       },
     });
     getPopularCourse({
-        callBack: (response) => {
-            setPopularCourse(response.data);
-        },
-    })
+      callBack: (response) => {
+        setPopularCourse(response.data);
+      },
+    });
   }, []);
 
   const handleDiscountPercent = (price, offer_price) => {
@@ -160,7 +160,15 @@ const AllCourseWOL = () => {
             return (
               <Box className="CradBox">
                 <Box className="CardBoxImg">
-                  <img src={item.thumbnail_path} className="CoursesCardImg" />
+                  {/* <img src={item.thumbnail_path} className="CoursesCardImg" /> */}
+                  {item.thumbnail_path != null ? (
+                    <img src={item.thumbnail_path} className="CoursesCardImg" />
+                  ) : (
+                    <img
+                      src={CriticalCareReportImg}
+                      className="CoursesCardImg"
+                    />
+                  )}
                 </Box>
                 <Box className="CardTextBox">
                   <Typography className="CardHeading .wrap-text-50 ">
@@ -232,7 +240,6 @@ const AllCourseWOL = () => {
           <span className="Subscribe">Subscribe</span>
         </Button>
       </Box>
-
       <Box className="PopularCourseMainBox">
         <Typography sx={{ fontSize: "2rem", fontWeight: 700 }}>
           Our <span className="HeadingColor">Popular Course</span>
@@ -241,33 +248,32 @@ const AllCourseWOL = () => {
         <Box className="PopularCourseBox">
           {popularCourse.map((item) => {
             return (
-            //   <Box className="PopularCardBox">
-            //     <img src={cardimg} className="Cardimgs" />
-            //     <Box>
-            //       <Typography className="Para1" sx={{ mt: 1 }}>
-            //         {item?.Para1}
-            //       </Typography>
-            //       <Typography className="Para2">{item?.Para2}</Typography>
-            //     </Box>
-            //   </Box>
-            <Box key={item.id} className="PopularCardBox">
-            {item.image_url != null ? (
-              <img src={item.thumbnail_path} className="Cardimgs" />
-            ) : (
-              <img src={cardimg} className="Cardimgs" />
-            )}
-            <Box>
-              <Typography className="Para1" sx={{ mt: 1 }}>
-                {item.title}
-              </Typography>
-              <Typography className="Para2">{item.description}</Typography>
-            </Box>
-          </Box>
+              //   <Box className="PopularCardBox">
+              //     <img src={cardimg} className="Cardimgs" />
+              //     <Box>
+              //       <Typography className="Para1" sx={{ mt: 1 }}>
+              //         {item?.Para1}
+              //       </Typography>
+              //       <Typography className="Para2">{item?.Para2}</Typography>
+              //     </Box>
+              //   </Box>
+              <Box key={item.id} className="PopularCardBox">
+                {item.image_url != null ? (
+                  <img src={item.thumbnail_path} className="Cardimgs" />
+                ) : (
+                  <img src={cardimg} className="Cardimgs" />
+                )}
+                <Box>
+                  <Typography className="Para1" sx={{ mt: 1 }}>
+                    {item.title}
+                  </Typography>
+                  <Typography className="Para2">{item.description}</Typography>
+                </Box>
+              </Box>
             );
           })}
         </Box>
       </Box>
-
       <NewsLatter />
       <Footer />{" "}
     </Fragment>

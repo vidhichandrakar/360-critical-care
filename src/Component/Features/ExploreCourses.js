@@ -7,8 +7,8 @@ import EDIC from "../../Media/Images/EDIC-1.png";
 import Juduwa from "../../Media/Images/Juduwa.png";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
-import IconButton from '@mui/material/IconButton';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import IconButton from "@mui/material/IconButton";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import homeimg from "../../Media/Images/AllCourseHome.jpg";
 // import yellowEnvlope from "../../Images/yellowEnvlope.jpeg";
 // import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
@@ -19,114 +19,131 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { redirectRestriction } from "../ApiFactory/redirectRestriction";
 import OurFaculties from "./OurFaculties";
+import CriticalCareReportImg from "../../Media/Images/CriticalCareWrittingBoard.png"
+
 
 const ExploreCourses = () => {
-
   const [courseData, setCourseData] = useState({});
 
   let location = useLocation();
   const courseId = location?.state?.courseId;
-
-  
-  console.log("location",location)
-  console.log("idd",courseId)
   const navigate = useNavigate();
   const [durationData, setDuration] = useState([]);
-  
+  const [specialDiscountImg, SetSpecialDiscountImg] = useState("");
+  const [exploreCourseBanner, SetExploreCourseBanner] = useState("");
+  const [isVideo, SetIsVideo] = useState("");
+
   useEffect(() => {
-    console.log("idd",courseId)
-  //  setLoaderState(true);
-   if (redirectRestriction()) {
     //  setLoaderState(true);
-   buyCourse({
-     courseId,
-     callBack: (response) => {
-       const userCallBack = response?.data;
-       setCourseData(userCallBack[0]);
-    //    setLoaderState(false);
-     },
-     error: (error) => {
-      //  toast.error(error.message);
-       console.log(error.message);
-      //  setLoaderState(false);
-     },
-   });
-   duration({
-     callBack: (response) => {
-       const userCallBack = response?.data;
-       setDuration(userCallBack);
-       console.log(response, "kjhgfxdgchj");
-     },
-     error: (error) => {
-      //  toast.error(error.message);
-      //  console.log(error.message);
-     },
-   });
- 
-  //    getAllCourse({
-  //      callBack: (response) => {
-  //        const userCallBack = response?.data;
-  //        const isPublish = "published";
-  //        const pubishedCourse = userCallBack.filter(
-  //          (item) => item.is_publish === isPublish
-  //        );
-  //        setCourse(pubishedCourse);
-  //        setLoaderState(false);
-  //      },
-  //      error: (error) => {
-  //        toast.error(error.message);
-  //        console.log(error.message);
-  //        setLoaderState(false);
-  //      },
-  //    });
-  //    duration({
-  //      callBack: (response) => {
-  //        const userCallBack = response?.data;
-  //        setDuration(userCallBack);
-  //        console.log(response, "kjhgfxdgchj");
-  //      },
-  //      error: (error) => {
-  //        toast.error(error.message);
-  //        console.log(error.message);
-  //      },
-  //    });
-   } else {
-    //  navigate("/");
-   }
- }, [courseId]);
+    if (redirectRestriction()) {
+      //  setLoaderState(true);
+      buyCourse({
+        courseId,
+        callBack: (response) => {
+          const userCallBack = response?.data;
+          setCourseData(userCallBack[0]);
+          //    setLoaderState(false);
+        },
+        error: (error) => {
+          //  toast.error(error.message);
+          console.log(error.message);
+          //  setLoaderState(false);
+        },
+      });
+      duration({
+        callBack: (response) => {
+          const userCallBack = response?.data;
+          setDuration(userCallBack);
+        },
+        error: (error) => {
+          //  toast.error(error.message);
+        },
+      });
 
- const handleLearnNow = (courseId) => {
-  navigate("/user/CoursesContent", { state: { courseId: courseId } });
-  console.log("moded", courseId);
-};
+      //    getAllCourse({
+      //      callBack: (response) => {
+      //        const userCallBack = response?.data;
+      //        const isPublish = "published";
+      //        const pubishedCourse = userCallBack.filter(
+      //          (item) => item.is_publish === isPublish
+      //        );
+      //        setCourse(pubishedCourse);
+      //        setLoaderState(false);
+      //      },
+      //      error: (error) => {
+      //        toast.error(error.message);
+      //        console.log(error.message);
+      //        setLoaderState(false);
+      //      },
+      //    });
+      //    duration({
+      //      callBack: (response) => {
+      //        const userCallBack = response?.data;
+      //        setDuration(userCallBack);
+      //        console.log(response, "kjhgfxdgchj");
+      //      },
+      //      error: (error) => {
+      //        toast.error(error.message);
+      //        console.log(error.message);
+      //      },
+      //    });
+    } else {
+      //  navigate("/");
+    }
+  }, [courseId]);
 
+  const handleLearnNow = (courseId) => {
+    navigate("/user/CoursesContent", { state: { courseId: courseId } });
+    SetIsVideo(true);
+  };
 
   return (
     <Fragment>
-        <Header />
+      <Header />
       <Box className="HeadimgBox">
-                <img src={homeimg} width="100%"  className="WebViewImg"/>
+        {/* <img src={homeimg} width="100%" className="WebViewImg" /> */}
+        {courseData?.thumbnail_path_mobile != null ? (
+               <img src={courseData?.thumbnail_path_desktop} width="100%" className="WebViewImg" />
+              ) : (
+                <img src={CriticalCareReportImg} width="100%" className="WebViewImg" />
+              )}
+      </Box>
+      <div className="MobileBuyNowCardBox">
+        <div className="StickyBOx">
+          <img src={EDIC} className="EDICImg" />
+          <Box sx={{ textAlign: "center" }}>
+            <Typography>Special Discount Price</Typography>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <Typography>
+                ₹
+                {courseData?.durations?.length &&
+                  courseData?.durations[0]?.offer_price}
+              </Typography>
+              <Typography sx={{ textDecoration: "line-through" }}>
+                ₹
+                {courseData?.durations?.length &&
+                  courseData?.durations[0]?.price}
+              </Typography>
+              <Typography className="offBox">25%off</Typography>
             </Box>
-            <div className="MobileBuyNowCardBox">
-                <div className="StickyBOx">
-                <img src={EDIC} className="EDICImg"/>
-                <Box sx={{textAlign: "center"}}>
-                    <Typography>Special Discount Price</Typography>
-                    <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
-                        <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
-                        <Typography sx={{textDecoration: "line-through"}}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
-                        <Typography className="offBox">25%off</Typography>
-                    </Box>
-                {/* <Link to="/user/PurchasedCourse">  */}
-                <Button  variant="contained" className="BuyNowCardButton" 
-                   onClick={() => handleLearnNow(courseData?.course_id)}
-                    >Buy Now</Button>
-                {/* </Link> */}
-                </Box>
-                </div>
-                </div>
-            {/* {console.log(courseData, "courseData")}
-            {console.log(durationData, "durationData")} */}
+            {/* <Link to="/user/PurchasedCourse">  */}
+            <Button
+              variant="contained"
+              className="BuyNowCardButton"
+              onClick={() => handleLearnNow(courseData?.course_id)}
+            >
+              Buy Now
+            </Button>
+            {/* </Link> */}
+          </Box>
+        </div>
+      </div>
       <Box className="CDMainBox">
         <Typography className="CourseDetailsHead">Courses Details</Typography>
         <ul className="CourseDetails">
@@ -136,10 +153,8 @@ const ExploreCourses = () => {
           <li>High probability question bank</li>
         </ul>
       </Box>
-{console.log(courseData, "courseData")}
-<OurFaculties  className="OurfacultiesmobileView"/>
+      <OurFaculties className="OurfacultiesmobileView" />
       <Box className="FacultiesBox">
-        
         <Typography className="FacultiesBoxHeading">Our Faculties</Typography>
         OurFaculties
         <Box className="FacultiesCardBox">
@@ -178,7 +193,6 @@ const ExploreCourses = () => {
             <img src={sananta} className="FaculriesImg" />
           </Box>
         </Box>
-        
       </Box>
 
       <Box className="TBIMainBox">
@@ -195,29 +209,62 @@ const ExploreCourses = () => {
             <li>Best Guidance</li>
             <li>Dedicated WhatsApp Group</li>
           </ol>
-            <div className="BuyNowCardBox">
-                <div className="StickyBOx">
-                <img src={EDIC} className="EDICImg"/>
-                <Box sx={{textAlign: "center"}}>
-                    <Typography>Special Discount Price</Typography>
-                    <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
-                        <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
-                        <Typography sx={{textDecoration: "line-through"}}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
-                        <Typography className="offBox">25%off</Typography>
-                    </Box>
-                {/* <Link to="/user/PurchasedCourse">  */}
-                <Button  variant="contained" className="BuyNowCardButton" 
-                   onClick={() => handleLearnNow(courseData?.course_id)}
-                    >Buy Now</Button>
-                {/* </Link> */}
+          <div className="BuyNowCardBox">
+            <div className="StickyBOx">
+              {/* <img src={EDIC} className="EDICImg" /> */}
+              {specialDiscountImg?.thumbnail_path_mobile != null ? (
+               <img src={specialDiscountImg?.thumbnail_path_mobile} className="EDICImg" />
+              ) : (
+                <img src={CriticalCareReportImg} className="EDICImg" />
+              )}
+               <img src={specialDiscountImg?.thumbnail_path_mobile} className="EDICImg" />
+              <Box sx={{ textAlign: "center" }}>
+                <Typography>Special Discount Price</Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <Typography>
+                    ₹
+                    {courseData?.durations?.length &&
+                      courseData?.durations[0]?.offer_price}
+                  </Typography>
+                  <Typography sx={{ textDecoration: "line-through" }}>
+                    ₹
+                    {courseData?.durations?.length &&
+                      courseData?.durations[0]?.price}
+                  </Typography>
+                  <Typography className="offBox">25%off</Typography>
                 </Box>
-                </div>
-                </div>
+                {/* <Link to="/user/PurchasedCourse">  */}
+                {isVideo ? (
+                      <video width="400" controls autoPlay>
+                        <source src="your-video-url.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img
+                        src="your-image-url.jpg"
+                        // alt="Click Explore to view video"
+                        width="400"
+                      />
+                    )}
+                <Button
+                  variant="contained"
+                  className="BuyNowCardButton"
+                  onClick={() => handleLearnNow(courseData?.course_id)}
+                >
+                  Buy Now
+                </Button>
+                {/* </Link> */}
+              </Box>
+            </div>
+          </div>
         </Box>
-         
-        
       </Box>
-     
 
       <Box className="FAQMainBox">
         <Typography className="CourseDetailsHead marginmobile">
@@ -252,10 +299,9 @@ const ExploreCourses = () => {
             <span className="FreeCourseC0lor">Free Courses</span> Now
           </Typography>
           <Typography className="QualityMaterial">
-              Get instant access to high - quality material
-            </Typography>
+            Get instant access to high - quality material
+          </Typography>
           <Box>
-            
             <Paper
               component="form"
               sx={{
@@ -280,8 +326,6 @@ const ExploreCourses = () => {
         </Box>
         <img src={Juduwa} className="juduwaimg" />
       </Box>
-
-    
 
       <Footer />
     </Fragment>
