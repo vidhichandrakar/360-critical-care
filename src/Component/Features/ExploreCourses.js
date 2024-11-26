@@ -19,8 +19,7 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { redirectRestriction } from "../ApiFactory/redirectRestriction";
 import OurFaculties from "./OurFaculties";
-import CriticalCareReportImg from "../../Media/Images/CriticalCareWrittingBoard.png"
-
+import CriticalCareReportImg from "../../Media/Images/CriticalCareWrittingBoard.png";
 
 const ExploreCourses = () => {
   const [courseData, setCourseData] = useState({});
@@ -34,20 +33,15 @@ const ExploreCourses = () => {
   const [isVideo, SetIsVideo] = useState("");
 
   useEffect(() => {
-    //  setLoaderState(true);
     if (redirectRestriction()) {
-      //  setLoaderState(true);
       buyCourse({
         courseId,
         callBack: (response) => {
           const userCallBack = response?.data;
           setCourseData(userCallBack[0]);
-          //    setLoaderState(false);
         },
         error: (error) => {
-          //  toast.error(error.message);
           console.log(error.message);
-          //  setLoaderState(false);
         },
       });
       duration({
@@ -55,45 +49,13 @@ const ExploreCourses = () => {
           const userCallBack = response?.data;
           setDuration(userCallBack);
         },
-        error: (error) => {
-          //  toast.error(error.message);
-        },
+        error: (error) => {},
       });
-
-      //    getAllCourse({
-      //      callBack: (response) => {
-      //        const userCallBack = response?.data;
-      //        const isPublish = "published";
-      //        const pubishedCourse = userCallBack.filter(
-      //          (item) => item.is_publish === isPublish
-      //        );
-      //        setCourse(pubishedCourse);
-      //        setLoaderState(false);
-      //      },
-      //      error: (error) => {
-      //        toast.error(error.message);
-      //        console.log(error.message);
-      //        setLoaderState(false);
-      //      },
-      //    });
-      //    duration({
-      //      callBack: (response) => {
-      //        const userCallBack = response?.data;
-      //        setDuration(userCallBack);
-      //        console.log(response, "kjhgfxdgchj");
-      //      },
-      //      error: (error) => {
-      //        toast.error(error.message);
-      //        console.log(error.message);
-      //      },
-      //    });
     } else {
-      //  navigate("/");
     }
   }, [courseId]);
 
   const handleLearnNow = (courseId) => {
-    navigate("/user/CoursesContent", { state: { courseId: courseId } });
     SetIsVideo(true);
   };
 
@@ -101,12 +63,19 @@ const ExploreCourses = () => {
     <Fragment>
       <Header />
       <Box className="HeadimgBox">
-        {/* <img src={homeimg} width="100%" className="WebViewImg" /> */}
         {courseData?.thumbnail_path_mobile != null ? (
-               <img src={courseData?.thumbnail_path_desktop} width="100%" className="WebViewImg" />
-              ) : (
-                <img src={CriticalCareReportImg} width="100%" className="WebViewImg" />
-              )}
+          <img
+            src={courseData?.thumbnail_path_desktop}
+            width="100%"
+            className="WebViewImg"
+          />
+        ) : (
+          <img
+            src={CriticalCareReportImg}
+            width="100%"
+            className="WebViewImg"
+          />
+        )}
       </Box>
       <div className="MobileBuyNowCardBox">
         <div className="StickyBOx">
@@ -132,7 +101,6 @@ const ExploreCourses = () => {
               </Typography>
               <Typography className="offBox">25%off</Typography>
             </Box>
-            {/* <Link to="/user/PurchasedCourse">  */}
             <Button
               variant="contained"
               className="BuyNowCardButton"
@@ -140,7 +108,6 @@ const ExploreCourses = () => {
             >
               Buy Now
             </Button>
-            {/* </Link> */}
           </Box>
         </div>
       </div>
@@ -211,13 +178,27 @@ const ExploreCourses = () => {
           </ol>
           <div className="BuyNowCardBox">
             <div className="StickyBOx">
-              {/* <img src={EDIC} className="EDICImg" /> */}
-              {specialDiscountImg?.thumbnail_path_mobile != null ? (
-               <img src={specialDiscountImg?.thumbnail_path_mobile} className="EDICImg" />
+              {isVideo ? (
+                <video width="400" controls autoPlay>
+                  <source
+                    src={specialDiscountImg?.thumbnail_video_path}
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              ) : specialDiscountImg?.thumbnail_path_mobile != null ? (
+                <img
+                  src={specialDiscountImg?.thumbnail_path_mobile}
+                  className="EDICImg"
+                />
               ) : (
                 <img src={CriticalCareReportImg} className="EDICImg" />
               )}
-               <img src={specialDiscountImg?.thumbnail_path_mobile} className="EDICImg" />
+
+              <img
+                src={specialDiscountImg?.thumbnail_path_mobile}
+                className="EDICImg"
+              />
               <Box sx={{ textAlign: "center" }}>
                 <Typography>Special Discount Price</Typography>
                 <Box
@@ -239,27 +220,13 @@ const ExploreCourses = () => {
                   </Typography>
                   <Typography className="offBox">25%off</Typography>
                 </Box>
-                {/* <Link to="/user/PurchasedCourse">  */}
-                {isVideo ? (
-                      <video width="400" controls autoPlay>
-                        <source src="your-video-url.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    ) : (
-                      <img
-                        src="your-image-url.jpg"
-                        // alt="Click Explore to view video"
-                        width="400"
-                      />
-                    )}
                 <Button
                   variant="contained"
                   className="BuyNowCardButton"
                   onClick={() => handleLearnNow(courseData?.course_id)}
                 >
-                  Buy Now
+                  Play Now
                 </Button>
-                {/* </Link> */}
               </Box>
             </div>
           </div>
@@ -308,7 +275,6 @@ const ExploreCourses = () => {
                 p: "2px 4px",
                 display: "flex",
                 alignItems: "center",
-                // width: 588,
                 mt: 2,
               }}
               className="GetsearchBarBox"

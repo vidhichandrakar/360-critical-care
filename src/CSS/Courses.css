@@ -365,12 +365,12 @@ color: #585858;
     justify-content: space-evenly;
     align-items: left;
   }
-  .multipleValidity-bothBox{
-    
-  }
   .EDICImg{
     width: 405px;
     /* height: 334px; */
+  }
+  .EDICImgVideo{
+    width: 405px;
   }
   .BuyNowCardBox{
     display: flex;

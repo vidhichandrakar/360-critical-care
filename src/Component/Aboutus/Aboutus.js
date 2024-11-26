@@ -46,8 +46,8 @@ const Aboutus = () => {
       },
       error: (err) => {
         console.log("error");
-      }
-    })
+      },
+    });
   }, []);
 
   // Slider settings
@@ -131,14 +131,6 @@ const Aboutus = () => {
         </div>
       </Fragment>
 
-      {/* <img
-        src={PrepatoryImg}
-        width={1697}
-        height={360}
-        className="aboutUsFirstImg"
-        //   style={Margin="23px"}
-      /> */}
-
       <Box className="abt360CriticalCare">
         <img
           src={Stethoscope}
@@ -206,10 +198,7 @@ const Aboutus = () => {
             <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
               Director
             </Typography>
-            <Typography
-              // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
-              className="ourFounderAbout"
-            >
+            <Typography className="ourFounderAbout">
               MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
               Critical care Fellowship (University of Toronto) | MBA (Healthcare
               Management) | Associate Director and HOD | Department of Critical
@@ -225,10 +214,7 @@ const Aboutus = () => {
           </Box>
         </Box>
 
-        <Box
-          // sx={{ flexGrow: 1 }}
-          className="OurFoundersLeftCard"
-        >
+        <Box className="OurFoundersLeftCard">
           <Box>
             <img src={Sananta} width={70} height={70} />
             <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
@@ -237,10 +223,7 @@ const Aboutus = () => {
             <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
               Director
             </Typography>
-            <Typography
-              // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
-              className="ourFounderAbout"
-            >
+            <Typography className="ourFounderAbout">
               “My aim is to democratize and transform the education landscape in
               Bharat.”
             </Typography>
@@ -266,23 +249,21 @@ const Aboutus = () => {
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             {/* {countryNames((item) => {
               return( */}
-                <ul className="disc">
-                <li>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <p className="countryNames">
-                      {countryNames?.Country_name}
-                    </p> 
-                    <span>{countryNames?.student_count}</span>
-                  </div>
-                </li>
-              </ul>
-              {/* );
+            <ul className="disc">
+              <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">{countryNames?.Country_name}</p>
+                  <span>{countryNames?.student_count}</span>
+                </div>
+              </li>
+            </ul>
+            {/* );
             })} */}
             {/* <ul className="disc">
               <li>
@@ -333,55 +314,11 @@ const Aboutus = () => {
             </ul> */}
           </Box>
         </Box>
-        <Box className="whyChooseUsVerticalLine"></Box>
-        <img src={globalMap} className="globally" />
       </Box>
+      <Box className="whyChooseUsVerticalLine"></Box>
+      <img src={globalMap} className="globally" />
 
       <Box className="percentageOfSuccess">
-        {/* <Box
-          sx={{
-            backgroundColor: "#FFF3E3",
-            borderRadius: "9px",
-            width: "135px",
-            height: "114px",
-          }}
-        >
-          <h1 style={{ marginTop: 4 }}>800+</h1>
-          <p style={{ fontSize: "0.8rem" }}>Students</p>
-        </Box>
-        <Box
-          sx={{
-            backgroundColor: "#FFEEEE",
-            borderRadius: "9px",
-            width: "135px",
-            height: "114px",
-          }}
-        >
-          <h1>3+</h1>
-          <p style={{ fontSize: "0.8rem" }}>Glorious Years</p>
-        </Box>
-        <Box
-          sx={{
-            backgroundColor: "#E4FAFF",
-            borderRadius: "9px",
-            width: "135px",
-            height: "114px",
-          }}
-        >
-          <h1>90%</h1>
-          <p style={{ fontSize: "0.8rem" }}>Success Rate</p>
-        </Box>
-        <Box
-          sx={{
-            backgroundColor: "#ECE7FF",
-            borderRadius: "9px",
-            width: "135px",
-            height: "114px",
-          }}
-        >
-          <h1>100+</h1>
-          <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
-        </Box> */}
         <Box className="ImgBoxData">
           <Box
             sx={{
