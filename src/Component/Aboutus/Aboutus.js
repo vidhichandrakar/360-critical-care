@@ -50,11 +50,29 @@ const Aboutus = () => {
     arrows: false
   };
 
-  // Filter banners where webpage_text is "Landing Page"
-  const aboutUsBanners = bannerAPI.filter(banner => banner.webpage_text === "About Us");
+  // Filter banners based on webpage_text and position
+  const getBannersByPosition = (banners, position) => {
+    return banners.filter(
+      (banner) =>
+        banner.webpage_text === "About Us" &&
+        banner.web_banner_position === position
+    );
+  };
 
-  // Get the last banner from the filtered banners
-  const lastBanner = aboutUsBanners.length > 0 ? aboutUsBanners[aboutUsBanners.length - 1] : null;
+  // Get the last banner from a filtered list
+  const getLastBannerByPosition = (banners, position) => {
+    const positionBanners = getBannersByPosition(banners, position);
+    return positionBanners.length > 0 ? positionBanners[positionBanners.length - 1] : null;
+  };
+
+  // Get banners for each position
+  const topBanner = getLastBannerByPosition(bannerAPI, 1);
+  const middleBanner = getLastBannerByPosition(bannerAPI, 2);
+  const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
+
+  console.log("Top Banner:", topBanner);
+  console.log("Middle Banner:", middleBanner);
+  console.log("Bottom Banner:", bottomBanner);
 
   return (
     <>
@@ -64,12 +82,12 @@ const Aboutus = () => {
           {isLoading && <p>Loading banners...</p>} {/* Display loading message */}
           {error && <p>{error}</p>} {/* Display error if it occurs */}
 
-          {!isLoading && !error && lastBanner && (
+          {!isLoading && !error && topBanner && (
             <Fragment>
               {/*Check if the web_banner_type_text is "Banner"*/}
-              {lastBanner.web_banner_type_text === "Banner" && (
+              {topBanner.web_banner_type_text === "Banner" && (
                 <div className="homeImage">
-                  {lastBanner.web_banner_links?.map((link) => (
+                  {topBanner.web_banner_links_desktop?.map((link) => (
                     <Fragment key={link._id}>
                       {/* Display web banner images */}
                       <img
@@ -89,10 +107,10 @@ const Aboutus = () => {
               )}
 
               {/*Check if the web_banner_type_text is "Slider"*/}
-              {lastBanner.web_banner_type_text === "Slider" && lastBanner.web_banner_links && (
+              {topBanner.web_banner_type_text === "Slider" && topBanner.web_banner_links_desktop && (
                 <div className="slider-container" style={{ marginTop: "60px", width: "100%" }}>
                   <Slider {...settings}>
-                    {lastBanner.web_banner_links.map((link) => (
+                    {topBanner.web_banner_links_desktop.map((link) => (
                       <div key={link._id}>
                         <img
                           className="WebViewImg"
