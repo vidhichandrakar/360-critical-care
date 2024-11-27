@@ -8,6 +8,7 @@ export const APIS = {
     getCountryNames: REACT_APP_API + "/aboutUS/whyChoose/id", //About-us--> country names
     getBlog: REACT_APP_API + "/blog/bloglist",
     getBlogCards: REACT_APP_API + "/blog/bloglist?popular=Y",// Blog.js --> popular cards
+    getTeamMembers: REACT_APP_API + "/teamMember/member_id", 
     addNewsLetter: REACT_APP_API + "/blog/newsletter",
     contactUS: REACT_APP_API + "/contactUs/form",
     testimonials: REACT_APP_API + "/testimonial",

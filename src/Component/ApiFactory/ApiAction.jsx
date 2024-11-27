@@ -26,6 +26,14 @@ export const getBlog = ({ callBack, error }) => {
     error(errorMessage);
   });
 };
+export const getTeamMembers = ({ callBack, error }) => {
+  const url = APIS.getTeamMembers;
+  axios.get(url).then((response) => {
+    callBack(response);
+  }).catch((errorMessage) => {
+    error(errorMessage);
+  });
+};
 export const getBlogCards = ({ callBack, error }) => {
   const url = APIS.getBlogCards;
   axios.get(url)

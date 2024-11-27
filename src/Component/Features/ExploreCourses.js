@@ -20,6 +20,7 @@ import { useNavigate } from "react-router-dom";
 import { redirectRestriction } from "../ApiFactory/redirectRestriction";
 import OurFaculties from "./OurFaculties";
 import CriticalCareReportImg from "../../Media/Images/CriticalCareWrittingBoard.png";
+import { tripmHtmlTagsToNormalFormat } from "../Utils/CommonUtils";
 
 const ExploreCourses = () => {
   const [courseData, setCourseData] = useState({});
@@ -113,54 +114,44 @@ const ExploreCourses = () => {
       </div>
       <Box className="CDMainBox">
         <Typography className="CourseDetailsHead">Courses Details</Typography>
-        <ul className="CourseDetails">
-          <li>10 section wise 3 whole syllabus mock test</li>
-          <li>Convenient timing for Exam</li>
-          <li>Access to Debrif videos </li>
-          <li>High probability question bank</li>
-        </ul>
+        <Typography className="CourseDetails">
+          {tripmHtmlTagsToNormalFormat(courseData?.description)}
+        </Typography>
       </Box>
-      <OurFaculties className="OurfacultiesmobileView" />
-      <Box className="FacultiesBox">
-        <Typography className="FacultiesBoxHeading">Our Faculties</Typography>
-        OurFaculties
-        <Box className="FacultiesCardBox">
-          <Box className="FacultiesDetailsBox">
-            <Box className="NameBox">
-              <Box>
-                <Typography className="FacultiesName">
-                  Tapas kumar sahoo
-                </Typography>
-                <Typography className="FacultiesDetails">
-                  Associate director head, Critical care medanta hospital,
-                  Ranchi, india, general secretary, Nephro Critical Care Society
-                </Typography>
-              </Box>
-              <Button variant="contained" className="KnowNowBtn">
-                Known Now
-              </Button>
-            </Box>
-            <img src={sananta} className="FaculriesImg" />
-          </Box>
-          <Box className="FacultiesDetailsBox" sx={{ ml: 3 }}>
-            <Box className="NameBox">
-              <Box>
-                <Typography className="FacultiesName">
-                  Tapas kumar sahoo
-                </Typography>
-                <Typography className="FacultiesDetails">
-                  Associate director head, Critical care medanta hospital,
-                  Ranchi, india, general secretary, Nephro Critical Care Society
-                </Typography>
-              </Box>
-              <Button variant="contained" className="KnowNowBtn">
-                Known Now
-              </Button>
-            </Box>
-            <img src={sananta} className="FaculriesImg" />
+      <OurFaculties
+        className="OurfacultiesmobileView"
+        teamMember={courseData?.teamMembers}
+      />
+      {courseData?.teamMembers?.length !== null ? (
+        <Box className="FacultiesBox">
+          <Typography className="FacultiesBoxHeading">Our Faculties</Typography>
+          OurFaculties
+          <Box className="FacultiesCardBox">
+            {courseData?.teamMembers?.map((data) => {
+              return (
+                <Box className="FacultiesDetailsBox">
+                  <Box className="NameBox">
+                    <Box>
+                      <Typography className="FacultiesName">
+                        {data.member_name}
+                      </Typography>
+                      <Typography className="FacultiesDetails">
+                        Associate director head, Critical care medanta hospital,
+                        Ranchi, india, general secretary, Nephro Critical Care
+                        Society
+                      </Typography>
+                    </Box>
+                    <Button variant="contained" className="KnowNowBtn">
+                      Known Now
+                    </Button>
+                  </Box>
+                  <img src={sananta} className="FaculriesImg" />
+                </Box>
+              );
+            })}
           </Box>
         </Box>
-      </Box>
+      ) : null}
 
       <Box className="TBIMainBox">
         <Typography className="CourseDetailsHead marginmobile">
