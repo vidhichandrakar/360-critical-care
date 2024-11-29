@@ -68,6 +68,7 @@
 }
 .WebViewImg {
   display: block;
+  height: 51vh;
 }
 .PopularCourseBox {
   display: grid;
