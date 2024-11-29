@@ -7,12 +7,25 @@ import ExcelInCC from "../../../Media/Images/ExcelInCriticalCareImg.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { banner } from "../../ApiFactory/ApiAction";
+import { banner, StudentData } from "../../ApiFactory/ApiAction";
 
 const ExploreTech = () => {
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [error, setError] = useState(null); // Error state
+  const [studentDatas, seStudentDatas] = useState();
+
+  const bgColor = ["#FFF3E3","#ffeeee","#e4faff","#ece7ff"];
+  useEffect(() => {
+    StudentData({
+      callBack: (response) => {
+        seStudentDatas(response?.data)
+      },
+      error: error => {
+        console.error(error)
+      }
+    })
+  }, [])
 
   useEffect(() => {
     banner({
@@ -68,58 +81,22 @@ const ExploreTech = () => {
           </Box>
           <div class="centeredBox">
             <Box className="ImgBoxData">
-              <Box
-                sx={{
-                  backgroundColor: "#FFF3E3",
-                }}
-                className="DataCardBox"
-              >
-                <h1 className="aboutExploreClasses-head">
-                  <b>800+</b>
-                </h1>
-                <p className="aboutExploreClasses-para">
-                  <b>Students</b>
-                </p>
-              </Box>
-              <Box
-                sx={{
-                  backgroundColor: "#ffeeee",
-                }}
-                className="DataCardBox"
-              >
-                <h1 className="aboutExploreClasses-head">
-                  <b>3+</b>
-                </h1>
-                <p className="aboutExploreClasses-para">
-                  <b>Glorious Years</b>
-                </p>
-              </Box>
-              <Box
-                className="DataCardBox"
-                sx={{
-                  backgroundColor: "#e4faff",
-                }}
-              >
-                <h1 className="aboutExploreClasses-head">
-                  <b>90%</b>
-                </h1>
-                <p className="aboutExploreClasses-para">
-                  <b>Success Rate</b>
-                </p>
-              </Box>
-              <Box
-                sx={{
-                  backgroundColor: "#ece7ff",
-                }}
-                className="DataCardBox"
-              >
-                <h1 className="aboutExploreClasses-head">
-                  <b>100+</b>
-                </h1>
-                <p className="aboutExploreClasses-para">
-                  <b>Teaching Videos</b>
-                </p>
-              </Box>
+            {studentDatas?.map((item, index) => (
+                <Box
+                key={index}
+                  sx={{
+                    backgroundColor: bgColor[index],
+                  }}
+                  className="DataCardBox"
+                >
+                  <h1 className="aboutExploreClasses-head">
+                    <b>{item.count_value}+</b>
+                  </h1>
+                  <p className="aboutExploreClasses-para">
+                    <b>{item.count_name}</b>
+                  </p>
+                </Box>
+))}
             </Box>
           </div>
         </div>

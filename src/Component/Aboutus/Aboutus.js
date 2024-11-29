@@ -16,13 +16,15 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { banner } from "../ApiFactory/ApiAction";
+import { banner, StudentData, Whyus } from "../ApiFactory/ApiAction";
 
 const Aboutus = () => {
 
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [error, setError] = useState(null); // Error state
+  const [whyusData, setWhyusData] = useState();
+  const [studentDatas, seStudentDatas] = useState();
 
   useEffect(() => {
     console.log("check")
@@ -39,6 +41,29 @@ const Aboutus = () => {
       }
     });
   }, []);
+
+  const bgColor = ["#FFF3E3","#ffeeee","#e4faff","#ece7ff"];
+  useEffect(() => {
+    StudentData({
+      callBack: (response) => {
+        seStudentDatas(response?.data)
+      },
+      error: error => {
+        console.error(error)
+      }
+    })
+  }, [])
+  useEffect(() => {
+    Whyus({
+      callBack: (response) => {
+        setWhyusData(response?.data)
+      },
+      error: error => {
+        console.error(error)
+      }
+    })
+  }, [])
+ 
 
   // Slider settings
   const settings = {
@@ -246,12 +271,20 @@ const Aboutus = () => {
               <b>Country Wise Student</b>
         </Typography>
         <Box sx={{display:"flex", justifyContent: "center"}}>
-          <ul className="disc">
-            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">India</p> <span>- 2,000</span></div></li>
-            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">UAE</p> <span>- 4,000</span></div></li>
-            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">USA</p> <span>- 1,000</span></div></li>
-            <li ><div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}><p className="countryNames">Australia</p> <span>- 2,00</span></div></li>
-          </ul>
+          <ul>
+          <li>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p className="countryNames">{whyusData?.Country_name} - </p>
+                  <span style={{marginLeft: "5px"}}> {whyusData?.student_count}</span>
+                </div>
+              </li>
+            </ul>
         </Box>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
@@ -304,58 +337,22 @@ const Aboutus = () => {
           <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
         </Box> */}
         <Box className="ImgBoxData">
-            <Box
-              sx={{
-                backgroundColor: "#FFF3E3",             
-              }}
-               className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>800+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Students</b>
-              </p>
-            </Box>
-            <Box
-              sx={{
-                backgroundColor: "#ffeeee",
-               }}
-                className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>3+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Glorious Years</b>
-              </p>
-            </Box>
-            <Box
-             className="DataCardBox"
-              sx={{
-                backgroundColor: "#e4faff",
+        {studentDatas?.map((item, index) => (
+                <Box
+                key={index}
+                  sx={{
+                    backgroundColor: bgColor[index],
                   }}
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>90%</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Success Rate</b>
-              </p>
-            </Box>
-            <Box
-              sx={{
-                backgroundColor: "#ece7ff",
-              }}
-              className="DataCardBox"
-            >
-              <h1 className="aboutExploreClasses-head">
-                <b>100+</b>
-              </h1>
-              <p className="aboutExploreClasses-para">
-                <b>Teaching Videos</b>
-              </p>
-            </Box>
+                  className="DataCardBox"
+                >
+                  <h1 className="aboutExploreClasses-head">
+                    <b>{item.count_value}+</b>
+                  </h1>
+                  <p className="aboutExploreClasses-para">
+                    <b>{item.count_name}</b>
+                  </p>
+                </Box>
+))}
           </Box>
       </Box> 
        <NewsLatter />

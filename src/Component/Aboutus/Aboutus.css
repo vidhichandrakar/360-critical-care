@@ -1,8 +1,8 @@
 .abt360CriticalCare{
     display: flex;
     flex-direction: row;
-    /* margin-top: 9% !important; */
-    margin: 50px;
+    margin-top: 7% !important;
+    /* margin: 50px; */
   }
   .abt360CriticalCare-right{
     text-align: left !important;
@@ -282,6 +282,9 @@ text-align: justify !important;
     }
 }
 @media(max-width: 498px){
+    .abt360CriticalCare{
+        margin-top: 10% !important;
+    }
     .box-fix{    
          width: 80%;
     }

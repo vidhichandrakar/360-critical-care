@@ -11,7 +11,7 @@ import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
-import { getBlog } from "../ApiFactory/ApiAction";
+import { getBlog, getBlogCards } from "../ApiFactory/ApiAction";
 import { useEffect } from "react";
 
 import Slider from "react-slick";
@@ -26,6 +26,7 @@ const Blog = () => {
   const [bannerAPI, setBannerAPI] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [error, setError] = useState(null); // Error state
+  const [blogCards, setBlogCards] = useState([]);
 
 
   useEffect(() => {
@@ -35,6 +36,17 @@ const Blog = () => {
       }
     })
   }, [])
+  useEffect(() => {
+    getBlogCards({
+      callBack: (response) => {
+        setBlogCards(response.data)
+      },
+      error: (err) => {
+        setError("Blog Error");
+      }
+    })
+  }, [])
+  
 
   console.log("Blogdata :", blogData)
 
@@ -158,11 +170,11 @@ const Blog = () => {
 
             return ( // Added return statement
               <Box key={item.id} className="PopularCardBox">
-                {item.image_url != null ? (
-                  <img src={item.image_url} className="Cardimgs" />
-                ) : (
-                  <img src={cardimg} className="Cardimgs" />
-                )}
+               {item.image_url != null ? (
+                <img src={item.image_url} className="Cardimgs" />
+              ) : (
+                <img src={cardimg} className="Cardimgs" />
+              )}
                 <Box>
                   <Typography className="Para1" sx={{ mt: 1 }}>
                     {item.title}
@@ -185,21 +197,28 @@ const Blog = () => {
 
       <Box className="PopularCourseMainBox">
         <Typography sx={{ fontSize: "2rem", fontWeight: 700 }}>
-          Our <span className="HeadingColor">Popular Course</span>
+          Our <span className="HeadingColor">Blogs</span>
         </Typography>
 
         <Box className="PopularCourseBox">
-          {PopularCard.map((item) => {
+        {blogCards.map((item) => {
             return (
-              <Box className="PopularCardBox">
+              <Box key={item.id} className="PopularCardBox">
+              {item.image_url != null ? (
+                <img src={item.image_url} className="Cardimgs" />
+              ) : (
                 <img src={cardimg} className="Cardimgs" />
-                <Box>
-                  <Typography className="Para1" sx={{ mt: 1 }}>
-                    {item.Para1}
-                  </Typography>
-                  <Typography className="Para2">{item.Para2}</Typography>
-                </Box>
+              )}
+              <Box>
+                <Typography className="Para1" sx={{ mt: 1 }}>
+                  {item.title}
+                </Typography>
+                <Typography className="Para2">
+                  {item.description}
+                </Typography>
               </Box>
+            </Box>
+
             );
           })}
         </Box>
