@@ -1584,11 +1584,23 @@ margin: 24px 0px !important;
  .sliderFlex{
   display: flex !important;
   flex-direction: row !important;
+  height: 53vh;
  }
+ .slick-track {
+  position: relative !important;
+  top: 0px !important;
+  left: -461px !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
  .testimonialBox{
   padding: 5% !important;
   min-height: 230px;
-  /* width:32%; */
+  width:100vw;
   margin: 10px;
   background-color: #fff;
   border-radius: 15px;
