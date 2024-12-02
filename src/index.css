@@ -1586,7 +1586,7 @@ margin: 24px 0px !important;
   flex-direction: row !important;
   height: 53vh;
  }
- .slick-track {
+ /* .slick-track {
   position: relative !important;
   top: 0px !important;
   left: -461px !important;
@@ -1595,7 +1595,7 @@ margin: 24px 0px !important;
   margin-right: auto !important;
   display: flex !important;
   flex-direction: row !important;
-}
+} */
 
  .testimonialBox{
   padding: 5% !important;
