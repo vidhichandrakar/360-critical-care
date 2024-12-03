@@ -181,7 +181,21 @@ const ExploreCourses = () => {
           </ol>
             <div className="BuyNowCardBox">
                 <div className="StickyBOx">
-                <img src={EDIC} className="EDICImg"/>
+                {courseData?.thumbnail_video_path ? (
+                  <>
+                    <video width="325" height="170" controls>
+                      <source
+                        src={courseData?.thumbnail_video_path}
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </>
+                ) : (
+                  <>
+                    <img src={EDIC} className="EDICImg" />
+                  </>
+                )}
                 <Box sx={{textAlign: "center"}}>
                     <Typography>Special Discount Price</Typography>
                     <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
