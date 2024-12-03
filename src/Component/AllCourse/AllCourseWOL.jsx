@@ -8,7 +8,7 @@ import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png"
 import "../../CSS/Courses.css";
 import { AllCourseWOLCard, PopularCard } from "../../JsonData/JsonData"
 import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
-import { getAllCourses } from "../ApiFactory/ApiAction";
+import { getAllCourses, getPopularColurses } from "../ApiFactory/ApiAction";
 import { useState } from "react";
 import { useEffect } from "react";
 import Header from "../Header/Header";
@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { banner } from "../ApiFactory/ApiAction";
 import { Link, Navigate, useNavigate } from "react-router-dom";
+import { tripmHtmlTagsToNormalFormat } from "../util/CommonUtil";
 
 const AllCourseWOL = () => {
 
@@ -27,6 +28,7 @@ const AllCourseWOL = () => {
     const [bannerAPI, setBannerAPI] = useState([]);
     const [isLoading, setIsLoading] = useState(true); // Loading state
     const [error, setError] = useState(null); // Error state
+    const [popularColurses, setPopularColurses] = useState([]);
 
     const navigate = useNavigate();
     
@@ -88,6 +90,14 @@ const AllCourseWOL = () => {
             }
         })
     }, [])
+
+    useEffect(() => {
+        getPopularColurses({
+          callBack: (response) => {
+            setPopularColurses(response.data);
+          },
+        });
+      }, []);
 
     const handleDiscountPercent = (price, offer_price) => {
         console.log(price, offer_price, (price - offer_price) / price);
@@ -166,7 +176,7 @@ const AllCourseWOL = () => {
                 {allCourseData?.length && allCourseData?.map((item) => {
                   return   <Box className="CradBox">
                     <Box className="CardBoxImg">
-                    <img src={item.thumbnail_path} className="CoursesCardImg"/>
+                    <img src={item.thumbnail_path_desktop} className="CoursesCardImg"/>
                     </Box>
                     <Box className="CardTextBox"    >
                         <Typography className="CardHeading .wrap-text-50 ">
@@ -222,22 +232,20 @@ const AllCourseWOL = () => {
                 <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
                
                 <Box className="PopularCourseBox">
-                     {PopularCard.map((item) => {
-                    return  <Box className="PopularCardBox">
-                        <img src={cardimg} className="Cardimgs"/>
-                        <Box>
-                            <Typography className="Para1" sx={{mt: 1}}>
-                            {item?.Para1}
-                            </Typography>
-                            <Typography className="Para2">
-                            {item?.Para2}
-                            </Typography>
-                        </Box>
-                    </Box>
-
-          
-
-                    })}
+                {popularColurses.map((data)=> {
+       return (   <Box className="PopularCardBox">
+          <img src={data?.thumbnail_path_desktop} className="Cardimgs" />
+          <Box>
+            <Typography className="Para1 .wrap-text-50" sx={{ mt: 1 }}>
+              {data?.course_name}
+            </Typography>
+            <Typography className="Para2">
+              {tripmHtmlTagsToNormalFormat(data?.description)}
+            </Typography>
+          </Box>
+        </Box>);
+         })} 
+         
                 </Box>
 
             </Box>

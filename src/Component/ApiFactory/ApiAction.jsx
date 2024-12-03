@@ -45,6 +45,51 @@ export const addNewsLetter = ({ payload, callBack, error }) => {
     });
 };
 
+export const StudentData = ({  callBack, error }) => {
+  const url = APIS.StudentData;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      // error(errorMessage);
+    });
+};
+export const Whyus = ({  callBack, error }) => {
+  const url = APIS.Whyus;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      // error(errorMessage);
+    });
+};
+
+export const getPopularColurses = ({  callBack, error }) => {
+  const url = APIS.getPopularColurses;
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      // error(errorMessage);
+    });
+};
+export const getBlogCards = ({ callBack, error }) => {
+  const url = APIS.getBlogCards;
+  axios.get(url)
+  .then((response)=> {
+    callBack(response);
+  })
+  .catch((errorMessage) => {
+    error(errorMessage);
+  })
+};
+
 export const contactUsDetails = ({ payload, callBack, error }) => {
   const url = APIS.contactUS;
   axios
