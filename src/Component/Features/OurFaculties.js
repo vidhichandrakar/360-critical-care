@@ -29,7 +29,7 @@ function NextArrow(props) {
     />
   );
 }
-const OurFaculties = () => {
+const OurFaculties = ({courseData}) => {
   const [testimonialData, setTestimonialData] = useState([]);
   useEffect(() => {
     getAllTestimonials({
@@ -44,7 +44,7 @@ const OurFaculties = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: courseData?.length > 1,
     speed: 500,
     // autoplay: true,
     slidesToShow: 1,
@@ -63,40 +63,28 @@ const OurFaculties = () => {
           {/* <Box className="FacultiesCardBox"> */}
       <div className="slider-container" style={{ width: "100%", marginTop:"2%", marginLeft:"1%" }}>
         <Slider {...settings}>
-          <Box className="FacultiesDetailsBox FacultiesCardBox">
-            <Box className="NameBox">
-              <Box>
-                <Typography className="FacultiesName">
-                  Tapas kumar sahoo
-                </Typography>
-                <Typography className="FacultiesDetails">
-                  Associate director head, Critical care medanta hospital,
-                  Ranchi, india, general secretary, Nephro Critical Care Society
-                </Typography>
-              </Box>
-              <Button variant="contained" className="KnowNowBtn">
-                Known Now
-              </Button>
-            </Box>
-            <img src={sananta} className="FaculriesImg" />
-          </Box>
-          <Box className="FacultiesDetailsBox FacultiesCardBox">
-            <Box className="NameBox">
-              <Box>
-                <Typography className="FacultiesName">
-                  Tapas kumar sahoo
-                </Typography>
-                <Typography className="FacultiesDetails">
-                  Associate director head, Critical care medanta hospital,
-                  Ranchi, india, general secretary, Nephro Critical Care Society
-                </Typography>
-              </Box>
-              <Button variant="contained" className="KnowNowBtn">
-                Known Now
-              </Button>
-            </Box>
-            <img src={sananta} className="FaculriesImg" />
-          </Box>
+        {courseData?.teamMembers?.map((data) => {
+                return (
+                  <Box className="FacultiesDetailsBox">
+                    <Box className="NameBox">
+                      <Box>
+                        <Typography className="FacultiesName">
+                          {data.member_name}
+                        </Typography>
+                        <Typography className="FacultiesDetails">
+                          Associate director head, Critical care medanta
+                          hospital, Ranchi, india, general secretary, Nephro
+                          Critical Care Society
+                        </Typography>
+                      </Box>
+                      <Button variant="contained" className="KnowNowBtn">
+                        Known Now
+                      </Button>
+                    </Box>
+                    <img src={sananta} className="FaculriesImg" />
+                  </Box>
+                );
+              })}
         
 
 

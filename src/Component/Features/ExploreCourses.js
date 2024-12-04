@@ -134,7 +134,7 @@ const ExploreCourses = () => {
           </Typography>
       </Box>
 {console.log(courseData, "courseData")}
-<OurFaculties  className="OurfacultiesmobileView"/>
+<OurFaculties  className="OurfacultiesmobileView" courseData={courseData}/>
       <Box className="FacultiesBox">
         
         <Typography className="FacultiesBoxHeading">Our Faculties</Typography>

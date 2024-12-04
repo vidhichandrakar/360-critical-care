@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import react, { Fragment } from "react";
 import homeimg from "../../Media/ProjectImage/AllCourseHome.jpg";
-import cardimg from "../../Media/ProjectImage/AllCourseCard.jpg";
+import cardImg from "../../Media/ProjectImage/AllCourseCard.jpg";
 import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
 import JoinImg from "../../Media/ProjectImage/AllCourseImg4.jpg";
 import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png"
@@ -48,7 +48,9 @@ const Blog = () => {
   }, [])
   
 
-  console.log("Blogdata :", blogData)
+  console.log("Blogdata :", blogData);
+  console.log(item.image_url, cardImg);
+
 
   useEffect(() => {
     banner({
@@ -173,7 +175,7 @@ const Blog = () => {
                {item.image_url != null ? (
                 <img src={item.image_url} className="Cardimgs" />
               ) : (
-                <img src={cardimg} className="Cardimgs" />
+                <img src={cardImg} className="Cardimgs" />
               )}
                 <Box>
                   <Typography className="Para1" sx={{ mt: 1 }}>
@@ -197,7 +199,7 @@ const Blog = () => {
 
       <Box className="PopularCourseMainBox">
         <Typography sx={{ fontSize: "2rem", fontWeight: 700 }}>
-          Our <span className="HeadingColor">Blogs</span>
+          Our <span className="HeadingColor">Popular Blogs</span>
         </Typography>
 
         <Box className="PopularCourseBox">
@@ -207,7 +209,7 @@ const Blog = () => {
               {item.image_url != null ? (
                 <img src={item.image_url} className="Cardimgs" />
               ) : (
-                <img src={cardimg} className="Cardimgs" />
+                <img src={cardImg} className="Cardimgs" />
               )}
               <Box>
                 <Typography className="Para1" sx={{ mt: 1 }}>

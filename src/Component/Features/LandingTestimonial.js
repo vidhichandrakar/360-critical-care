@@ -43,7 +43,7 @@ const LandingTestimonial = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: testimonialData?.length > 1,
     speed: 500,
     // autoplay: true,
     slidesToShow: window.innerWidth < 768 ? 1 : 3,
@@ -64,7 +64,10 @@ const LandingTestimonial = () => {
           </Box>
       <div className="slider-container" style={{ width: "97%", marginTop:"2%", marginLeft:"1%" }}>
         <Slider {...settings}>
-          {testimonialData?.map((data) => <div key={1} className="sliderFlex">
+          {testimonialData?.map((data) => <div key={1} 
+          // className="sliderFlex"
+          >
+            {/* {data.active_status == "Y" ? className="differentTestCard" : className="sliderFlex"} */}
             <Box className="testimonialBox">
 
               <img src={Comma} width={40} height={40} className="topComma" />
@@ -73,6 +76,9 @@ const LandingTestimonial = () => {
               </Typography>
               <Typography className="author">
                 {data?.author}
+              </Typography>
+              <Typography className="testimonialAutherName">
+                <b>{data.author_name}</b>
               </Typography>
               <img src={Comma} width={40} height={40} style={{ float: "right", transform:"scaleX(-1)" }} />
             </Box>
