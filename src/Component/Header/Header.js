@@ -157,7 +157,6 @@ const Header = () => {
                 style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
               >
                 <Link to="/Critical-care/Contact-us/" style={{ color: 'inherit', textDecoration: 'none'}}>
-                  {" "}
                   <Typography
                     textAlign="center"
                     className="menuText"
@@ -186,9 +185,7 @@ const Header = () => {
             </Menu>
           </Box>
          <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
-        
-        
-          <Typography
+         <Typography
             variant="h5"
             noWrap
             component="a"

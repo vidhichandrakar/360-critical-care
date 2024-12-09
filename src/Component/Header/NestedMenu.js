@@ -22,10 +22,6 @@ import { useEffect } from "react";
 const DropDown = ({variant, icon}) => {
     
   const [categoreData, setCategoreData] = useState([])
-
-  const handleCreate = () => {
-    console.log("create something");
-  };
   const theme = createTheme({
     palette: {
       ochre: {
@@ -47,9 +43,6 @@ const DropDown = ({variant, icon}) => {
       setCategoreData(response.data)
     },error:()=>{} })
   },[])
-
-  {console.log(categoreData, "categoreData")}
-
   return (
     
     <ThemeProvider theme={theme}>

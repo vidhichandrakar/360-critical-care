@@ -27,14 +27,9 @@ const ExploreCourses = () => {
 
   let location = useLocation();
   const courseId = location?.state?.courseId;
-
-  
-  console.log("location",location)
-  console.log("idd",courseId)
   const navigate = useNavigate();
   const [durationData, setDuration] = useState([]);
   useEffect(() => {
-    console.log("idd",courseId)
   //  setLoaderState(true);
    if (redirectRestriction()) {
     //  setLoaderState(true);
@@ -47,7 +42,6 @@ const ExploreCourses = () => {
      },
      error: (error) => {
       //  toast.error(error.message);
-       console.log(error.message);
       //  setLoaderState(false);
      },
    });
@@ -55,41 +49,12 @@ const ExploreCourses = () => {
      callBack: (response) => {
        const userCallBack = response?.data;
        setDuration(userCallBack);
-       console.log(response, "kjhgfxdgchj");
      },
      error: (error) => {
       //  toast.error(error.message);
-      //  console.log(error.message);
      },
    });
- 
-  //    getAllCourse({
-  //      callBack: (response) => {
-  //        const userCallBack = response?.data;
-  //        const isPublish = "published";
-  //        const pubishedCourse = userCallBack.filter(
-  //          (item) => item.is_publish === isPublish
-  //        );
-  //        setCourse(pubishedCourse);
-  //        setLoaderState(false);
-  //      },
-  //      error: (error) => {
-  //        toast.error(error.message);
-  //        console.log(error.message);
-  //        setLoaderState(false);
-  //      },
-  //    });
-  //    duration({
-  //      callBack: (response) => {
-  //        const userCallBack = response?.data;
-  //        setDuration(userCallBack);
-  //        console.log(response, "kjhgfxdgchj");
-  //      },
-  //      error: (error) => {
-  //        toast.error(error.message);
-  //        console.log(error.message);
-  //      },
-  //    });
+
    } else {
     //  navigate("/");
    }
@@ -97,7 +62,6 @@ const ExploreCourses = () => {
 
  const handleLearnNow = (courseId) => {
   navigate("/user/CoursesContent", { state: { courseId: courseId } });
-  console.log("moded", courseId);
 };
 
 
@@ -125,15 +89,12 @@ const ExploreCourses = () => {
                 </Box>
                 </div>
                 </div>
-            {/* {console.log(courseData, "courseData")}
-            {console.log(durationData, "durationData")} */}
-      <Box className="CDMainBox">
+              <Box className="CDMainBox">
         <Typography className="CourseDetailsHead">Courses Details</Typography>
         <Typography className="CourseDetails">
             {tripmHtmlTagsToNormalFormat(courseData.description)}
           </Typography>
       </Box>
-{console.log(courseData, "courseData")}
 <OurFaculties  className="OurfacultiesmobileView"/>
       <Box className="FacultiesBox">
         

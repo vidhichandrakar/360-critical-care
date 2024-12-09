@@ -27,10 +27,8 @@ const Aboutus = () => {
   const [studentDatas, seStudentDatas] = useState();
 
   useEffect(() => {
-    console.log("check")
     banner({
       callBack: (response) => {
-        console.log("API response:", response.data);
         setBannerAPI(response.data);
         setIsLoading(false);
       },
@@ -95,12 +93,7 @@ const Aboutus = () => {
   // Get banners for each position
   const topBanner = getLastBannerByPosition(bannerAPI, 1);
   const middleBanner = getLastBannerByPosition(bannerAPI, 2);
-  const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
-
-  console.log("Top Banner:", topBanner);
-  console.log("Middle Banner:", middleBanner);
-  console.log("Bottom Banner:", bottomBanner);
-
+  const bottomBanner = getLastBannerByPosition(bannerAPI, 3)
   return (
     <>
       <Header />

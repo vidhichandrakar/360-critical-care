@@ -48,7 +48,6 @@ const Analytics = ({}) => {
   const maxSteps = steps.length;
 
   const handleNext = () => {
-    console.log("abcc", activeStep, maxSteps);
     if (activeStep < maxSteps - 1) {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
     }

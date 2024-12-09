@@ -745,6 +745,9 @@ font-size: 1.3em !important;
   .leftSubDesign {
     font-size: 2rem;
   }
+  .allCoursesIcon{
+    display: block;
+  }
   .MuiInputBase-input-MuiOutlinedInput-input{
     color: #000 !important;
     font-size: 2rem !important;
@@ -960,6 +963,9 @@ font-size: 1.3em !important;
   width: 2px !important;
   height: 10vh !important;
 }
+.drNB-head{
+  cursor: pointer;
+}
 .drNBCompleteBox{
   display: flex;
   flex-direction: row;
@@ -1022,6 +1028,7 @@ font-size: 1.3em !important;
   width: 8vw;
   font-size: 0.8rem;
   text-align: center ;
+  cursor: pointer;
 }
 .changedDrNBBoxes-EDIC{
   border: 0.5px solid grey !important;

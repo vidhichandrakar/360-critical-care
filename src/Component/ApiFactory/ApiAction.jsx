@@ -33,6 +33,29 @@ export const getAllCourses = ({ callBack, searchString, error }) => {
     });
 };
 
+export const getAllCoursesFilter = ({
+  category_id,
+  subcategories,
+  callBack,
+  error,
+}) => {
+  let url = new URL(`${APIS.allCoursesFilter}`);
+  if (category_id) {
+    url.searchParams.set("category_id", category_id);
+  }
+  if (subcategories) {
+    url.searchParams.set("sub_category_id", subcategories);
+  }
+  axios
+    .get(url)
+    .then((response) => {
+      callBack(response);
+    })
+    .catch((errorMessage) => {
+      error(errorMessage);
+    });
+};
+
 export const addNewsLetter = ({ payload, callBack, error }) => {
   const url = APIS.addNewsLetter;
   axios

@@ -24,7 +24,6 @@ const COntactus = () => {
     email: "",
   });
   const handleInputChange = (e, type) => {
-    console.log("e->", e, "type--------->", type);
     const { name, value } = e.target;
     setFormValues({
       ...formValues,
@@ -56,7 +55,6 @@ const COntactus = () => {
     });
 
     if (!mobileError && !emailError) {
-      console.log("Validation passed:", formValues);
       let payload = {
         Name: formValues.name,
         email: formValues.email,
@@ -66,7 +64,6 @@ const COntactus = () => {
       contactUsDetails({
         payload: payload,
         callBack: (response) => {
-          console.log("----->", response);
         },
       });
       // Add logic to handle successful validation

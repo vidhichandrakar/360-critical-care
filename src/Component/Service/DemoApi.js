@@ -12,7 +12,6 @@ const DemoApi = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
         setApidata(json);
       });
   };

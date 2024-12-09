@@ -1,25 +1,20 @@
 import { Box, Button, Typography } from "@mui/material";
 import react, { Fragment } from "react";
-import homeimg from "../../Media/ProjectImage/AllCourseHome.jpg";
-import cardimg from "../../Media/ProjectImage/AllCourseCard.jpg";
-import NewsLetter from "../../Media/ProjectImage/AllCourseImg3.jpg";
-import JoinImg from "../../Media/ProjectImage/AllCourseImg4.jpg";
-import MobileViewHeadimg from "../../Media/Images/AllcourseHeadImg.png"
 import "../../CSS/Courses.css";
-import { AllCourseWOLCard, PopularCard } from "../../JsonData/JsonData"
 import NewsLatter from "../MainComponent/LandingpageSubComponent/NewsLatter";
-import { getAllCourses, getPopularColurses } from "../ApiFactory/ApiAction";
+import { getAllCourses, getAllCoursesFilter, getPopularColurses } from "../ApiFactory/ApiAction";
 import { useState } from "react";
 import { useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { banner } from "../ApiFactory/ApiAction";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { tripmHtmlTagsToNormalFormat } from "../util/CommonUtil";
+import { useLocation } from "react-router-dom";
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 const AllCourseWOL = () => {
 
@@ -35,7 +30,6 @@ const AllCourseWOL = () => {
     useEffect(() => {
         banner({
             callBack: (response) => {
-                console.log("Banner API response:", response.data);
                 setBannerAPI(response.data);
                 setIsLoading(false);
             },
@@ -79,17 +73,29 @@ const AllCourseWOL = () => {
     const middleBanner = getLastBannerByPosition(bannerAPI, 2);
     const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
 
-    console.log("Top Banner:", topBanner);
-    console.log("Middle Banner:", middleBanner);
-    console.log("Bottom Banner:", bottomBanner);
-
+    let location = useLocation();
+    const category_id = location?.state?.category_id;
+    const sub_category_id = location?.state?.subcategories;
+ 
     useEffect(() => {
+        if(category_id || sub_category_id){
+            getAllCoursesFilter({
+                category_id: category_id,
+                subcategories: sub_category_id,
+                callBack: (response) => {
+                    setAllCourseData(response.data)
+                }
+            })
+        }
+        else{
         getAllCourses({
             callBack: (response) => {
                 setAllCourseData(response.data)
             }
-        })
+        })}
     }, [])
+
+  
 
     useEffect(() => {
         getPopularColurses({
@@ -100,16 +106,18 @@ const AllCourseWOL = () => {
       }, []);
 
     const handleDiscountPercent = (price, offer_price) => {
-        console.log(price, offer_price, (price - offer_price) / price);
         return Math.floor(((price - offer_price) / price) * 100) + " %";
       };
 
       const handleExplore = (courseId) => {
         navigate("/Critical-care/ExploreCourses", { state: { courseId: courseId } });
-        console.log("moded", courseId);
       };
 
-    console.log("allCourseData : ", allCourseData)
+      const handleReset= () =>{
+        navigate("/Critical-care/Allcourse");
+        window.location.reload()
+    }
+    
     return (
         <Fragment>
             <Header />
@@ -164,15 +172,10 @@ const AllCourseWOL = () => {
                     )}
                 </div>
             </Fragment>
-
-
-            {/* <Box className="HeadimgBox">
-                <img src={homeimg} width="100%" className="WebViewImg" />
-                <img src={MobileViewHeadimg} className="MobileViewImg" />
-            </Box> */}
-            {console.log(allCourseData, "allCourseData")}
-
-            <Box className="CoursesCardMainBox">
+                <Box sx={{marginTop: "5%", display: "flex", flexDirection: "row", justifyContent: "right", padding: "10px 60px"}}>
+                    <Button sx={{cursor:"pointer"}} onClick={handleReset}><RestartAltIcon />Reset</Button>
+                </Box>
+                {allCourseData?.length != null  ? <Box className="CoursesCardMainBox">
                 {allCourseData?.length && allCourseData?.map((item) => {
                   return   <Box className="CradBox">
                     <Box className="CardBoxImg">
@@ -197,7 +200,6 @@ const AllCourseWOL = () => {
                                 </Typography>
                                 </Box>
                                 <Typography sx={{ml:6}} className="offBox">
-                                    {/* 40% OFF */}
                                     {item.durations[item?.durations?.length - 1]
                             ?.offer_price &&
                           item.durations[item?.durations?.length - 1]?.price
@@ -212,17 +214,16 @@ const AllCourseWOL = () => {
 
                                     </Box>
                                 </Box>
-                                {/* <Link to="/Critical-care/user/ExploreCourses"> */}
                                 <Button variant="contained" className="ExploreButton" 
                                     onClick={() => handleExplore(item?.course_id)}>
                                     Explore Now
                                 </Button>
-                                {/* </Link>s */}
                             </Box>
                         </Box>
                     </Box>
                 })}
-            </Box>
+            </Box> : <Box>No course available</Box>}
+            
             <Box className="JoinContainer">
                 <Typography className="JoinHeading">Join Our Free Webinar</Typography>
                 <Button className="Joincentered" variant="contained"><span className="JoinNow">Join Now</span><span className="Subscribe">Subscribe</span></Button>
@@ -232,7 +233,7 @@ const AllCourseWOL = () => {
                 <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
                
                 <Box className="PopularCourseBox">
-                {popularColurses.map((data)=> {
+                {popularColurses?.length === "" && popularColurses?.map((data)=> {
        return (   <Box className="PopularCardBox">
           <img src={data?.thumbnail_path_desktop} className="Cardimgs" />
           <Box>

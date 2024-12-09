@@ -1,14 +1,8 @@
-import { Typography, Box, Button, colors } from "@mui/material";
+import {Box} from "@mui/material";
 import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
-import ExcelInCC from "../../Media/Images/ExcelInCriticalCareImg.png";
-import doctorSign from '../../Media/Images/handsAndDoctorSign.png';
-import functioning from '../../Media/Images/functioning.png';
-import robot from '../../Media/Images/robot.png';
-import building from '../../Media/Images/hospnew.png';
-import transparentOverBuilding from '../../Media/Images/Rectangle 6.png';
 import { useEffect } from "react";
 import { getCategory } from "../ApiFactory/ApiAction";
+import { useNavigate } from "react-router-dom";
 
 
 const SubCategory = ({ categorySelected }) => {
@@ -34,100 +28,64 @@ const SubCategory = ({ categorySelected }) => {
   },[])
 
   const handleCourses = ({ type }) => {
-    // console.log(type);
-
     switch (type) {
       case "Top Crash Course": {
-        console.log("sdojif");
         setSavedPath("/TopCourse");
         break;
       }
       case "EDIC 1": {
         setSavedPath("/EDIC");
-        console.log("oijn");
         break;
       }
       case "EDIC 2": {
         setSavedPath("/EDIC2");
-        console.log("oijn");
         break;
       }
       case "TRICS-IDCCM": {
         setSavedPath("/IDCCM");
-        console.log("oijn");
         break;
       }
 
       default:
     }
   };
+  const subcategoriesdata = categoreData?.subcategories
+  const navigate = useNavigate();
+  const handlechange = (category_id) => {
+    navigate("/Critical-care/Allcourse", { state: { category_id: category_id , subcategories: null} });
+     };
+  const handlechangeBySubcategory = (category_id) => {
+    navigate("/Critical-care/Allcourse", { state: { subcategories: category_id , category_id: null} });
+     };
   return (
     <Fragment>
       <div className="allExploreCatCards">
-        <Box className="SubBoxSubBox">
-          <Box className="drNBCompleteBox">
-            <Box className="drNBCompleteBox-left">
-            <h5 className="drNB-head">  
-              <b>{categoreData[0]?.category_name}</b>
-            </h5>
-            {console.log(categoreData, "line73")}
-            <Box className="drNBSubSections">
-              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[0]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[2]?.category_name}</Box>
+         {
+          categoreData?.slice(0, 4)?.map((item) => (
+            <Box className="SubBoxSubBox">
+            <Box className="drNBCompleteBox">
+              <Box className="drNBCompleteBox-left">
+              <h5 className="drNB-head" onClick={() => handlechange(item?.category_id)}>  
+                <b>{item?.category_name}</b>
+              </h5>
+              {item?.subcategories?.length !== 0  ?  <div className="drNBSubSections">
+                {item?.subcategories?.slice(0, 3)?.map((data) => (
+                  <Box>
+                     <Box className="changedDrNBBoxes" 
+                     onClick={() => handlechangeBySubcategory(data?.category_id)}>
+                      {data?.category_name}</Box>
+                  </Box>
+                ))}
+             
+              </div> : <div><p>no date</p></div>}
+              </Box>
             </Box>
-            </Box>
+  
+           
           </Box>
-
-         
-        </Box>
-
-        <Box className="drNBCompleteBox">
-          <Box className="drNBCompleteBox-left">
-            <h5 className="drNB-head">
-            <b>{categoreData[1]?.category_name}</b>
-            </h5>
-            <Box className="drNBSubSections">
-              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[0]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[1]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
-            </Box>
-          </Box>
-          </Box>
-
-          <Box className="drNBCompleteBox">
-          <Box className="drNBCompleteBox-left">
-            <h5 className="drNB-head">
-            <b>{categoreData[2]?.category_name}</b>
-            </h5>
-            <div className="drNBSubSections">
-            <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[0]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
-            </div>
-          </Box>
-        </Box>
-          <Box className="drNBCompleteBox">
-          <Box className="drNBCompleteBox-left">
-            <h5 className="drNB-head">
-            <b>{categoreData[3]?.category_name}</b>
-            </h5>
-            <div className="drNBSubSections">
-            <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[0]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[0]?.subcategories[1]?.category_name}</Box>
-              <Box className="changedDrNBBoxes">{categoreData[1]?.subcategories[2]?.category_name}</Box>
-            </div>
-          </Box>
-        </Box>
-       
-       
+          ))
+        }  
       </div>
-
-       
-
-       
-      
-
        </Fragment>
   );
 };

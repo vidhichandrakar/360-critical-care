@@ -14,7 +14,6 @@ const NavHome = () => {
   useEffect(() => {
     banner({
       callBack: (response) => {
-        console.log("API response:", response.data);
         setBannerAPI(response.data);
         setIsLoading(false);
       },
@@ -56,10 +55,6 @@ const NavHome = () => {
   const topBanner = getLastBannerByPosition(bannerAPI, 1);
   const middleBanner = getLastBannerByPosition(bannerAPI, 2);
   const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
-
-  console.log("Top Banner:", topBanner);
-  console.log("Middle Banner:", middleBanner);
-  console.log("Bottom Banner:", bottomBanner);
 
   return (
     <div>

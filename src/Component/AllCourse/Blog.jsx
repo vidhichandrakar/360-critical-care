@@ -48,12 +48,9 @@ const Blog = () => {
   }, [])
   
 
-  console.log("Blogdata :", blogData)
-
   useEffect(() => {
     banner({
       callBack: (response) => {
-        console.log("Banner API response:", response.data);
         setBannerAPI(response.data);
         setIsLoading(false);
       },
@@ -96,13 +93,7 @@ const Blog = () => {
   const topBanner = getLastBannerByPosition(bannerAPI, 1);
   const middleBanner = getLastBannerByPosition(bannerAPI, 2);
   const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
-
-  console.log("Top Banner:", topBanner);
-  console.log("Middle Banner:", middleBanner);
-  console.log("Bottom Banner:", bottomBanner);
-
-
-  return (
+ return (
     <Fragment>
       <Header />
 
@@ -157,30 +148,7 @@ const Blog = () => {
         </div>
       </Fragment>
 
-      {/* <Box className="HeadimgBox">
-        {console.log(blogData, "blogData")}
-        <img src={homeimg} width="100%" className="WebViewImg" />
-        <img src={MobileViewHeadimg} className="MobileViewImg" />
-      </Box> */}
-
-
-      {/* <Box className="FeaturesBLog">
-        <Typography>
-          Featured story
-        </Typography>
-        <Box className="FeaturesDataBox">
-          <img src={cardimg} className="Cardimgs" />
-          <Box sx={{ ml: 2 }}>
-            <Typography>
-              Sbi clark first waitng list nvkdnvkdjvh cdbncjkds ndhbv vbfhdkn bdjrlfng vjfheje vkdj
-            </Typography>
-            <Typography>
-              Sbi clark first waitng list nvkdnvkdjvh cdbncjkds ndhbv vbfhdkn bdjrlfng vjfheje vkdj
-            </Typography>
-          </Box>
-        </Box>
-
-      </Box> */}
+     
       <Box className="PopularCourseMainBox">
         <Box className="PopularCourseBox">
           {blogData.map((item) => {

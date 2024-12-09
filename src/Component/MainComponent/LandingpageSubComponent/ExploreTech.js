@@ -30,7 +30,6 @@ const ExploreTech = () => {
   useEffect(() => {
     banner({
       callBack: (response) => {
-        console.log("API response:", response.data);
         setBannerAPI(response.data);
         setIsLoading(false);
       },
