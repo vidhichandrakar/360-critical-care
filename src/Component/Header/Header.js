@@ -132,7 +132,7 @@ const Header = () => {
         >  */}
          {/* All Courses */}
         <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
-                <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/>
+                {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
                 {/* </Link> */}
               </MenuItem>
 

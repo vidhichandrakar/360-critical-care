@@ -36,7 +36,7 @@ body {
   padding: 0px 12px !important;
   margin-top: 6px !important;
   color: black !important;
-  margin-left: 66px !important;
+  /* margin-left: 66px !important; */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
