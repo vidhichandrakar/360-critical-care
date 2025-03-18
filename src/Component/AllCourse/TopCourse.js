@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Box } from "@mui/material";
 import { TopCrashCourse } from "../../JsonData/AboutData/AboutData";
+import "../../CSS/Courses.css";
 
 const TopCourse = () => {
   return (
@@ -25,14 +26,14 @@ const TopCourse = () => {
               <p>{value.para}</p>
             </Box>
           ))}
-        <p>
-          By aligning these objectives, the course aims to not only impart
-          knowledge but also to empower students with the strategic skills and
-          confidence necessary to excel in the demanding field of Critical Care
-          Medicine examinations.
-        </p>
+          <p>
+            By aligning these objectives, the course aims to not only impart
+            knowledge but also to empower students with the strategic skills and
+            confidence necessary to excel in the demanding field of Critical Care
+            Medicine examinations.
+          </p>
         </Box>
-      
+
       </Box>
       <Footer />
     </Fragment>

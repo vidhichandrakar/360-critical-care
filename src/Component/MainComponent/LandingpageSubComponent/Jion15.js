@@ -7,25 +7,25 @@ import pwimg from "../../../Media/Images/PWImg.png"
 import Mobilemockup from "../../../Media/Images/MobileMockup.png"
 
 const Jion15 = () => {
-    return(
-        <Fragment>
-            <Box  className="appAdvertisement">
+  return (
+    <Fragment>
+      <Box className="appAdvertisement">
         <Box className="JionMainBox">
-            <Typography  className="appAdvertisementHead">
+          <Typography className="appAdvertisementHead">
             Join on the app today!
-            </Typography>
-            <Box sx={{color: "BLack"}} className="JoinBoxSubHead">
+          </Typography>
+          <Box sx={{ color: "BLack" }} className="JoinBoxSubHead">
             <Typography>
-            Live & recorded classes available at ease
-            </Typography>
-            <Typography>
-            dashboard for progress tracking      
+              Live & recorded classes available at ease
             </Typography>
             <Typography>
-            Millions of practice questions at your fingertips  
-            </Typography>      
-            </Box>
-            <div className="googlePlay-n-appStore" style={{marginTop: "8%"}}>
+              dashboard for progress tracking
+            </Typography>
+            <Typography>
+              Millions of practice questions at your fingertips
+            </Typography>
+          </Box>
+          <div className="googlePlay-n-appStore" style={{ marginTop: "8%" }}>
             <img
               src={GoogleLogo}
               width={140}
@@ -34,9 +34,9 @@ const Jion15 = () => {
             <img
               src={AppLogo}
               width={140}
-              height= "auto"
+              height="auto"
               className="aaplogo"
-              // style={{marginLeft: "15px"}}
+            // style={{marginLeft: "15px"}}
             />
           </div>
         </Box>
@@ -47,10 +47,10 @@ const Jion15 = () => {
             height={350}
             className="transparentMobile"
           />
-          <img src={Mobilemockup} className="PWImg"/>
-          </Box>
+          <img src={Mobilemockup} className="PWImg" />
+        </Box>
       </Box>
-        </Fragment>
-    )
+    </Fragment>
+  )
 }
 export default Jion15;

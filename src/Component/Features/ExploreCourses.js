@@ -30,100 +30,100 @@ const ExploreCourses = () => {
   const navigate = useNavigate();
   const [durationData, setDuration] = useState([]);
   useEffect(() => {
-  //  setLoaderState(true);
-   if (redirectRestriction()) {
     //  setLoaderState(true);
-   buyCourse({
-     courseId,
-     callBack: (response) => {
-       const userCallBack = response?.data;
-       setCourseData(userCallBack[0]);
-    //    setLoaderState(false);
-     },
-     error: (error) => {
-      //  toast.error(error.message);
-      //  setLoaderState(false);
-     },
-   });
-   duration({
-     callBack: (response) => {
-       const userCallBack = response?.data;
-       setDuration(userCallBack);
-     },
-     error: (error) => {
-      //  toast.error(error.message);
-     },
-   });
+    if (redirectRestriction()) {
+      //  setLoaderState(true);
+      buyCourse({
+        courseId,
+        callBack: (response) => {
+          const userCallBack = response?.data;
+          setCourseData(userCallBack[0]);
+          //    setLoaderState(false);
+        },
+        error: (error) => {
+          //  toast.error(error.message);
+          //  setLoaderState(false);
+        },
+      });
+      duration({
+        callBack: (response) => {
+          const userCallBack = response?.data;
+          setDuration(userCallBack);
+        },
+        error: (error) => {
+          //  toast.error(error.message);
+        },
+      });
 
-   } else {
-    //  navigate("/");
-   }
- }, [courseId]);
+    } else {
+      //  navigate("/");
+    }
+  }, [courseId]);
 
- const handleLearnNow = (courseId) => {
-  navigate("/user/CoursesContent", { state: { courseId: courseId } });
-};
+  const handleLearnNow = (courseId) => {
+    navigate("/user/CoursesContent", { state: { courseId: courseId } });
+  };
 
 
   return (
     <Fragment>
-        <Header />
+      <Header />
       <Box className="HeadimgBox">
-                <img src={homeimg} width="100%"  className="WebViewImg"/>
+        <img src={homeimg} width="100%" className="WebViewImg" />
+      </Box>
+      <div className="MobileBuyNowCardBox">
+        <div className="StickyBOx">
+          <img src={EDIC} className="EDICImg" />
+          <Box sx={{ textAlign: "center" }}>
+            <Typography>Special Discount Price</Typography>
+            <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
+              <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
+              <Typography sx={{ textDecoration: "line-through" }}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
+              <Typography className="offBox">25%off</Typography>
             </Box>
-            <div className="MobileBuyNowCardBox">
-                <div className="StickyBOx">
-                <img src={EDIC} className="EDICImg"/>
-                <Box sx={{textAlign: "center"}}>
-                    <Typography>Special Discount Price</Typography>
-                    <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
-                        <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
-                        <Typography sx={{textDecoration: "line-through"}}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
-                        <Typography className="offBox">25%off</Typography>
-                    </Box>
-                {/* <Link to="/user/PurchasedCourse">  */}
-                <Button  variant="contained" className="BuyNowCardButton" 
-                   onClick={() => handleLearnNow(courseData?.course_id)}
-                    >Buy Now</Button>
-                {/* </Link> */}
-                </Box>
-                </div>
-                </div>
-              <Box className="CDMainBox">
+            {/* <Link to="/user/PurchasedCourse">  */}
+            <Button variant="contained" className="BuyNowCardButton"
+              onClick={() => handleLearnNow(courseData?.course_id)}
+            >Buy Now</Button>
+            {/* </Link> */}
+          </Box>
+        </div>
+      </div>
+      <Box className="CDMainBox">
         <Typography className="CourseDetailsHead">Courses Details</Typography>
         <Typography className="CourseDetails">
-            {tripmHtmlTagsToNormalFormat(courseData.description)}
-          </Typography>
+          {tripmHtmlTagsToNormalFormat(courseData.description)}
+        </Typography>
       </Box>
-<OurFaculties  className="OurfacultiesmobileView"/>
+      <OurFaculties className="OurfacultiesmobileView" />
       <Box className="FacultiesBox">
-        
+
         <Typography className="FacultiesBoxHeading">Our Faculties</Typography>
         <Box className="FacultiesCardBox">
-        {courseData?.teamMembers?.map((data) => {
-                return (
-                  <Box className="FacultiesDetailsBox">
-                    <Box className="NameBox">
-                      <Box>
-                        <Typography className="FacultiesName">
-                          {data.member_name}
-                        </Typography>
-                        <Typography className="FacultiesDetails">
-                          Associate director head, Critical care medanta
-                          hospital, Ranchi, india, general secretary, Nephro
-                          Critical Care Society
-                        </Typography>
-                      </Box>
-                      <Button variant="contained" className="KnowNowBtn">
-                        Known Now
-                      </Button>
-                    </Box>
-                    <img src={sananta} className="FaculriesImg" />
+          {courseData?.teamMembers?.map((data) => {
+            return (
+              <Box className="FacultiesDetailsBox">
+                <Box className="NameBox">
+                  <Box>
+                    <Typography className="FacultiesName">
+                      {data.member_name}
+                    </Typography>
+                    <Typography className="FacultiesDetails">
+                      Associate director head, Critical care medanta
+                      hospital, Ranchi, india, general secretary, Nephro
+                      Critical Care Society
+                    </Typography>
                   </Box>
-                );
-              })}
+                  <Button variant="contained" className="KnowNowBtn">
+                    Known Now
+                  </Button>
+                </Box>
+                <img src={sananta} className="FaculriesImg" />
+              </Box>
+            );
+          })}
         </Box>
-        
+
       </Box>
 
       <Box className="TBIMainBox">
@@ -140,43 +140,43 @@ const ExploreCourses = () => {
             <li>Best Guidance</li>
             <li>Dedicated WhatsApp Group</li>
           </ol>
-            <div className="BuyNowCardBox">
-                <div className="StickyBOx">
-                {courseData?.thumbnail_video_path ? (
-                  <>
-                    <video width="325" height="170" controls>
-                      <source
-                        src={courseData?.thumbnail_video_path}
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
-                  </>
-                ) : (
-                  <>
-                    <img src={EDIC} className="EDICImg" />
-                  </>
-                )}
-                <Box sx={{textAlign: "center"}}>
-                    <Typography>Special Discount Price</Typography>
-                    <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
-                        <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
-                        <Typography sx={{textDecoration: "line-through"}}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
-                        <Typography className="offBox">25%off</Typography>
-                    </Box>
-                {/* <Link to="/user/PurchasedCourse">  */}
-                <Button  variant="contained" className="BuyNowCardButton" 
-                   onClick={() => handleLearnNow(courseData?.course_id)}
-                    >Buy Now</Button>
-                {/* </Link> */}
+          <div className="BuyNowCardBox">
+            <div className="StickyBOx">
+              {courseData?.thumbnail_video_path ? (
+                <>
+                  <video width="325" height="170" controls>
+                    <source
+                      src={courseData?.thumbnail_video_path}
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </>
+              ) : (
+                <>
+                  <img src={EDIC} className="EDICImg" />
+                </>
+              )}
+              <Box sx={{ textAlign: "center" }}>
+                <Typography>Special Discount Price</Typography>
+                <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
+                  <Typography>₹{courseData?.durations?.length && courseData?.durations[0]?.offer_price}</Typography>
+                  <Typography sx={{ textDecoration: "line-through" }}>₹{courseData?.durations?.length && courseData?.durations[0]?.price}</Typography>
+                  <Typography className="offBox">25%off</Typography>
                 </Box>
-                </div>
-                </div>
+                {/* <Link to="/user/PurchasedCourse">  */}
+                <Button variant="contained" className="BuyNowCardButton"
+                  onClick={() => handleLearnNow(courseData?.course_id)}
+                >Buy Now</Button>
+                {/* </Link> */}
+              </Box>
+            </div>
+          </div>
         </Box>
-         
-        
+
+
       </Box>
-     
+
 
       <Box className="FAQMainBox">
         <Typography className="CourseDetailsHead marginmobile">
@@ -211,10 +211,10 @@ const ExploreCourses = () => {
             <span className="FreeCourseC0lor">Free Courses</span> Now
           </Typography>
           <Typography className="QualityMaterial">
-              Get instant access to high - quality material
-            </Typography>
+            Get instant access to high - quality material
+          </Typography>
           <Box>
-            
+
             <Paper
               component="form"
               sx={{
@@ -240,7 +240,7 @@ const ExploreCourses = () => {
         <img src={Juduwa} className="juduwaimg" />
       </Box>
 
-    
+
 
       <Footer />
     </Fragment>

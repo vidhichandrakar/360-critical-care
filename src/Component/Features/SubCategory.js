@@ -1,4 +1,4 @@
-import {Box} from "@mui/material";
+import { Box } from "@mui/material";
 import React, { Fragment, useState } from "react";
 import { useEffect } from "react";
 import { getCategory } from "../ApiFactory/ApiAction";
@@ -21,11 +21,13 @@ const SubCategory = ({ categorySelected }) => {
   const [savedPath, setSavedPath] = useState("");
   const [categoreData, setCategoreData] = useState([])
 
-  useEffect(()=>{
-    getCategory({callBack: (response) => {
-      setCategoreData(response.data)
-    },error:()=>{} })
-  },[])
+  useEffect(() => {
+    getCategory({
+      callBack: (response) => {
+        setCategoreData(response.data)
+      }, error: () => { }
+    })
+  }, [])
 
   const handleCourses = ({ type }) => {
     switch (type) {
@@ -52,41 +54,41 @@ const SubCategory = ({ categorySelected }) => {
   const subcategoriesdata = categoreData?.subcategories
   const navigate = useNavigate();
   const handlechange = (category_id) => {
-    navigate("/Critical-care/Allcourse", { state: { category_id: category_id , subcategories: null} });
-     };
+    navigate("/Critical-care/Allcourse", { state: { category_id: category_id, subcategories: null } });
+  };
   const handlechangeBySubcategory = (category_id) => {
-    navigate("/Critical-care/Allcourse", { state: { subcategories: category_id , category_id: null} });
-     };
+    navigate("/Critical-care/Allcourse", { state: { subcategories: category_id, category_id: null } });
+  };
   return (
     <Fragment>
       <div className="allExploreCatCards">
-         {
+        {
           categoreData?.slice(0, 4)?.map((item) => (
             <Box className="SubBoxSubBox">
-            <Box className="drNBCompleteBox">
-              <Box className="drNBCompleteBox-left">
-              <h5 className="drNB-head" onClick={() => handlechange(item?.category_id)}>  
-                <b>{item?.category_name}</b>
-              </h5>
-              {item?.subcategories?.length !== 0  ?  <div className="drNBSubSections">
-                {item?.subcategories?.slice(0, 3)?.map((data) => (
-                  <Box>
-                     <Box className="changedDrNBBoxes" 
-                     onClick={() => handlechangeBySubcategory(data?.category_id)}>
-                      {data?.category_name}</Box>
-                  </Box>
-                ))}
-             
-              </div> : <div><p>no date</p></div>}
+              <Box className="drNBCompleteBox">
+                <Box className="drNBCompleteBox-left">
+                  <h5 className="drNB-head" onClick={() => handlechange(item?.category_id)}>
+                    <b>{item?.category_name}</b>
+                  </h5>
+                  {item?.subcategories?.length !== 0 ? <div className="drNBSubSections">
+                    {item?.subcategories?.slice(0, 3)?.map((data) => (
+                      <Box>
+                        <Box className="changedDrNBBoxes"
+                          onClick={() => handlechangeBySubcategory(data?.category_id)}>
+                          {data?.category_name}</Box>
+                      </Box>
+                    ))}
+
+                  </div> : <div><p>no date</p></div>}
+                </Box>
               </Box>
+
+
             </Box>
-  
-           
-          </Box>
           ))
-        }  
+        }
       </div>
-       </Fragment>
+    </Fragment>
   );
 };
 export default SubCategory;

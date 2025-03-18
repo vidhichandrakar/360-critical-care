@@ -133,7 +133,7 @@ const COntactus = () => {
 
           <Box className="DetailsFormBox">
             {/* <form onSubmit={handleSubmit}> */}
-            <Box
+            <Box className="input-name-num"
               sx={{ display: "flex", flexDirection: "row", textAlign: "left" }}
             >
               <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -142,7 +142,7 @@ const COntactus = () => {
                   hiddenLabel
                   id="filled-hidden-label-small"
                   size="small"
-                  className="textfieldName"
+                  className="textfieldName textfieldName1"
                   name="name"
                   onChange={handleInputChange}
                   value={formValues.name}
@@ -154,7 +154,7 @@ const COntactus = () => {
                   hiddenLabel
                   id="filled-hidden-label-small"
                   size="small"
-                  className="textfieldName"
+                  className="textfieldName textfieldName2"
                   name="mobile"
                   value={formValues.mobile}
                   onChange={handleInputChange}

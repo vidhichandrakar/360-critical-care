@@ -72,8 +72,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-
-
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -92,231 +90,250 @@ const Header = () => {
 
   return (
     <>
-    <AppBar position="fixed" className="AppHeader">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{  display: { xs: "flex", md: "none" } }}>
-           
-            
-            <Box>
-              <Link to="/Critical-care"><img src={Logo} className="Responsivelogo"/></Link> 
-            </Box>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-              className="menuSize"
-            >
-              <MenuItem
-                key={1}
-                onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+      <AppBar position="fixed" className="AppHeader">
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Box sx={{ display: { xs: "flex", md: "none" } }} className="main-header">
+
+
+              <Box>
+                <Link to="/Critical-care"><img src={Logo} className="Responsivelogo" /></Link>
+              </Box>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+                className="menuSize"
               >
+                <MenuItem
+                  key={1}
+                  onClick={handleCloseNavMenu}
+                  style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+                >
                   {/* <Link
           to="/Critical-care/AllCourse/"
           style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
           className="menuText"
         >  */}
-         {/* All Courses */}
-        <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
-                {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
-                {/* </Link> */}
-              </MenuItem>
+                  {/* All Courses */}
+                  <DropDown variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon" />} />
+                  {/* <DropDown variant="null" icon={<KeyboardArrowRightIcon className="allCoursesIcon"/>}/> */}
+                  {/* </Link> */}
+                </MenuItem>
 
-              <MenuItem
-                key={1}
-                onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
-              > 
-                <Link to="/Critical-care/About-us/" style={{ color: 'inherit', textDecoration: 'none'}}> 
-                  <Typography
-                    textAlign="center"
-                    className="menuText"
-                  >
-                    About Us
-                  </Typography>
-                </Link>
-              </MenuItem>
+                <MenuItem
+                  key={1}
+                  onClick={handleCloseNavMenu}
+                  style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+                >
+                  <Link to="/Critical-care/About-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <Typography
+                      textAlign="center"
+                      className="menuText"
+                    >
+                      About Us
+                    </Typography>
+                  </Link>
+                </MenuItem>
 
-              <MenuItem
-                key={1}
-                onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
-              >
-                <Link to="/Critical-care/Contact-us/" style={{ color: 'inherit', textDecoration: 'none'}}>
-                  <Typography
-                    textAlign="center"
-                    className="menuText"
-                  >
-                    Contact Us
-                  </Typography>
-                </Link>
-              </MenuItem>
+                <MenuItem
+                  key={1}
+                  onClick={handleCloseNavMenu}
+                  style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+                >
+                  <Link to="/Critical-care/Contact-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <Typography
+                      textAlign="center"
+                      className="menuText"
+                    >
+                      Contact Us
+                    </Typography>
+                  </Link>
+                </MenuItem>
 
-              <MenuItem
-                key={1}
-                onClick={handleCloseNavMenu}
-                style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
-              >
-                <Link to="/Critical-care/Blog/" style={{ color: 'inherit', textDecoration: 'none'}}>
-                  {" "}
-                  <Typography
-                    textAlign="center"
-                    className="menuText"
-                  >
-                    Blog
-                  </Typography>
-                </Link>
-              </MenuItem>
+                <MenuItem
+                  key={1}
+                  onClick={handleCloseNavMenu}
+                  style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
+                >
+                  <Link to="/Critical-care/Blog/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {" "}
+                    <Typography
+                      textAlign="center"
+                      className="menuText"
+                    >
+                      Blog
+                    </Typography>
+                  </Link>
+                </MenuItem>
 
-            </Menu>
-          </Box>
-         <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo'  /></Link> 
-         <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "Inter",
-              fontWeight: 600,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          ></Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              marginLeft: "3%",
-            }}
-          >
-          
+              </Menu>
+            </Box>
+            <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo' /></Link>
             <Typography
-              key={"2"}
-              onClick={handleCloseNavMenu}
+              variant="h5"
+              noWrap
+              component="a"
+              href="#app-bar-with-responsive-menu"
               sx={{
-                color: "black",
-                fontWeight: "600",
-                // marginLeft: "5%",
-                // fontSize: "1.1em",
-                // marginTop: "9px",
-                // fontSize: "16px",
-                fontFamily: "Arial, Helvetica, sans-serif "
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+                flexGrow: 1,
+                fontFamily: "Inter",
+                fontWeight: 600,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
               }}
+            ></Typography>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                marginLeft: "5%",
+              }}
+              className="nav-menu-items"
             >
-            {/* <Link
+
+              <Typography
+                key={"2"}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  fontWeight: "600",
+                  marginLeft: "2%",
+                  // fontSize: "1.1em",
+                  // marginTop: "9px",
+                  // fontSize: "16px",
+                  fontFamily: "Arial, Helvetica, sans-serif "
+                }}
+                className="allCourse-dropDown"
+              >
+                {/* <Link
           to="/Critical-care/AllCourse/"
           style={{ color: "inherit", textDecoration: "none" }}
         >   */}
-        {/* All Courses */}
-        <DropDown  variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon"  />}/>
-         {/* </Link> */}
-         </Typography>
-         
-            <Typography
-              key={"2"}
-              onClick={handleCloseNavMenu}
-              sx={{
-                color: "black",
-                fontWeight: "600",
-                marginLeft: "5%",
-                // fontSize: "1.1em",
-                marginTop: "9px",
-                fontSize: "16px",
-                fontFamily: "Arial, Helvetica, sans-serif "
-              }}
-            >
-              <Link
-                to="/Critical-care/About-us/"
-                style={{ color: "inherit", textDecoration: "none" }}
+                {/* All Courses */}
+                <DropDown variant="outlined" icon={<KeyboardArrowDownIcon className="allCoursesIcon" />}
+                />
+                {/* </Link> */}
+              </Typography>
+
+
+              <Typography
+                key={"2"}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  fontWeight: "600",
+                  marginLeft: "5%",
+                  // fontSize: "1.1em",
+                  marginTop: "9px",
+                  fontSize: "16px",
+                  fontFamily: "Arial, Helvetica, sans-serif "
+                }}
               >
-                About Us
-              </Link>
-            </Typography>
+                <Link
+                  to="/Critical-care/About-us/"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  About Us
+                </Link>
+              </Typography>
 
-            <Typography
-              key={"3"}
-              onClick={handleCloseNavMenu}
-              sx={{
-                color: "black",
-                fontWeight: "600",
-                marginLeft: "5%",
-                marginTop: "9px",
-                fontSize: "16px",
-                lineHeight: "auto",
-                fontFamily: "Arial, Helvetica, sans-serif "
-              }}
-            >
-              <Link
-                to="/Critical-care/Contact-us/"
-                style={{ color: "inherit", textDecoration: "none" }}
+              <Typography
+                key={"3"}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  fontWeight: "600",
+                  marginLeft: "5%",
+                  marginTop: "9px",
+                  fontSize: "16px",
+                  lineHeight: "auto",
+                  fontFamily: "Arial, Helvetica, sans-serif "
+                }}
               >
-                Contact Us
-              </Link>
-            </Typography>
+                <Link
+                  to="/Critical-care/Contact-us/"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  Contact Us
+                </Link>
+              </Typography>
 
-            <Typography
-              key={"3"}
-              onClick={handleCloseNavMenu}
-              sx={{
-                color: "black",
-                fontWeight: "600",
-                marginLeft: "6%",
-                marginTop: "9px",
-                fontSize: "16px",
-                fontFamily: "Arial, Helvetica, sans-serif "
-              }}
-            >
-              <Link
-                to="/Critical-care/Blog/"
-                style={{ color: "inherit", textDecoration: "none" }}
+              <Typography
+                key={"3"}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  color: "black",
+                  fontWeight: "600",
+                  marginLeft: "6%",
+                  marginTop: "9px",
+                  fontSize: "16px",
+                  fontFamily: "Arial, Helvetica, sans-serif "
+                }}
               >
-                Blog
-              </Link>
-            </Typography>
+                <Link
+                  to="/Critical-care/Blog/"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  Blog
+                </Link>
+              </Typography>
 
 
-            <Search className="headerSearchBar">
-            <SearchIconWrapper>
-              <SearchIcon sx={{color:"grey"}}/>
-            </SearchIconWrapper>
+              <Search className="headerSearchBar">
+                <SearchIconWrapper>
+                  <SearchIcon sx={{ color: "grey" }} className="search-box-icon" />
+                </SearchIconWrapper>
 
-            <StyledInputBase
-              placeholder="Search Course"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+                <StyledInputBase
+                  placeholder="Search Course"
+                  inputProps={{ 'aria-label': 'search' }}
+                  className="search-box-input"
+                />
+              </Search>
 
-          </Box>
+            </Box>
 
-          <Box sx={{ flexGrow: 0 ,position:"fixed",right:0}} className="loginContainer">
-            <Button variant="contained" className="LoginButton">
-              Login / Register
-            </Button>
-          </Box>
-          <Box sx={{ mr: 3}} className="loginContainerony">
-            <Button variant="contained" className="LoginButtononly">
-              Login
-            </Button>
+            <Box sx={{ flexGrow: 0, position: "fixed", right: "0" }} className="loginContainer">
+              <Button variant="contained" className="LoginButton">
+                Login / Register
+              </Button>
+            </Box>
+            <Box sx={{ mr: 6 }} className="loginContainerony">
+              <Button variant="contained" className="LoginButtononly">
+                Login
+              </Button>
+              {/* <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+                className="MenuButton"
+              >
+                <MenuIcon className="Hamburger" />
+              </IconButton> */}
+            </Box>
+
             <IconButton
+              sx={{ flexGrow: 0, position: "fixed", right: "60px" }}
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -325,19 +342,18 @@ const Header = () => {
               color="inherit"
               className="MenuButton"
             >
-              <MenuIcon className="Hamburger"/>
-              </IconButton>
-          </Box>
+              <MenuIcon className="Hamburger" />
+            </IconButton>
 
-        </Toolbar>
-      </Container>
-    </AppBar>
-
+          </Toolbar>
+        </Container>
+      </AppBar>
 
 
 
-  
-     </>
+
+
+    </>
   );
 }
 export default Header;

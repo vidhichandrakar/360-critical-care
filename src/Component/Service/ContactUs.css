@@ -1,94 +1,118 @@
-.ContactTaxt{ 
+.ContactTaxt {
     text-align: left;
     /* margin-top: 10%; */
 }
-.ContactBox{
+
+.ContactBox {
     margin: 5%;
     margin-top: 7%;
 }
-.ContactBox p{
+
+.ContactBox p {
     text-align: justify;
     letter-spacing: 0.0em;
 }
-.ContactBox li{
+
+.ContactBox li {
     text-align: justify;
 }
-.Headcenter{
+
+.Headcenter {
     text-align: left;
 }
-.FAQList{
+
+.FAQList {
     margin-left: 2%;
 }
+
 .FAQList li {
     margin-top: 1%;
 }
-.MapBox{
+
+.MapBox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
 }
-.AddressBox{
+
+.AddressBox {
     margin-top: 10%;
 }
 
-.divider{
+.divider {
     /* color: black; */
     padding-bottom: 2%;
     border-bottom: solid 1px black;
 }
 
-@media(max-width: 498px){
-    .ContactFont{    
-         font-size: 2.5rem !important;
-         margin-top: 3%;
+@media(max-width: 498px) {
+    .ContactFont {
+        font-size: 2.5rem !important;
+        margin-top: 3%;
     }
-    .ContactBox h3{
+
+    .ContactBox h3 {
         font-size: 3.2rem;
-      /* width: 70%; */;
+        /* width: 70%; */
+        ;
     }
-    .ContactBox h5{
+
+    .ContactBox h5 {
         font-size: 2.6rem;
-      /* width: 70%; */;
+        /* width: 70%; */
+        ;
     }
-    .ContactBox p{
+
+    .ContactBox p {
         margin-top: 2%;
         font-size: 2.6rem;
         font-weight: 300;
-      /* width: 70%; */;
+        /* width: 70%; */
+        ;
     }
-    .ContactBox{
+
+    .ContactBox {
         margin-top: 13% !important;
     }
-    .MapBox{
+
+    .MapBox {
         flex-direction: column;
         text-align: center;
     }
-    .Headcenter{
+
+    .Headcenter {
         font-size: 3.5rem !important;
     }
-    .GEtDirection{
+
+    .GEtDirection {
         font-size: 2rem !important;
     }
-    .AddressBox{
+
+    .AddressBox {
         padding-bottom: 4%;
     }
-    .headSize{
+
+    .headSize {
         font-size: 3rem !important;
     }
-    .ContactBox p{
+
+    .ContactBox p {
         font-size: 2.3rem !important;
         text-align: justify !important;
     }
-    .ContactBox li{
+
+    .ContactBox li {
         font-size: 2.3rem !important;
         text-align: justify !important;
     }
-    .contactUsMap{
+
+    .contactUsMap {
         width: 100% !important;
         height: 30vh !important;
     }
-    .MapBox{
+
+    .MapBox {
         padding: 20px 15px !important;
     }
 }
@@ -99,63 +123,67 @@
 
 
 
-.allContactUs{
+.allContactUs {
     /* width: 70%; */
     font-size: small;
     margin: 50px;
 }
-.contactUsHeading{
+
+.contactUsHeading {
     /* width: 70%; */
     font-size: 500%;
     margin-top: 3%;
 }
-.contactHeading{
+
+.contactHeading {
     color: black;
     font-weight: bold !important;
 }
 
-.usHeading{
+.usHeading {
     color: blue;
     font-weight: bold !important;
 }
 
-.contactUs1{
-     text-align: left;
-     padding: 2% 2%;
-     /* width: 70%; */;
-     font-size:xx-large;
+.contactUs1 {
+    text-align: left;
+    padding: 2% 2%;
+    /* width: 70%; */
+    ;
+    font-size: xx-large;
 }
 
-.contactUs2_1{
+.contactUs2_1 {
     display: flex;
     flex-direction: column;
     width: 39%;
-     text-align: left;
-     padding: 2% 2%;
-     /* width: 70%; */;    
-     font-size: small;
+    text-align: left;
+    padding: 2% 2%;
+    /* width: 70%; */
+    ;
+    font-size: small;
 }
 
-.contactUs2_2{
+.contactUs2_2 {
     height: 90%;
     width: 70%;
 }
 
-.text{
+.text {
     font-size: xx-large;
 }
 
-.criticalCareHead2_1{
+.criticalCareHead2_1 {
     font-size: 495%;
 }
 
-.contactEmailId{
+.contactEmailId {
     /* padding: 0%; */
     margin-top: 5%;
     font-size: xx-large;
     padding: 0px 0px;
     width: 84%;
-    
+
 }
 
 .getDirectionBox {
@@ -175,42 +203,45 @@
 
 
 
-.fAQSection{
+.fAQSection {
     margin-top: 1%;
     text-align: left;
     padding: 2% 2%;
-    /* width: 70%; */;
+    /* width: 70%; */
+    ;
 }
 
-.fAQHeading{
+.fAQHeading {
     font-size: 480%;
 }
 
-.qna{
+.qna {
     /* width: 70%; */
     font-size: xx-large;
 }
 
-.line{
+.line {
     padding: 1% 4%;
 }
 
 
 
 /* NEW WEBSITE CONTACT US  */
-.contacUsFirstImg{
-   margin-top: 5%;
-   width: 100%;
-   height: auto;
+.contacUsFirstImg {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
 }
-.getInTouchCompleteBox{
+
+.getInTouchCompleteBox {
     border: 0.5px solid grey;
     display: flex;
     flex-direction: row;
     /* height: 76vh; */
     /* margin: 59px -35px; */
 }
-.getInTouch{
+
+.getInTouch {
     /* width: 30vw; */
     /* height: 40vh; */
     background-color: #002C4F;
@@ -218,116 +249,205 @@
     padding: 32px 28px;
     width: 35%;
 }
-.textfieldName{
+
+.textfieldName {
     width: 26vw;
     background-color: rgba(232, 232, 232, 0.549);
 }
-.DetailsFormBox{
+
+.DetailsFormBox {
     margin: 50px;
 }
 
-.getInTouch-head{
+.getInTouch-head {
     font-size: var(--MainHeading) !important;
     text-align: center !important;
 }
-.getInTouchPersonalInfo{
+
+.getInTouchPersonalInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px 82px;
     gap: 6%;
     width: 26vw;
 }
-.getInTouchVerticalLine{
+
+.getInTouchVerticalLine {
     width: 1px;
-    height: 61px;
+    height: 60px;
     background-color: #ffffff !important;
 }
-.getInTouch-about{
+
+.getInTouch-about {
     /* margin-top: 24px; */
 }
-.getInTouchAbtSection{
+
+.getInTouchAbtSection {
     display: flex;
     flex-direction: row;
     gap: 9%;
-    margin: 12px 95px;
+    margin: 12px 20px;
     align-items: center !important;
+    text-align: start;
 }
 
-.getInTouch-right{
+.getInTouch-right {
     padding: 12px 12px;
     margin-left: 12px;
 }
-.getInTouch-right-nameAndMob{
+
+.getInTouch-right-nameAndMob {
     display: flex;
     flex-direction: row;
     margin-top: 31px;
     width: 50vw;
 }
+
 .contactUs-sendMsgBtn {
     /* margin-right: 3%; */
-  }
-  .sendMsgButton {
+}
+
+.sendMsgButton {
     width: 24%;
     height: 6vh;
     background-color: #002C4F !important;
     top: 3%;
     left: 38%;
-  }
-  .contactUsMap{
+}
+
+.contactUsMap {
     width: 100%;
     height: 50vh;
     margin-top: 3% !important;
-  }
-  .ContactMainBox{
+}
+
+.ContactMainBox {
     margin: 50px;
-  }
-  .FormBox{
+}
+
+.FormBox {
     display: flex;
     flex-direction: row;
     margin-top: 3%;
     border: 1px solid;
-  }
+}
 
 
-@media (max-width: 490px){
+@media (max-width: 490px) {
     .getInTouchCompleteBox {
         flex-direction: column;
     }
-    .getInTouch-right-nameAndMob{
+
+    .getInTouch-right-nameAndMob {
         flex-direction: column;
     }
-    .FormBox{
+
+    .FormBox {
         flex-direction: column;
-        border: 1px solid white;
+        /* border: 1px solid white; */
+        border: none;
         margin-top: 0;
+        width: 100%;
     }
-    .DetailsFormBox{
+
+    .DetailsFormBox {
         justify-content: space-evenly;
-        margin: 10px;
+        margin-top: 20px;
+        width: 100% !important;
+        padding: 10px;
     }
-    .ContactMainBox{
+
+    .ContactMainBox {
         margin: 0;
     }
-    .sendMsgButton{
+
+    .sendMsgButton {
         width: 50%;
         height: 6vh;
         background-color: #002C4F !important;
         top: 10% !important;
         left: 0;
     }
-    .textfieldName{
+
+    .textfieldName {
         width: 45vw;
     }
-    .getInTouch{
+
+    .getInTouch {
         padding: 13px 8px;
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .getInTouchAbtSection {
+        margin-left: 50px !important;
     }
 }
 
-:root  {
-    --MainHeading:26px;
-    --subHeading:24px;
-    --ScndHeading:20px;
-    --Heading:18px;
-    --small:16px;
-   }  
+:root {
+    --MainHeading: 26px;
+    --subHeading: 24px;
+    --ScndHeading: 20px;
+    --Heading: 18px;
+    --small: 16px;
+}
+
+@media (max-width: 1060px) {
+    .getInTouchAbtSection {
+        margin: 20px !important;
+        margin-left: 0;
+    }
+
+    .getInTouchVerticalLine {
+        display: none;
+    }
+}
+
+@media (max-width: 899px) {
+    .FormBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .getInTouch {
+        width: 80%;
+        margin-top: 20px;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .getInTouchAbtSection {
+        align-items: center;
+        justify-content: start;
+        margin-left: 0;
+    }
+
+    .getInTouchVerticalLine {
+        display: block;
+        height: 30px;
+    }
+
+    .DetailsFormBox {
+        width: 80%;
+    }
+
+    .input-name-num {
+        min-width: 100% !important;
+    }
+
+    .textfieldName1{
+        width: 100%;
+    }
+    .textfieldName2{
+        width: 100%;
+    }
+
+    .sendMsgButton {
+        width: 40%;
+        height: 6vh;
+        background-color: #002C4F !important;
+        left: 0;
+        top: 10px
+    }
+}

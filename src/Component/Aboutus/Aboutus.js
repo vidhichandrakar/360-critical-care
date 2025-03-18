@@ -40,7 +40,7 @@ const Aboutus = () => {
     });
   }, []);
 
-  const bgColor = ["#FFF3E3","#ffeeee","#e4faff","#ece7ff"];
+  const bgColor = ["#FFF3E3", "#ffeeee", "#e4faff", "#ece7ff"];
   useEffect(() => {
     StudentData({
       callBack: (response) => {
@@ -61,7 +61,7 @@ const Aboutus = () => {
       }
     })
   }, [])
- 
+
 
   // Slider settings
   const settings = {
@@ -164,7 +164,7 @@ const Aboutus = () => {
           className="stethoscopeImg"
         />
 
-        <img src={PWRedImg} width={200} height={150} className="PWSRedImg"/>
+        <img src={PWRedImg} width={200} height={150} className="PWSRedImg" />
         <Box className="abt360CriticalCare-right">
           <Typography className="youtubeHead">
             About <span className="AquaColor">360 Critical Care</span>
@@ -186,24 +186,24 @@ const Aboutus = () => {
             knowledge and skills, ultimately improving patient outcomes in
             intensive care settings.
           </Typography>
-          <Typography className="abt360CriticalCare-typography" sx={{mt: 2}}>
+          <Typography className="abt360CriticalCare-typography" sx={{ mt: 2 }}>
             The idea of this endeavor originated with Our Founders
           </Typography>
 
-          <Typography sx={{fontSize: "1rem"}}
-           className="mobileViewText" 
-           >
+          <Typography sx={{ fontSize: "1rem" }}
+            className="mobileViewText"
+          >
             360CC Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
             dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book. It has
             survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. 
+            typesetting, remaining essentially unchanged.
           </Typography>
-          <Typography sx={{fontSize: "1rem"}} 
-          className="mobileViewText"
+          <Typography sx={{ fontSize: "1rem" }}
+            className="mobileViewText"
           >
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
             passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is
             simply dummy text of the printing and typesetting industry. Lorem
@@ -223,26 +223,26 @@ const Aboutus = () => {
           className="OurFoundersLeftCard"
         >
           <Box>
-          <img src={tapas} width={70} height={70} />
-          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
-            <b>Dr. Tapas Kumar Sahoo</b>
-          </Typography>
-          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
-            Director
-          </Typography>
-          <Typography
-            // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
-            className="ourFounderAbout"
-          >
-            MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
-            Critical care Fellowship (University of Toronto) | MBA (Healthcare
-            Management) | Associate Director and HOD | Department of Critical
-            Care | Medanta Hospital, Ranch
-          </Typography>
+            <img src={tapas} width={70} height={70} />
+            <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+              <b>Dr. Tapas Kumar Sahoo</b>
+            </Typography>
+            <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+              Director
+            </Typography>
+            <Typography
+              // sx={{ fontSize: "0.7rem", padding: "0px 0px", color:"#002C4F" }}
+              className="ourFounderAbout"
+            >
+              MD (Anesthesiology)| FNB (CCM)| EDIC | FCCP | IFCCM | Canadian
+              Critical care Fellowship (University of Toronto) | MBA (Healthcare
+              Management) | Associate Director and HOD | Department of Critical
+              Care | Medanta Hospital, Ranch
+            </Typography>
           </Box>
           <Box>
-          <Box className="ourFoundersHorizontalLine"></Box>
-          <Box  className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+            <Box className="ourFoundersHorizontalLine"></Box>
+            <Box className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
           </Box>
         </Box>
 
@@ -251,24 +251,24 @@ const Aboutus = () => {
           className="OurFoundersLeftCard"
         >
           <Box>
-          <img src={Sananta} width={70} height={70} />
-          <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
-            <b>Dr. Sananta Kumar Dash</b>
-          </Typography>
-          <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
-            Director
-          </Typography>
-          <Typography
-            // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
-            className="ourFounderAbout"
-          >
-            “My aim is to democratize and transform the education landscape in
-            Bharat.”
-          </Typography>
+            <img src={Sananta} width={70} height={70} />
+            <Typography sx={{ fontSize: "1.3rem", mt: 2 }}>
+              <b>Dr. Sananta Kumar Dash</b>
+            </Typography>
+            <Typography sx={{ fontSize: "0.8rem", mt: 1, mb: 3 }}>
+              Director
+            </Typography>
+            <Typography
+              // sx={{ fontSize: "0.7rem", color:"#002C4F" }}
+              className="ourFounderAbout"
+            >
+              “My aim is to democratize and transform the education landscape in
+              Bharat.”
+            </Typography>
           </Box>
           <Box>
-          <Box className="ourFoundersHorizontalLine"></Box>
-          <Box className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
+            <Box className="ourFoundersHorizontalLine"></Box>
+            <Box className="ReadmoreBox"><Typography>Read more</Typography><KeyboardArrowUpIcon /></Box>
           </Box>
         </Box>
       </div>
@@ -278,31 +278,32 @@ const Aboutus = () => {
       </Typography>
       <Box className="whyChooseUsSection">
         <Box className="countryWiseStuBox">
-        <Typography className="countryWiseStudent">
-              <b>Country Wise Student</b>
-        </Typography>
-        <Box sx={{display:"flex", justifyContent: "center"}}>
-          <ul>
-          <li>
+          <Typography className="countryWiseStudent">
+            <b>Country Wise Students:</b>
+          </Typography>
+          <Box sx={{ display: "flex", justifyContent: "center"}}>
+            <ul>
+              <li>
                 <div
                   style={{
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-between",
                   }}
+                  className="country-name-count"
                 >
-                  <p className="countryNames">{whyusData?.Country_name} - </p>
-                  <span style={{marginLeft: "5px"}}> {whyusData?.student_count}</span>
+                  <p className="countryNames">{whyusData?.Country_name}</p>
+                  <span style={{ marginLeft: "5px" }}> {whyusData?.student_count}</span>
                 </div>
               </li>
             </ul>
-        </Box>
+          </Box>
         </Box>
         <Box className="whyChooseUsVerticalLine"></Box>
         <img src={globalMap} className="globally" />
       </Box>
 
-       <Box className="percentageOfSuccess">
+      <Box className="percentageOfSuccess">
         {/* <Box
           sx={{
             backgroundColor: "#FFF3E3",
@@ -348,26 +349,26 @@ const Aboutus = () => {
           <p style={{ fontSize: "0.8rem" }}>Teaching Videos</p>
         </Box> */}
         <Box className="ImgBoxData">
-        {studentDatas?.map((item, index) => (
-                <Box
-                key={index}
-                  sx={{
-                    backgroundColor: bgColor[index],
-                  }}
-                  className="DataCardBox"
-                >
-                  <h1 className="aboutExploreClasses-head">
-                    <b>{item.count_value}+</b>
-                  </h1>
-                  <p className="aboutExploreClasses-para">
-                    <b>{item.count_name}</b>
-                  </p>
-                </Box>
-))}
-          </Box>
-      </Box> 
-       <NewsLatter />
-      <Footer/> 
+          {studentDatas?.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                backgroundColor: bgColor[index],
+              }}
+              className="DataCardBox"
+            >
+              <h1 className="aboutExploreClasses-head">
+                <b>{item.count_value}+</b>
+              </h1>
+              <p className="aboutExploreClasses-para">
+                <b>{item.count_name}</b>
+              </p>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <NewsLatter />
+      <Footer />
     </>
   );
 };

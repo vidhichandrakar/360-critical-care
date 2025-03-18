@@ -42,7 +42,7 @@ const steps = [
   },
 ];
 
-const Analytics = ({}) => {
+const Analytics = ({ }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = steps.length;
@@ -66,14 +66,14 @@ const Analytics = ({}) => {
           <Typography className="appAdvertisementHead">
             Join 15 Million students on the app today!
           </Typography>
-          <Box sx={{mt: 3}}>
-          <Typography className="paraFontSize-forMobileView-common " sx={{lineHeight: "2.5rem"}}>Live & recorded classes available at ease</Typography>
-          <Typography className="paraFontSize-forMobileView-common">dashboard for progress tracking</Typography>
-          <Typography className="paraFontSize-forMobileView-common">
-            Millions of practice questions at your fingertips
-          </Typography>
+          <Box sx={{ mt: 3 }}>
+            <Typography className="paraFontSize-forMobileView-common " sx={{ lineHeight: "2.5rem" }}>Live & recorded classes available at ease</Typography>
+            <Typography className="paraFontSize-forMobileView-common">dashboard for progress tracking</Typography>
+            <Typography className="paraFontSize-forMobileView-common">
+              Millions of practice questions at your fingertips
+            </Typography>
           </Box>
-          <div className="googlePlay-n-appStore" style={{marginTop: "8%"}}>
+          <div className="googlePlay-n-appStore" style={{ marginTop: "8%" }}>
             <img
               src={GoogleLogo}
               width={100}
@@ -95,7 +95,7 @@ const Analytics = ({}) => {
             width={450}
             height={350}
             className="transparentMobile"
-            style={{marginBottom: "-22px"}}
+            style={{ marginBottom: "-22px" }}
           />
         </Box>
       </Box>
@@ -116,33 +116,33 @@ const Analytics = ({}) => {
           />
 
           <Box className="studentsSliderBoxes">
-          <Box
-            sx={{ maxWidth: 400, flexGrow: 1 }}
-            className="TestimonialsLeftCard"
-          >
-            <p className="testimonialPara wrap1-text-50-archiver">
-              <b> {steps[activeStep]?.description}</b>
-            </p>
-            {/* <h3 className="names">{steps[activeStep]?.label}</h3> */}
-          </Box>
+            <Box
+              sx={{ maxWidth: 400, flexGrow: 1 }}
+              className="TestimonialsLeftCard"
+            >
+              <p className="testimonialPara wrap1-text-50-archiver">
+                <b> {steps[activeStep]?.description}</b>
+              </p>
+              {/* <h3 className="names">{steps[activeStep]?.label}</h3> */}
+            </Box>
 
-          <Box
-            sx={{ maxWidth: 400, flexGrow: 1 }}
-            className="TestimonialsLeftCard cardRight"
-          >
-            <p className="testimonialPara wrap1-text-50-archiver">
-              <b> {steps[activeStep]?.description}</b>
-            </p>
-          </Box>
+            <Box
+              sx={{ maxWidth: 400, flexGrow: 1 }}
+              className="TestimonialsLeftCard cardRight"
+            >
+              <p className="testimonialPara wrap1-text-50-archiver">
+                <b> {steps[activeStep]?.description}</b>
+              </p>
+            </Box>
 
-          <Box
-            sx={{ maxWidth: 400, flexGrow: 1 }}
-            className="TestimonialsLeftCard cardRight"
-          >
-            <p className="testimonialPara wrap1-text-50-archiver">
-              <b> {steps[activeStep]?.description}</b>
-            </p>
-          </Box>
+            <Box
+              sx={{ maxWidth: 400, flexGrow: 1 }}
+              className="TestimonialsLeftCard cardRight"
+            >
+              <p className="testimonialPara wrap1-text-50-archiver">
+                <b> {steps[activeStep]?.description}</b>
+              </p>
+            </Box>
           </Box>
 
 

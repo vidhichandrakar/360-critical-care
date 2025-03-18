@@ -11,7 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { banner } from "../ApiFactory/ApiAction";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { tripmHtmlTagsToNormalFormat } from "../util/CommonUtil";
 import { useLocation } from "react-router-dom";
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
@@ -26,7 +26,7 @@ const AllCourseWOL = () => {
     const [popularColurses, setPopularColurses] = useState([]);
 
     const navigate = useNavigate();
-    
+
     useEffect(() => {
         banner({
             callBack: (response) => {
@@ -76,9 +76,9 @@ const AllCourseWOL = () => {
     let location = useLocation();
     const category_id = location?.state?.category_id;
     const sub_category_id = location?.state?.subcategories;
- 
+
     useEffect(() => {
-        if(category_id || sub_category_id){
+        if (category_id || sub_category_id) {
             getAllCoursesFilter({
                 category_id: category_id,
                 subcategories: sub_category_id,
@@ -87,37 +87,38 @@ const AllCourseWOL = () => {
                 }
             })
         }
-        else{
-        getAllCourses({
-            callBack: (response) => {
-                setAllCourseData(response.data)
-            }
-        })}
+        else {
+            getAllCourses({
+                callBack: (response) => {
+                    setAllCourseData(response.data)
+                }
+            })
+        }
     }, [])
 
-  
+
 
     useEffect(() => {
         getPopularColurses({
-          callBack: (response) => {
-            setPopularColurses(response.data);
-          },
+            callBack: (response) => {
+                setPopularColurses(response.data);
+            },
         });
-      }, []);
+    }, []);
 
     const handleDiscountPercent = (price, offer_price) => {
         return Math.floor(((price - offer_price) / price) * 100) + " %";
-      };
+    };
 
-      const handleExplore = (courseId) => {
+    const handleExplore = (courseId) => {
         navigate("/Critical-care/ExploreCourses", { state: { courseId: courseId } });
-      };
+    };
 
-      const handleReset= () =>{
+    const handleReset = () => {
         navigate("/Critical-care/Allcourse");
         window.location.reload()
     }
-    
+
     return (
         <Fragment>
             <Header />
@@ -172,49 +173,49 @@ const AllCourseWOL = () => {
                     )}
                 </div>
             </Fragment>
-                <Box sx={{marginTop: "5%", display: "flex", flexDirection: "row", justifyContent: "right", padding: "10px 60px"}}>
-                    <Button sx={{cursor:"pointer"}} onClick={handleReset}><RestartAltIcon />Reset</Button>
-                </Box>
-                {allCourseData?.length != null  ? <Box className="CoursesCardMainBox">
+            <Box sx={{ marginTop: "5%", display: "flex", flexDirection: "row", justifyContent: "right", padding: "10px 60px" }}>
+                <Button sx={{ cursor: "pointer" }} onClick={handleReset} className="reset-btn"><RestartAltIcon />Reset</Button>
+            </Box>
+            {allCourseData?.length != null ? <Box className="CoursesCardMainBox">
                 {allCourseData?.length && allCourseData?.map((item) => {
-                  return   <Box className="CradBox">
-                    <Box className="CardBoxImg">
-                    <img src={item.thumbnail_path_desktop} className="CoursesCardImg"/>
-                    </Box>
-                    <Box className="CardTextBox"    >
-                        <Typography className="CardHeading .wrap-text-50 ">
-                           {item?.course_name}
-                        </Typography>
-                        <Box className="Price_ButtonBox">
-                            <Box>
-                                <Typography sx={{fontWeight: 600}}>
-                                Special Discounted Price
-                                </Typography>
-                                <Box className="PriceBox">
-                                <Box sx={{display: "flex", flexDirection: "row", width: "60%"}}>
-                                <Typography sx={{fontWeight: 600}}>
-                                ₹{item.durations?.length ? item.durations[0]?.offer_price : ""}
-                                </Typography>
-                                <Typography sx={{ml:"100px", color: "grey",textDecoration: "line-through"}}>
-                                ₹{item.durations[0]?.price}
-                                </Typography>
-                                </Box>
-                                <Typography sx={{ml:6}} className="offBox">
-                                    {item.durations[item?.durations?.length - 1]
-                            ?.offer_price &&
-                          item.durations[item?.durations?.length - 1]?.price
-                            ? handleDiscountPercent(
-                                item.durations[item?.durations?.length - 1]
-                                  .price,
-                                item.durations[item?.durations?.length - 1]
-                                  .offer_price
-                              )
-                            : null}
-                                </Typography>
+                    return <Box className="CradBox">
+                        <Box className="CardBoxImg">
+                            <img src={item.thumbnail_path_desktop} className="CoursesCardImg" />
+                        </Box>
+                        <Box className="CardTextBox"    >
+                            <Typography className="CardHeading .wrap-text-50 ">
+                                {item?.course_name}
+                            </Typography>
+                            <Box className="Price_ButtonBox">
+                                <Box>
+                                    <Typography sx={{ fontWeight: 600 }}>
+                                        Special Discounted Price
+                                    </Typography>
+                                    <Box className="PriceBox">
+                                        <Box sx={{ display: "flex", flexDirection: "row", width: "60%" }}>
+                                            <Typography sx={{ fontWeight: 600 }}>
+                                                ₹{item.durations?.length ? item.durations[0]?.offer_price : ""}
+                                            </Typography>
+                                            <Typography sx={{ ml: "100px", color: "grey", textDecoration: "line-through" }}>
+                                                ₹{item.durations[0]?.price}
+                                            </Typography>
+                                        </Box>
+                                        <Typography sx={{ ml: 6 }} className="offBox">
+                                            {item.durations[item?.durations?.length - 1]
+                                                ?.offer_price &&
+                                                item.durations[item?.durations?.length - 1]?.price
+                                                ? handleDiscountPercent(
+                                                    item.durations[item?.durations?.length - 1]
+                                                        .price,
+                                                    item.durations[item?.durations?.length - 1]
+                                                        .offer_price
+                                                )
+                                                : null}
+                                        </Typography>
 
                                     </Box>
                                 </Box>
-                                <Button variant="contained" className="ExploreButton" 
+                                <Button variant="contained" className="ExploreButton"
                                     onClick={() => handleExplore(item?.course_id)}>
                                     Explore Now
                                 </Button>
@@ -223,30 +224,30 @@ const AllCourseWOL = () => {
                     </Box>
                 })}
             </Box> : <Box>No course available</Box>}
-            
+
             <Box className="JoinContainer">
                 <Typography className="JoinHeading">Join Our Free Webinar</Typography>
                 <Button className="Joincentered" variant="contained"><span className="JoinNow">Join Now</span><span className="Subscribe">Subscribe</span></Button>
             </Box>
-            
+
             <Box className="PopularCourseMainBox">
-                <Typography sx={{fontSize: "2rem", fontWeight: 700}}>Our <span className="HeadingColor">Popular Course</span></Typography>
-               
+                <Typography sx={{ fontSize: "2rem", fontWeight: 700 }}>Our <span className="HeadingColor">Popular Course</span></Typography>
+
                 <Box className="PopularCourseBox">
-                {popularColurses?.length === "" && popularColurses?.map((data)=> {
-       return (   <Box className="PopularCardBox">
-          <img src={data?.thumbnail_path_desktop} className="Cardimgs" />
-          <Box>
-            <Typography className="Para1 .wrap-text-50" sx={{ mt: 1 }}>
-              {data?.course_name}
-            </Typography>
-            <Typography className="Para2">
-              {tripmHtmlTagsToNormalFormat(data?.description)}
-            </Typography>
-          </Box>
-        </Box>);
-         })} 
-         
+                    {popularColurses?.length === "" && popularColurses?.map((data) => {
+                        return (<Box className="PopularCardBox">
+                            <img src={data?.thumbnail_path_desktop} className="Cardimgs" />
+                            <Box>
+                                <Typography className="Para1 .wrap-text-50" sx={{ mt: 1 }}>
+                                    {data?.course_name}
+                                </Typography>
+                                <Typography className="Para2">
+                                    {tripmHtmlTagsToNormalFormat(data?.description)}
+                                </Typography>
+                            </Box>
+                        </Box>);
+                    })}
+
                 </Box>
 
             </Box>

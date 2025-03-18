@@ -46,7 +46,7 @@ const Blog = () => {
       }
     })
   }, [])
-  
+
 
   useEffect(() => {
     banner({
@@ -93,7 +93,7 @@ const Blog = () => {
   const topBanner = getLastBannerByPosition(bannerAPI, 1);
   const middleBanner = getLastBannerByPosition(bannerAPI, 2);
   const bottomBanner = getLastBannerByPosition(bannerAPI, 3);
- return (
+  return (
     <Fragment>
       <Header />
 
@@ -148,18 +148,18 @@ const Blog = () => {
         </div>
       </Fragment>
 
-     
+
       <Box className="PopularCourseMainBox">
         <Box className="PopularCourseBox">
           {blogData.map((item) => {
 
             return ( // Added return statement
               <Box key={item.id} className="PopularCardBox">
-               {item.image_url != null ? (
-                <img src={item.image_url} className="Cardimgs" />
-              ) : (
-                <img src={cardimg} className="Cardimgs" />
-              )}
+                {item.image_url != null ? (
+                  <img src={item.image_url} className="Cardimgs" />
+                ) : (
+                  <img src={cardimg} className="Cardimgs" />
+                )}
                 <Box>
                   <Typography className="Para1" sx={{ mt: 1 }}>
                     {item.title}
@@ -173,7 +173,7 @@ const Blog = () => {
         </Box>
       </Box>
       <Box className="JoinContainer">
-        <Typography className="JoinHeading" style={{fontFamily: "CustomFont"}}>Join Our Free Webinar</Typography>
+        <Typography className="JoinHeading" style={{ fontFamily: "CustomFont" }}>Join Our Free Webinar</Typography>
         <Button className="Joincentered" variant="contained">
           <span className="JoinNow" >Join Now</span>
           <span className="Subscribe">Subscribe</span>
@@ -186,23 +186,23 @@ const Blog = () => {
         </Typography>
 
         <Box className="PopularCourseBox">
-        {blogCards.map((item) => {
+          {blogCards.map((item) => {
             return (
               <Box key={item.id} className="PopularCardBox">
-              {item.image_url != null ? (
-                <img src={item.image_url} className="Cardimgs" />
-              ) : (
-                <img src={cardimg} className="Cardimgs" />
-              )}
-              <Box>
-                <Typography className="Para1" sx={{ mt: 1 }}>
-                  {item.title}
-                </Typography>
-                <Typography className="Para2">
-                  {item.description}
-                </Typography>
+                {item.image_url != null ? (
+                  <img src={item.image_url} className="Cardimgs" />
+                ) : (
+                  <img src={cardimg} className="Cardimgs" />
+                )}
+                <Box>
+                  <Typography className="Para1" sx={{ mt: 1 }}>
+                    {item.title}
+                  </Typography>
+                  <Typography className="Para2">
+                    {item.description}
+                  </Typography>
+                </Box>
               </Box>
-            </Box>
 
             );
           })}
