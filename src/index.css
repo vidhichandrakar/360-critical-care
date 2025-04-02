@@ -1907,6 +1907,7 @@ html {
   margin: 10px;
   background-color: #fff;
   border-radius: 15px;
+  width: 90%;
 }
 
 .topComma {
@@ -1929,6 +1930,10 @@ html {
 .googlePlay-n-appStore {
   display: flex;
   gap: 10px;
+}
+
+.googlePlay-n-appStore:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

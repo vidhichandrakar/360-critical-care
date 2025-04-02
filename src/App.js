@@ -19,10 +19,13 @@ import WhatsAppIcon from './Component/CallToAction/WhatsAppIcon.jsx';
 
 import { BrowserRouter } from 'react-router-dom'
 import ExploreCourses from './Component/Features/ExploreCourses.js';
+import ScrollToTop from './Component/util/ScrollToTop .js';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path='/Critical-care/' exact Component={MainComponent} />
           <Route path='/Critical-care/About-us/' Component={Aboutus} />
