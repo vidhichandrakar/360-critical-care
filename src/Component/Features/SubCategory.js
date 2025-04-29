@@ -54,10 +54,10 @@ const SubCategory = ({ categorySelected }) => {
   const subcategoriesdata = categoreData?.subcategories
   const navigate = useNavigate();
   const handlechange = (category_id) => {
-    navigate("/Critical-care/Allcourse", { state: { category_id: category_id, subcategories: null } });
+    navigate("/Allcourse", { state: { category_id: category_id, subcategories: null } });
   };
   const handlechangeBySubcategory = (category_id) => {
-    navigate("/Critical-care/Allcourse", { state: { subcategories: category_id, category_id: null } });
+    navigate("/Allcourse", { state: { subcategories: category_id, category_id: null } });
   };
   return (
     <Fragment>

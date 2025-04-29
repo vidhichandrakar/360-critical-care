@@ -17,7 +17,7 @@ function Footer() {
         <div class="container">
           <div class="row">
             <div class="footer-col  center footer-logo-para">
-              <Link to="/Critical-care"><img
+              <Link to="/"><img
                 src={Logo}
                 className="LogoFooter"
               /></Link>
@@ -81,11 +81,11 @@ function Footer() {
            
             <div className="flexcol fontWidth text-color-white CompanyServices">
              <Link  style={{ color: 'inherit', textDecoration: 'none'}} className="CompanyBox"> <p>Company</p></Link>
-             <Link to="/Critical-care/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p  className="rIGHTlINE">Terms and Condition </p></Link>
-             <Link to="/Critical-care/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Privacy Policy  </p></Link> 
-             <Link to="/Critical-care/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">About Us </p></Link> 
-             <Link to="/Critical-care/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Contact Us</p></Link> 
-             <Link to="/Critical-care/Blog/" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left ">Blog </p></Link> 
+             <Link to="/Terms-&-Condition" style={{ color: 'inherit', textDecoration: 'none'}}> <p  className="rIGHTlINE">Terms and Condition </p></Link>
+             <Link to="/Privacy-policy" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Privacy Policy  </p></Link> 
+             <Link to="/About-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">About Us </p></Link> 
+             <Link to="/Contact-us" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left rIGHTlINE">Contact Us</p></Link> 
+             <Link to="/Blog/" style={{ color: 'inherit', textDecoration: 'none'}}><p className="margin-left ">Blog </p></Link> 
             </div>
 
             <p className="text-color-white CopyRight">

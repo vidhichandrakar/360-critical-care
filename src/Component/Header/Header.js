@@ -97,7 +97,7 @@ const Header = () => {
 
 
               <Box>
-                <Link to="/Critical-care"><img src={Logo} className="Responsivelogo" /></Link>
+                <Link to="/"><img src={Logo} className="Responsivelogo" /></Link>
               </Box>
               <Menu
                 id="menu-appbar"
@@ -124,7 +124,7 @@ const Header = () => {
                   style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
                 >
                   {/* <Link
-          to="/Critical-care/AllCourse/"
+          to="/AllCourse/"
           style={{ fontFamily: "Arial, Helvetica, sans-serif "}}
           className="menuText"
         >  */}
@@ -139,7 +139,7 @@ const Header = () => {
                   onClick={handleCloseNavMenu}
                   style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
                 >
-                  <Link to="/Critical-care/About-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link to="/About-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
                     <Typography
                       textAlign="center"
                       className="menuText"
@@ -154,7 +154,7 @@ const Header = () => {
                   onClick={handleCloseNavMenu}
                   style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
                 >
-                  <Link to="/Critical-care/Contact-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link to="/Contact-us/" style={{ color: 'inherit', textDecoration: 'none' }}>
                     <Typography
                       textAlign="center"
                       className="menuText"
@@ -169,7 +169,7 @@ const Header = () => {
                   onClick={handleCloseNavMenu}
                   style={{ fontFamily: "Arial, Helvetica, sans-serif " }}
                 >
-                  <Link to="/Critical-care/Blog/" style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link to="/Blog/" style={{ color: 'inherit', textDecoration: 'none' }}>
                     {" "}
                     <Typography
                       textAlign="center"
@@ -182,7 +182,7 @@ const Header = () => {
 
               </Menu>
             </Box>
-            <Link to="/Critical-care"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo' /></Link>
+            <Link to="/"><img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo' /></Link>
             <Typography
               variant="h5"
               noWrap
@@ -223,7 +223,7 @@ const Header = () => {
                 className="allCourse-dropDown"
               >
                 {/* <Link
-          to="/Critical-care/AllCourse/"
+          to="/AllCourse/"
           style={{ color: "inherit", textDecoration: "none" }}
         >   */}
                 {/* All Courses */}
@@ -247,7 +247,7 @@ const Header = () => {
                 }}
               >
                 <Link
-                  to="/Critical-care/About-us/"
+                  to="/About-us/"
                   style={{ color: "inherit", textDecoration: "none" }}
                 >
                   About Us
@@ -268,7 +268,7 @@ const Header = () => {
                 }}
               >
                 <Link
-                  to="/Critical-care/Contact-us/"
+                  to="/Contact-us/"
                   style={{ color: "inherit", textDecoration: "none" }}
                 >
                   Contact Us
@@ -288,7 +288,7 @@ const Header = () => {
                 }}
               >
                 <Link
-                  to="/Critical-care/Blog/"
+                  to="/Blog/"
                   style={{ color: "inherit", textDecoration: "none" }}
                 >
                   Blog

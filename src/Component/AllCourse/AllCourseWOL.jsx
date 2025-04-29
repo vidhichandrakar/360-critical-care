@@ -111,11 +111,11 @@ const AllCourseWOL = () => {
     };
 
     const handleExplore = (courseId) => {
-        navigate("/Critical-care/ExploreCourses", { state: { courseId: courseId } });
+        navigate("/ExploreCourses", { state: { courseId: courseId } });
     };
 
     const handleReset = () => {
-        navigate("/Critical-care/Allcourse");
+        navigate("/Allcourse");
         window.location.reload()
     }
 

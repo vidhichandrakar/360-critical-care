@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import MainComponent from './Component/MainComponent/MainComponent';
 import { Route, Routes } from 'react-router-dom'
 import Aboutus from './Component/Aboutus/Aboutus';
 import Terms from './Component/Terms&Condition/Terms';
-import ContactUs from './Component/Service/ContactUs';
 import PrivacyPolicy from './Component/Service/PrivacyPolicy';
 import TopCourse from './Component/AllCourse/TopCourse';
 import EDIC from './Component/AllCourse/EDIC';
@@ -21,31 +19,32 @@ import { BrowserRouter } from 'react-router-dom'
 import ExploreCourses from './Component/Features/ExploreCourses.js';
 import ScrollToTop from './Component/util/ScrollToTop .js';
 
+
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path='/Critical-care/' exact Component={MainComponent} />
-          <Route path='/Critical-care/About-us/' Component={Aboutus} />
-          <Route path='/Critical-care/Terms-&-Condition/' Component={Terms} />
-          <Route path='/Critical-care/Contact-us/' Component={COntactus} />
-          <Route path='/Critical-care/Blog/' Component={Blog} />
-          <Route path='/Critical-care/Privacy-policy/' Component={PrivacyPolicy} />
-          <Route path='/Critical-care/TopCourse/' Component={TopCourse} />
-          <Route path='/Critical-care/EDIC/' Component={EDIC} />
-          <Route path='/Critical-care/EDIC2/' Component={EDIC2} />
-          <Route path='/Critical-care/IDCCM/' Component={IDCCM} />
-          <Route path='/Critical-care/Demo/' Component={DemoApi} />
-          <Route path='/Critical-care/AllCourse/' Component={AllCourseWOL} />
-          <Route path='/Critical-care/testportal' Component={TestportalMain} />
-          <Route path='/Critical-care/ExploreCourses' Component={ExploreCourses} />
-        </Routes>
-        <WhatsAppIcon /> {/* Include the WhatsApp icon here */}
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter basename="/Critical-care">
+                <ScrollToTop />
+                <Routes>
+                    <Route path='/' exact Component={MainComponent} />
+                    <Route path='/About-us/' Component={Aboutus} />
+                    <Route path='/Terms-&-Condition/' Component={Terms} />
+                    <Route path='/Contact-us/' Component={COntactus} />
+                    <Route path='/Blog/' Component={Blog} />
+                    <Route path='/Privacy-policy/' Component={PrivacyPolicy} />
+                    <Route path='/TopCourse/' Component={TopCourse} />
+                    <Route path='/EDIC/' Component={EDIC} />
+                    <Route path='/EDIC2/' Component={EDIC2} />
+                    <Route path='/IDCCM/' Component={IDCCM} />
+                    <Route path='/Demo/' Component={DemoApi} />
+                    <Route path='/AllCourse/' Component={AllCourseWOL} />
+                    <Route path='/testportal' Component={TestportalMain} />
+                    <Route path='/ExploreCourses' Component={ExploreCourses} />
+                </Routes>
+                <WhatsAppIcon /> {/* Include the WhatsApp icon here */}
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

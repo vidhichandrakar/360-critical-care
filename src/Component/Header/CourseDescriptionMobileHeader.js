@@ -23,7 +23,7 @@ const CourseDescriptionMobileHeader = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
-         <Link to="/Critical-care">
+         <Link to="/">
          <img src={Logo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} className='logo-CourseDescriptionMobileHeader' />
          </Link> 
 
