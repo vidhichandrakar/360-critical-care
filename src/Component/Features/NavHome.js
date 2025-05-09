@@ -89,20 +89,20 @@ const NavHome = () => {
           )}
 
           {topBanner.web_banner_type_text === "Slider" && topBanner.web_banner_links_desktop && (
-            <div className="slider-container" style={{ marginTop: "60px", width: "100%" }}>
-              <Slider {...settings}>
-                {topBanner.web_banner_links_desktop.map((link) => (
-                  <div key={link._id}>
-                    <img
-                      className="WebViewImg"
-                      src={link.banner_url}
-                      alt="Slider Banner"
-                      style={{ width: "100%", height: "auto" }}
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
+            <div className="home-slider-wrapper" style={{ width: "100%", overflow: "hidden" }}>
+  <Slider {...settings}>
+    {topBanner.web_banner_links_desktop.map((link) => (
+      <div key={link._id}>
+        <img
+          src={link.banner_url}
+          alt="Slider Banner"
+          style={{ width: "100%", height: "400px", objectFit: "cover" }}
+        />
+      </div>
+    ))}
+  </Slider>
+</div>
+
           )}
         </Fragment>
       )}
